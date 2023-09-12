@@ -1,0 +1,21 @@
+{
+  "name": "app",
+  "version": "1.0.50",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "bun run --watch src/index.ts"
+  },
+  "dependencies": {
+    "@elysiajs/cors": "^0.6.0",
+    "@elysiajs/swagger": "^0.6.2",
+    "bitsharesjs": "^6.0.0",
+    "bitsharesjs-ws": "^6.0.0",
+    "elysia": "latest",
+    "elysia-rate-limit": "^1.0.3",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "module": "src/index.js"
+}
