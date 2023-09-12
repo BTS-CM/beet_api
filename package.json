@@ -3,15 +3,15 @@
   "version": "1.0.50",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "bun run --watch src/index.ts"
+    "dev": "bun run --watch src/index.tsx",
+    "compile": "bun build --compile ./src/index.tsx --outfile beet_api"
   },
   "dependencies": {
-    "@elysiajs/cors": "^0.6.0",
+    "@elysiajs/html": "^0.6.5",
     "@elysiajs/swagger": "^0.6.2",
     "bitsharesjs": "^6.0.0",
     "bitsharesjs-ws": "^6.0.0",
     "elysia": "latest",
-    "elysia-rate-limit": "^1.0.3",
     "uuid": "^9.0.0"
   },
   "devDependencies": {

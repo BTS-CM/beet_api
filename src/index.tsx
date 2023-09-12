@@ -1,25 +1,18 @@
 import { Elysia } from "elysia";
 import { swagger } from '@elysiajs/swagger'
-import { cors } from '@elysiajs/cors'
-import { rateLimit } from 'elysia-rate-limit'
-
+import { html } from '@elysiajs/html'
 import { generateDeepLink } from './lib';
 
 const app = new Elysia()
                 .use(swagger())
-                //.use(cors()) // for local dev only
-                .use(cors({
-                  origin: /\*.vercel.app$/
-                }))
-                .use(
-                  rateLimit({
-                    duration: 60 * 60 * 1000, // 1 hour
-                    max: 60, // 500 req per hour
-                  })
-                )
+                .use(html())
                 .onError(({ code, error }) => {
                   return new Response(error.toString())
                 })
+                .get("/", () => Bun.file('./src/view/index.html')) // astro built files
+                .get('/_astro/Form.js', () => Bun.file('./src/view/_astro/Form.js'))
+                .get('/_astro/index.js', () => Bun.file('./src/view/_astro/index.js'))
+                .get('/_astro/client.js', () => Bun.file('./src/view/_astro/client.js')) // end of astro files
                 .post("/beet", async ({ body }) => {
                   if (!body || !JSON.parse(body)) {
                     throw new Error("Missing required fields");
