@@ -1,0 +1,145 @@
+[
+    {
+        "id": "1.19.0",
+        "asset_a_id": "1.3.0",
+        "asset_a_symbol": "TEST",
+        "asset_b_id": "1.3.1515",
+        "asset_b_symbol": "CONTEST.BTC",
+        "share_asset_symbol": "CONTEST.LP1",
+        "balance_a": 87647856,
+        "balance_b": 416257465,
+        "taker_fee_percent": 15
+    },
+    {
+        "id": "1.19.6",
+        "asset_a_id": "1.3.0",
+        "asset_a_symbol": "TEST",
+        "asset_b_id": "1.3.1564",
+        "asset_b_symbol": "MKUU",
+        "share_asset_symbol": "MKUU.INVALIDPOOL",
+        "balance_a": 30081856,
+        "balance_b": 202382,
+        "taker_fee_percent": 100
+    },
+    {
+        "id": "1.19.7",
+        "asset_a_id": "1.3.0",
+        "asset_a_symbol": "TEST",
+        "asset_b_id": "1.3.174",
+        "asset_b_symbol": "CNY",
+        "share_asset_symbol": "MYLP01",
+        "balance_a": 0,
+        "balance_b": 0,
+        "taker_fee_percent": 480
+    },
+    {
+        "id": "1.19.8",
+        "asset_a_id": "1.3.0",
+        "asset_a_symbol": "TEST",
+        "asset_b_id": "1.3.1564",
+        "asset_b_symbol": "MKUU",
+        "share_asset_symbol": "MKUU.POOLX1",
+        "balance_a": 144050193,
+        "balance_b": 30680,
+        "taker_fee_percent": 100
+    },
+    {
+        "id": "1.19.11",
+        "asset_a_id": "1.3.597",
+        "asset_a_symbol": "VVOVVOVV",
+        "asset_b_id": "1.3.642",
+        "asset_b_symbol": "AAAA",
+        "share_asset_symbol": "MYLP01.C",
+        "balance_a": 0,
+        "balance_b": 0,
+        "taker_fee_percent": 100
+    },
+    {
+        "id": "1.19.12",
+        "asset_a_id": "1.3.0",
+        "asset_a_symbol": "TEST",
+        "asset_b_id": "1.3.1579",
+        "asset_b_symbol": "XBTSX.STH",
+        "share_asset_symbol": "BTSPOOL",
+        "balance_a": 129462593,
+        "balance_b": 111936372,
+        "taker_fee_percent": 12
+    },
+    {
+        "id": "1.19.22",
+        "asset_a_id": "1.3.0",
+        "asset_a_symbol": "TEST",
+        "asset_b_id": "1.3.1602",
+        "asset_b_symbol": "XBTAAA",
+        "share_asset_symbol": "XBTAAA.P1",
+        "balance_a": 16783894,
+        "balance_b": 5690652,
+        "taker_fee_percent": 30
+    },
+    {
+        "id": "1.19.47",
+        "asset_a_id": "1.3.1686",
+        "asset_a_symbol": "MKUU.ZWEICO",
+        "asset_b_id": "1.3.1687",
+        "asset_b_symbol": "MKUU.ZWEIDECO",
+        "share_asset_symbol": "MKUU.ZWEICODECO",
+        "balance_a": 2,
+        "balance_b": 1,
+        "taker_fee_percent": 0
+    },
+    {
+        "id": "1.19.48",
+        "asset_a_id": "1.3.0",
+        "asset_a_symbol": "TEST",
+        "asset_b_id": "1.3.1043",
+        "asset_b_symbol": "XRPBTS",
+        "share_asset_symbol": "NICHOLASLP",
+        "balance_a": 0,
+        "balance_b": 0,
+        "taker_fee_percent": 1000
+    },
+    {
+        "id": "1.19.52",
+        "asset_a_id": "1.3.0",
+        "asset_a_symbol": "TEST",
+        "asset_b_id": "1.3.1709",
+        "asset_b_symbol": "BSWAP",
+        "share_asset_symbol": "BSWAP.LP1",
+        "balance_a": 123877453,
+        "balance_b": 11842338,
+        "taker_fee_percent": 10
+    },
+    {
+        "id": "1.19.53",
+        "asset_a_id": "1.3.1693",
+        "asset_a_symbol": "TESTAA",
+        "asset_b_id": "1.3.1699",
+        "asset_b_symbol": "TESTUSDT",
+        "share_asset_symbol": "TESTAAUSDT.LP",
+        "balance_a": "3082787988",
+        "balance_b": 342731334,
+        "taker_fee_percent": 10
+    },
+    {
+        "id": "1.19.54",
+        "asset_a_id": "1.3.1693",
+        "asset_a_symbol": "TESTAA",
+        "asset_b_id": "1.3.1700",
+        "asset_b_symbol": "TESTBTCT",
+        "share_asset_symbol": "TESTAABTC.LP",
+        "balance_a": "22001991613",
+        "balance_b": 90471754,
+        "taker_fee_percent": 10
+    },
+    {
+        "id": "1.19.55",
+        "asset_a_id": "1.3.0",
+        "asset_a_symbol": "TEST",
+        "asset_b_id": "1.3.1709",
+        "asset_b_symbol": "BSWAP",
+        "share_asset_symbol": "BSWAP.LP2",
+        "balance_a": 219860534,
+        "balance_b": 33500653,
+        "taker_fee_percent": 10
+    }
+]

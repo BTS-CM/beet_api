@@ -4,14 +4,24 @@ import { swagger } from '@elysiajs/swagger'
 
 import { generateDeepLink } from './lib';
 
-import allPools from "./data/allPools.json";
-import assetData from "./data/assetData.json";
+import bts_allPools from "./data/bitshares/allPools.json";
+import bts_allAssets from "./data/bitshares/allAssets.json";
 
-function getAsset(id: string) {
-  const foundAsset = assetData.find((asset: any) => asset.id === id);
+import test_allPools from "./data/bitshares_testnet/allPools.json";
+import test_allAssets from "./data/bitshares_testnet/allAssets.json";
+
+function getAsset(chain: string, id: string) {
+  let foundAsset;
+  if (chain === "bitshares") {
+    foundAsset = bts_allAssets.find((asset: any) => asset.id === id);
+  } else if (chain === "bitshares_testnet") {
+    foundAsset = test_allAssets.find((asset: any) => asset.id === id);
+  }
+
   if (!foundAsset) {
     throw new Error("Asset not found");
   }
+
   return new Response(
     JSON.stringify({
       message: "Success!",
@@ -26,11 +36,18 @@ function getAsset(id: string) {
   );
 }
 
-function getPool(id: string) {
-  const foundPool = allPools.find((pool: any) => pool.id === id);
+function getPool(chain: string, id: string) {
+  let foundPool;
+  if (chain === "bitshares") {
+    foundPool = bts_allPools.find((asset: any) => asset.id === id);
+  } else if (chain === "bitshares_testnet") {
+    foundPool = test_allPools.find((asset: any) => asset.id === id);
+  }
+
   if (!foundPool) {
     throw new Error("Pool not found");
   }
+
   return new Response(
     JSON.stringify({
       message: "Success!",
@@ -83,16 +100,22 @@ const app = new Elysia()
                     tags: ['Bitshares']
                   }
                 })
-                .get('/assets', () => {
-                  return Bun.file('./src/data/assetData.json')
+                .get('/assets/:chain', ({ params: { chain } }) => {
+                  if (chain !== 'bitshares' && chain !== 'bitshares_testnet') {
+                    throw new Error("Invalid chain");
+                  }
+                  return Bun.file(`./src/data/${chain}/poolAssets.json`)
                 }, {
                   detail: {
                     summary: 'A list of Bitshares assets',
                     tags: ['Bitshares']
                   }
                 })
-                .get('/pools', () => {
-                  return Bun.file('./src/data/pools.json')
+                .get('/pools/:chain', ({ params: { chain } }) => {
+                  if (chain !== 'bitshares' && chain !== 'bitshares_testnet') {
+                    throw new Error("Invalid chain");
+                  }
+                  return Bun.file(`./src/data/${chain}/pools.json`)
                 }, {
                   detail: {
                     summary: 'A list of Bitshares pools',
@@ -100,21 +123,35 @@ const app = new Elysia()
                   }
                 })
                 // astro built files
-                .get('/_astro/Form.3f0ea395.js', () => Bun.file('./src/view/_astro/Form.3f0ea395.js'))
+                .get('/_astro/Form.4acbcf50.js', () => Bun.file('./src/view/_astro/Form.4acbcf50.js'))
                 .get('/_astro/index.6460afdd.js', () => Bun.file('./src/view/_astro/index.6460afdd.js'))
                 .get('/_astro/client.a461b027.js', () => Bun.file('./src/view/_astro/client.a461b027.js'))
                 // end of astro files
                 .group('/api', app => app
-                  .get('/asset/:id', ({ params: { id } }) => {
-                    return getAsset(id)
+                  .get('/asset/:chain/:id', ({ params: { chain, id } }) => {
+                    if (
+                      !chain ||
+                      (chain !== "bitshares" && chain !== 'bitshares_testnet') ||
+                      !id
+                    ) {
+                      throw new Error("Missing required fields");
+                    }
+                    return getAsset(chain, id)
                   }, {
                     detail: {
                       summary: 'Retreive a Bitshares asset',
                       tags: ['Bitshares']
                     }
                   })
-                  .get('/pool/:id', ({ params: { id } }) => {
-                   return getPool(id)
+                  .get('/pool/:chain/:id', ({ params: { chain, id } }) => {
+                    if (
+                      !chain ||
+                      (chain !== "bitshares" && chain !== 'bitshares_testnet') ||
+                      !id
+                    ) {
+                      throw new Error("Missing required fields");
+                    }
+                    return getPool(chain, id)
                   }, {
                     detail: {
                       summary: 'Retrieve a Bitshares pool',
@@ -122,54 +159,59 @@ const app = new Elysia()
                     }
                   })
                 )
-                .post('/beet', async ({ body }) => {
-                  if (!body || !JSON.parse(body)) {
-                    throw new Error("Missing required fields");
-                  }
-                
-                  let generatedDeepLink;
-                  try {
-                    generatedDeepLink = await generateDeepLink(JSON.parse(body));
-                  } catch (error) {
-                    throw error;
-                  }
-                
-                  return new Response(
-                    JSON.stringify({
-                      message: "Success!",
-                      generatedDeepLink
-                    }),
-                    {
-                      status: 200,
-                      headers: {
-                        "Content-Type": "application/json"
-                      }
+                .post(
+                  '/beet/:chain/:opType',
+                  async ({ body, params: { chain, opType } }) => {
+                    if (!body || !JSON.parse(body) || (!chain || !opType)) {
+                      throw new Error("Missing required fields");
                     }
-                  );
-                }, {
-                  body: t.String({
-                    description: 'The JSON-encoded request body',
-                    example: [
+                  
+                    let generatedDeepLink;
+                    try {
+                      generatedDeepLink = await generateDeepLink(chain, opType, JSON.parse(body));
+                    } catch (error) {
+                      throw error;
+                    }
+                
+                    return new Response(
+                      JSON.stringify({
+                        message: "Success!",
+                        generatedDeepLink
+                      }),
                       {
-                        account: "1.2.1811495",
-                        pool: "1.19.0",
-                        amount_to_sell: {
-                          amount: 100000,
-                          asset_id: "1.3.0"
-                        },
-                        min_to_receive: {
-                          amount: 635,
-                          asset_id: "1.3.3291"
-                        },
-                        extensions: []
+                        status: 200,
+                        headers: {
+                          "Content-Type": "application/json"
+                        }
                       }
-                    ]
-                  }),
-                  detail: {
-                    summary: 'Generate a deep link',
-                    tags: ['Beet']
-                  }
-                })
+                    );
+                  }, {
+                    body: t.String({
+                      description: 'The JSON-encoded request body',
+                      example: [
+                        [
+                          "",
+                          {
+                            account: "1.2.1811495",
+                            pool: "1.19.0",
+                            amount_to_sell: {
+                              amount: 100000,
+                              asset_id: "1.3.0"
+                            },
+                            min_to_receive: {
+                              amount: 635,
+                              asset_id: "1.3.3291"
+                            },
+                            extensions: []
+                          }
+                        ]
+                      ]
+                    }),
+                    detail: {
+                      summary: 'Generate a deep link',
+                      tags: ['Beet']
+                    }
+                  })
                 .listen(8080);
 
 console.log(

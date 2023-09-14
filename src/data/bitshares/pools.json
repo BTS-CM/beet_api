@@ -28,8 +28,8 @@
         "asset_b_id": "1.3.113",
         "asset_b_symbol": "CNY",
         "share_asset_symbol": "BTSPP.BTSCNY",
-        "balance_a": "99984413505",
-        "balance_b": 666873428,
+        "balance_a": "100034073726",
+        "balance_b": 666542701,
         "taker_fee_percent": 10
     },
     {
@@ -72,8 +72,8 @@
         "asset_b_id": "1.3.2241",
         "asset_b_symbol": "GDEX.BTC",
         "share_asset_symbol": "GDEX.LPBB",
-        "balance_a": "58340791794",
-        "balance_b": 19666529,
+        "balance_a": "58209650430",
+        "balance_b": 19710925,
         "taker_fee_percent": 20
     },
     {
@@ -457,8 +457,8 @@
         "asset_b_id": "1.3.5589",
         "asset_b_symbol": "XBTSX.USDT",
         "share_asset_symbol": "WANGZI.LPBTSXU",
-        "balance_a": "298465179436",
-        "balance_b": "26388958827",
+        "balance_a": "297684695082",
+        "balance_b": "26458355203",
         "taker_fee_percent": 30
     },
     {
@@ -567,8 +567,8 @@
         "asset_b_id": "1.3.4157",
         "asset_b_symbol": "XBTSX.BTC",
         "share_asset_symbol": "ABITS.BTSXBTCLP",
-        "balance_a": "260204569907",
-        "balance_b": 87843554,
+        "balance_a": "260002824076",
+        "balance_b": 87911886,
         "taker_fee_percent": 25
     },
     {
@@ -600,8 +600,8 @@
         "asset_b_id": "1.3.5286",
         "asset_b_symbol": "GDEX.USDT",
         "share_asset_symbol": "DEFI.BTSGDEXUSDT",
-        "balance_a": "156705224290",
-        "balance_b": "138805341316",
+        "balance_a": "156335740055",
+        "balance_b": "139134447694",
         "taker_fee_percent": 20
     },
     {
@@ -622,8 +622,8 @@
         "asset_b_id": "1.3.5589",
         "asset_b_symbol": "XBTSX.USDT",
         "share_asset_symbol": "XBTSX.SHU",
-        "balance_a": "1145200472431",
-        "balance_b": "3723547943",
+        "balance_a": "1144359640922",
+        "balance_b": "3726290725",
         "taker_fee_percent": 25
     },
     {
@@ -688,8 +688,8 @@
         "asset_b_id": "1.3.5877",
         "asset_b_symbol": "XBTSX.EOS",
         "share_asset_symbol": "ABITS.BTSXEOSLP",
-        "balance_a": "181441874658",
-        "balance_b": "28801186019",
+        "balance_a": "180730556096",
+        "balance_b": "28914826377",
         "taker_fee_percent": 25
     },
     {
@@ -1227,8 +1227,8 @@
         "asset_b_id": "1.3.6013",
         "asset_b_symbol": "XBTSX.HIVE",
         "share_asset_symbol": "ABITS.XBTCHIVELP",
-        "balance_a": 136480290,
-        "balance_b": "130788105143",
+        "balance_a": 136767851,
+        "balance_b": "130513803661",
         "taker_fee_percent": 25
     },
     {
@@ -1293,8 +1293,8 @@
         "asset_b_id": "1.3.2635",
         "asset_b_symbol": "GDEX.EOS",
         "share_asset_symbol": "DEFI.BTSGEOS",
-        "balance_a": "91320173279",
-        "balance_b": "14487027748",
+        "balance_a": "90947309532",
+        "balance_b": "14546540692",
         "taker_fee_percent": 20
     },
     {
@@ -1359,8 +1359,8 @@
         "asset_b_id": "1.3.2598",
         "asset_b_symbol": "GDEX.ETH",
         "share_asset_symbol": "DEFI.BTSGETH",
-        "balance_a": "146569376524",
-        "balance_b": 8068015,
+        "balance_a": "146307426998",
+        "balance_b": 8082489,
         "taker_fee_percent": 20
     },
     {
@@ -1381,8 +1381,8 @@
         "asset_b_id": "1.3.2241",
         "asset_b_symbol": "GDEX.BTC",
         "share_asset_symbol": "DEFI.BTSGBTC",
-        "balance_a": "151721293951",
-        "balance_b": 51226186,
+        "balance_a": "151519499959",
+        "balance_b": 51294546,
         "taker_fee_percent": 20
     },
     {
@@ -2118,8 +2118,8 @@
         "asset_b_id": "1.3.5902",
         "asset_b_symbol": "XBTSX.USDC",
         "share_asset_symbol": "XBTSX.USDTUSDCLP",
-        "balance_a": 1149473009,
-        "balance_b": 1155606407,
+        "balance_a": 1066742048,
+        "balance_b": 1072434007,
         "taker_fee_percent": 30
     },
     {
@@ -2558,8 +2558,8 @@
         "asset_b_id": "1.3.6013",
         "asset_b_symbol": "XBTSX.HIVE",
         "share_asset_symbol": "XBTSX.STHHIVELP",
-        "balance_a": "848843795795",
-        "balance_b": "10137189263",
+        "balance_a": "849682946483",
+        "balance_b": "10127207764",
         "taker_fee_percent": 30
     },
     {
