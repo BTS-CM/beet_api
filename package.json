@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@elysiajs/cors": "^0.6.0",
+    "@elysiajs/static": "^0.6.0",
     "@elysiajs/swagger": "^0.6.2",
     "bitsharesjs": "^6.0.0",
     "bitsharesjs-ws": "^6.0.0",

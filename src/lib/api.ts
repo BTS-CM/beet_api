@@ -3,18 +3,18 @@ import { v4 as uuidv4 } from 'uuid';
 import { TransactionBuilder } from "bitsharesjs";
 import { Apis } from "bitsharesjs-ws";
 
-import config from "./data/config";
+import { chains } from "../config/chains";
 
 /**
  * Returns deeplink contents
  * @param {String} chain
  * @param {String} opType
  * @param {Array} operations
- * @returns {Object}
+ * @returns {String}
  */
-async function generateDeepLink(chain, opType, operations) {
+async function generateDeepLink(chain: String, opType: String, operations: Array<Object>) {
     return new Promise(async (resolve, reject) => {
-        const currentConfig = config[chain];
+        const currentConfig = chains[chain];
         const node = currentConfig.nodeList[0].url;
         const coreSymbol = currentConfig.coreSymbol;
 
@@ -24,7 +24,7 @@ async function generateDeepLink(chain, opType, operations) {
                 true,
                 10000,
                 { enableCrypto: false, enableOrders: true },
-                (error) => console.log(error),
+                (error: Error) => console.log(error),
             ).init_promise;
         } catch (error) {
             console.log(error);
@@ -119,9 +119,9 @@ function _sliceIntoChunks(arr, size) {
  * @param {String} chain
  * @param {Array} object_ids
  */
-async function getObjects(chain, object_ids) {
+async function getObjects(chain: String, object_ids: Array<String>) {
   return new Promise(async (resolve, reject) => {
-    const currentConfig = config[chain];
+    const currentConfig = chains[chain];
     const node = currentConfig.nodeList[0].url;
 
     try {
@@ -130,7 +130,7 @@ async function getObjects(chain, object_ids) {
             true,
             10000,
             { enableCrypto: false, enableOrders: true },
-            (error) => console.log(error),
+            (error: Error) => console.log(error),
         ).init_promise;
     } catch (error) {
         console.log(error);
@@ -138,7 +138,7 @@ async function getObjects(chain, object_ids) {
         return;
     }
 
-    let retrievedObjects = [];
+    let retrievedObjects: Object[] = [];
     const chunksOfInputs = _sliceIntoChunks(object_ids, 100);
     for (let i = 0; i < chunksOfInputs.length; i++) {
       const currentChunk = chunksOfInputs[i];
