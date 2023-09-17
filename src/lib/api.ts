@@ -4,19 +4,19 @@ import { TransactionBuilder } from "bitsharesjs";
 import { Apis } from "bitsharesjs-ws";
 
 import { chains } from "../config/chains";
+import { changeURL, getCurrentNode } from './states';
 
 /**
  * Returns deeplink contents
- * @param {String} chain
- * @param {String} opType
- * @param {Array} operations
- * @returns {String}
+ * @param chain
+ * @param opType
+ * @param operations
+ * @param app
+ * @returns generated deeplink
  */
-async function generateDeepLink(chain: String, opType: String, operations: Array<Object>) {
+async function generateDeepLink(chain: String, opType: String, operations: Array<Object>, app: any) {
     return new Promise(async (resolve, reject) => {
-        const currentConfig = chains[chain];
-        const node = currentConfig.nodeList[0].url;
-        const coreSymbol = currentConfig.coreSymbol;
+        const node = getCurrentNode(chain, app);
 
         try {
             await Apis.instance(
@@ -28,6 +28,7 @@ async function generateDeepLink(chain: String, opType: String, operations: Array
             ).init_promise;
         } catch (error) {
             console.log(error);
+            changeURL(chain, app);
             reject(error);
             return;
         }
@@ -41,6 +42,7 @@ async function generateDeepLink(chain: String, opType: String, operations: Array
             await tr.update_head_block(Apis);
         } catch (error) {
             console.error(error);
+            Apis.close();
             reject(error);
             return;
         }
@@ -49,6 +51,7 @@ async function generateDeepLink(chain: String, opType: String, operations: Array
             await tr.set_required_fees(null, null, Apis);
         } catch (error) {
             console.error(error);
+            Apis.close();
             reject(error);
             return;
         }
@@ -57,6 +60,7 @@ async function generateDeepLink(chain: String, opType: String, operations: Array
             tr.set_expire_seconds(7200);
         } catch (error) {
             console.error(error);
+            Apis.close();
             reject(error);
             return;
         }
@@ -65,6 +69,7 @@ async function generateDeepLink(chain: String, opType: String, operations: Array
             tr.finalize(Apis);
         } catch (error) {
             console.error(error);
+            Apis.close();
             reject(error);
             return;
         }
@@ -80,11 +85,13 @@ async function generateDeepLink(chain: String, opType: String, operations: Array
                     [],
                 ],
                 appName: "Static Bitshares Astro web app",
-                chain: coreSymbol,
+                chain: chain === 'bitshares' ? "BTS" : "TEST",
                 browser: 'web browser',
                 origin: 'localhost'
             }
         };
+
+        Apis.close();
 
         let encodedPayload;
         try {
@@ -116,13 +123,14 @@ function _sliceIntoChunks(arr, size) {
 
 /**
  * Get multiple objects such as accounts, assets, etc
- * @param {String} chain
- * @param {Array} object_ids
+ * @param chain
+ * @param object_ids
+ * @param app
+ * @returns Array of retrieved objects
  */
-async function getObjects(chain: String, object_ids: Array<String>) {
+async function getObjects(chain: String, object_ids: Array<String>, app: any) {
   return new Promise(async (resolve, reject) => {
-    const currentConfig = chains[chain];
-    const node = currentConfig.nodeList[0].url;
+    const node = getCurrentNode(chain, app);
 
     try {
         await Apis.instance(
@@ -134,6 +142,8 @@ async function getObjects(chain: String, object_ids: Array<String>) {
         ).init_promise;
     } catch (error) {
         console.log(error);
+        Apis.close();
+        changeURL(chain, app);
         reject(error);
         return;
     }
@@ -156,13 +166,157 @@ async function getObjects(chain: String, object_ids: Array<String>) {
       }
     }
 
+    Apis.close();
+
     if (retrievedObjects && retrievedObjects.length) {
       resolve(retrievedObjects);
     }
   });
 }
 
+/*
+* Fetch account/address list to warn users about
+* List is maintained by the Bitshares committee
+* @param chain
+* @param app
+* @returns committee account details containing block list
+*/
+async function getBlockedAccounts(chain: String, app: any) {
+    return new Promise(async (resolve, reject) => {
+      const node = getCurrentNode(chain, app);
+
+      try {
+        await Apis.instance(node, true).init_promise;
+      } catch (error) {
+        console.log(error);
+        changeURL(chain, app);
+        reject(error);
+        return;
+      }
+  
+      if (!Apis.instance().db_api()) {
+        console.log("no db_api");
+        Apis.close();
+        reject(new Error("no db_api"));
+        return;
+      }
+  
+      let object;
+      try {
+        object = await Apis.instance().db_api().exec("get_accounts", [['committee-blacklist-manager']]);
+      } catch (error) {
+        console.log(error);
+        Apis.close();
+        reject(error);
+      }
+  
+      Apis.close();
+
+      if (!object) {
+        reject(new Error('Committee account details not found'));
+        return;
+      }
+  
+      resolve(object);
+    });
+  }
+
+/*
+* Fetch account/address list to warn users about
+* List is maintained by the Bitshares committee
+*/
+async function getFullAccounts(chain: String, accountID: String, app: any) {
+    return new Promise(async (resolve, reject) => {
+        const node = getCurrentNode(chain, app);
+        
+        try {
+            await Apis.instance(node, true).init_promise;
+        } catch (error) {
+            console.log(error);
+            changeURL(chain, app);
+            reject(error);
+            return;
+        }
+
+        if (!Apis.instance().db_api()) {
+            console.log("no db_api");
+            Apis.close();
+            changeURL(chain, app);
+            reject(new Error("no db_api"));
+            return;
+        }
+
+        let object;
+        try {
+            object = await Apis.instance().db_api().exec("get_full_accounts", [[accountID], false]).then((results: Object[]) => {
+                if (results && results.length) {
+                    return results;
+                }
+            });
+        } catch (error) {
+            console.log(error);
+            Apis.close();
+            reject(error);
+        }
+
+        Apis.close();
+
+        if (!object) {
+            reject(new Error('Committee account details not found'));
+            return;
+        }
+
+        resolve(object);
+    });
+}
+
+/**
+ * Fetch the orderbook for a given market
+ * @param chain 
+ * @param base 
+ * @param quote 
+ * @param app
+ * @returns market orderbook contents
+ */
+async function fetchOrderBook(chain: String, base: String, quote: String, app: any) {
+    return new Promise(async (resolve, reject) => {
+        const node = getCurrentNode(chain, app);
+
+        try {
+            await Apis.instance(node, true, 4000, undefined, () => {
+                console.log(`OrderBook: Closed connection to: ${node}`);
+            }).init_promise;
+        } catch (error) {
+            console.log(error);
+            changeURL(chain, app);
+            return reject(error);
+        }
+
+        let orderBook;
+        try {
+            orderBook = await Apis.instance().db_api().exec("get_order_book", [base, quote, 50])
+        } catch (error) {
+            console.log(error);
+        }
+
+        try {
+            await Apis.close();
+        } catch (error) {
+            console.log(error);
+        }
+
+        if (!orderBook) {
+            return reject(new Error("Couldn't retrieve orderbook"));
+        }
+
+        return resolve(orderBook);
+    });
+}
+
 export {
     generateDeepLink,
     getObjects,
+    getBlockedAccounts,
+    getFullAccounts,
+    fetchOrderBook
 };
