@@ -1,7 +1,6 @@
 import { v4 as uuidv4 } from 'uuid';
 
-import { TransactionBuilder } from "bitsharesjs";
-import { Apis } from "bitsharesjs-ws";
+import { Apis, TransactionBuilder } from "bts-buntime";
 
 import { chains } from "../config/chains";
 import { changeURL, getCurrentNode } from './states';

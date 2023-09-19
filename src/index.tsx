@@ -173,7 +173,7 @@ const app = new Elysia()
     }, {
       detail: {
         summary: 'Get a list of blocked accounts',
-        tags: ['Bitshares']
+        tags: ['Blockchain']
       }
     })
     .get('/fullAccount/:chain/:id', async ({ params: { chain, id } }) => {
@@ -190,7 +190,7 @@ const app = new Elysia()
     }, {
       detail: {
         summary: "Get a single account's full details",
-        tags: ['Bitshares']
+        tags: ['Blockchain']
       }
     })
     .get('/orderBook/:chain/:base/:quote', async ({ params: { chain, base, quote } }) => {
@@ -206,7 +206,7 @@ const app = new Elysia()
     }, {
       detail: {
         summary: 'Get trading pair market orders',
-        tags: ['Bitshares']
+        tags: ['Blockchain']
       }
     })
   )

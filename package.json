@@ -6,14 +6,14 @@
     "fetchPools": "node ./src/data/fetchPools.js",
     "fetchAssets": "node ./src/data/batchedAssetFetch.js",
     "dev": "bun run --watch src/index.tsx",
-    "compile": "bun build --compile ./src/index.tsx --outfile beet_api"
+    "build": "bun build ./src/index.tsx --outdir=dist",
+    "compile": "bun build --compile ./src/index.tsx --outfile beet_api --external bytebuffer"
   },
   "dependencies": {
     "@elysiajs/cors": "^0.6.0",
     "@elysiajs/static": "^0.6.0",
     "@elysiajs/swagger": "^0.6.2",
-    "bitsharesjs": "^6.0.0",
-    "bitsharesjs-ws": "^6.0.0",
+    "bts-buntime": "git@github.com:BTS-CM/bts-buntime.git#f63621a",
     "elysia": "latest",
     "uuid": "^9.0.0"
   },
