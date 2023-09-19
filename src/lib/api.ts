@@ -107,11 +107,11 @@ async function generateDeepLink(chain: String, opType: String, operations: Array
 
 /**
  * Split an array into array chunks
- * @param {Array} arr 
- * @param {Number} size 
+ * @param arr 
+ * @param size 
  * @returns {Array} [[{..}, ...], ...]
  */
-function _sliceIntoChunks(arr, size) {
+function _sliceIntoChunks(arr: any[], size: number) {
     const chunks = [];
     for (let i = 0; i < arr.length; i += size) {
         const chunk = arr.slice(i, i + size);
@@ -129,7 +129,7 @@ function _sliceIntoChunks(arr, size) {
  */
 async function getObjects(chain: String, object_ids: Array<String>, app: any) {
   return new Promise(async (resolve, reject) => {
-    const node = getCurrentNode(chain, app);
+    const node = app ? getCurrentNode(chain, app) : chains[chain].nodeList[0].url;
 
     try {
         await Apis.instance(
@@ -142,7 +142,9 @@ async function getObjects(chain: String, object_ids: Array<String>, app: any) {
     } catch (error) {
         console.log(error);
         Apis.close();
-        changeURL(chain, app);
+        if (app) {
+            changeURL(chain, app);
+        }
         reject(error);
         return;
     }
@@ -151,7 +153,6 @@ async function getObjects(chain: String, object_ids: Array<String>, app: any) {
     const chunksOfInputs = _sliceIntoChunks(object_ids, 100);
     for (let i = 0; i < chunksOfInputs.length; i++) {
       const currentChunk = chunksOfInputs[i];
-
       let got_objects;
       try {
         got_objects = await Apis.instance().db_api().exec("get_objects", [currentChunk, false]);
@@ -169,7 +170,10 @@ async function getObjects(chain: String, object_ids: Array<String>, app: any) {
 
     if (retrievedObjects && retrievedObjects.length) {
       resolve(retrievedObjects);
+      return;
     }
+
+    reject(new Error("Couldn't retrieve objects"));
   });
 }
 

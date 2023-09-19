@@ -2,9 +2,11 @@ import { validResult } from "./common";
 
 import bts_allPools from "../data/bitshares/allPools.json";
 import bts_allAssets from "../data/bitshares/allAssets.json";
+import bts_allDynamicData from "../data/bitshares/dynamicData.json";
 
 import test_allPools from "../data/bitshares_testnet/allPools.json";
 import test_allAssets from "../data/bitshares_testnet/allAssets.json";
+import test_allDynamicData from "../data/bitshares_testnet/dynamicData.json";
 
 /**
  * Retrieves the requested asset from cached assets
@@ -25,6 +27,27 @@ function getAsset(chain: string, id: string) {
   }
 
   return validResult(foundAsset);
+}
+
+/**
+ * Get the dynamic data of an asset
+ * @param chain 
+ * @param id 2.3.x
+ * @returns Response
+ */
+function getDynamicData(chain: string, id: string) {
+  let foundDynamicData;
+  if (chain === "bitshares") {
+    foundDynamicData = bts_allDynamicData.find((dynamicData: any) => dynamicData.id === id);
+  } else if (chain === "bitshares_testnet") {
+    foundDynamicData = test_allDynamicData.find((dynamicData: any) => dynamicData.id === id);
+  }
+
+  if (!foundDynamicData) {
+    throw new Error("Dynamic data not found");
+  }
+
+  return validResult(foundDynamicData);
 }
 
 /**
@@ -50,5 +73,6 @@ function getPool(chain: string, id: string) {
 
 export {
   getAsset,
-  getPool
+  getPool,
+  getDynamicData
 }

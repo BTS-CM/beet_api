@@ -1,5 +1,5 @@
 import fs from 'fs';
-import { getObjects } from "../lib.js";
+import { getObjects } from "../lib/api";
 
 const chains = [
   "bitshares", "bitshares_testnet"

@@ -5,12 +5,13 @@ import { staticPlugin } from '@elysiajs/static'
 
 import {
   generateDeepLink,
+  getObjects,
   getBlockedAccounts,
   getFullAccounts,
   fetchOrderBook
 } from './lib/api';
 
-import { getAsset, getPool } from './lib/cache';
+import { getAsset, getPool, getDynamicData } from './lib/cache';
 import { validResult } from './lib/common';
 import { changeURL } from './lib/states';
 
@@ -27,7 +28,7 @@ const app = new Elysia()
   .onError(({ code, error }) => {
     return new Response(error.toString())
   })
-  .use(cors()) // for local astro development purposes only!
+  //.use(cors()) // for local astro development purposes only!
   .get("/", () => {
     // Index page which uses staticPlugin resources
     return Bun.file('./public/index.html')
@@ -47,19 +48,6 @@ const app = new Elysia()
     }, {
       detail: {
         summary: 'Output the current order of blockchain nodes',
-        tags: ['State']
-      }
-    })
-    .get('/shiftNodes/:chain', ({ params: { chain } }) => {
-      if (!chain || chain && chain !== 'bitshares' && chain !== 'bitshares_testnet') {
-        throw new Error("Invalid chain");
-      }
-
-      changeURL(chain, app);
-      return "Changed URLs";
-    }, {
-      detail: {
-        summary: 'Shift the nodes left',
         tags: ['State']
       }
     })
@@ -101,6 +89,21 @@ const app = new Elysia()
     }, {
       detail: {
         summary: 'Retrieve a Bitshares pool', tags: ['Cache']
+      }
+    })
+    .get('/dynamic/:chain/:id', ({ params: { chain, id } }) => {
+      // Return a pool's extended JSON data
+      if (
+        !chain ||
+        (chain !== "bitshares" && chain !== 'bitshares_testnet') ||
+        !id
+      ) {
+        throw new Error("Missing required fields");
+      }
+      return getDynamicData(chain, id)
+    }, {
+      detail: {
+        summary: "Retrieve an asset's dynamic data", tags: ['Cache']
       }
     })
     .get('/asset/:chain/:id', ({ params: { chain, id } }) => {
@@ -206,6 +209,23 @@ const app = new Elysia()
     }, {
       detail: {
         summary: 'Get trading pair market orders',
+        tags: ['Blockchain']
+      }
+    })
+    .get('/objects/:chain/:id', async ({ params: { chain, id } }) => {
+      // Return blockchain objects
+      if (!chain || !id) {
+        throw new Error("Missing required fields");
+      }
+
+      if (chain !== 'bitshares' && chain !== 'bitshares_testnet') {
+        throw new Error("Invalid chain");
+      }
+
+      return getObjects(chain, [id], app);
+    }, {
+      detail: {
+        summary: 'Get blockchain objects',
         tags: ['Blockchain']
       }
     })

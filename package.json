@@ -4,10 +4,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "fetchPools": "node ./src/data/fetchPools.js",
-    "fetchAssets": "node ./src/data/batchedAssetFetch.js",
+    "fetchAssets": "node ./src/data/fetchAssets.js",
+    "fetchDynamicData": "node ./src/data/fetchDynamicData.js",
     "dev": "bun run --watch src/index.tsx",
     "build": "bun build ./src/index.tsx --outdir=dist",
-    "compile": "bun build --compile ./src/index.tsx --outfile beet_api --external bytebuffer"
+    "compile": "bun build --compile ./src/index.tsx --outfile beet_api"
   },
   "dependencies": {
     "@elysiajs/cors": "^0.6.0",
