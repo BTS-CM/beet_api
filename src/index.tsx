@@ -5,11 +5,14 @@ import { staticPlugin } from '@elysiajs/static'
 
 import {
   generateDeepLink,
-  getObjects,
   accountSearch,
   getBlockedAccounts,
   getFullAccounts,
-  fetchOrderBook
+  fetchOrderBook,
+  getAccountBalances,
+  getLimitOrders,
+  getAccountHistory,
+  getPortfolio
 } from './lib/api';
 
 import { getAsset, getPool, getDynamicData } from './lib/cache';
@@ -28,7 +31,7 @@ const app = new Elysia()
   .onError(({ code, error }) => {
     return new Response(error.toString())
   })
-  //.use(cors()) // for local astro development purposes only!
+  .use(cors()) // for local astro development purposes only!
   .get("/", () => {
     // Index page which uses staticPlugin resources
     return Bun.file('./public/index.html')
@@ -119,6 +122,30 @@ const app = new Elysia()
     }, {
       detail: {
         summary: 'Retreive a Bitshares asset', tags: ['Cache']
+      }
+    })
+    .post('/assets/:chain', async ({ body, params: { chain } }) => {
+      if (!body || !JSON.parse(body) || (!chain)) {
+        throw new Error("Missing required fields");
+      }
+
+      if (chain !== 'bitshares' && chain !== 'bitshares_testnet') {
+        throw new Error("Invalid chain");
+      }
+
+      const assetIDs = JSON.parse(body);
+      const assets = [];
+      for (let i = 0; i < assetIDs.length; i++) {
+        const asset = getAsset(chain, assetIDs[i]);
+        if (asset) {
+          assets.push(asset);
+        }
+      }
+
+      return validResult(assets);
+    }, {
+      detail: {
+        summary: 'Retrieve multiple Bitshares assets', tags: ['Cache']
       }
     })
   )
@@ -226,6 +253,79 @@ const app = new Elysia()
     }, {
       detail: {
         summary: 'Search for blockchain account',
+        tags: ['Blockchain']
+      }
+    })
+    .get('/getAccountBalances/:chain/:id', async ({ params: { chain, id } }) => {
+      // Return account balances
+      if (!chain || !id) {
+        throw new Error("Missing required fields");
+      }
+
+      if (chain !== 'bitshares' && chain !== 'bitshares_testnet') {
+        throw new Error("Invalid chain");
+      }
+
+      return getAccountBalances(chain, id, app);
+    }, {
+      detail: {
+        summary: "Get an account's balance",
+        tags: ['Blockchain']
+      }
+    })
+    .get('/getAccountLimitOrders/:chain/:id', async ({ params: { chain, id } }) => {
+      // Return account limit orders
+      if (!chain || !id) {
+        throw new Error("Missing required fields");
+      }
+
+      if (chain !== 'bitshares' && chain !== 'bitshares_testnet') {
+        throw new Error("Invalid chain");
+      }
+
+      return getLimitOrders(
+        chain,
+        id,
+        100,
+        app
+      );
+    }, {
+      detail: {
+        summary: "Get an account's limit orders",
+        tags: ['Blockchain']
+      }
+    })
+    .get('/getAccountHistory/:chain/:id', async ({ params: { chain, id } }) => {
+      // Return account history
+      if (!chain || !id) {
+        throw new Error("Missing required fields");
+      }
+
+      if (chain !== 'bitshares' && chain !== 'bitshares_testnet') {
+        throw new Error("Invalid chain");
+      }
+      
+      return getAccountHistory(chain, id);
+    }, {
+      detail: {
+        summary: "Get an account's history",
+        tags: ['Blockchain']
+      }
+    })
+    .get('/getPortfolio/:chain/:id', async ({ params: { chain, id } }) => {
+      // Return portfolio data
+      if (!chain || !id) {
+        throw new Error("Missing required fields");
+      }
+
+      if (chain !== 'bitshares' && chain !== 'bitshares_testnet') {
+        throw new Error("Invalid chain");
+      }
+      
+      return getPortfolio(chain, id, app);
+    }, {
+      detail: {
+        summary: "Retrieve an account's open orders, balances and recent history in a single query.",
         tags: ['Blockchain']
       }
     })

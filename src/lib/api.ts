@@ -320,6 +320,184 @@ async function getFullAccounts(chain: String, accountID: String, app: any) {
 }
 
 /**
+ * Fetch account history from external elasticsearch server
+ * @param chain 
+ * @param accountID 
+ * @param app 
+ * @param from (optional) from which index to fetch
+ * @param size (optional) how many items to fetch
+ * @param from_date (optional) from which date to fetch
+ * @param to_date (optional) to which date to fetch
+ * @param sort_by (optional) sort by which field
+ * @param type (optional) type of data to fetch
+ * @param agg_field (optional) aggregate field
+ * 
+ * @returns Resposne containing account history
+ */
+async function getAccountHistory(
+    chain: String,
+    accountID: String,
+    from?: Number,
+    size?: Number,
+    from_date?: String,
+    to_date?: String,
+    sort_by?: String,
+    type?: String,
+    agg_field?: String
+) {
+    return new Promise(async (resolve, reject) => {   
+
+        const url = `https://${chain === "bitshares" ? "api" : "api.testnet"}.bitshares.ws/openexplorer/es/account_history`
+                    + `?account_id=${accountID}`
+                    + `&from_=${from ?? 0}`
+                    + `&size=${size ?? 100}`
+                    + `&from_date=${from_date ?? "2015-10-10"}`
+                    + `&to_date=${to_date ?? "now"}`
+                    + `&sort_by=${sort_by ?? "-operation_id_num"}`
+                    + `&type=${type ?? "data"}`
+                    + `&agg_field=${agg_field ?? "operation_type"}`;
+
+        let history;
+        try {
+            history = await fetch(url, { method: "GET" });
+        } catch (error) {
+            console.log(error);
+            reject(error);
+        }
+
+        if (!history || !history.ok) {
+            console.log({
+                error: new Error(history ? `${history.status} ${history.statusText}` : "Couldn't fetch account history"),
+                msg: "Couldn't fetch account history."
+            });
+            return;
+        }
+
+        const historyJSON = await history.json();
+
+        if (!historyJSON) {
+            reject(new Error('Account history not found'));
+            return;
+        }
+
+        resolve(validResult(historyJSON));
+    });
+}
+
+
+/**
+ * Fetch account balances
+ * @param chain 
+ * @param accountID 
+ * @param app 
+ * @returns Resposne containing account balances
+*/
+async function getAccountBalances(chain: String, accountID: String, app: any) {
+    return new Promise(async (resolve, reject) => {
+        const node = getCurrentNode(chain, app);
+        
+        try {
+            await Apis.instance(node, true).init_promise;
+        } catch (error) {
+            console.log(error);
+            changeURL(chain, app);
+            reject(error);
+            return;
+        }
+
+        if (!Apis.instance().db_api()) {
+            console.log("no db_api");
+            Apis.close();
+            changeURL(chain, app);
+            reject(new Error("no db_api"));
+            return;
+        }
+
+        let balances;
+        try {
+            balances = await Apis.instance().db_api().exec("get_account_balances", [accountID, []]).then((results: Object[]) => {
+                if (results && results.length) {
+                    return results;
+                }
+            });
+        } catch (error) {
+            console.log(error);
+            Apis.close();
+            reject(error);
+        }
+
+        Apis.close();
+
+        if (!balances) {
+            reject(new Error('Account balances not found'));
+            return;
+        }
+
+        resolve(validResult(balances));
+    });
+}
+
+/**
+ * Fetch account's limit orders
+ * @param chain 
+ * @param accountID 
+ * @param limit
+ * @param app 
+ * @param lastID (optional last ID to fetch from)
+ * @returns Resposne containing account balances
+*/
+async function getLimitOrders(
+    chain: String,
+    accountID: String,
+    limit: Number,
+    app: any,
+    lastID?: String
+) {
+    return new Promise(async (resolve, reject) => {
+        const node = getCurrentNode(chain, app);
+        
+        try {
+            await Apis.instance(node, true).init_promise;
+        } catch (error) {
+            console.log(error);
+            changeURL(chain, app);
+            reject(error);
+            return;
+        }
+
+        if (!Apis.instance().db_api()) {
+            console.log("no db_api");
+            Apis.close();
+            changeURL(chain, app);
+            reject(new Error("no db_api"));
+            return;
+        }
+
+        let limitOrders;
+        try {
+            limitOrders = await Apis.instance().db_api().exec("get_limit_orders_by_account", [accountID, limit]).then((results: Object[]) => {
+                if (results && results.length) {
+                    return results;
+                }
+            });
+        } catch (error) {
+            console.log(error);
+            Apis.close();
+            reject(error);
+        }
+
+        Apis.close();
+
+        if (!limitOrders) {
+            reject(new Error('Account balances not found'));
+            return;
+        }
+
+        resolve(validResult(limitOrders));
+    });
+}
+
+/**
  * Fetch the orderbook for a given market
  * @param chain 
  * @param base 
@@ -362,11 +540,99 @@ async function fetchOrderBook(chain: String, base: String, quote: String, app: a
     });
 }
 
+/**
+ * Fetches: Account balances, limit orders and activity
+ * @param chain 
+ * @param accountID 
+ * @param historyOptions
+ * @param app 
+ */
+async function getPortfolio(chain: String, accountID: String, app: any) {
+    return new Promise(async (resolve, reject) => {
+        const node = getCurrentNode(chain, app);
+
+        try {
+            await Apis.instance(node, true, 4000, undefined, () => {
+                console.log(`OrderBook: Closed connection to: ${node}`);
+            }).init_promise;
+        } catch (error) {
+            console.log(error);
+            changeURL(chain, app);
+            return reject(error);
+        }
+
+        if (!Apis.instance().db_api()) {
+            console.log("no db_api");
+            Apis.close();
+            changeURL(chain, app);
+            reject(new Error("no db_api"));
+            return;
+        }
+
+        let limitOrders;
+        try {
+            /*
+            limitOrders = await Apis.instance().db_api().exec("get_limit_orders_by_account", [accountID, 100]).then((results: Object[]) => {
+                if (results && results.length) {
+                    return results;
+                }
+            });
+            */
+            limitOrders = await Apis.instance().db_api().exec("get_limit_orders_by_account", [accountID, 100])
+        } catch (error) {
+            console.log(error);
+            Apis.close();
+            reject(error);
+        }
+
+        let balances;
+        try {
+            /*
+            balances = await Apis.instance().db_api().exec("get_account_balances", [accountID, []]).then((results: Object[]) => {
+                if (results && results.length) {
+                    return results;
+                }
+            });
+            */
+            balances = await Apis.instance().db_api().exec("get_account_balances", [accountID, []])
+        } catch (error) {
+            console.log(error);
+            Apis.close();
+            reject(error);
+        }
+
+        try {
+            Apis.close();
+        } catch (error) {
+            console.log(error);
+        }
+
+        if (!balances) {
+            reject(new Error('Account balances not found'));
+            return;
+        }
+
+        if (!limitOrders) {
+            reject(new Error('Account limit orders not found'));
+            return;
+        }
+
+        resolve(validResult({
+            balances,
+            limitOrders
+        }));
+    });
+}
+
 export {
     generateDeepLink,
     getObjects,
     accountSearch,
     getBlockedAccounts,
+    fetchOrderBook,
     getFullAccounts,
-    fetchOrderBook
+    getAccountBalances,
+    getAccountHistory,
+    getLimitOrders,
+    getPortfolio,
 };

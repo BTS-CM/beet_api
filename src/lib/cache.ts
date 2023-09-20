@@ -22,11 +22,9 @@ function getAsset(chain: string, id: string) {
     foundAsset = test_allAssets.find((asset: any) => asset.id === id);
   }
 
-  if (!foundAsset) {
-    throw new Error("Asset not found");
+  if (foundAsset) {
+    return foundAsset;
   }
-
-  return validResult(foundAsset);
 }
 
 /**
