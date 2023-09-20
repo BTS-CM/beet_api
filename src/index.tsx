@@ -6,6 +6,7 @@ import { staticPlugin } from '@elysiajs/static'
 import {
   generateDeepLink,
   getObjects,
+  accountSearch,
   getBlockedAccounts,
   getFullAccounts,
   fetchOrderBook
@@ -13,7 +14,6 @@ import {
 
 import { getAsset, getPool, getDynamicData } from './lib/cache';
 import { validResult } from './lib/common';
-import { changeURL } from './lib/states';
 
 import { swaggerConfig } from './config/swagger';
 import { chains } from "./config/chains";
@@ -212,9 +212,9 @@ const app = new Elysia()
         tags: ['Blockchain']
       }
     })
-    .get('/objects/:chain/:id', async ({ params: { chain, id } }) => {
-      // Return blockchain objects
-      if (!chain || !id) {
+    .get('/accountLookup/:chain/:searchInput', async ({ params: { chain, searchInput } }) => {
+      // Search for user input account
+      if (!chain || !searchInput) {
         throw new Error("Missing required fields");
       }
 
@@ -222,10 +222,10 @@ const app = new Elysia()
         throw new Error("Invalid chain");
       }
 
-      return getObjects(chain, [id], app);
+      return accountSearch(chain, searchInput, app);
     }, {
       detail: {
-        summary: 'Get blockchain objects',
+        summary: 'Search for blockchain account',
         tags: ['Blockchain']
       }
     })

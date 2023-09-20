@@ -1,9 +1,10 @@
 import { v4 as uuidv4 } from 'uuid';
-
 import { Apis, TransactionBuilder } from "bts-buntime";
 
 import { chains } from "../config/chains";
+
 import { changeURL, getCurrentNode } from './states';
+import { validResult } from './common';
 
 /**
  * Returns deeplink contents
@@ -169,7 +170,7 @@ async function getObjects(chain: String, object_ids: Array<String>, app: any) {
     Apis.close();
 
     if (retrievedObjects && retrievedObjects.length) {
-      resolve(retrievedObjects);
+      resolve(validResult(retrievedObjects));
       return;
     }
 
@@ -220,9 +221,54 @@ async function getBlockedAccounts(chain: String, app: any) {
         return;
       }
   
-      resolve(object);
+      resolve(validResult(object));
     });
   }
+
+/**
+ * Search for an account, given 1.2.x or an account name.
+ * @param chain
+ * @param search_string
+ * @returns
+ */
+async function accountSearch(chain: String, search_string: String, app: any) {
+    return new Promise(async (resolve, reject) => {
+        const node = getCurrentNode(chain, app);
+
+        try {
+            await Apis.instance(node, true).init_promise;
+        } catch (error) {
+            console.log(error);
+            changeURL(chain, app);
+            reject(error);
+            return;
+        }
+
+        if (!Apis.instance().db_api()) {
+            console.log("no db_api");
+            Apis.close();
+            changeURL(chain, app);
+            reject(new Error("no db_api"));
+            return;
+        }
+
+        let object;
+        try {
+            object = await Apis.instance().db_api().exec("get_accounts", [[search_string]]);
+        } catch (error) {
+            console.log(error);
+            Apis.close();
+            reject(error);
+        }
+
+        if (!object || !object.length) {
+            return reject(new Error("Couldn't retrieve account"));
+        }
+
+        Apis.close();
+        resolve(validResult(object[0]));
+    });
+}
 
 /*
 * Fetch account/address list to warn users about
@@ -269,7 +315,7 @@ async function getFullAccounts(chain: String, accountID: String, app: any) {
             return;
         }
 
-        resolve(object);
+        resolve(validResult(object));
     });
 }
 
@@ -312,13 +358,14 @@ async function fetchOrderBook(chain: String, base: String, quote: String, app: a
             return reject(new Error("Couldn't retrieve orderbook"));
         }
 
-        return resolve(orderBook);
+        resolve(validResult(orderBook));
     });
 }
 
 export {
     generateDeepLink,
     getObjects,
+    accountSearch,
     getBlockedAccounts,
     getFullAccounts,
     fetchOrderBook
