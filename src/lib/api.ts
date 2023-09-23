@@ -128,7 +128,7 @@ function _sliceIntoChunks(arr: any[], size: number) {
  * @param app
  * @returns Array of retrieved objects
  */
-async function getObjects(chain: String, object_ids: Array<String>, app: any) {
+async function getObjects(chain: String, object_ids: Array<String>, app?: any) {
   return new Promise(async (resolve, reject) => {
     const node = app ? getCurrentNode(chain, app) : chains[chain].nodeList[0].url;
 
@@ -151,7 +151,7 @@ async function getObjects(chain: String, object_ids: Array<String>, app: any) {
     }
 
     let retrievedObjects: Object[] = [];
-    const chunksOfInputs = _sliceIntoChunks(object_ids, 100);
+    const chunksOfInputs = _sliceIntoChunks(object_ids, 50);
     for (let i = 0; i < chunksOfInputs.length; i++) {
       const currentChunk = chunksOfInputs[i];
       let got_objects;
@@ -170,7 +170,7 @@ async function getObjects(chain: String, object_ids: Array<String>, app: any) {
     Apis.close();
 
     if (retrievedObjects && retrievedObjects.length) {
-      resolve(validResult(retrievedObjects));
+      resolve(app ? validResult(retrievedObjects) : retrievedObjects);
       return;
     }
 

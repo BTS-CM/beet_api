@@ -15,18 +15,21 @@ import {
   getPortfolio
 } from './lib/api';
 
-import { getAsset, getPool, getDynamicData } from './lib/cache';
+import {
+  getAsset,
+  getPool,
+  getDynamicData,
+  getMarketSearch
+} from './lib/cache';
 import { validResult } from './lib/common';
 
 import { swaggerConfig } from './config/swagger';
 import { chains } from "./config/chains";
 
 const app = new Elysia()
+.use(staticPlugin({ prefix: '/' }))
 .state('bitshares_nodes', JSON.stringify(chains.bitshares.nodeList))
 .state('bitshares_testnet_nodes', JSON.stringify(chains.bitshares_testnet.nodeList))
-.use(staticPlugin({
-    prefix: '/',
-  }))
   .use(swagger(swaggerConfig))
   .onError(({ code, error }) => {
     return new Response(error.toString())
@@ -118,14 +121,19 @@ const app = new Elysia()
       ) {
         throw new Error("Missing required fields");
       }
-      return getAsset(chain, id)
+      const retrievedAsset = getAsset(chain, id);
+      if (retrievedAsset) {
+        return validResult(retrievedAsset);
+      } else {
+        throw new Error("Asset not found");
+      }
     }, {
       detail: {
         summary: 'Retreive a Bitshares asset', tags: ['Cache']
       }
     })
     .post('/assets/:chain', async ({ body, params: { chain } }) => {
-      if (!body || !JSON.parse(body) || (!chain)) {
+      if (!body || Object.keys(body).length === 0 || (!chain)) {
         throw new Error("Missing required fields");
       }
 
@@ -133,7 +141,7 @@ const app = new Elysia()
         throw new Error("Invalid chain");
       }
 
-      const assetIDs = JSON.parse(body);
+      const assetIDs = typeof body === 'object' ? Object.values(body) : JSON.parse(body);
       const assets = [];
       for (let i = 0; i < assetIDs.length; i++) {
         const asset = getAsset(chain, assetIDs[i]);
@@ -146,6 +154,20 @@ const app = new Elysia()
     }, {
       detail: {
         summary: 'Retrieve multiple Bitshares assets', tags: ['Cache']
+      }
+    })
+    .get('/marketSearch/:chain', async ({ params: { chain } }) => {
+      if (
+        !chain ||
+        (chain !== "bitshares" && chain !== 'bitshares_testnet')
+      ) {
+        throw new Error("Missing required fields");
+      }
+      
+      return getMarketSearch(chain);
+    }, {
+      detail: {
+        summary: 'Data for market asset search', tags: ['Cache']
       }
     })
   )
