@@ -9,10 +9,13 @@ import {
   getBlockedAccounts,
   getFullAccounts,
   fetchOrderBook,
+  fetchLimitOrders,
   getAccountBalances,
   getLimitOrders,
   getAccountHistory,
-  getPortfolio
+  getPortfolio,
+  getObjects,
+  getMarketTrades,
 } from './lib/api';
 
 import {
@@ -261,6 +264,22 @@ const app = new Elysia()
         tags: ['Blockchain']
       }
     })
+    .get('/limitOrders/:chain/:base/:quote', async ({ params: { chain, base, quote } }) => {
+      if (!chain || !base || !quote) {
+        throw new Error("Missing required fields");
+      }
+
+      if (chain !== 'bitshares' && chain !== 'bitshares_testnet') {
+        throw new Error("Invalid chain");
+      }
+
+      return fetchLimitOrders(chain, base, quote, app);
+    }, {
+      detail: {
+        summary: 'Get trading pair limit orders',
+        tags: ['Blockchain']
+      }
+    })
     .get('/accountLookup/:chain/:searchInput', async ({ params: { chain, searchInput } }) => {
       // Search for user input account
       if (!chain || !searchInput) {
@@ -348,6 +367,57 @@ const app = new Elysia()
     }, {
       detail: {
         summary: "Retrieve an account's open orders, balances and recent history in a single query.",
+        tags: ['Blockchain']
+      }
+    })
+    .post('/getObjects/:chain', async ({ body, params: { chain } }) => {
+      // Fetch multiple objects from the blockchain
+      if (!body || !chain) {
+        throw new Error("Missing required fields");
+      }
+
+      if (chain !== 'bitshares' && chain !== 'bitshares_testnet') {
+        throw new Error("Invalid chain");
+      }
+
+      const objects = JSON.parse(body);
+
+      let retrievedObjects;
+      try {
+        retrievedObjects = await getObjects(chain, objects, app);
+      } catch (error) {
+        throw error;
+      }
+
+      if (!retrievedObjects) {
+        throw new Error("Objects not found");
+      }
+
+      return validResult(retrievedObjects);
+    }, {
+      detail: {
+        summary: 'Get objects',
+        tags: ['Blockchain']
+      }
+    })
+    .get('/getMarketHistory/:chain/:base/:quote/:accountID', async ({ params: { chain, base, quote, accountID } }) => {
+      // Fetch market history
+      if (!chain || !base || !quote || !accountID) {
+        throw new Error("Missing required fields");
+      }
+
+      if (!base.includes("1.3.") || !quote.includes("1.3.")) {
+        throw new Error("Invalid asset IDs");
+      }
+      
+      if (chain !== 'bitshares' && chain !== 'bitshares_testnet') {
+        throw new Error("Invalid chain");
+      }
+
+      return await getMarketTrades(chain, base, quote, accountID, app);
+    }, {
+      detail: {
+        summary: 'Get market history',
         tags: ['Blockchain']
       }
     })

@@ -141,8 +141,7 @@ async function getObjects(chain: String, object_ids: Array<String>, app?: any) {
             (error: Error) => console.log(error),
         ).init_promise;
     } catch (error) {
-        console.log(error);
-        Apis.close();
+        console.log({error, msg: 'instance failed'});
         if (app) {
             changeURL(chain, app);
         }
@@ -170,7 +169,7 @@ async function getObjects(chain: String, object_ids: Array<String>, app?: any) {
     Apis.close();
 
     if (retrievedObjects && retrievedObjects.length) {
-      resolve(app ? validResult(retrievedObjects) : retrievedObjects);
+      resolve(retrievedObjects);
       return;
     }
 
@@ -541,6 +540,49 @@ async function fetchOrderBook(chain: String, base: String, quote: String, app: a
 }
 
 /**
+ * Fetch the limit orders for a given market
+ * @param chain 
+ * @param base 
+ * @param quote 
+ * @param app
+ * @returns market limit orders contents
+ */
+async function fetchLimitOrders(chain: String, base: String, quote: String, app: any) {
+    return new Promise(async (resolve, reject) => {
+        const node = getCurrentNode(chain, app);
+
+        try {
+            await Apis.instance(node, true, 4000, undefined, () => {
+                console.log(`OrderBook: Closed connection to: ${node}`);
+            }).init_promise;
+        } catch (error) {
+            console.log(error);
+            changeURL(chain, app);
+            return reject(error);
+        }
+
+        let limitOrders;
+        try {
+            limitOrders = await Apis.instance().db_api().exec("get_limit_orders", [base, quote, 50])
+        } catch (error) {
+            console.log(error);
+        }
+
+        try {
+            await Apis.close();
+        } catch (error) {
+            console.log(error);
+        }
+
+        if (!limitOrders) {
+            return reject(new Error("Couldn't retrieve limit orders"));
+        }
+
+        resolve(validResult(limitOrders));
+    });
+}
+
+/**
  * Fetches: Account balances, limit orders and activity
  * @param chain 
  * @param accountID 
@@ -571,13 +613,6 @@ async function getPortfolio(chain: String, accountID: String, app: any) {
 
         let limitOrders;
         try {
-            /*
-            limitOrders = await Apis.instance().db_api().exec("get_limit_orders_by_account", [accountID, 100]).then((results: Object[]) => {
-                if (results && results.length) {
-                    return results;
-                }
-            });
-            */
             limitOrders = await Apis.instance().db_api().exec("get_limit_orders_by_account", [accountID, 100])
         } catch (error) {
             console.log(error);
@@ -587,13 +622,6 @@ async function getPortfolio(chain: String, accountID: String, app: any) {
 
         let balances;
         try {
-            /*
-            balances = await Apis.instance().db_api().exec("get_account_balances", [accountID, []]).then((results: Object[]) => {
-                if (results && results.length) {
-                    return results;
-                }
-            });
-            */
             balances = await Apis.instance().db_api().exec("get_account_balances", [accountID, []])
         } catch (error) {
             console.log(error);
@@ -624,15 +652,142 @@ async function getPortfolio(chain: String, accountID: String, app: any) {
     });
 }
 
+/**
+ * Fetches: Market pair's recent trades, user's recent trades, user's open orders
+ * @param chain 
+ * @param base 
+ * @param quote
+ * @param accountID
+ * @param app 
+ */
+async function getMarketTrades(
+    chain: String,
+    base: String,
+    quote: String,
+    accountID: String, app: any
+) {
+    return new Promise(async (resolve, reject) => {
+        const node = getCurrentNode(chain, app);
+
+        try {
+            await Apis.instance(node, true, 4000, undefined, () => {
+                console.log(`OrderBook: Closed connection to: ${node}`);
+            }).init_promise;
+        } catch (error) {
+            console.log(error);
+            changeURL(chain, app);
+            return reject(error);
+        }
+
+        let balances;
+        try {
+            balances = await Apis.instance().db_api().exec("get_account_balances", [accountID, [base, quote]]);
+        } catch (error) {
+            console.log(error);
+            Apis.close();
+            reject(error);
+        }
+
+        if (!balances) {
+            reject(new Error('Account balances not found'));
+            return;
+        }
+
+        const now = new Date().toISOString().slice(0, 19);
+        const oneMonthAgo = new Date(Date.now() - 30 * 24 * 60 * 60 * 1000).toISOString().slice(0, 19);
+        let marketHistory;
+        try {
+            marketHistory = await Apis.instance().db_api().exec(
+                "get_trade_history",
+                [
+                    base,
+                    quote,
+                    now, 
+                    oneMonthAgo,
+                    100
+                ]
+            );
+        } catch (error) {
+            console.log(error);
+            Apis.close();
+            reject(error);
+        }
+
+        if (!marketHistory) {
+            reject(new Error('Market history not found'));
+            return;
+        }
+
+        let fullAccount;
+        try {
+            fullAccount = await Apis.instance().db_api().exec("get_full_accounts", [[accountID], false]);
+        } catch (error) {
+            console.log(error);
+            Apis.close();
+            reject(error);
+        }
+
+        if (!fullAccount) {
+            reject(new Error('Account not found'));
+            return;
+        }
+
+        let usrTrades;
+        try {
+            usrTrades = await Apis.instance().history_api().exec("get_account_history_operations", [accountID, 4, "1.11.0", "1.11.0", 100]);
+        } catch (error) {
+            console.log(error);
+            Apis.close();
+            reject(error);
+        }
+
+        if (!usrTrades) {
+            reject(new Error('Account not found'));
+            return;
+        }
+
+        try {
+            Apis.close();
+        } catch (error) {
+            console.log(error);
+        }
+
+        const result = {
+            balances, // qty held quote & base assets
+            marketHistory: marketHistory.map((x: any) => {
+                return {
+                    date: x.date,
+                    price: x.price,
+                    amount: x.amount,
+                    value: x.value,
+                    type: x.type,
+                }
+            }), // recent trades
+            accountLimitOrders: fullAccount[0][1].limit_orders.map((x: any) => {
+                return {
+                    expiration: x.expiration,
+                    for_sale: x.for_sale,
+                    sell_price: x.sell_price,
+                }
+            }),
+            usrTrades: usrTrades.filter((x: any) => x.op[1].fill_price.base.asset_id === base && x.op[1].fill_price.quote.asset_id === quote)
+        };
+        resolve(validResult(result));
+    })
+}
+
+
 export {
     generateDeepLink,
     getObjects,
     accountSearch,
     getBlockedAccounts,
     fetchOrderBook,
+    fetchLimitOrders,
     getFullAccounts,
     getAccountBalances,
     getAccountHistory,
     getLimitOrders,
     getPortfolio,
+    getMarketTrades,
 };
