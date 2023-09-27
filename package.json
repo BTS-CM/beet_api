@@ -15,7 +15,7 @@
     "@elysiajs/cors": "^0.7.0",
     "@elysiajs/static": "^0.6.0",
     "@elysiajs/swagger": "^0.6.2",
-    "bts-buntime": "git@github.com:BTS-CM/bts-buntime.git#f63621a",
+    "bts-buntime": "git@github.com:BTS-CM/bts-buntime.git#650bfb7",
     "elysia": "latest",
     "uuid": "^9.0.1"
   },
