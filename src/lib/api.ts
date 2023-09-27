@@ -24,7 +24,7 @@ async function generateDeepLink(chain: String, opType: String, operations: Array
                 node,
                 true,
                 10000,
-                { enableCrypto: false, enableOrders: true },
+                { enableDatabase: true, enableCrypto: false, enableOrders: true },
                 (error: Error) => console.log(error),
             );
         } catch (error) {
