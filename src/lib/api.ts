@@ -139,9 +139,9 @@ async function getObjects(chain: String, object_ids: Array<String>, app?: any) {
             node,
             true,
             4000,
-            { enableDatabase: true, enableCrypto: false, enableOrders: true },
+            { enableDatabase: true },
             (error: Error) => console.log(error),
-        ).init_promise;
+        );
     } catch (error) {
         console.log({error, msg: 'instance failed'});
         if (app) {
@@ -196,9 +196,9 @@ async function getBlockedAccounts(chain: String, app: any) {
             node,
             true,
             4000,
-            { enableDatabase: true, enableCrypto: false, enableOrders: true },
+            { enableDatabase: true },
             (error: Error) => console.log(error),
-        ).init_promise;
+        );
       } catch (error) {
         console.log(error);
         changeURL(chain, app);
@@ -249,22 +249,13 @@ async function accountSearch(chain: String, search_string: String, app: any) {
                 node, 
                 true,
                 4000,
-                //{ enableDatabase: true, enableCrypto: false, enableOrders: true },
                 { enableDatabase: true },
                 (error: Error) => console.log(error),
-            ).init_promise;
+            );
         } catch (error) {
             console.log(error);
             changeURL(chain, app);
             reject(error);
-            return;
-        }
-
-        if (!currentAPI.db_api()) {
-            console.log("no db_api");
-            currentAPI.close()
-            changeURL(chain, app);
-            reject(new Error("no db_api"));
             return;
         }
 
@@ -300,22 +291,13 @@ async function getFullAccounts(chain: String, accountID: String, app: any) {
                 node, 
                 true,
                 4000,
-                //{ enableDatabase: true, enableCrypto: false, enableOrders: true },
                 { enableDatabase: true },
                 (error: Error) => console.log(error),
-            ).init_promise;
+            );
         } catch (error) {
             console.log(error);
             changeURL(chain, app);
             reject(error);
-            return;
-        }
-
-        if (!currentAPI.db_api()) {
-            console.log("no db_api");
-            currentAPI.close()
-            changeURL(chain, app);
-            reject(new Error("no db_api"));
             return;
         }
 
@@ -426,22 +408,13 @@ async function getAccountBalances(chain: String, accountID: String, app: any) {
                 node, 
                 true,
                 4000,
-                //{ enableDatabase: true, enableCrypto: false, enableOrders: true },
                 { enableDatabase: true },
                 (error: Error) => console.log(error)
-            ).init_promise;
+            );
         } catch (error) {
             console.log(error);
             changeURL(chain, app);
             reject(error);
-            return;
-        }
-
-        if (!currentAPI.db_api()) {
-            console.log("no db_api");
-            currentAPI.close()
-            changeURL(chain, app);
-            reject(new Error("no db_api"));
             return;
         }
 
@@ -494,22 +467,13 @@ async function getLimitOrders(
                 node,
                 true,
                 4000,
-                //{ enableDatabase: true, enableCrypto: false, enableOrders: true },
                 { enableDatabase: true },
                 (error: Error) => console.log(error)
-            ).init_promise;
+            );
         } catch (error) {
             console.log(error);
             changeURL(chain, app);
             reject(error);
-            return;
-        }
-
-        if (!currentAPI.db_api()) {
-            console.log("no db_api");
-            currentAPI.close()
-            changeURL(chain, app);
-            reject(new Error("no db_api"));
             return;
         }
 
@@ -555,7 +519,6 @@ async function fetchOrderBook(chain: String, base: String, quote: String, app: a
                 node, 
                 true,
                 4000,
-                //{ enableDatabase: true, enableCrypto: false, enableOrders: true },
                 { enableDatabase: true },
                 (error: Error) => console.log(error)
             );
@@ -604,10 +567,9 @@ async function fetchLimitOrders(chain: String, base: String, quote: String, app:
                 node, 
                 true,
                 4000,
-                //{ enableDatabase: true, enableCrypto: false, enableOrders: true },
                 { enableDatabase: true },
                 (error: Error) => console.log(error)
-            ).init_promise;
+            );
         } catch (error) {
             console.log(error);
             changeURL(chain, app);
@@ -652,22 +614,13 @@ async function getPortfolio(chain: String, accountID: String, app: any) {
                 node, 
                 true,
                 4000,
-                //{ enableDatabase: true, enableCrypto: false, enableOrders: true },
                 { enableDatabase: true },
                 (error: Error) => console.log(error)
-            ).init_promise;
+            );
         } catch (error) {
             console.log(error);
             changeURL(chain, app);
             return reject(error);
-        }
-
-        if (!currentAPI.db_api()) {
-            console.log("no db_api");
-            currentAPI.close()
-            changeURL(chain, app);
-            reject(new Error("no db_api"));
-            return;
         }
 
         let limitOrders;

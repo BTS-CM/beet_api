@@ -8,6 +8,7 @@
     "fetchDynamicData": "node ./src/data/fetchDynamicData.js",
     "fetchIssuers": "node ./src/data/fetchAssetIssuers.js",
     "dev": "bun run --watch src/index.tsx",
+    "constructUI": "rm -rf public/* && git clone https://github.com/BTS-CM/astro-ui.git && cd astro-ui && mv dist/* ../public && cd .. && rm -rf astro-ui",
     "build": "bun build ./src/index.tsx --outdir=dist",
     "compile": "bun build --compile ./src/index.tsx --outfile beet_api"
   },
