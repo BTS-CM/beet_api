@@ -509,7 +509,7 @@ async function getLimitOrders(
  * @param app
  * @returns market orderbook contents
  */
-async function fetchOrderBook(chain: String, base: String, quote: String, app: any) {
+async function fetchOrderBook(chain: String, quote: String, base: String, app: any) {
     return new Promise(async (resolve, reject) => {
         const node = getCurrentNode(chain, app);
 
@@ -667,15 +667,15 @@ async function getPortfolio(chain: String, accountID: String, app: any) {
 /**
  * Fetches: Market pair's recent trades, user's recent trades, user's open orders
  * @param chain 
- * @param base 
  * @param quote
+ * @param base 
  * @param accountID
  * @param app 
  */
 async function getMarketTrades(
     chain: String,
-    base: String,
     quote: String,
+    base: String,
     accountID: String,
     app: any
 ) {

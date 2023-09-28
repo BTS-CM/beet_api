@@ -248,7 +248,7 @@ const app = new Elysia()
         tags: ['Blockchain']
       }
     })
-    .get('/orderBook/:chain/:base/:quote', async ({ params: { chain, base, quote } }) => {
+    .get('/orderBook/:chain/:quote/:base', async ({ params: { chain, quote, base } }) => {
       if (!chain || !base || !quote) {
         throw new Error("Missing required fields");
       }
@@ -257,7 +257,7 @@ const app = new Elysia()
         throw new Error("Invalid chain");
       }
 
-      return fetchOrderBook(chain, base, quote, app);
+      return fetchOrderBook(chain, quote, base, app);
     }, {
       detail: {
         summary: 'Get trading pair market orders',
@@ -400,7 +400,7 @@ const app = new Elysia()
         tags: ['Blockchain']
       }
     })
-    .get('/getMarketHistory/:chain/:base/:quote/:accountID', async ({ params: { chain, base, quote, accountID } }) => {
+    .get('/getMarketHistory/:chain/:quote/:base/:accountID', async ({ params: { chain, quote, base, accountID } }) => {
       // Fetch market history
       if (!chain || !base || !quote || !accountID) {
         throw new Error("Missing required fields");
@@ -414,7 +414,7 @@ const app = new Elysia()
         throw new Error("Invalid chain");
       }
 
-      return await getMarketTrades(chain, base, quote, accountID, app);
+      return await getMarketTrades(chain, quote, base, accountID, app);
     }, {
       detail: {
         summary: 'Get market history',
