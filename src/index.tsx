@@ -57,7 +57,11 @@ const app = new Elysia()
   .onError(({ code, error }) => {
     return new Response(error.toString());
   })
-  //.use(cors()) // for local astro development purposes only!
+  .use(
+    cors({
+      origin: /localhost/,
+    })
+  )
   .get(
     "/",
     () => {
