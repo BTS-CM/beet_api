@@ -6,8 +6,8 @@
         "asset_b_id": "1.3.3291",
         "asset_b_symbol": "TWENTIX",
         "share_asset_symbol": "TWENTIX.BTSPOOL",
-        "balance_a": "7209228574",
-        "balance_b": 37454092,
+        "balance_a": "8442841609",
+        "balance_b": 39044817,
         "taker_fee_percent": 50
     },
     {
@@ -28,8 +28,8 @@
         "asset_b_id": "1.3.113",
         "asset_b_symbol": "CNY",
         "share_asset_symbol": "BTSPP.BTSCNY",
-        "balance_a": "100034073726",
-        "balance_b": 666542701,
+        "balance_a": "99376816141",
+        "balance_b": 670996350,
         "taker_fee_percent": 10
     },
     {
@@ -39,8 +39,8 @@
         "asset_b_id": "1.3.5286",
         "asset_b_symbol": "GDEX.USDT",
         "share_asset_symbol": "GDEX.LPBU",
-        "balance_a": 602264344,
-        "balance_b": 533966887,
+        "balance_a": 594786831,
+        "balance_b": 541087915,
         "taker_fee_percent": 20
     },
     {
@@ -50,8 +50,8 @@
         "asset_b_id": "1.3.5286",
         "asset_b_symbol": "GDEX.USDT",
         "share_asset_symbol": "GDEX.LPCU",
-        "balance_a": 31556612,
-        "balance_b": "4187888360",
+        "balance_a": 31367077,
+        "balance_b": "4216377954",
         "taker_fee_percent": 20
     },
     {
@@ -61,8 +61,8 @@
         "asset_b_id": "1.3.2598",
         "asset_b_symbol": "GDEX.ETH",
         "share_asset_symbol": "GDEX.LPBE",
-        "balance_a": 1110707677,
-        "balance_b": 61394,
+        "balance_a": 1084636966,
+        "balance_b": 62914,
         "taker_fee_percent": 20
     },
     {
@@ -72,8 +72,8 @@
         "asset_b_id": "1.3.2241",
         "asset_b_symbol": "GDEX.BTC",
         "share_asset_symbol": "GDEX.LPBB",
-        "balance_a": "58209650430",
-        "balance_b": 19710925,
+        "balance_a": "58942279383",
+        "balance_b": 19494151,
         "taker_fee_percent": 20
     },
     {
@@ -83,8 +83,8 @@
         "asset_b_id": "1.3.2635",
         "asset_b_symbol": "GDEX.EOS",
         "share_asset_symbol": "GDEX.LPBO",
-        "balance_a": 526481783,
-        "balance_b": 84534649,
+        "balance_a": 517639534,
+        "balance_b": 86026586,
         "taker_fee_percent": 20
     },
     {
@@ -105,8 +105,8 @@
         "asset_b_id": "1.3.5476",
         "asset_b_symbol": "CNVOTE",
         "share_asset_symbol": "FATSO",
-        "balance_a": 24899,
-        "balance_b": 21189960,
+        "balance_a": 26244,
+        "balance_b": 20105045,
         "taker_fee_percent": 10
     },
     {
@@ -116,8 +116,8 @@
         "asset_b_id": "1.3.121",
         "asset_b_symbol": "USD",
         "share_asset_symbol": "BTSPP.BTSUSD",
-        "balance_a": 90815995,
-        "balance_b": 381436,
+        "balance_a": 91753692,
+        "balance_b": 377541,
         "taker_fee_percent": 10
     },
     {
@@ -138,8 +138,8 @@
         "asset_b_id": "1.3.4099",
         "asset_b_symbol": "XBTSX.STH",
         "share_asset_symbol": "SMARTHOLDEM",
-        "balance_a": 1914877298,
-        "balance_b": "52380601515",
+        "balance_a": 1914648827,
+        "balance_b": "52417512723",
         "taker_fee_percent": 20
     },
     {
@@ -160,8 +160,8 @@
         "asset_b_id": "1.3.4367",
         "asset_b_symbol": "WEYOUME",
         "share_asset_symbol": "WEYOUME.BTSLP",
-        "balance_a": 104546395,
-        "balance_b": "1000260551699",
+        "balance_a": 104701490,
+        "balance_b": "998913743450",
         "taker_fee_percent": 25
     },
     {
@@ -171,8 +171,8 @@
         "asset_b_id": "1.3.4485",
         "asset_b_symbol": "BEOS",
         "share_asset_symbol": "TWENTIX.BEOSLP",
-        "balance_a": 2444457,
-        "balance_b": "19527741241",
+        "balance_a": 2316647,
+        "balance_b": "20610720864",
         "taker_fee_percent": 50
     },
     {
@@ -215,8 +215,8 @@
         "asset_b_id": "1.3.120",
         "asset_b_symbol": "EUR",
         "share_asset_symbol": "AMMPOOL.CNYEUR",
-        "balance_a": 27173695,
-        "balance_b": 3534581,
+        "balance_a": 26927297,
+        "balance_b": 3567663,
         "taker_fee_percent": 10
     },
     {
@@ -226,8 +226,8 @@
         "asset_b_id": "1.3.1325",
         "asset_b_symbol": "RUBLE",
         "share_asset_symbol": "AMMPOOL.CNYRUBLE",
-        "balance_a": 2539377,
-        "balance_b": 326421363,
+        "balance_a": 2567078,
+        "balance_b": 322947530,
         "taker_fee_percent": 10
     },
     {
@@ -237,8 +237,8 @@
         "asset_b_id": "1.3.121",
         "asset_b_symbol": "USD",
         "share_asset_symbol": "AMMPOOL.EURUSD",
-        "balance_a": 34617,
-        "balance_b": 178071,
+        "balance_a": 24330,
+        "balance_b": 103369,
         "taker_fee_percent": 10
     },
     {
@@ -248,8 +248,8 @@
         "asset_b_id": "1.3.1325",
         "asset_b_symbol": "RUBLE",
         "share_asset_symbol": "AMMPOOL.EURRUBLE",
-        "balance_a": 333589,
-        "balance_b": 326409958,
+        "balance_a": 341110,
+        "balance_b": 319257542,
         "taker_fee_percent": 10
     },
     {
@@ -259,8 +259,8 @@
         "asset_b_id": "1.3.1325",
         "asset_b_symbol": "RUBLE",
         "share_asset_symbol": "AMMPOOL.USDRUBLE",
-        "balance_a": 99638,
-        "balance_b": 19045591,
+        "balance_a": 98921,
+        "balance_b": 19185717,
         "taker_fee_percent": 10
     },
     {
@@ -270,8 +270,8 @@
         "asset_b_id": "1.3.4485",
         "asset_b_symbol": "BEOS",
         "share_asset_symbol": "BEOS.BTSLP",
-        "balance_a": "69204199288",
-        "balance_b": "2902211638544",
+        "balance_a": "69206483140",
+        "balance_b": "2902180796620",
         "taker_fee_percent": 25
     },
     {
@@ -292,8 +292,8 @@
         "asset_b_id": "1.3.3377",
         "asset_b_symbol": "CNC",
         "share_asset_symbol": "WECHAT.CNC",
-        "balance_a": "5195207184",
-        "balance_b": 48419265,
+        "balance_a": "4525574327",
+        "balance_b": 55603489,
         "taker_fee_percent": 10
     },
     {
@@ -303,8 +303,8 @@
         "asset_b_id": "1.3.3377",
         "asset_b_symbol": "CNC",
         "share_asset_symbol": "WECHAT.OTC",
-        "balance_a": 44385219,
-        "balance_b": 61481063,
+        "balance_a": 38848630,
+        "balance_b": 70262280,
         "taker_fee_percent": 10
     },
     {
@@ -314,8 +314,8 @@
         "asset_b_id": "1.3.2635",
         "asset_b_symbol": "GDEX.EOS",
         "share_asset_symbol": "GDEX.LPBTCEOS",
-        "balance_a": 10880967,
-        "balance_b": "5124100773",
+        "balance_a": 10483487,
+        "balance_b": "5321878090",
         "taker_fee_percent": 20
     },
     {
@@ -325,8 +325,8 @@
         "asset_b_id": "1.3.113",
         "asset_b_symbol": "CNY",
         "share_asset_symbol": "OPTIONS.LPTOKEN",
-        "balance_a": 521482,
-        "balance_b": 3840,
+        "balance_a": 582058,
+        "balance_b": 3441,
         "taker_fee_percent": 10
     },
     {
@@ -369,8 +369,8 @@
         "asset_b_id": "1.3.5761",
         "asset_b_symbol": "CRUDE.NGN",
         "share_asset_symbol": "CRUDE.BTSP",
-        "balance_a": 99708001,
-        "balance_b": "15927777580626",
+        "balance_a": 97651587,
+        "balance_b": "16264709392530",
         "taker_fee_percent": 10
     },
     {
@@ -380,8 +380,8 @@
         "asset_b_id": "1.3.3291",
         "asset_b_symbol": "TWENTIX",
         "share_asset_symbol": "BTWTY.TWENTIXMM",
-        "balance_a": 344,
-        "balance_b": 4888759,
+        "balance_a": 315,
+        "balance_b": 4007274,
         "taker_fee_percent": 25
     },
     {
@@ -391,8 +391,8 @@
         "asset_b_id": "1.3.5649",
         "asset_b_symbol": "HONEST.USD",
         "share_asset_symbol": "TWENTIX.HUSDMM",
-        "balance_a": 16180646,
-        "balance_b": 2854059,
+        "balance_a": 32445271,
+        "balance_b": 6345461,
         "taker_fee_percent": 25
     },
     {
@@ -402,8 +402,8 @@
         "asset_b_id": "1.3.5649",
         "asset_b_symbol": "HONEST.USD",
         "share_asset_symbol": "HONEST.USDBTSMM",
-        "balance_a": "9369618448",
-        "balance_b": 8496076,
+        "balance_a": "9346920473",
+        "balance_b": 8524611,
         "taker_fee_percent": 30
     },
     {
@@ -413,8 +413,8 @@
         "asset_b_id": "1.3.5537",
         "asset_b_symbol": "IOB.XRP",
         "share_asset_symbol": "TWENTIX.IOXRPMM",
-        "balance_a": 52981586,
-        "balance_b": 19145274,
+        "balance_a": 51393359,
+        "balance_b": 19373269,
         "taker_fee_percent": 50
     },
     {
@@ -457,8 +457,8 @@
         "asset_b_id": "1.3.5589",
         "asset_b_symbol": "XBTSX.USDT",
         "share_asset_symbol": "WANGZI.LPBTSXU",
-        "balance_a": "297684695082",
-        "balance_b": "26458355203",
+        "balance_a": "295166675306",
+        "balance_b": "26798546563",
         "taker_fee_percent": 30
     },
     {
@@ -468,8 +468,8 @@
         "asset_b_id": "1.3.5286",
         "asset_b_symbol": "GDEX.USDT",
         "share_asset_symbol": "GDEX.LPEOSUSDT",
-        "balance_a": 414799282,
-        "balance_b": "2305442618",
+        "balance_a": 420580972,
+        "balance_b": "2275140543",
         "taker_fee_percent": 20
     },
     {
@@ -479,8 +479,8 @@
         "asset_b_id": "1.3.5286",
         "asset_b_symbol": "GDEX.USDT",
         "share_asset_symbol": "GDEX.LPETHUSDT",
-        "balance_a": 131263,
-        "balance_b": 2104322650,
+        "balance_a": 132392,
+        "balance_b": 2086871166,
         "taker_fee_percent": 20
     },
     {
@@ -490,8 +490,8 @@
         "asset_b_id": "1.3.5286",
         "asset_b_symbol": "GDEX.USDT",
         "share_asset_symbol": "GDEX.LPBTCUSDT",
-        "balance_a": 427478,
-        "balance_b": 1123019471,
+        "balance_a": 415973,
+        "balance_b": 1154267823,
         "taker_fee_percent": 20
     },
     {
@@ -501,8 +501,8 @@
         "asset_b_id": "1.3.121",
         "asset_b_symbol": "USD",
         "share_asset_symbol": "DEFI.CNYUSD",
-        "balance_a": 7907158,
-        "balance_b": 4905767,
+        "balance_a": 7971553,
+        "balance_b": 4866516,
         "taker_fee_percent": 20
     },
     {
@@ -512,8 +512,8 @@
         "asset_b_id": "1.3.3377",
         "asset_b_symbol": "CNC",
         "share_asset_symbol": "DEFI.CNYCNC",
-        "balance_a": 13859732,
-        "balance_b": 19342991,
+        "balance_a": 12170266,
+        "balance_b": 22046249,
         "taker_fee_percent": 20
     },
     {
@@ -523,8 +523,8 @@
         "asset_b_id": "1.3.121",
         "asset_b_symbol": "USD",
         "share_asset_symbol": "DEFI.BTSUSD",
-        "balance_a": "8551471310",
-        "balance_b": 35978265,
+        "balance_a": "8626108776",
+        "balance_b": 35667777,
         "taker_fee_percent": 20
     },
     {
@@ -556,8 +556,8 @@
         "asset_b_id": "1.3.5925",
         "asset_b_symbol": "DEFI",
         "share_asset_symbol": "DEFI.BTSDEFI",
-        "balance_a": "113956879637",
-        "balance_b": "473186153027",
+        "balance_a": "113845449388",
+        "balance_b": "496228843510",
         "taker_fee_percent": 20
     },
     {
@@ -567,8 +567,8 @@
         "asset_b_id": "1.3.4157",
         "asset_b_symbol": "XBTSX.BTC",
         "share_asset_symbol": "ABITS.BTSXBTCLP",
-        "balance_a": "260002824076",
-        "balance_b": 87911886,
+        "balance_a": "262915744153",
+        "balance_b": 87090831,
         "taker_fee_percent": 25
     },
     {
@@ -578,8 +578,8 @@
         "asset_b_id": "1.3.120",
         "asset_b_symbol": "EUR",
         "share_asset_symbol": "DEFI.BTSEUR",
-        "balance_a": "73646854182",
-        "balance_b": 62993865,
+        "balance_a": "77389346968",
+        "balance_b": 69011482,
         "taker_fee_percent": 20
     },
     {
@@ -589,8 +589,8 @@
         "asset_b_id": "1.3.113",
         "asset_b_symbol": "CNY",
         "share_asset_symbol": "DEFI.BTSCNY",
-        "balance_a": "135087933989",
-        "balance_b": 900275545,
+        "balance_a": "134011258836",
+        "balance_b": 907633099,
         "taker_fee_percent": 20
     },
     {
@@ -600,8 +600,8 @@
         "asset_b_id": "1.3.5286",
         "asset_b_symbol": "GDEX.USDT",
         "share_asset_symbol": "DEFI.BTSGDEXUSDT",
-        "balance_a": "156335740055",
-        "balance_b": "139134447694",
+        "balance_a": "155157588025",
+        "balance_b": "140803532842",
         "taker_fee_percent": 20
     },
     {
@@ -611,8 +611,8 @@
         "asset_b_id": "1.3.5925",
         "asset_b_symbol": "DEFI",
         "share_asset_symbol": "DEFI.DEFIGUSDT",
-        "balance_a": "227795753560",
-        "balance_b": "1068070544586",
+        "balance_a": "225448354999",
+        "balance_b": "1080166239124",
         "taker_fee_percent": 20
     },
     {
@@ -622,8 +622,8 @@
         "asset_b_id": "1.3.5589",
         "asset_b_symbol": "XBTSX.USDT",
         "share_asset_symbol": "XBTSX.SHU",
-        "balance_a": "1144359640922",
-        "balance_b": "3726290725",
+        "balance_a": "1141351238367",
+        "balance_b": "3770470106",
         "taker_fee_percent": 25
     },
     {
@@ -633,8 +633,8 @@
         "asset_b_id": "1.3.5943",
         "asset_b_symbol": "ARTCASA",
         "share_asset_symbol": "ARTCASA.BTSMM",
-        "balance_a": "8900262846",
-        "balance_b": "54807219772",
+        "balance_a": "7891595604",
+        "balance_b": "61851434146",
         "taker_fee_percent": 35
     },
     {
@@ -644,8 +644,8 @@
         "asset_b_id": "1.3.5650",
         "asset_b_symbol": "HONEST.BTC",
         "share_asset_symbol": "HONEST.BTCUSDMM",
-        "balance_a": 5172422,
-        "balance_b": 1978078,
+        "balance_a": 5265282,
+        "balance_b": 1943449,
         "taker_fee_percent": 30
     },
     {
@@ -655,8 +655,8 @@
         "asset_b_id": "1.3.5650",
         "asset_b_symbol": "HONEST.BTC",
         "share_asset_symbol": "HONEST.BTCBTSMM",
-        "balance_a": "3291042907",
-        "balance_b": 1136921,
+        "balance_a": "3344228882",
+        "balance_b": 1119476,
         "taker_fee_percent": 30
     },
     {
@@ -688,8 +688,8 @@
         "asset_b_id": "1.3.5877",
         "asset_b_symbol": "XBTSX.EOS",
         "share_asset_symbol": "ABITS.BTSXEOSLP",
-        "balance_a": "180730556096",
-        "balance_b": "28914826377",
+        "balance_a": "176572883431",
+        "balance_b": "29649556838",
         "taker_fee_percent": 25
     },
     {
@@ -721,8 +721,8 @@
         "asset_b_id": "1.3.113",
         "asset_b_symbol": "CNY",
         "share_asset_symbol": "SWAP.BTSCNY",
-        "balance_a": 438915255,
-        "balance_b": 2918642,
+        "balance_a": 434491176,
+        "balance_b": 2949178,
         "taker_fee_percent": 20
     },
     {
@@ -732,8 +732,8 @@
         "asset_b_id": "1.3.120",
         "asset_b_symbol": "EUR",
         "share_asset_symbol": "SWAP.BTSEUR",
-        "balance_a": 406638170,
-        "balance_b": 349929,
+        "balance_a": 398132092,
+        "balance_b": 357480,
         "taker_fee_percent": 20
     },
     {
@@ -743,8 +743,8 @@
         "asset_b_id": "1.3.121",
         "asset_b_symbol": "USD",
         "share_asset_symbol": "SWAP.BTSUSD",
-        "balance_a": "11043195858",
-        "balance_b": 46016724,
+        "balance_a": "11453438546",
+        "balance_b": 47030931,
         "taker_fee_percent": 20
     },
     {
@@ -787,8 +787,8 @@
         "asset_b_id": "1.3.2512",
         "asset_b_symbol": "EVRAZ",
         "share_asset_symbol": "SWAP.BTSEVRAZ",
-        "balance_a": 1135263574,
-        "balance_b": 18719585,
+        "balance_a": 1156911563,
+        "balance_b": 18375022,
         "taker_fee_percent": 20
     },
     {
@@ -875,8 +875,8 @@
         "asset_b_id": "1.3.3377",
         "asset_b_symbol": "CNC",
         "share_asset_symbol": "DEFI.BTSCNC",
-        "balance_a": 1001834068,
-        "balance_b": 9250872,
+        "balance_a": 871934452,
+        "balance_b": 10634384,
         "taker_fee_percent": 10
     },
     {
@@ -952,8 +952,8 @@
         "asset_b_id": "1.3.5925",
         "asset_b_symbol": "DEFI",
         "share_asset_symbol": "DEFI.DEFICNY",
-        "balance_a": 376410152,
-        "balance_b": "235020070879",
+        "balance_a": 376108016,
+        "balance_b": "241709043043",
         "taker_fee_percent": 20
     },
     {
@@ -963,8 +963,8 @@
         "asset_b_id": "1.3.4157",
         "asset_b_symbol": "XBTSX.BTC",
         "share_asset_symbol": "SMARTHOLDEM.BTC",
-        "balance_a": "1316687747015",
-        "balance_b": 16413235,
+        "balance_a": "1346865430248",
+        "balance_b": 16133928,
         "taker_fee_percent": 25
     },
     {
@@ -974,8 +974,8 @@
         "asset_b_id": "1.3.103",
         "asset_b_symbol": "BTC",
         "share_asset_symbol": "SWAP.BTSBTC",
-        "balance_a": "38585459329",
-        "balance_b": 253610266,
+        "balance_a": "39216108533",
+        "balance_b": 253405458,
         "taker_fee_percent": 20
     },
     {
@@ -985,8 +985,8 @@
         "asset_b_id": "1.3.106",
         "asset_b_symbol": "GOLD",
         "share_asset_symbol": "SWAP.BTSGOLD",
-        "balance_a": 914504198,
-        "balance_b": 439409,
+        "balance_a": 957745065,
+        "balance_b": 447219,
         "taker_fee_percent": 20
     },
     {
@@ -996,8 +996,8 @@
         "asset_b_id": "1.3.105",
         "asset_b_symbol": "SILVER",
         "share_asset_symbol": "SWAP.BTSSILVER",
-        "balance_a": 1377491280,
-        "balance_b": 433231,
+        "balance_a": 1449641241,
+        "balance_b": 429553,
         "taker_fee_percent": 20
     },
     {
@@ -1007,8 +1007,8 @@
         "asset_b_id": "1.3.2598",
         "asset_b_symbol": "GDEX.ETH",
         "share_asset_symbol": "GDEX.LPBTCETH",
-        "balance_a": 87938504,
-        "balance_b": 14330923,
+        "balance_a": 85049129,
+        "balance_b": 14820385,
         "taker_fee_percent": 20
     },
     {
@@ -1018,8 +1018,8 @@
         "asset_b_id": "1.3.5925",
         "asset_b_symbol": "DEFI",
         "share_asset_symbol": "DEFI.DEFIUSD",
-        "balance_a": 1365167,
-        "balance_b": 1364917032,
+        "balance_a": 1326868,
+        "balance_b": 1405644168,
         "taker_fee_percent": 20
     },
     {
@@ -1029,8 +1029,8 @@
         "asset_b_id": "1.3.4760",
         "asset_b_symbol": "XBTSX.ETH",
         "share_asset_symbol": "SMARTHOLDEM.ETHL",
-        "balance_a": "512982436041",
-        "balance_b": 10532442,
+        "balance_a": "509182542352",
+        "balance_b": 10619267,
         "taker_fee_percent": 25
     },
     {
@@ -1040,8 +1040,8 @@
         "asset_b_id": "1.3.5887",
         "asset_b_symbol": "XBTSX.RUB",
         "share_asset_symbol": "SMARTHOLDEM.RUBL",
-        "balance_a": "523558054744",
-        "balance_b": 1622238306,
+        "balance_a": "507308851594",
+        "balance_b": 1674480242,
         "taker_fee_percent": 25
     },
     {
@@ -1062,8 +1062,8 @@
         "asset_b_id": "1.3.4176",
         "asset_b_symbol": "XBTSX.DASH",
         "share_asset_symbol": "SMARTHOLDEM.DALP",
-        "balance_a": "151992515237",
-        "balance_b": 1934567219,
+        "balance_a": "152576418859",
+        "balance_b": 1927245451,
         "taker_fee_percent": 25
     },
     {
@@ -1073,8 +1073,8 @@
         "asset_b_id": "1.3.4099",
         "asset_b_symbol": "XBTSX.STH",
         "share_asset_symbol": "SMARTHOLDEM.CNYL",
-        "balance_a": 14156832,
-        "balance_b": "57767400914",
+        "balance_a": 14144525,
+        "balance_b": "57829136402",
         "taker_fee_percent": 20
     },
     {
@@ -1084,8 +1084,8 @@
         "asset_b_id": "1.3.4156",
         "asset_b_symbol": "XBTSX.DOGE",
         "share_asset_symbol": "SMARTHOLDEM.DOGL",
-        "balance_a": "181382765974",
-        "balance_b": 968013992,
+        "balance_a": "177126377824",
+        "balance_b": 991631429,
         "taker_fee_percent": 20
     },
     {
@@ -1095,8 +1095,8 @@
         "asset_b_id": "1.3.5649",
         "asset_b_symbol": "HONEST.USD",
         "share_asset_symbol": "BTWTY.HUSDMM",
-        "balance_a": 260,
-        "balance_b": 665788,
+        "balance_a": 262,
+        "balance_b": 661049,
         "taker_fee_percent": 30
     },
     {
@@ -1117,8 +1117,8 @@
         "asset_b_id": "1.3.4367",
         "asset_b_symbol": "WEYOUME",
         "share_asset_symbol": "TWENTIX.WYMLP",
-        "balance_a": 678569,
-        "balance_b": "1288319793132",
+        "balance_a": 664908,
+        "balance_b": "1314842867059",
         "taker_fee_percent": 20
     },
     {
@@ -1128,8 +1128,8 @@
         "asset_b_id": "1.3.5877",
         "asset_b_symbol": "XBTSX.EOS",
         "share_asset_symbol": "ABITS.XBTCXEOSLP",
-        "balance_a": 51875028,
-        "balance_b": "24441765071",
+        "balance_a": 50013730,
+        "balance_b": "25373010236",
         "taker_fee_percent": 25
     },
     {
@@ -1150,8 +1150,8 @@
         "asset_b_id": "1.3.4156",
         "asset_b_symbol": "XBTSX.DOGE",
         "share_asset_symbol": "BTWTY.DOGEXBTSX",
-        "balance_a": 229,
-        "balance_b": 92998939,
+        "balance_a": 225,
+        "balance_b": 94718945,
         "taker_fee_percent": 20
     },
     {
@@ -1161,8 +1161,8 @@
         "asset_b_id": "1.3.5902",
         "asset_b_symbol": "XBTSX.USDC",
         "share_asset_symbol": "BTWTY.XBTSXUSDC",
-        "balance_a": 1906,
-        "balance_b": 477099163,
+        "balance_a": 1896,
+        "balance_b": 465908121,
         "taker_fee_percent": 15
     },
     {
@@ -1183,8 +1183,8 @@
         "asset_b_id": "1.3.6009",
         "asset_b_symbol": "NIUSHI",
         "share_asset_symbol": "NIUSHI.LP",
-        "balance_a": 521774537,
-        "balance_b": "283649902158095",
+        "balance_a": 521874537,
+        "balance_b": "283597180596573",
         "taker_fee_percent": 300
     },
     {
@@ -1216,8 +1216,8 @@
         "asset_b_id": "1.3.6013",
         "asset_b_symbol": "XBTSX.HIVE",
         "share_asset_symbol": "ABITS.BTSXHIVELP",
-        "balance_a": "199285306462",
-        "balance_b": "64451024500",
+        "balance_a": "205010719612",
+        "balance_b": "62774430982",
         "taker_fee_percent": 25
     },
     {
@@ -1227,8 +1227,8 @@
         "asset_b_id": "1.3.6013",
         "asset_b_symbol": "XBTSX.HIVE",
         "share_asset_symbol": "ABITS.XBTCHIVELP",
-        "balance_a": 136767851,
-        "balance_b": "130513803661",
+        "balance_a": 139114726,
+        "balance_b": "128454958704",
         "taker_fee_percent": 25
     },
     {
@@ -1238,8 +1238,8 @@
         "asset_b_id": "1.3.5925",
         "asset_b_symbol": "DEFI",
         "share_asset_symbol": "DEFI.DEFIGAT",
-        "balance_a": 686770808,
-        "balance_b": "32720516079",
+        "balance_a": 758210736,
+        "balance_b": "29643475605",
         "taker_fee_percent": 20
     },
     {
@@ -1282,8 +1282,8 @@
         "asset_b_id": "1.3.5925",
         "asset_b_symbol": "DEFI",
         "share_asset_symbol": "DEFI.DEFIGEOS",
-        "balance_a": "11065342992",
-        "balance_b": "288726691966",
+        "balance_a": "11127709116",
+        "balance_b": "287290822374",
         "taker_fee_percent": 20
     },
     {
@@ -1293,8 +1293,8 @@
         "asset_b_id": "1.3.2635",
         "asset_b_symbol": "GDEX.EOS",
         "share_asset_symbol": "DEFI.BTSGEOS",
-        "balance_a": "90947309532",
-        "balance_b": "14546540692",
+        "balance_a": "88833600357",
+        "balance_b": "14916110644",
         "taker_fee_percent": 20
     },
     {
@@ -1326,8 +1326,8 @@
         "asset_b_id": "1.3.5537",
         "asset_b_symbol": "IOB.XRP",
         "share_asset_symbol": "IOB.BTSXRP",
-        "balance_a": "38325663089",
-        "balance_b": 71102468,
+        "balance_a": "39413391339",
+        "balance_b": 69185133,
         "taker_fee_percent": 25
     },
     {
@@ -1337,8 +1337,8 @@
         "asset_b_id": "1.3.5882",
         "asset_b_symbol": "CRUDE.LVRG",
         "share_asset_symbol": "CRUDE.STHLP",
-        "balance_a": "2842291100",
-        "balance_b": "64523838983255",
+        "balance_a": "2928687987",
+        "balance_b": "62622276170372",
         "taker_fee_percent": 10
     },
     {
@@ -1348,8 +1348,8 @@
         "asset_b_id": "1.3.5925",
         "asset_b_symbol": "DEFI",
         "share_asset_symbol": "DEFI.DEFIGETH",
-        "balance_a": 8827997,
-        "balance_b": "662574160823",
+        "balance_a": 8822220,
+        "balance_b": "663258034629",
         "taker_fee_percent": 20
     },
     {
@@ -1359,8 +1359,8 @@
         "asset_b_id": "1.3.2598",
         "asset_b_symbol": "GDEX.ETH",
         "share_asset_symbol": "DEFI.BTSGETH",
-        "balance_a": "146307426998",
-        "balance_b": 8082489,
+        "balance_a": "142924591997",
+        "balance_b": 8285612,
         "taker_fee_percent": 20
     },
     {
@@ -1370,8 +1370,8 @@
         "asset_b_id": "1.3.5925",
         "asset_b_symbol": "DEFI",
         "share_asset_symbol": "DEFI.DEFIGBTC",
-        "balance_a": 52680783,
-        "balance_b": "645714485377",
+        "balance_a": 56095243,
+        "balance_b": "737286128126",
         "taker_fee_percent": 20
     },
     {
@@ -1381,8 +1381,8 @@
         "asset_b_id": "1.3.2241",
         "asset_b_symbol": "GDEX.BTC",
         "share_asset_symbol": "DEFI.BTSGBTC",
-        "balance_a": "151519499959",
-        "balance_b": 51294546,
+        "balance_a": "153259927751",
+        "balance_b": 50785686,
         "taker_fee_percent": 20
     },
     {
@@ -1392,8 +1392,8 @@
         "asset_b_id": "1.3.5882",
         "asset_b_symbol": "CRUDE.LVRG",
         "share_asset_symbol": "CRUDE.USDTLP",
-        "balance_a": 3008868,
-        "balance_b": "20550100987362",
+        "balance_a": 3168443,
+        "balance_b": "19516153688107",
         "taker_fee_percent": 10
     },
     {
@@ -1414,8 +1414,8 @@
         "asset_b_id": "1.3.5882",
         "asset_b_symbol": "CRUDE.LVRG",
         "share_asset_symbol": "CRUDE.BIT20",
-        "balance_a": 962870,
-        "balance_b": "114193465466045",
+        "balance_a": 938833,
+        "balance_b": "117120174918869",
         "taker_fee_percent": 10
     },
     {
@@ -1425,8 +1425,8 @@
         "asset_b_id": "1.3.5943",
         "asset_b_symbol": "ARTCASA",
         "share_asset_symbol": "BTWTY.ARTCASAMM",
-        "balance_a": 311,
-        "balance_b": "5292693373",
+        "balance_a": 279,
+        "balance_b": "5908293434",
         "taker_fee_percent": 30
     },
     {
@@ -1458,8 +1458,8 @@
         "asset_b_id": "1.3.5597",
         "asset_b_symbol": "XBTSX.RVN",
         "share_asset_symbol": "XBTSX.USDTRVNLP",
-        "balance_a": 300552662,
-        "balance_b": 192728794,
+        "balance_a": 300219784,
+        "balance_b": 192955995,
         "taker_fee_percent": 25
     },
     {
@@ -1502,8 +1502,8 @@
         "asset_b_id": "1.3.5581",
         "asset_b_symbol": "XBTSX.AXAI",
         "share_asset_symbol": "XBTSX.AXAIBTSLP",
-        "balance_a": "7121865951",
-        "balance_b": "1013797345519",
+        "balance_a": "7205027997",
+        "balance_b": "1002392657853",
         "taker_fee_percent": 20
     },
     {
@@ -1535,8 +1535,8 @@
         "asset_b_id": "1.3.5899",
         "asset_b_symbol": "TWENTIX.HUSDMM",
         "share_asset_symbol": "TWENTIX.TWNTXUSD",
-        "balance_a": 3428048,
-        "balance_b": 2245868,
+        "balance_a": 969372,
+        "balance_b": 625974,
         "taker_fee_percent": 15
     },
     {
@@ -1557,8 +1557,8 @@
         "asset_b_id": "1.3.5286",
         "asset_b_symbol": "GDEX.USDT",
         "share_asset_symbol": "DEFI.GBKBTGUSDT",
-        "balance_a": "3713760691596",
-        "balance_b": "10827354928",
+        "balance_a": "3723990139580",
+        "balance_b": "10798524906",
         "taker_fee_percent": 20
     },
     {
@@ -1568,8 +1568,8 @@
         "asset_b_id": "1.3.3168",
         "asset_b_symbol": "GDEX.BKBT",
         "share_asset_symbol": "DEFI.GBKBTGETH",
-        "balance_a": 436233,
-        "balance_b": "2400614809307",
+        "balance_a": 438204,
+        "balance_b": "2390073492770",
         "taker_fee_percent": 20
     },
     {
@@ -1579,8 +1579,8 @@
         "asset_b_id": "1.3.5589",
         "asset_b_symbol": "XBTSX.USDT",
         "share_asset_symbol": "XBTSX.BTCUSDTLP",
-        "balance_a": 23479513,
-        "balance_b": "6137476881",
+        "balance_a": 23144720,
+        "balance_b": "6340949958",
         "taker_fee_percent": 30
     },
     {
@@ -1590,8 +1590,8 @@
         "asset_b_id": "1.3.5589",
         "asset_b_symbol": "XBTSX.USDT",
         "share_asset_symbol": "XBTSX.EGCUSDTLP",
-        "balance_a": "1073730529141",
-        "balance_b": 183032824,
+        "balance_a": "1074583789823",
+        "balance_b": 182952877,
         "taker_fee_percent": 30
     },
     {
@@ -1601,8 +1601,8 @@
         "asset_b_id": "1.3.4889",
         "asset_b_symbol": "XBTSX.EGC",
         "share_asset_symbol": "XBTSX.EGCBTCLP",
-        "balance_a": 2541080,
-        "balance_b": "3885404254470",
+        "balance_a": 2464239,
+        "balance_b": "4007429813252",
         "taker_fee_percent": 25
     },
     {
@@ -1634,8 +1634,8 @@
         "asset_b_id": "1.3.4099",
         "asset_b_symbol": "XBTSX.STH",
         "share_asset_symbol": "XBTSX.STHBTWTYLP",
-        "balance_a": 1307,
-        "balance_b": "98957276352",
+        "balance_a": 1238,
+        "balance_b": "92173278694",
         "taker_fee_percent": 30
     },
     {
@@ -1678,8 +1678,8 @@
         "asset_b_id": "1.3.4157",
         "asset_b_symbol": "XBTSX.BTC",
         "share_asset_symbol": "BTWTY.XBTCMM",
-        "balance_a": 339,
-        "balance_b": 330125,
+        "balance_a": 356,
+        "balance_b": 314973,
         "taker_fee_percent": 25
     },
     {
@@ -1689,8 +1689,8 @@
         "asset_b_id": "1.3.5589",
         "asset_b_symbol": "XBTSX.USDT",
         "share_asset_symbol": "CRUDE.AXAIUSDTLP",
-        "balance_a": "267974482958",
-        "balance_b": 166619089,
+        "balance_a": "261303442531",
+        "balance_b": 170876902,
         "taker_fee_percent": 1
     },
     {
@@ -1700,8 +1700,8 @@
         "asset_b_id": "1.3.4889",
         "asset_b_symbol": "XBTSX.EGC",
         "share_asset_symbol": "XBTSX.EGCBTSLP",
-        "balance_a": "2577501103",
-        "balance_b": "1351796366534",
+        "balance_a": "2551184354",
+        "balance_b": "1367194022713",
         "taker_fee_percent": 30
     },
     {
@@ -1733,8 +1733,8 @@
         "asset_b_id": "1.3.4485",
         "asset_b_symbol": "BEOS",
         "share_asset_symbol": "KARAT.BEOSQUINT",
-        "balance_a": 101977720,
-        "balance_b": "849196512165",
+        "balance_a": 102111861,
+        "balance_b": "848143571778",
         "taker_fee_percent": 25
     },
     {
@@ -1744,8 +1744,8 @@
         "asset_b_id": "1.3.2567",
         "asset_b_symbol": "QUINT",
         "share_asset_symbol": "KARAT.BTSQUINT",
-        "balance_a": "46755675121",
-        "balance_b": 236221575,
+        "balance_a": "46851372162",
+        "balance_b": 235796778,
         "taker_fee_percent": 25
     },
     {
@@ -1755,8 +1755,8 @@
         "asset_b_id": "1.3.5902",
         "asset_b_symbol": "XBTSX.USDC",
         "share_asset_symbol": "TWENTIX.XBTSUSDC",
-        "balance_a": 0,
-        "balance_b": 0,
+        "balance_a": 8248088,
+        "balance_b": 245304718,
         "taker_fee_percent": 25
     },
     {
@@ -1777,8 +1777,8 @@
         "asset_b_id": "1.3.5902",
         "asset_b_symbol": "XBTSX.USDC",
         "share_asset_symbol": "QUINT.QUINTUSDC",
-        "balance_a": 283178731,
-        "balance_b": "5056415633",
+        "balance_a": 283156154,
+        "balance_b": "5058426965",
         "taker_fee_percent": 35
     },
     {
@@ -1788,8 +1788,8 @@
         "asset_b_id": "1.3.5925",
         "asset_b_symbol": "DEFI",
         "share_asset_symbol": "DEFI.DEFISTH",
-        "balance_a": "183043838726",
-        "balance_b": "28006432951",
+        "balance_a": "186282451814",
+        "balance_b": "29370626224",
         "taker_fee_percent": 20
     },
     {
@@ -1799,8 +1799,8 @@
         "asset_b_id": "1.3.4099",
         "asset_b_symbol": "XBTSX.STH",
         "share_asset_symbol": "DEFI.BTSSTH",
-        "balance_a": "101069188856",
-        "balance_b": "2754453997543",
+        "balance_a": "101593971373",
+        "balance_b": "2793923431620",
         "taker_fee_percent": 20
     },
     {
@@ -1821,8 +1821,8 @@
         "asset_b_id": "1.3.4889",
         "asset_b_symbol": "XBTSX.EGC",
         "share_asset_symbol": "XBTSX.EGCLTCLP",
-        "balance_a": 464476146,
-        "balance_b": "1648846776119",
+        "balance_a": 451797547,
+        "balance_b": "1695742967933",
         "taker_fee_percent": 30
     },
     {
@@ -1832,8 +1832,8 @@
         "asset_b_id": "1.3.118",
         "asset_b_symbol": "GBP",
         "share_asset_symbol": "SWAP.BTSGBP",
-        "balance_a": "6691967873",
-        "balance_b": 4319800,
+        "balance_a": "6718009385",
+        "balance_b": 4303117,
         "taker_fee_percent": 20
     },
     {
@@ -1843,8 +1843,8 @@
         "asset_b_id": "1.3.119",
         "asset_b_symbol": "JPY",
         "share_asset_symbol": "SWAP.BTSJPY",
-        "balance_a": "4322767776",
-        "balance_b": 4999958,
+        "balance_a": "4331584507",
+        "balance_b": 4990097,
         "taker_fee_percent": 20
     },
     {
@@ -1854,8 +1854,8 @@
         "asset_b_id": "1.3.6013",
         "asset_b_symbol": "XBTSX.HIVE",
         "share_asset_symbol": "XBTSX.EGCHIVELP",
-        "balance_a": "254113705472",
-        "balance_b": 161714809,
+        "balance_a": "271265613726",
+        "balance_b": 151542457,
         "taker_fee_percent": 30
     },
     {
@@ -1887,8 +1887,8 @@
         "asset_b_id": "1.3.6149",
         "asset_b_symbol": "XBTSX.TUSC",
         "share_asset_symbol": "XBTSX.TUSCBTSLP",
-        "balance_a": 1132277842,
-        "balance_b": "474096280557",
+        "balance_a": 947768410,
+        "balance_b": "436062487605",
         "taker_fee_percent": 30
     },
     {
@@ -1898,8 +1898,8 @@
         "asset_b_id": "1.3.6149",
         "asset_b_symbol": "XBTSX.TUSC",
         "share_asset_symbol": "XBTSX.TUSCUSDTLP",
-        "balance_a": 29079006,
-        "balance_b": "135553172366",
+        "balance_a": 76140469,
+        "balance_b": "396151000149",
         "taker_fee_percent": 25
     },
     {
@@ -1909,8 +1909,8 @@
         "asset_b_id": "1.3.6149",
         "asset_b_symbol": "XBTSX.TUSC",
         "share_asset_symbol": "BTWTY.XUSDXTUSC",
-        "balance_a": 65892918,
-        "balance_b": "532039542287",
+        "balance_a": 65855043,
+        "balance_b": "532519499255",
         "taker_fee_percent": 25
     },
     {
@@ -1931,8 +1931,8 @@
         "asset_b_id": "1.3.106",
         "asset_b_symbol": "GOLD",
         "share_asset_symbol": "SWAP.SILVERGOLD",
-        "balance_a": 538548,
-        "balance_b": 828976,
+        "balance_a": 542212,
+        "balance_b": 834616,
         "taker_fee_percent": 20
     },
     {
@@ -1964,8 +1964,8 @@
         "asset_b_id": "1.3.4889",
         "asset_b_symbol": "XBTSX.EGC",
         "share_asset_symbol": "XBTSX.STHEGCLP",
-        "balance_a": "124377002223",
-        "balance_b": "2374056029297",
+        "balance_a": "126353605644",
+        "balance_b": "2455028501562",
         "taker_fee_percent": 30
     },
     {
@@ -1975,8 +1975,8 @@
         "asset_b_id": "1.3.6139",
         "asset_b_symbol": "XBTSX.XAUT",
         "share_asset_symbol": "XBTSX.EGCXAUTLP",
-        "balance_a": "2357583999660",
-        "balance_b": 208883,
+        "balance_a": "2308759350666",
+        "balance_b": 213343,
         "taker_fee_percent": 30
     },
     {
@@ -1986,8 +1986,8 @@
         "asset_b_id": "1.3.4889",
         "asset_b_symbol": "XBTSX.EGC",
         "share_asset_symbol": "XBTSX.EGCETHLP",
-        "balance_a": 779068,
-        "balance_b": "722716548009",
+        "balance_a": 804194,
+        "balance_b": "756864556721",
         "taker_fee_percent": 30
     },
     {
@@ -1997,8 +1997,8 @@
         "asset_b_id": "1.3.5887",
         "asset_b_symbol": "XBTSX.RUB",
         "share_asset_symbol": "XBTSX.BTCRUBLP",
-        "balance_a": 3419647,
-        "balance_b": 842003895,
+        "balance_a": 3237135,
+        "balance_b": 889845588,
         "taker_fee_percent": 25
     },
     {
@@ -2008,8 +2008,8 @@
         "asset_b_id": "1.3.4367",
         "asset_b_symbol": "WEYOUME",
         "share_asset_symbol": "WEYOUME.BTWTYLP",
-        "balance_a": 55,
-        "balance_b": "1446576741273",
+        "balance_a": 56,
+        "balance_b": "1421400475595",
         "taker_fee_percent": 100
     },
     {
@@ -2019,8 +2019,8 @@
         "asset_b_id": "1.3.5589",
         "asset_b_symbol": "XBTSX.USDT",
         "share_asset_symbol": "XBTSX.ETHUSDTLP",
-        "balance_a": 9814376,
-        "balance_b": 1564329352,
+        "balance_a": 9859148,
+        "balance_b": 1560446413,
         "taker_fee_percent": 30
     },
     {
@@ -2030,8 +2030,8 @@
         "asset_b_id": "1.3.6013",
         "asset_b_symbol": "XBTSX.HIVE",
         "share_asset_symbol": "DEFI.DEFIXHIVE",
-        "balance_a": "237169324399",
-        "balance_b": "18527911476",
+        "balance_a": "252810872620",
+        "balance_b": "17794212777",
         "taker_fee_percent": 20
     },
     {
@@ -2052,8 +2052,8 @@
         "asset_b_id": "1.3.6041",
         "asset_b_symbol": "XBTSX.NESS",
         "share_asset_symbol": "XBTSX.NESSUSDCLP",
-        "balance_a": 957230,
-        "balance_b": "5789701322",
+        "balance_a": 1206403,
+        "balance_b": "4597275021",
         "taker_fee_percent": 30
     },
     {
@@ -2063,8 +2063,8 @@
         "asset_b_id": "1.3.6041",
         "asset_b_symbol": "XBTSX.NESS",
         "share_asset_symbol": "XBTSX.SCHNESSLP",
-        "balance_a": "57118359469",
-        "balance_b": "45371819701",
+        "balance_a": "58109144058",
+        "balance_b": "50357166594",
         "taker_fee_percent": 30
     },
     {
@@ -2096,8 +2096,8 @@
         "asset_b_id": "1.3.5541",
         "asset_b_symbol": "XBTSX.BNB",
         "share_asset_symbol": "XBTSX.EGCBNBLP",
-        "balance_a": "1227984376232",
-        "balance_b": 9362674,
+        "balance_a": "1226761970424",
+        "balance_b": 9372647,
         "taker_fee_percent": 30
     },
     {
@@ -2118,8 +2118,8 @@
         "asset_b_id": "1.3.5902",
         "asset_b_symbol": "XBTSX.USDC",
         "share_asset_symbol": "XBTSX.USDTUSDCLP",
-        "balance_a": 1066742048,
-        "balance_b": 1072434007,
+        "balance_a": 1166697925,
+        "balance_b": 1162896481,
         "taker_fee_percent": 30
     },
     {
@@ -2151,8 +2151,8 @@
         "asset_b_id": "1.3.5581",
         "asset_b_symbol": "XBTSX.AXAI",
         "share_asset_symbol": "XBTSX.STHAXAILP",
-        "balance_a": "108185732772",
-        "balance_b": "563686953822",
+        "balance_a": "109828693107",
+        "balance_b": "555279818896",
         "taker_fee_percent": 30
     },
     {
@@ -2162,8 +2162,8 @@
         "asset_b_id": "1.3.5581",
         "asset_b_symbol": "XBTSX.AXAI",
         "share_asset_symbol": "XBTSX.AXAIBCHLP",
-        "balance_a": 472112883,
-        "balance_b": "1476463223081",
+        "balance_a": 461477657,
+        "balance_b": "1510706228136",
         "taker_fee_percent": 30
     },
     {
@@ -2173,8 +2173,8 @@
         "asset_b_id": "1.3.4159",
         "asset_b_symbol": "XBTSX.LTC",
         "share_asset_symbol": "SMARTHOLDEM.LTCL",
-        "balance_a": "268669880658",
-        "balance_b": 1432509459,
+        "balance_a": "273824576340",
+        "balance_b": 1412957059,
         "taker_fee_percent": 30
     },
     {
@@ -2184,8 +2184,8 @@
         "asset_b_id": "1.3.5581",
         "asset_b_symbol": "XBTSX.AXAI",
         "share_asset_symbol": "XBTSX.AXAIBTCLP",
-        "balance_a": 1403791,
-        "balance_b": "585776583564",
+        "balance_a": 1395605,
+        "balance_b": "589437045429",
         "taker_fee_percent": 30
     },
     {
@@ -2217,8 +2217,8 @@
         "asset_b_id": "1.3.6199",
         "asset_b_symbol": "XBTSX.RDD",
         "share_asset_symbol": "XBTSX.EGCRDDLP",
-        "balance_a": "554959749602",
-        "balance_b": "15403485612",
+        "balance_a": "552370346237",
+        "balance_b": "15475912417",
         "taker_fee_percent": 30
     },
     {
@@ -2272,8 +2272,8 @@
         "asset_b_id": "1.3.6199",
         "asset_b_symbol": "XBTSX.RDD",
         "share_asset_symbol": "XBTSX.STHRDDLP",
-        "balance_a": "114304952337",
-        "balance_b": "61639101679",
+        "balance_a": "114187418104",
+        "balance_b": "62103373740",
         "taker_fee_percent": 30
     },
     {
@@ -2283,8 +2283,8 @@
         "asset_b_id": "1.3.4889",
         "asset_b_symbol": "XBTSX.EGC",
         "share_asset_symbol": "XBTSX.EGCDOGELP",
-        "balance_a": 57423237,
-        "balance_b": "202378062956",
+        "balance_a": 66078929,
+        "balance_b": "229551967846",
         "taker_fee_percent": 30
     },
     {
@@ -2294,8 +2294,8 @@
         "asset_b_id": "1.3.4889",
         "asset_b_symbol": "XBTSX.EGC",
         "share_asset_symbol": "XBTSX.EGCDASHLP",
-        "balance_a": 29257832,
-        "balance_b": "44036510181",
+        "balance_a": 34052082,
+        "balance_b": "54073140391",
         "taker_fee_percent": 30
     },
     {
@@ -2305,8 +2305,8 @@
         "asset_b_id": "1.3.6199",
         "asset_b_symbol": "XBTSX.RDD",
         "share_asset_symbol": "XBTSX.USDTRDDLP",
-        "balance_a": 85584581,
-        "balance_b": "14068109907",
+        "balance_a": 85924907,
+        "balance_b": "14013359317",
         "taker_fee_percent": 30
     },
     {
@@ -2448,8 +2448,8 @@
         "asset_b_id": "1.3.6007",
         "asset_b_symbol": "BTWTY.XBTSXUSDC",
         "share_asset_symbol": "BTWTY.XEOSUSDC",
-        "balance_a": 0,
-        "balance_b": 0,
+        "balance_a": 211474790,
+        "balance_b": 73368900,
         "taker_fee_percent": 35
     },
     {
@@ -2514,8 +2514,8 @@
         "asset_b_id": "1.3.5902",
         "asset_b_symbol": "XBTSX.USDC",
         "share_asset_symbol": "TWENTIX.XUSDCLP",
-        "balance_a": 25653762,
-        "balance_b": 446327671,
+        "balance_a": 74348119,
+        "balance_b": 1442085626,
         "taker_fee_percent": 35
     },
     {
@@ -2547,8 +2547,8 @@
         "asset_b_id": "1.3.5581",
         "asset_b_symbol": "XBTSX.AXAI",
         "share_asset_symbol": "XBTSX.EGCAXAILP",
-        "balance_a": "345953254907",
-        "balance_b": "94868813479",
+        "balance_a": "354291318230",
+        "balance_b": "92642783790",
         "taker_fee_percent": 30
     },
     {
@@ -2558,8 +2558,8 @@
         "asset_b_id": "1.3.6013",
         "asset_b_symbol": "XBTSX.HIVE",
         "share_asset_symbol": "XBTSX.STHHIVELP",
-        "balance_a": "849682946483",
-        "balance_b": "10127207764",
+        "balance_a": "883541986614",
+        "balance_b": "9747029282",
         "taker_fee_percent": 30
     },
     {
@@ -2569,8 +2569,8 @@
         "asset_b_id": "1.3.6241",
         "asset_b_symbol": "XBTSX.ETC",
         "share_asset_symbol": "XBTSX.USDTETCLP",
-        "balance_a": 1008482178,
-        "balance_b": 675737995,
+        "balance_a": 1051043467,
+        "balance_b": 703429174,
         "taker_fee_percent": 30
     },
     {
@@ -2580,8 +2580,8 @@
         "asset_b_id": "1.3.6241",
         "asset_b_symbol": "XBTSX.ETC",
         "share_asset_symbol": "XBTSX.STHETCLP",
-        "balance_a": "91834097217",
-        "balance_b": 201441198,
+        "balance_a": "91714621876",
+        "balance_b": 201723943,
         "taker_fee_percent": 30
     },
     {
@@ -2591,8 +2591,8 @@
         "asset_b_id": "1.3.6241",
         "asset_b_symbol": "XBTSX.ETC",
         "share_asset_symbol": "XBTSX.BTSETCLP",
-        "balance_a": 658558738,
-        "balance_b": 39341447,
+        "balance_a": 658725969,
+        "balance_b": 39349856,
         "taker_fee_percent": 30
     },
     {
@@ -2602,8 +2602,8 @@
         "asset_b_id": "1.3.5581",
         "asset_b_symbol": "XBTSX.AXAI",
         "share_asset_symbol": "XBTSX.AXAIQUINTL",
-        "balance_a": 9629696,
-        "balance_b": "276188856524",
+        "balance_a": 9847559,
+        "balance_b": "270118806248",
         "taker_fee_percent": 30
     },
     {
@@ -2624,8 +2624,8 @@
         "asset_b_id": "1.3.6180",
         "asset_b_symbol": "XBTSX.HVQ",
         "share_asset_symbol": "XBTSX.BTSHVQLP",
-        "balance_a": 19429888,
-        "balance_b": "174302615145",
+        "balance_a": 19580762,
+        "balance_b": "173032860609",
         "taker_fee_percent": 30
     },
     {
@@ -2635,8 +2635,8 @@
         "asset_b_id": "1.3.6149",
         "asset_b_symbol": "XBTSX.TUSC",
         "share_asset_symbol": "TWENTIX.XTUSCLP",
-        "balance_a": 977661,
-        "balance_b": "81244462341",
+        "balance_a": 0,
+        "balance_b": 0,
         "taker_fee_percent": 35
     },
     {
@@ -2646,8 +2646,8 @@
         "asset_b_id": "1.3.5597",
         "asset_b_symbol": "XBTSX.RVN",
         "share_asset_symbol": "XBTSX.STHRVNLP",
-        "balance_a": "62415363262",
-        "balance_b": 131847166,
+        "balance_a": "62535837882",
+        "balance_b": 131609238,
         "taker_fee_percent": 30
     },
     {
@@ -2668,8 +2668,8 @@
         "asset_b_id": "1.3.5581",
         "asset_b_symbol": "XBTSX.AXAI",
         "share_asset_symbol": "XBTSX.AXAIETHLP",
-        "balance_a": 83478,
-        "balance_b": "21656578071",
+        "balance_a": 85696,
+        "balance_b": "21097740000",
         "taker_fee_percent": 30
     },
     {
@@ -2679,8 +2679,8 @@
         "asset_b_id": "1.3.5920",
         "asset_b_symbol": "XBTSX.TRX",
         "share_asset_symbol": "XBTSX.USDTTRXLP",
-        "balance_a": 71905885,
-        "balance_b": 10524156,
+        "balance_a": 72100007,
+        "balance_b": 10496390,
         "taker_fee_percent": 30
     },
     {
@@ -2690,8 +2690,8 @@
         "asset_b_id": "1.3.5920",
         "asset_b_symbol": "XBTSX.TRX",
         "share_asset_symbol": "XBTSX.STHTRXLP",
-        "balance_a": "27086932598",
-        "balance_b": 12824435,
+        "balance_a": "27030389195",
+        "balance_b": 12851827,
         "taker_fee_percent": 30
     },
     {
@@ -2701,8 +2701,8 @@
         "asset_b_id": "1.3.5589",
         "asset_b_symbol": "XBTSX.USDT",
         "share_asset_symbol": "XBTSX.DOGEUSDTLP",
-        "balance_a": "8350934629",
-        "balance_b": "5123454273",
+        "balance_a": "9188920044",
+        "balance_b": "5372743071",
         "taker_fee_percent": 30
     },
     {
@@ -2712,8 +2712,8 @@
         "asset_b_id": "1.3.5589",
         "asset_b_symbol": "XBTSX.USDT",
         "share_asset_symbol": "XBTSX.LTCUSDTLP",
-        "balance_a": "4961332705",
-        "balance_b": "3033184378",
+        "balance_a": "5020261927",
+        "balance_b": "3205935898",
         "taker_fee_percent": 30
     },
     {
@@ -2745,8 +2745,8 @@
         "asset_b_id": "1.3.6053",
         "asset_b_symbol": "XBTSX.PPC",
         "share_asset_symbol": "XBTSX.USDTPPCLP",
-        "balance_a": 108445712,
-        "balance_b": "2636124751",
+        "balance_a": 108377533,
+        "balance_b": "2637872678",
         "taker_fee_percent": 30
     },
     {
@@ -2756,8 +2756,8 @@
         "asset_b_id": "1.3.6053",
         "asset_b_symbol": "XBTSX.PPC",
         "share_asset_symbol": "XBTSX.STHPPCLP",
-        "balance_a": "17917516583",
-        "balance_b": 1446454343,
+        "balance_a": "17941036520",
+        "balance_b": 1444647111,
         "taker_fee_percent": 30
     },
     {
@@ -2767,8 +2767,8 @@
         "asset_b_id": "1.3.5589",
         "asset_b_symbol": "XBTSX.USDT",
         "share_asset_symbol": "XBTSX.BCHUSDTLP",
-        "balance_a": 100062985,
-        "balance_b": 196037079,
+        "balance_a": 95859162,
+        "balance_b": 204697666,
         "taker_fee_percent": 30
     },
     {
@@ -2778,8 +2778,8 @@
         "asset_b_id": "1.3.4274",
         "asset_b_symbol": "XBTSX.BCH",
         "share_asset_symbol": "XBTSX.STHBCHLP",
-        "balance_a": "61703287732",
-        "balance_b": 103755202,
+        "balance_a": "64384366915",
+        "balance_b": 99450689,
         "taker_fee_percent": 30
     },
     {
@@ -2789,8 +2789,8 @@
         "asset_b_id": "1.3.6268",
         "asset_b_symbol": "BTWTY.EOS",
         "share_asset_symbol": "TWENTIX.EOSLP",
-        "balance_a": 19709250,
-        "balance_b": 5847330,
+        "balance_a": 22643674,
+        "balance_b": 8918993,
         "taker_fee_percent": 25
     },
     {
@@ -2800,8 +2800,8 @@
         "asset_b_id": "1.3.6110",
         "asset_b_symbol": "XBTSX.SHIB",
         "share_asset_symbol": "XBTSX.AXAISHIBLP",
-        "balance_a": "295431673316",
-        "balance_b": 239528125,
+        "balance_a": "292668691104",
+        "balance_b": 241802989,
         "taker_fee_percent": 30
     },
     {
@@ -2811,8 +2811,8 @@
         "asset_b_id": "1.3.6110",
         "asset_b_symbol": "XBTSX.SHIB",
         "share_asset_symbol": "XBTSX.USDTSHIBLP",
-        "balance_a": 111787593,
-        "balance_b": 144579302,
+        "balance_a": 113592646,
+        "balance_b": 142295429,
         "taker_fee_percent": 30
     },
     {
@@ -2822,8 +2822,8 @@
         "asset_b_id": "1.3.6268",
         "asset_b_symbol": "BTWTY.EOS",
         "share_asset_symbol": "BTWTY.EOSLP",
-        "balance_a": 101,
-        "balance_b": 437812,
+        "balance_a": 174,
+        "balance_b": 868634,
         "taker_fee_percent": 50
     },
     {
@@ -2844,8 +2844,8 @@
         "asset_b_id": "1.3.5589",
         "asset_b_symbol": "XBTSX.USDT",
         "share_asset_symbol": "XBTSX.DASHUSDTLP",
-        "balance_a": 538105521,
-        "balance_b": 137369705,
+        "balance_a": 531507498,
+        "balance_b": 139105992,
         "taker_fee_percent": 30
     },
     {
@@ -2866,8 +2866,8 @@
         "asset_b_id": "1.3.4176",
         "asset_b_symbol": "XBTSX.DASH",
         "share_asset_symbol": "XBTSX.BTSDASHLP",
-        "balance_a": 376849099,
-        "balance_b": 131889196,
+        "balance_a": 377235530,
+        "balance_b": 131813722,
         "taker_fee_percent": 30
     },
     {
@@ -2877,8 +2877,8 @@
         "asset_b_id": "1.3.6281",
         "asset_b_symbol": "BTWTY.TUSC",
         "share_asset_symbol": "BTWTY.TUSCTWNTX",
-        "balance_a": 15834759,
-        "balance_b": "13050444580861",
+        "balance_a": 9835539,
+        "balance_b": "9756782633057",
         "taker_fee_percent": 25
     },
     {
@@ -2888,8 +2888,8 @@
         "asset_b_id": "1.3.6281",
         "asset_b_symbol": "BTWTY.TUSC",
         "share_asset_symbol": "BTWTY.TUSCLP",
-        "balance_a": "15356614609056",
-        "balance_b": "156605077905233",
+        "balance_a": "15437533042227",
+        "balance_b": "151146524135634",
         "taker_fee_percent": 20
     },
     {
@@ -2899,8 +2899,8 @@
         "asset_b_id": "1.3.5589",
         "asset_b_symbol": "XBTSX.USDT",
         "share_asset_symbol": "XBTSX.USDTBNBLP",
-        "balance_a": 13470091,
-        "balance_b": 300181188,
+        "balance_a": 13459694,
+        "balance_b": 300427473,
         "taker_fee_percent": 30
     },
     {
@@ -2910,8 +2910,8 @@
         "asset_b_id": "1.3.5887",
         "asset_b_symbol": "XBTSX.RUB",
         "share_asset_symbol": "XBTSX.BITRUBLP",
-        "balance_a": 316138132,
-        "balance_b": 32290812,
+        "balance_a": 310405956,
+        "balance_b": 32900852,
         "taker_fee_percent": 30
     },
     {
@@ -2921,8 +2921,8 @@
         "asset_b_id": "1.3.4373",
         "asset_b_symbol": "XBTSX.NVC",
         "share_asset_symbol": "XBTSX.STHNVCLP",
-        "balance_a": "16150060210",
-        "balance_b": "190163815237",
+        "balance_a": "15425010295",
+        "balance_b": "199154932414",
         "taker_fee_percent": 30
     },
     {
@@ -2943,8 +2943,8 @@
         "asset_b_id": "1.3.6137",
         "asset_b_symbol": "XBTSX.RTM",
         "share_asset_symbol": "XBTSX.STHRTMLP",
-        "balance_a": "8797472879",
-        "balance_b": "2806712243",
+        "balance_a": "8841554856",
+        "balance_b": "2820775989",
         "taker_fee_percent": 30
     },
     {
@@ -3020,8 +3020,8 @@
         "asset_b_id": "1.3.6281",
         "asset_b_symbol": "BTWTY.TUSC",
         "share_asset_symbol": "BTWTY.TUSCBTWTY",
-        "balance_a": 0,
-        "balance_b": 0,
+        "balance_a": 181,
+        "balance_b": "2221066323178",
         "taker_fee_percent": 25
     },
     {
@@ -3086,8 +3086,8 @@
         "asset_b_id": "1.3.6301",
         "asset_b_symbol": "HONEST.MONEY",
         "share_asset_symbol": "HONEST.H2M",
-        "balance_a": 14859,
-        "balance_b": "27938980309077",
+        "balance_a": 14977,
+        "balance_b": "27719173002412",
         "taker_fee_percent": 0
     },
     {
@@ -3130,8 +3130,8 @@
         "asset_b_id": "1.3.6301",
         "asset_b_symbol": "HONEST.MONEY",
         "share_asset_symbol": "HONEST.BTSMONEY",
-        "balance_a": 1318567524,
-        "balance_b": "92069089325299",
+        "balance_a": 1346519216,
+        "balance_b": "90277901993498",
         "taker_fee_percent": 30
     },
     {
@@ -3152,8 +3152,8 @@
         "asset_b_id": "1.3.6303",
         "asset_b_symbol": "HONEST.DEV",
         "share_asset_symbol": "HONEST.BTSDEV",
-        "balance_a": 308259575,
-        "balance_b": "226588365255522",
+        "balance_a": 308443619,
+        "balance_b": "226457025111812",
         "taker_fee_percent": 10
     },
     {
@@ -3163,8 +3163,8 @@
         "asset_b_id": "1.3.5640",
         "asset_b_symbol": "HONEST",
         "share_asset_symbol": "HONEST.BTSHONEST",
-        "balance_a": 509701610,
-        "balance_b": 18837,
+        "balance_a": 512921924,
+        "balance_b": 18719,
         "taker_fee_percent": 0
     },
     {
@@ -3229,8 +3229,8 @@
         "asset_b_id": "1.3.6303",
         "asset_b_symbol": "HONEST.DEV",
         "share_asset_symbol": "HONEST.D2BTC",
-        "balance_a": 40537,
-        "balance_b": "82720500282945",
+        "balance_a": 39582,
+        "balance_b": "84716745513511",
         "taker_fee_percent": 10
     },
     {
@@ -3240,8 +3240,8 @@
         "asset_b_id": "1.3.6303",
         "asset_b_symbol": "HONEST.DEV",
         "share_asset_symbol": "HONEST.D2USD",
-        "balance_a": 75688,
-        "balance_b": "62067976989672",
+        "balance_a": 78035,
+        "balance_b": "60203071902816",
         "taker_fee_percent": 10
     },
     {
@@ -3295,8 +3295,8 @@
         "asset_b_id": "1.3.6301",
         "asset_b_symbol": "HONEST.MONEY",
         "share_asset_symbol": "HONEST.M2USD",
-        "balance_a": 1419679,
-        "balance_b": "107283268047777",
+        "balance_a": 1428632,
+        "balance_b": "106621554524401",
         "taker_fee_percent": 10
     },
     {
@@ -3988,8 +3988,8 @@
         "asset_b_id": "1.3.6301",
         "asset_b_symbol": "HONEST.MONEY",
         "share_asset_symbol": "HONEST.M2QUINT",
-        "balance_a": 3757890,
-        "balance_b": "51423043980532",
+        "balance_a": 3800439,
+        "balance_b": "50848472700706",
         "taker_fee_percent": 20
     },
     {
@@ -4076,8 +4076,8 @@
         "asset_b_id": "1.3.6301",
         "asset_b_symbol": "HONEST.MONEY",
         "share_asset_symbol": "HONEST.M2TWENTIX",
-        "balance_a": 9206160,
-        "balance_b": "122848521064787",
+        "balance_a": 8815160,
+        "balance_b": "128311217987680",
         "taker_fee_percent": 20
     },
     {
@@ -4109,8 +4109,8 @@
         "asset_b_id": "1.3.6301",
         "asset_b_symbol": "HONEST.MONEY",
         "share_asset_symbol": "HONEST.M2IOBXRP",
-        "balance_a": 3500172,
-        "balance_b": "128014938312525",
+        "balance_a": 3416647,
+        "balance_b": "131181717416616",
         "taker_fee_percent": 20
     },
     {
@@ -4120,8 +4120,8 @@
         "asset_b_id": "1.3.6301",
         "asset_b_symbol": "HONEST.MONEY",
         "share_asset_symbol": "HONEST.M2XBTUSC",
-        "balance_a": "464561164469",
-        "balance_b": "76386144647918",
+        "balance_a": "495450645260",
+        "balance_b": "71673218032664",
         "taker_fee_percent": 20
     },
     {
@@ -4142,8 +4142,8 @@
         "asset_b_id": "1.3.4156",
         "asset_b_symbol": "XBTSX.DOGE",
         "share_asset_symbol": "BENCHX.BTS2DOGE",
-        "balance_a": "2605105542",
-        "balance_b": 379326599,
+        "balance_a": "2541611237",
+        "balance_b": 390317745,
         "taker_fee_percent": 50
     },
     {
@@ -4164,8 +4164,8 @@
         "asset_b_id": "1.3.6444",
         "asset_b_symbol": "IOB.XLM",
         "share_asset_symbol": "IOB.BTSXLM",
-        "balance_a": "8428261967",
-        "balance_b": 62758799,
+        "balance_a": "8952583584",
+        "balance_b": 72745376,
         "taker_fee_percent": 25
     },
     {
@@ -4494,8 +4494,8 @@
         "asset_b_id": "1.3.6306",
         "asset_b_symbol": "HONEST.LTC",
         "share_asset_symbol": "HONEST.LTC2XLTC",
-        "balance_a": 13304103,
-        "balance_b": 10001571,
+        "balance_a": 11127112,
+        "balance_b": 10001587,
         "taker_fee_percent": 25
     },
     {
@@ -4637,8 +4637,8 @@
         "asset_b_id": "1.3.5650",
         "asset_b_symbol": "HONEST.BTC",
         "share_asset_symbol": "HONEST.BTCXBTC",
-        "balance_a": 85042,
-        "balance_b": 85079,
+        "balance_a": 84101,
+        "balance_b": 86033,
         "taker_fee_percent": 25
     },
     {
@@ -4857,8 +4857,8 @@
         "asset_b_id": "1.3.4159",
         "asset_b_symbol": "XBTSX.LTC",
         "share_asset_symbol": "XBTSX.BTSLTCLP",
-        "balance_a": 231355143,
-        "balance_b": 34328743,
+        "balance_a": 236500900,
+        "balance_b": 33610376,
         "taker_fee_percent": 30
     },
     {
@@ -4879,8 +4879,8 @@
         "asset_b_id": "1.3.6444",
         "asset_b_symbol": "IOB.XLM",
         "share_asset_symbol": "BTWTY.IOBXLM",
-        "balance_a": 168,
-        "balance_b": 3441470,
+        "balance_a": 159,
+        "balance_b": 3638502,
         "taker_fee_percent": 25
     },
     {
@@ -4890,8 +4890,8 @@
         "asset_b_id": "1.3.6268",
         "asset_b_symbol": "BTWTY.EOS",
         "share_asset_symbol": "BTWTY.EOSXUSDC",
-        "balance_a": "3031699190",
-        "balance_b": 51769729,
+        "balance_a": 1617359478,
+        "balance_b": 32579798,
         "taker_fee_percent": 30
     },
     {
@@ -4934,8 +4934,8 @@
         "asset_b_id": "1.3.6007",
         "asset_b_symbol": "BTWTY.XBTSXUSDC",
         "share_asset_symbol": "BTWTY.XBTSXUSD2X",
-        "balance_a": 184588470,
-        "balance_b": 106565994,
+        "balance_a": 75678436,
+        "balance_b": 48678407,
         "taker_fee_percent": 15
     },
     {
@@ -4945,8 +4945,8 @@
         "asset_b_id": "1.3.6301",
         "asset_b_symbol": "HONEST.MONEY",
         "share_asset_symbol": "BTWTY.HONSTMONEY",
-        "balance_a": 7872499,
-        "balance_b": "10249753500978",
+        "balance_a": 8322897,
+        "balance_b": "9695903122737",
         "taker_fee_percent": 15
     },
     {
@@ -4956,8 +4956,8 @@
         "asset_b_id": "1.3.6007",
         "asset_b_symbol": "BTWTY.XBTSXUSDC",
         "share_asset_symbol": "BTWTY.USDARTCASA",
-        "balance_a": "8068898908",
-        "balance_b": 67548736,
+        "balance_a": "8530430779",
+        "balance_b": 63913699,
         "taker_fee_percent": 25
     },
     {
@@ -4967,8 +4967,8 @@
         "asset_b_id": "1.3.6281",
         "asset_b_symbol": "BTWTY.TUSC",
         "share_asset_symbol": "BTWTY.TUSCUSDC",
-        "balance_a": 40475091,
-        "balance_b": "3270566516124",
+        "balance_a": 40702293,
+        "balance_b": "3253670335178",
         "taker_fee_percent": 30
     },
     {
@@ -4978,8 +4978,8 @@
         "asset_b_id": "1.3.6139",
         "asset_b_symbol": "XBTSX.XAUT",
         "share_asset_symbol": "XBTSX.USDTXAUTLP",
-        "balance_a": 361754131,
-        "balance_b": 187536,
+        "balance_a": 354293114,
+        "balance_b": 191630,
         "taker_fee_percent": 30
     },
     {
@@ -4989,8 +4989,8 @@
         "asset_b_id": "1.3.6007",
         "asset_b_symbol": "BTWTY.XBTSXUSDC",
         "share_asset_symbol": "BTWTY.XUSDCXNGN",
-        "balance_a": "63112762467236",
-        "balance_b": 21539589,
+        "balance_a": "62772943068555",
+        "balance_b": 21656689,
         "taker_fee_percent": 10
     },
     {
@@ -5033,8 +5033,8 @@
         "asset_b_id": "1.3.6281",
         "asset_b_symbol": "BTWTY.TUSC",
         "share_asset_symbol": "BTWTY.EOSXBTUSC",
-        "balance_a": 7917950,
-        "balance_b": "21645432133252",
+        "balance_a": 11081120,
+        "balance_b": "27582538617771",
         "taker_fee_percent": 25
     },
     {
@@ -5066,8 +5066,8 @@
         "asset_b_id": "1.3.6281",
         "asset_b_symbol": "BTWTY.TUSC",
         "share_asset_symbol": "BTWTY.TUSCXBTSTH",
-        "balance_a": "13235134414",
-        "balance_b": "2074722050859",
+        "balance_a": "12915865054",
+        "balance_b": "2127043416194",
         "taker_fee_percent": 20
     },
     {
@@ -5077,8 +5077,8 @@
         "asset_b_id": "1.3.6038",
         "asset_b_symbol": "XBTSX.EMC",
         "share_asset_symbol": "XBTSX.USDTEMCLP",
-        "balance_a": 331699326,
-        "balance_b": "248903924012",
+        "balance_a": 325524052,
+        "balance_b": "253701854353",
         "taker_fee_percent": 30
     },
     {
@@ -5088,8 +5088,8 @@
         "asset_b_id": "1.3.6038",
         "asset_b_symbol": "XBTSX.EMC",
         "share_asset_symbol": "XBTSX.BTSEMCLP",
-        "balance_a": "2201259823",
-        "balance_b": "147264989232",
+        "balance_a": "2167459557",
+        "balance_b": "152576585785",
         "taker_fee_percent": 30
     },
     {
@@ -5099,8 +5099,8 @@
         "asset_b_id": "1.3.6440",
         "asset_b_symbol": "XBTSX.XCCX",
         "share_asset_symbol": "XBTSX.USDTXCCXLP",
-        "balance_a": 135734547,
-        "balance_b": "103389491501",
+        "balance_a": 59300253,
+        "balance_b": "50548588349",
         "taker_fee_percent": 30
     },
     {
@@ -5110,8 +5110,8 @@
         "asset_b_id": "1.3.6281",
         "asset_b_symbol": "BTWTY.TUSC",
         "share_asset_symbol": "BTWTY.TUSCUSDC2",
-        "balance_a": 156645905,
-        "balance_b": "7315293924648",
+        "balance_a": 151434971,
+        "balance_b": "7590628470991",
         "taker_fee_percent": 25
     },
     {
@@ -5121,8 +5121,8 @@
         "asset_b_id": "1.3.6041",
         "asset_b_symbol": "XBTSX.NESS",
         "share_asset_symbol": "XBTSX.NESSBTSLP",
-        "balance_a": 7752439,
-        "balance_b": "3285051426",
+        "balance_a": 8540868,
+        "balance_b": "2985772053",
         "taker_fee_percent": 30
     },
     {
@@ -5143,8 +5143,8 @@
         "asset_b_id": "1.3.6041",
         "asset_b_symbol": "XBTSX.NESS",
         "share_asset_symbol": "XBTSX.NESSDOGELP",
-        "balance_a": 911957,
-        "balance_b": "3538050036",
+        "balance_a": 1074977,
+        "balance_b": "3003049299",
         "taker_fee_percent": 30
     }
 ]

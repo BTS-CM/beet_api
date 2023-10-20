@@ -1,11 +1,11 @@
 [
     {
         "id": "2.3.0",
-        "current_supply": "299505951104368",
+        "current_supply": "299510674133102",
         "confidential_supply": "36373422640",
         "accumulated_fees": 0,
         "accumulated_collateral_fees": 0,
-        "fee_pool": "5937869679"
+        "fee_pool": "5937969679"
     },
     {
         "id": "2.3.100",
@@ -35,7 +35,7 @@
         "id": "2.3.103",
         "current_supply": "3277316225",
         "confidential_supply": 196,
-        "accumulated_fees": 570594,
+        "accumulated_fees": 572008,
         "accumulated_collateral_fees": 0,
         "fee_pool": 1994191666
     },
@@ -51,7 +51,7 @@
         "id": "2.3.105",
         "current_supply": 118582911,
         "confidential_supply": 0,
-        "accumulated_fees": 3675,
+        "accumulated_fees": 3687,
         "accumulated_collateral_fees": 0,
         "fee_pool": 19307849
     },
@@ -59,7 +59,7 @@
         "id": "2.3.106",
         "current_supply": 54768156,
         "confidential_supply": 0,
-        "accumulated_fees": 3041,
+        "accumulated_fees": 3070,
         "accumulated_collateral_fees": 0,
         "fee_pool": 24824498
     },
@@ -115,9 +115,9 @@
         "id": "2.3.113",
         "current_supply": "118504762718",
         "confidential_supply": 3633442,
-        "accumulated_fees": 204944589,
+        "accumulated_fees": 205154847,
         "accumulated_collateral_fees": "169121668507",
-        "fee_pool": 833040573
+        "fee_pool": 832903726
     },
     {
         "id": "2.3.114",
@@ -153,35 +153,35 @@
     },
     {
         "id": "2.3.118",
-        "current_supply": 11494887,
+        "current_supply": 10982596,
         "confidential_supply": 6769,
-        "accumulated_fees": 53232,
-        "accumulated_collateral_fees": 2016979312,
+        "accumulated_fees": 53423,
+        "accumulated_collateral_fees": 2016979353,
         "fee_pool": 962535074
     },
     {
         "id": "2.3.119",
         "current_supply": 17435522,
         "confidential_supply": 0,
-        "accumulated_fees": 77763,
+        "accumulated_fees": 77978,
         "accumulated_collateral_fees": 1977445691,
         "fee_pool": 0
     },
     {
         "id": "2.3.120",
-        "current_supply": 360636087,
+        "current_supply": 391400794,
         "confidential_supply": 3860,
-        "accumulated_fees": 25774371,
-        "accumulated_collateral_fees": "33276527036",
-        "fee_pool": 2047635149
+        "accumulated_fees": 25844001,
+        "accumulated_collateral_fees": "33554060447",
+        "fee_pool": 2047583121
     },
     {
         "id": "2.3.121",
-        "current_supply": "11448118159",
+        "current_supply": "11448107840",
         "confidential_supply": 10084829,
-        "accumulated_fees": 2932058,
+        "accumulated_fees": 2937799,
         "accumulated_collateral_fees": 0,
-        "fee_pool": "3698293024"
+        "fee_pool": "3698341126"
     },
     {
         "id": "2.3.122",
@@ -6091,17 +6091,17 @@
         "id": "2.3.860",
         "current_supply": "870038233888",
         "confidential_supply": 0,
-        "accumulated_fees": 211075,
+        "accumulated_fees": 211133,
         "accumulated_collateral_fees": 0,
-        "fee_pool": 42670
+        "fee_pool": 43224
     },
     {
         "id": "2.3.861",
         "current_supply": "48619738944",
         "confidential_supply": 0,
-        "accumulated_fees": 3290053,
+        "accumulated_fees": 3290064,
         "accumulated_collateral_fees": 0,
-        "fee_pool": 3163
+        "fee_pool": 3276
     },
     {
         "id": "2.3.862",
@@ -7539,9 +7539,9 @@
         "id": "2.3.1041",
         "current_supply": 218052675,
         "confidential_supply": 0,
-        "accumulated_fees": 0,
+        "accumulated_fees": 112,
         "accumulated_collateral_fees": 0,
-        "fee_pool": 7363
+        "fee_pool": 7459
     },
     {
         "id": "2.3.1042",
@@ -7555,9 +7555,9 @@
         "id": "2.3.1043",
         "current_supply": "70913542902",
         "confidential_supply": 0,
-        "accumulated_fees": 45244770,
+        "accumulated_fees": 45249590,
         "accumulated_collateral_fees": 0,
-        "fee_pool": 88049
+        "fee_pool": 88145
     },
     {
         "id": "2.3.1044",
@@ -9097,15 +9097,15 @@
     },
     {
         "id": "2.3.1236",
-        "current_supply": 939670008,
+        "current_supply": 956920008,
         "confidential_supply": 0,
-        "accumulated_fees": 2844448,
+        "accumulated_fees": 2951015,
         "accumulated_collateral_fees": 0,
-        "fee_pool": 154774443
+        "fee_pool": 176368631
     },
     {
         "id": "2.3.1237",
-        "current_supply": 939670000,
+        "current_supply": 956920000,
         "confidential_supply": 0,
         "accumulated_fees": 0,
         "accumulated_collateral_fees": 0,
@@ -9285,7 +9285,7 @@
         "confidential_supply": 0,
         "accumulated_fees": 649310964,
         "accumulated_collateral_fees": 0,
-        "fee_pool": 5775696
+        "fee_pool": 5727436
     },
     {
         "id": "2.3.1260",
@@ -9809,11 +9809,11 @@
     },
     {
         "id": "2.3.1325",
-        "current_supply": "99396961096",
+        "current_supply": "89769668207",
         "confidential_supply": 129080116,
-        "accumulated_fees": "3488662726",
-        "accumulated_collateral_fees": "24458406212",
-        "fee_pool": 1063106822
+        "accumulated_fees": "3501368362",
+        "accumulated_collateral_fees": "24574782734",
+        "fee_pool": 1063010302
     },
     {
         "id": "2.3.1326",
@@ -11835,9 +11835,9 @@
         "id": "2.3.1578",
         "current_supply": "50396739398823",
         "confidential_supply": 1020000,
-        "accumulated_fees": "19990189125",
+        "accumulated_fees": "19995111525",
         "accumulated_collateral_fees": 0,
-        "fee_pool": 1771
+        "fee_pool": 49067
     },
     {
         "id": "2.3.1579",
@@ -12227,9 +12227,9 @@
         "id": "2.3.1627",
         "current_supply": "46394858593",
         "confidential_supply": 0,
-        "accumulated_fees": 26365461,
+        "accumulated_fees": 26365943,
         "accumulated_collateral_fees": 0,
-        "fee_pool": 921038
+        "fee_pool": 968816
     },
     {
         "id": "2.3.1628",
@@ -14411,9 +14411,9 @@
         "id": "2.3.1900",
         "current_supply": "405085344515868",
         "confidential_supply": 0,
-        "accumulated_fees": "283974822081",
+        "accumulated_fees": "283984462081",
         "accumulated_collateral_fees": 0,
-        "fee_pool": 42556
+        "fee_pool": 42652
     },
     {
         "id": "2.3.1901",
@@ -15459,9 +15459,9 @@
         "id": "2.3.2031",
         "current_supply": "619003954254538",
         "confidential_supply": 0,
-        "accumulated_fees": "805841064610",
+        "accumulated_fees": "805853114610",
         "accumulated_collateral_fees": 0,
-        "fee_pool": 3424215
+        "fee_pool": 3424311
     },
     {
         "id": "2.3.2032",
@@ -17051,7 +17051,7 @@
         "id": "2.3.2230",
         "current_supply": "998108952552",
         "confidential_supply": 12905428,
-        "accumulated_fees": "27769297528",
+        "accumulated_fees": "28264714294",
         "accumulated_collateral_fees": 0,
         "fee_pool": 94206
     },
@@ -17139,7 +17139,7 @@
         "id": "2.3.2241",
         "current_supply": "5000000000",
         "confidential_supply": 0,
-        "accumulated_fees": 15820,
+        "accumulated_fees": 114543,
         "accumulated_collateral_fees": 0,
         "fee_pool": 437
     },
@@ -19307,9 +19307,9 @@
         "id": "2.3.2512",
         "current_supply": "1000000009809",
         "confidential_supply": 0,
-        "accumulated_fees": 274098337,
+        "accumulated_fees": 274113203,
         "accumulated_collateral_fees": 0,
-        "fee_pool": 77823182
+        "fee_pool": 77674540
     },
     {
         "id": "2.3.2513",
@@ -19747,17 +19747,17 @@
         "id": "2.3.2567",
         "current_supply": "75182048657",
         "confidential_supply": 0,
-        "accumulated_fees": 18484065,
+        "accumulated_fees": 18579093,
         "accumulated_collateral_fees": 0,
-        "fee_pool": 23396769
+        "fee_pool": 23112340
     },
     {
         "id": "2.3.2568",
         "current_supply": "27733616110",
         "confidential_supply": 0,
-        "accumulated_fees": 3427129,
+        "accumulated_fees": 3435587,
         "accumulated_collateral_fees": 0,
-        "fee_pool": 28213413
+        "fee_pool": 28211000
     },
     {
         "id": "2.3.2569",
@@ -19995,7 +19995,7 @@
         "id": "2.3.2598",
         "current_supply": 499999970,
         "confidential_supply": 0,
-        "accumulated_fees": 1880,
+        "accumulated_fees": 15519,
         "accumulated_collateral_fees": 0,
         "fee_pool": 372
     },
@@ -20075,9 +20075,9 @@
         "id": "2.3.2608",
         "current_supply": "328932177985737",
         "confidential_supply": 0,
-        "accumulated_fees": "18033853525",
+        "accumulated_fees": "18037709525",
         "accumulated_collateral_fees": 0,
-        "fee_pool": 2246240
+        "fee_pool": 2246336
     },
     {
         "id": "2.3.2609",
@@ -20227,7 +20227,7 @@
         "id": "2.3.2627",
         "current_supply": "251509546272121",
         "confidential_supply": 0,
-        "accumulated_fees": "861588583424",
+        "accumulated_fees": "863306420325",
         "accumulated_collateral_fees": 0,
         "fee_pool": 10786
     },
@@ -20291,7 +20291,7 @@
         "id": "2.3.2635",
         "current_supply": "499999999946",
         "confidential_supply": 0,
-        "accumulated_fees": 5784940,
+        "accumulated_fees": 36060737,
         "accumulated_collateral_fees": 0,
         "fee_pool": 400090758
     },
@@ -20523,9 +20523,9 @@
         "id": "2.3.2664",
         "current_supply": "21457622195",
         "confidential_supply": 0,
-        "accumulated_fees": 345776,
+        "accumulated_fees": 346258,
         "accumulated_collateral_fees": 0,
-        "fee_pool": 460258
+        "fee_pool": 460354
     },
     {
         "id": "2.3.2665",
@@ -20675,9 +20675,9 @@
         "id": "2.3.2683",
         "current_supply": "15272621737577",
         "confidential_supply": 0,
-        "accumulated_fees": "2845532955",
+        "accumulated_fees": "2845918555",
         "accumulated_collateral_fees": 0,
-        "fee_pool": 26209808
+        "fee_pool": 26210000
     },
     {
         "id": "2.3.2684",
@@ -22075,9 +22075,9 @@
         "id": "2.3.2858",
         "current_supply": "3746935608660",
         "confidential_supply": 0,
-        "accumulated_fees": 1049904630,
+        "accumulated_fees": 1049952830,
         "accumulated_collateral_fees": 0,
-        "fee_pool": 11204013
+        "fee_pool": 11204109
     },
     {
         "id": "2.3.2859",
@@ -22659,9 +22659,9 @@
         "id": "2.3.2931",
         "current_supply": "999999998212827",
         "confidential_supply": 0,
-        "accumulated_fees": "14124860275",
+        "accumulated_fees": "14124908475",
         "accumulated_collateral_fees": 0,
-        "fee_pool": 955305
+        "fee_pool": 1003083
     },
     {
         "id": "2.3.2932",
@@ -22803,7 +22803,7 @@
         "id": "2.3.2949",
         "current_supply": "8858259510699",
         "confidential_supply": 0,
-        "accumulated_fees": "2904348291",
+        "accumulated_fees": "2908531062",
         "accumulated_collateral_fees": 0,
         "fee_pool": 37796705
     },
@@ -23843,7 +23843,7 @@
         "id": "2.3.3079",
         "current_supply": "999999999999915",
         "confidential_supply": 0,
-        "accumulated_fees": 272625477,
+        "accumulated_fees": 272661214,
         "accumulated_collateral_fees": 0,
         "fee_pool": 369229682
     },
@@ -24555,7 +24555,7 @@
         "id": "2.3.3168",
         "current_supply": "16842348788304",
         "confidential_supply": 0,
-        "accumulated_fees": "49888265223",
+        "accumulated_fees": "50166818054",
         "accumulated_collateral_fees": 0,
         "fee_pool": 15
     },
@@ -24611,9 +24611,9 @@
         "id": "2.3.3175",
         "current_supply": "3706207176765",
         "confidential_supply": 0,
-        "accumulated_fees": 988100,
+        "accumulated_fees": 1301400,
         "accumulated_collateral_fees": 0,
-        "fee_pool": 77001
+        "fee_pool": 78249
     },
     {
         "id": "2.3.3176",
@@ -24795,9 +24795,9 @@
         "id": "2.3.3198",
         "current_supply": "5998989596",
         "confidential_supply": 0,
-        "accumulated_fees": 137300069,
+        "accumulated_fees": 137361613,
         "accumulated_collateral_fees": 0,
-        "fee_pool": 134508
+        "fee_pool": 79491
     },
     {
         "id": "2.3.3199",
@@ -25259,9 +25259,9 @@
         "id": "2.3.3256",
         "current_supply": "29008024343726",
         "confidential_supply": 0,
-        "accumulated_fees": "9086458801",
+        "accumulated_fees": "21234495530",
         "accumulated_collateral_fees": 0,
-        "fee_pool": 15629249
+        "fee_pool": 15532729
     },
     {
         "id": "2.3.3257",
@@ -25539,7 +25539,7 @@
         "id": "2.3.3291",
         "current_supply": 688493611,
         "confidential_supply": 0,
-        "accumulated_fees": 488677,
+        "accumulated_fees": 13251,
         "accumulated_collateral_fees": 0,
         "fee_pool": 261
     },
@@ -26011,9 +26011,9 @@
         "id": "2.3.3350",
         "current_supply": "500000000000000",
         "confidential_supply": 0,
-        "accumulated_fees": 3236901,
+        "accumulated_fees": 3719501,
         "accumulated_collateral_fees": 0,
-        "fee_pool": 210454
+        "fee_pool": 162194
     },
     {
         "id": "2.3.3351",
@@ -26043,9 +26043,9 @@
         "id": "2.3.3354",
         "current_supply": "66608915709503",
         "confidential_supply": 0,
-        "accumulated_fees": 3388881,
+        "accumulated_fees": 3388997,
         "accumulated_collateral_fees": 0,
-        "fee_pool": 2508
+        "fee_pool": 2626
     },
     {
         "id": "2.3.3355",
@@ -26227,7 +26227,7 @@
         "id": "2.3.3377",
         "current_supply": "999999999992413",
         "confidential_supply": 0,
-        "accumulated_fees": 36236560,
+        "accumulated_fees": 36286267,
         "accumulated_collateral_fees": 0,
         "fee_pool": 368839840
     },
@@ -26627,9 +26627,9 @@
         "id": "2.3.3427",
         "current_supply": "113074156250",
         "confidential_supply": 0,
-        "accumulated_fees": 3999425,
+        "accumulated_fees": 4002261,
         "accumulated_collateral_fees": 0,
-        "fee_pool": 479974
+        "fee_pool": 480070
     },
     {
         "id": "2.3.3428",
@@ -27819,9 +27819,9 @@
         "id": "2.3.3576",
         "current_supply": "535344110438",
         "confidential_supply": 0,
-        "accumulated_fees": 1715336418,
+        "accumulated_fees": 1715346058,
         "accumulated_collateral_fees": 0,
-        "fee_pool": 1092159
+        "fee_pool": 1092255
     },
     {
         "id": "2.3.3577",
@@ -29051,9 +29051,9 @@
         "id": "2.3.3730",
         "current_supply": "4059184075",
         "confidential_supply": 0,
-        "accumulated_fees": 0,
+        "accumulated_fees": 362,
         "accumulated_collateral_fees": 0,
-        "fee_pool": 0
+        "fee_pool": 96
     },
     {
         "id": "2.3.3731",
@@ -29203,9 +29203,9 @@
         "id": "2.3.3749",
         "current_supply": "11787487448068",
         "confidential_supply": 0,
-        "accumulated_fees": "15173066088",
+        "accumulated_fees": "15182706088",
         "accumulated_collateral_fees": 0,
-        "fee_pool": 25158804
+        "fee_pool": 25158900
     },
     {
         "id": "2.3.3750",
@@ -29339,9 +29339,9 @@
         "id": "2.3.3766",
         "current_supply": "3000999999134",
         "confidential_supply": 0,
-        "accumulated_fees": 5801141,
+        "accumulated_fees": 5811709,
         "accumulated_collateral_fees": 0,
-        "fee_pool": 449743
+        "fee_pool": 450127
     },
     {
         "id": "2.3.3767",
@@ -29739,9 +29739,9 @@
         "id": "2.3.3816",
         "current_supply": 774025547,
         "confidential_supply": 0,
-        "accumulated_fees": 19356,
+        "accumulated_fees": 24713,
         "accumulated_collateral_fees": 0,
-        "fee_pool": 117287
+        "fee_pool": 117383
     },
     {
         "id": "2.3.3817",
@@ -30211,9 +30211,9 @@
         "id": "2.3.3875",
         "current_supply": "7515323546312",
         "confidential_supply": 0,
-        "accumulated_fees": "6837174445",
+        "accumulated_fees": "6851634445",
         "accumulated_collateral_fees": 0,
-        "fee_pool": 51695018
+        "fee_pool": 51695114
     },
     {
         "id": "2.3.3876",
@@ -30251,7 +30251,7 @@
         "id": "2.3.3880",
         "current_supply": 637997631,
         "confidential_supply": 0,
-        "accumulated_fees": 1692211,
+        "accumulated_fees": 1692214,
         "accumulated_collateral_fees": 0,
         "fee_pool": 47778
     },
@@ -31995,17 +31995,17 @@
         "id": "2.3.4098",
         "current_supply": "678791957877",
         "confidential_supply": 0,
-        "accumulated_fees": "4377154388",
+        "accumulated_fees": "4379564388",
         "accumulated_collateral_fees": 0,
-        "fee_pool": 3044727
+        "fee_pool": 3092505
     },
     {
         "id": "2.3.4099",
-        "current_supply": "108537296964828",
+        "current_supply": "108583485364817",
         "confidential_supply": 0,
-        "accumulated_fees": "3160500319",
+        "accumulated_fees": "2672273096",
         "accumulated_collateral_fees": 0,
-        "fee_pool": 135262379
+        "fee_pool": 128509867
     },
     {
         "id": "2.3.4100",
@@ -32457,19 +32457,19 @@
     },
     {
         "id": "2.3.4156",
-        "current_supply": "17965529709",
+        "current_supply": "18979428241",
         "confidential_supply": 0,
-        "accumulated_fees": 175933913,
+        "accumulated_fees": 177422692,
         "accumulated_collateral_fees": 0,
-        "fee_pool": 2819701
+        "fee_pool": 2719309
     },
     {
         "id": "2.3.4157",
-        "current_supply": 895634048,
+        "current_supply": 902496267,
         "confidential_supply": 0,
-        "accumulated_fees": 253560,
+        "accumulated_fees": 589426,
         "accumulated_collateral_fees": 0,
-        "fee_pool": 28493601
+        "fee_pool": 28153850
     },
     {
         "id": "2.3.4158",
@@ -32481,11 +32481,11 @@
     },
     {
         "id": "2.3.4159",
-        "current_supply": "9870315690",
+        "current_supply": "10063723427",
         "confidential_supply": 0,
-        "accumulated_fees": 233882878,
+        "accumulated_fees": 235127135,
         "accumulated_collateral_fees": 0,
-        "fee_pool": 47826
+        "fee_pool": 47344
     },
     {
         "id": "2.3.4160",
@@ -32555,9 +32555,9 @@
         "id": "2.3.4168",
         "current_supply": "298576551993",
         "confidential_supply": 0,
-        "accumulated_fees": 43785589,
+        "accumulated_fees": 53425589,
         "accumulated_collateral_fees": 0,
-        "fee_pool": 14172856
+        "fee_pool": 14173336
     },
     {
         "id": "2.3.4169",
@@ -32619,7 +32619,7 @@
         "id": "2.3.4176",
         "current_supply": "5629644979",
         "confidential_supply": 0,
-        "accumulated_fees": 87283131,
+        "accumulated_fees": 87383146,
         "accumulated_collateral_fees": 0,
         "fee_pool": 2322
     },
@@ -32843,17 +32843,17 @@
         "id": "2.3.4204",
         "current_supply": 1458322304,
         "confidential_supply": 0,
-        "accumulated_fees": 1394604,
+        "accumulated_fees": 1394653,
         "accumulated_collateral_fees": 0,
-        "fee_pool": 11466
+        "fee_pool": 11564
     },
     {
         "id": "2.3.4205",
         "current_supply": 2026551113,
         "confidential_supply": 0,
-        "accumulated_fees": 138323,
+        "accumulated_fees": 138328,
         "accumulated_collateral_fees": 0,
-        "fee_pool": 263972
+        "fee_pool": 264090
     },
     {
         "id": "2.3.4206",
@@ -33403,7 +33403,7 @@
         "id": "2.3.4274",
         "current_supply": 892774893,
         "confidential_supply": 0,
-        "accumulated_fees": 5923714,
+        "accumulated_fees": 5935774,
         "accumulated_collateral_fees": 0,
         "fee_pool": 3062
     },
@@ -33875,7 +33875,7 @@
         "id": "2.3.4333",
         "current_supply": "149999891807",
         "confidential_supply": 0,
-        "accumulated_fees": 148692888,
+        "accumulated_fees": 148692910,
         "accumulated_collateral_fees": 0,
         "fee_pool": 3260658
     },
@@ -34193,11 +34193,11 @@
     },
     {
         "id": "2.3.4373",
-        "current_supply": "5424127477344",
+        "current_supply": "4788895429878",
         "confidential_supply": 0,
-        "accumulated_fees": "24801125984",
+        "accumulated_fees": "25205322457",
         "accumulated_collateral_fees": 0,
-        "fee_pool": 8233792
+        "fee_pool": 8032546
     },
     {
         "id": "2.3.4374",
@@ -34659,9 +34659,9 @@
         "id": "2.3.4431",
         "current_supply": "1297375583188",
         "confidential_supply": 0,
-        "accumulated_fees": 1191987380,
+        "accumulated_fees": 1191992200,
         "accumulated_collateral_fees": 0,
-        "fee_pool": 19627227
+        "fee_pool": 19627323
     },
     {
         "id": "2.3.4432",
@@ -35475,9 +35475,9 @@
         "id": "2.3.4533",
         "current_supply": 175900000,
         "confidential_supply": 0,
-        "accumulated_fees": 74,
+        "accumulated_fees": 77,
         "accumulated_collateral_fees": 0,
-        "fee_pool": 4137
+        "fee_pool": 32691
     },
     {
         "id": "2.3.4534",
@@ -35859,7 +35859,7 @@
         "id": "2.3.4581",
         "current_supply": 1611462087,
         "confidential_supply": 0,
-        "accumulated_fees": 88911,
+        "accumulated_fees": 88919,
         "accumulated_collateral_fees": 0,
         "fee_pool": 0
     },
@@ -36259,9 +36259,9 @@
         "id": "2.3.4631",
         "current_supply": "263369406200",
         "confidential_supply": 0,
-        "accumulated_fees": 917606830,
+        "accumulated_fees": 920080350,
         "accumulated_collateral_fees": 0,
-        "fee_pool": 12392471
+        "fee_pool": 12249568
     },
     {
         "id": "2.3.4632",
@@ -36837,7 +36837,7 @@
         "confidential_supply": 0,
         "accumulated_fees": 174855353,
         "accumulated_collateral_fees": "3069166666",
-        "fee_pool": 5800667
+        "fee_pool": 5800830
     },
     {
         "id": "2.3.4704",
@@ -37291,7 +37291,7 @@
         "id": "2.3.4760",
         "current_supply": 71318019,
         "confidential_supply": 0,
-        "accumulated_fees": 2726978,
+        "accumulated_fees": 2738387,
         "accumulated_collateral_fees": 0,
         "fee_pool": 12931197
     },
@@ -38321,19 +38321,19 @@
     },
     {
         "id": "2.3.4889",
-        "current_supply": "21852866433275",
+        "current_supply": "21957666433275",
         "confidential_supply": 0,
-        "accumulated_fees": "86782196787",
+        "accumulated_fees": "88362441042",
         "accumulated_collateral_fees": 0,
-        "fee_pool": 10829821
+        "fee_pool": 10925377
     },
     {
         "id": "2.3.4890",
         "current_supply": "201141216562",
         "confidential_supply": 0,
-        "accumulated_fees": 1809170372,
+        "accumulated_fees": 1809652372,
         "accumulated_collateral_fees": 0,
-        "fee_pool": 3799189
+        "fee_pool": 3846967
     },
     {
         "id": "2.3.4891",
@@ -39403,7 +39403,7 @@
         "id": "2.3.5024",
         "current_supply": "5345000000000",
         "confidential_supply": 0,
-        "accumulated_fees": "6836369367",
+        "accumulated_fees": "6849716259",
         "accumulated_collateral_fees": 0,
         "fee_pool": 29212
     },
@@ -40427,17 +40427,17 @@
         "id": "2.3.5152",
         "current_supply": "8491674571120",
         "confidential_supply": 0,
-        "accumulated_fees": 123770752,
+        "accumulated_fees": 128590752,
         "accumulated_collateral_fees": 0,
-        "fee_pool": 8142029
+        "fee_pool": 8189807
     },
     {
         "id": "2.3.5153",
-        "current_supply": "6492948611",
+        "current_supply": "6493948611",
         "confidential_supply": 0,
-        "accumulated_fees": 27136889,
+        "accumulated_fees": 27140889,
         "accumulated_collateral_fees": 0,
-        "fee_pool": 88765
+        "fee_pool": 853213
     },
     {
         "id": "2.3.5154",
@@ -40611,9 +40611,9 @@
         "id": "2.3.5175",
         "current_supply": 17496306,
         "confidential_supply": 0,
-        "accumulated_fees": 152449,
+        "accumulated_fees": 152498,
         "accumulated_collateral_fees": 0,
-        "fee_pool": 2556092
+        "fee_pool": 2603870
     },
     {
         "id": "2.3.5176",
@@ -41283,9 +41283,9 @@
         "id": "2.3.5259",
         "current_supply": "1340007286985",
         "confidential_supply": 0,
-        "accumulated_fees": 1051433767,
+        "accumulated_fees": "2572206461",
         "accumulated_collateral_fees": 0,
-        "fee_pool": 13894660
+        "fee_pool": 13890319
     },
     {
         "id": "2.3.5260",
@@ -41499,7 +41499,7 @@
         "id": "2.3.5286",
         "current_supply": "5949519989988",
         "confidential_supply": 0,
-        "accumulated_fees": 129663818,
+        "accumulated_fees": 879854290,
         "accumulated_collateral_fees": 0,
         "fee_pool": 1876
     },
@@ -41737,11 +41737,11 @@
     },
     {
         "id": "2.3.5316",
-        "current_supply": 13026430,
+        "current_supply": 13032664,
         "confidential_supply": 0,
-        "accumulated_fees": 237477,
+        "accumulated_fees": 243227,
         "accumulated_collateral_fees": 0,
-        "fee_pool": 53303389
+        "fee_pool": 53206839
     },
     {
         "id": "2.3.5317",
@@ -41769,11 +41769,11 @@
     },
     {
         "id": "2.3.5320",
-        "current_supply": "6936043819123",
+        "current_supply": "6875172399123",
         "confidential_supply": 0,
-        "accumulated_fees": "192668965704",
+        "accumulated_fees": "193244486441",
         "accumulated_collateral_fees": 0,
-        "fee_pool": 21295320
+        "fee_pool": 21052574
     },
     {
         "id": "2.3.5321",
@@ -41883,9 +41883,9 @@
         "id": "2.3.5334",
         "current_supply": 9447062,
         "confidential_supply": 0,
-        "accumulated_fees": 2723855,
+        "accumulated_fees": 2723879,
         "accumulated_collateral_fees": 0,
-        "fee_pool": 39232186
+        "fee_pool": 39230686
     },
     {
         "id": "2.3.5335",
@@ -42237,7 +42237,7 @@
         "confidential_supply": 0,
         "accumulated_fees": "63052924553",
         "accumulated_collateral_fees": 0,
-        "fee_pool": 99070
+        "fee_pool": 50810
     },
     {
         "id": "2.3.5379",
@@ -42945,11 +42945,11 @@
     },
     {
         "id": "2.3.5467",
-        "current_supply": 50436364,
+        "current_supply": 51670540,
         "confidential_supply": 0,
         "accumulated_fees": 15223805,
         "accumulated_collateral_fees": 0,
-        "fee_pool": 57397890
+        "fee_pool": 56915290
     },
     {
         "id": "2.3.5468",
@@ -43019,7 +43019,7 @@
         "id": "2.3.5476",
         "current_supply": "9993956215161",
         "confidential_supply": 0,
-        "accumulated_fees": "8500244629",
+        "accumulated_fees": "8500245713",
         "accumulated_collateral_fees": 0,
         "fee_pool": 47041
     },
@@ -43121,9 +43121,9 @@
     },
     {
         "id": "2.3.5489",
-        "current_supply": "14470018441",
+        "current_supply": "14511963838",
         "confidential_supply": 0,
-        "accumulated_fees": "4440151216",
+        "accumulated_fees": "4440248412",
         "accumulated_collateral_fees": 0,
         "fee_pool": 62919253
     },
@@ -43505,7 +43505,7 @@
     },
     {
         "id": "2.3.5537",
-        "current_supply": 107033874,
+        "current_supply": 105777052,
         "confidential_supply": 0,
         "accumulated_fees": 0,
         "accumulated_collateral_fees": 0,
@@ -43523,9 +43523,9 @@
         "id": "2.3.5539",
         "current_supply": "2914931420973",
         "confidential_supply": 0,
-        "accumulated_fees": "51444011532",
+        "accumulated_fees": "51453651532",
         "accumulated_collateral_fees": 0,
-        "fee_pool": 10509236
+        "fee_pool": 10557014
     },
     {
         "id": "2.3.5540",
@@ -43539,9 +43539,9 @@
         "id": "2.3.5541",
         "current_supply": 45437206,
         "confidential_supply": 0,
-        "accumulated_fees": 446105,
+        "accumulated_fees": 446417,
         "accumulated_collateral_fees": 0,
-        "fee_pool": 9357281
+        "fee_pool": 9354281
     },
     {
         "id": "2.3.5542",
@@ -43857,9 +43857,9 @@
     },
     {
         "id": "2.3.5581",
-        "current_supply": "16753819098548",
+        "current_supply": "16755819098548",
         "confidential_supply": 0,
-        "accumulated_fees": 1387487767,
+        "accumulated_fees": 1648601981,
         "accumulated_collateral_fees": 0,
         "fee_pool": 6222087
     },
@@ -43921,11 +43921,11 @@
     },
     {
         "id": "2.3.5589",
-        "current_supply": "161160717638",
+        "current_supply": "174497862857",
         "confidential_supply": 0,
-        "accumulated_fees": 117268933,
+        "accumulated_fees": 283028752,
         "accumulated_collateral_fees": 0,
-        "fee_pool": 18574026
+        "fee_pool": 16849847
     },
     {
         "id": "2.3.5590",
@@ -43987,7 +43987,7 @@
         "id": "2.3.5597",
         "current_supply": 381815044,
         "confidential_supply": 0,
-        "accumulated_fees": 5797086,
+        "accumulated_fees": 5807813,
         "accumulated_collateral_fees": 0,
         "fee_pool": 19506113
     },
@@ -44053,7 +44053,7 @@
         "confidential_supply": 0,
         "accumulated_fees": 165,
         "accumulated_collateral_fees": 0,
-        "fee_pool": 104952151
+        "fee_pool": 105352151
     },
     {
         "id": "2.3.5606",
@@ -44357,7 +44357,7 @@
         "confidential_supply": 0,
         "accumulated_fees": 2179,
         "accumulated_collateral_fees": 0,
-        "fee_pool": 34359392
+        "fee_pool": 34459392
     },
     {
         "id": "2.3.5644",
@@ -44401,9 +44401,9 @@
     },
     {
         "id": "2.3.5649",
-        "current_supply": 55057617,
+        "current_supply": 57307617,
         "confidential_supply": 0,
-        "accumulated_fees": 20721,
+        "accumulated_fees": 27754,
         "accumulated_collateral_fees": 0,
         "fee_pool": 0
     },
@@ -44411,16 +44411,16 @@
         "id": "2.3.5650",
         "current_supply": 6100873,
         "confidential_supply": 0,
-        "accumulated_fees": 996,
+        "accumulated_fees": 1465,
         "accumulated_collateral_fees": 0,
         "fee_pool": 0
     },
     {
         "id": "2.3.5651",
-        "current_supply": 1115262,
+        "current_supply": 1087457,
         "confidential_supply": 0,
         "accumulated_fees": 10258,
-        "accumulated_collateral_fees": 4918283,
+        "accumulated_collateral_fees": 4920974,
         "fee_pool": 0
     },
     {
@@ -45299,7 +45299,7 @@
         "id": "2.3.5761",
         "current_supply": "324934562462636",
         "confidential_supply": 0,
-        "accumulated_fees": "64746987958",
+        "accumulated_fees": "65103455595",
         "accumulated_collateral_fees": 0,
         "fee_pool": 939840
     },
@@ -45355,15 +45355,15 @@
         "id": "2.3.5768",
         "current_supply": "13439807335",
         "confidential_supply": 0,
-        "accumulated_fees": 2820250,
+        "accumulated_fees": 2821455,
         "accumulated_collateral_fees": 0,
-        "fee_pool": 18548389
+        "fee_pool": 18596167
     },
     {
         "id": "2.3.5769",
-        "current_supply": "12479849846646",
+        "current_supply": "12483269846646",
         "confidential_supply": 0,
-        "accumulated_fees": 13950,
+        "accumulated_fees": 534501,
         "accumulated_collateral_fees": 0,
         "fee_pool": 2924
     },
@@ -45393,7 +45393,7 @@
     },
     {
         "id": "2.3.5773",
-        "current_supply": 908897498,
+        "current_supply": 1001588984,
         "confidential_supply": 0,
         "accumulated_fees": 0,
         "accumulated_collateral_fees": 0,
@@ -46033,7 +46033,7 @@
     },
     {
         "id": "2.3.5853",
-        "current_supply": 109721,
+        "current_supply": 70000,
         "confidential_supply": 0,
         "accumulated_fees": 0,
         "accumulated_collateral_fees": 0,
@@ -46059,7 +46059,7 @@
         "id": "2.3.5856",
         "current_supply": "1386729946786",
         "confidential_supply": 0,
-        "accumulated_fees": 16341357,
+        "accumulated_fees": 16341797,
         "accumulated_collateral_fees": 0,
         "fee_pool": 47472223
     },
@@ -46225,11 +46225,11 @@
     },
     {
         "id": "2.3.5877",
-        "current_supply": "145390373088",
+        "current_supply": "148790195384",
         "confidential_supply": 0,
-        "accumulated_fees": 191305429,
+        "accumulated_fees": 26924673,
         "accumulated_collateral_fees": 0,
-        "fee_pool": 11729585
+        "fee_pool": 11777363
     },
     {
         "id": "2.3.5878",
@@ -46267,7 +46267,7 @@
         "id": "2.3.5882",
         "current_supply": "999864138942150",
         "confidential_supply": 0,
-        "accumulated_fees": "18356446128311",
+        "accumulated_fees": "18362606589832",
         "accumulated_collateral_fees": 0,
         "fee_pool": 2851740
     },
@@ -46305,19 +46305,19 @@
     },
     {
         "id": "2.3.5887",
-        "current_supply": "2926468915",
+        "current_supply": "2934668915",
         "confidential_supply": 0,
-        "accumulated_fees": 77051463,
+        "accumulated_fees": 77645267,
         "accumulated_collateral_fees": 0,
-        "fee_pool": 15712944
+        "fee_pool": 15309485
     },
     {
         "id": "2.3.5888",
-        "current_supply": 2016558,
+        "current_supply": 2346558,
         "confidential_supply": 0,
-        "accumulated_fees": 236454,
+        "accumulated_fees": 252948,
         "accumulated_collateral_fees": 0,
-        "fee_pool": 8886246
+        "fee_pool": 6960042
     },
     {
         "id": "2.3.5889",
@@ -46401,7 +46401,7 @@
     },
     {
         "id": "2.3.5899",
-        "current_supply": 18134603,
+        "current_supply": 38282264,
         "confidential_supply": 0,
         "accumulated_fees": 0,
         "accumulated_collateral_fees": 0,
@@ -46419,7 +46419,7 @@
         "id": "2.3.5901",
         "current_supply": "3501466563",
         "confidential_supply": 0,
-        "accumulated_fees": 47350,
+        "accumulated_fees": 48230,
         "accumulated_collateral_fees": 0,
         "fee_pool": 0
     },
@@ -46427,7 +46427,7 @@
         "id": "2.3.5902",
         "current_supply": "15012821670",
         "confidential_supply": 0,
-        "accumulated_fees": 171563169,
+        "accumulated_fees": 172993034,
         "accumulated_collateral_fees": 0,
         "fee_pool": 17597063
     },
@@ -46473,7 +46473,7 @@
     },
     {
         "id": "2.3.5908",
-        "current_supply": 36801402,
+        "current_supply": 38804387,
         "confidential_supply": 0,
         "accumulated_fees": 1301400,
         "accumulated_collateral_fees": 0,
@@ -46553,7 +46553,7 @@
     },
     {
         "id": "2.3.5918",
-        "current_supply": "100407654925",
+        "current_supply": "100418897729",
         "confidential_supply": 0,
         "accumulated_fees": 0,
         "accumulated_collateral_fees": 0,
@@ -46571,7 +46571,7 @@
         "id": "2.3.5920",
         "current_supply": 36723131,
         "confidential_supply": 0,
-        "accumulated_fees": 931054,
+        "accumulated_fees": 931182,
         "accumulated_collateral_fees": 0,
         "fee_pool": 17213051
     },
@@ -46611,7 +46611,7 @@
         "id": "2.3.5925",
         "current_supply": "8999999859856",
         "confidential_supply": 0,
-        "accumulated_fees": "13408998119",
+        "accumulated_fees": "13949709477",
         "accumulated_collateral_fees": 0,
         "fee_pool": 0
     },
@@ -46673,7 +46673,7 @@
     },
     {
         "id": "2.3.5933",
-        "current_supply": "683388413585",
+        "current_supply": "695524169702",
         "confidential_supply": 0,
         "accumulated_fees": 64041,
         "accumulated_collateral_fees": 0,
@@ -46681,7 +46681,7 @@
     },
     {
         "id": "2.3.5934",
-        "current_supply": "141137469451",
+        "current_supply": "141139082150",
         "confidential_supply": 0,
         "accumulated_fees": 0,
         "accumulated_collateral_fees": 0,
@@ -46689,7 +46689,7 @@
     },
     {
         "id": "2.3.5935",
-        "current_supply": "32900780067",
+        "current_supply": "34409293710",
         "confidential_supply": 0,
         "accumulated_fees": 7,
         "accumulated_collateral_fees": 0,
@@ -46755,7 +46755,7 @@
         "id": "2.3.5943",
         "current_supply": "100000000000",
         "confidential_supply": 0,
-        "accumulated_fees": 1970722681,
+        "accumulated_fees": 2000830885,
         "accumulated_collateral_fees": 0,
         "fee_pool": 0
     },
@@ -46785,7 +46785,7 @@
     },
     {
         "id": "2.3.5947",
-        "current_supply": "1119090110345",
+        "current_supply": "1123357258199",
         "confidential_supply": 0,
         "accumulated_fees": 1978099,
         "accumulated_collateral_fees": 0,
@@ -46819,7 +46819,7 @@
         "id": "2.3.5951",
         "current_supply": 233332541,
         "confidential_supply": 0,
-        "accumulated_fees": 506344,
+        "accumulated_fees": 506384,
         "accumulated_collateral_fees": 0,
         "fee_pool": 18680024
     },
@@ -46865,7 +46865,7 @@
     },
     {
         "id": "2.3.5957",
-        "current_supply": "8486962328",
+        "current_supply": "8687804752",
         "confidential_supply": 0,
         "accumulated_fees": 0,
         "accumulated_collateral_fees": 0,
@@ -46985,7 +46985,7 @@
     },
     {
         "id": "2.3.5972",
-        "current_supply": "4213853670148",
+        "current_supply": "4224294841926",
         "confidential_supply": 0,
         "accumulated_fees": 12282042,
         "accumulated_collateral_fees": 0,
@@ -47041,7 +47041,7 @@
     },
     {
         "id": "2.3.5979",
-        "current_supply": "49796307512",
+        "current_supply": "50469300716",
         "confidential_supply": 0,
         "accumulated_fees": 0,
         "accumulated_collateral_fees": 0,
@@ -47065,7 +47065,7 @@
     },
     {
         "id": "2.3.5982",
-        "current_supply": "57088764420",
+        "current_supply": "57455461129",
         "confidential_supply": 0,
         "accumulated_fees": 0,
         "accumulated_collateral_fees": 0,
@@ -47073,7 +47073,7 @@
     },
     {
         "id": "2.3.5983",
-        "current_supply": 748725343,
+        "current_supply": 767932160,
         "confidential_supply": 0,
         "accumulated_fees": 0,
         "accumulated_collateral_fees": 0,
@@ -47081,7 +47081,7 @@
     },
     {
         "id": "2.3.5984",
-        "current_supply": 1092964962,
+        "current_supply": 1111595166,
         "confidential_supply": 0,
         "accumulated_fees": 0,
         "accumulated_collateral_fees": 0,
@@ -47185,11 +47185,11 @@
     },
     {
         "id": "2.3.5997",
-        "current_supply": "25866907137",
+        "current_supply": "25736407137",
         "confidential_supply": 0,
-        "accumulated_fees": "2878179714",
+        "accumulated_fees": "2878949291",
         "accumulated_collateral_fees": 0,
-        "fee_pool": 46248467
+        "fee_pool": 46155273
     },
     {
         "id": "2.3.5998",
@@ -47249,7 +47249,7 @@
     },
     {
         "id": "2.3.6005",
-        "current_supply": 869464,
+        "current_supply": 0,
         "confidential_supply": 0,
         "accumulated_fees": 0,
         "accumulated_collateral_fees": 0,
@@ -47265,7 +47265,7 @@
     },
     {
         "id": "2.3.6007",
-        "current_supply": 482815706,
+        "current_supply": 475251091,
         "confidential_supply": 0,
         "accumulated_fees": 1773738,
         "accumulated_collateral_fees": 0,
@@ -47283,7 +47283,7 @@
         "id": "2.3.6009",
         "current_supply": "745336919998839",
         "confidential_supply": 0,
-        "accumulated_fees": "96776275600",
+        "accumulated_fees": "97303491215",
         "accumulated_collateral_fees": 0,
         "fee_pool": 0
     },
@@ -47313,11 +47313,11 @@
     },
     {
         "id": "2.3.6013",
-        "current_supply": "690922062151",
+        "current_supply": "686920915622",
         "confidential_supply": 0,
-        "accumulated_fees": 30882022,
+        "accumulated_fees": 230002063,
         "accumulated_collateral_fees": 0,
-        "fee_pool": 24562753
+        "fee_pool": 24610531
     },
     {
         "id": "2.3.6014",
@@ -47465,7 +47465,7 @@
     },
     {
         "id": "2.3.6032",
-        "current_supply": "32411765165",
+        "current_supply": "32411765633",
         "confidential_supply": 0,
         "accumulated_fees": 0,
         "accumulated_collateral_fees": 0,
@@ -47513,15 +47513,15 @@
     },
     {
         "id": "2.3.6038",
-        "current_supply": "837193425662",
+        "current_supply": "816672227605",
         "confidential_supply": 0,
-        "accumulated_fees": "2439983798",
+        "accumulated_fees": "2495847921",
         "accumulated_collateral_fees": 0,
         "fee_pool": 11489182
     },
     {
         "id": "2.3.6039",
-        "current_supply": "225699447443",
+        "current_supply": "248813928993",
         "confidential_supply": 0,
         "accumulated_fees": 0,
         "accumulated_collateral_fees": 0,
@@ -47537,9 +47537,9 @@
     },
     {
         "id": "2.3.6041",
-        "current_supply": "8797975969723",
+        "current_supply": "8805975969723",
         "confidential_supply": 0,
-        "accumulated_fees": "4098799986",
+        "accumulated_fees": "4104093695",
         "accumulated_collateral_fees": 0,
         "fee_pool": 46621
     },
@@ -47635,9 +47635,9 @@
         "id": "2.3.6053",
         "current_supply": "6660025228",
         "confidential_supply": 0,
-        "accumulated_fees": 28580277,
+        "accumulated_fees": 28639773,
         "accumulated_collateral_fees": 0,
-        "fee_pool": 7893680
+        "fee_pool": 7941458
     },
     {
         "id": "2.3.6054",
@@ -48081,7 +48081,7 @@
     },
     {
         "id": "2.3.6109",
-        "current_supply": "8811325312",
+        "current_supply": "8887028904",
         "confidential_supply": 0,
         "accumulated_fees": 0,
         "accumulated_collateral_fees": 0,
@@ -48091,9 +48091,9 @@
         "id": "2.3.6110",
         "current_supply": 514572737,
         "confidential_supply": 0,
-        "accumulated_fees": 1294295,
+        "accumulated_fees": 1300862,
         "accumulated_collateral_fees": 0,
-        "fee_pool": 6065311
+        "fee_pool": 6064339
     },
     {
         "id": "2.3.6111",
@@ -48201,7 +48201,7 @@
     },
     {
         "id": "2.3.6124",
-        "current_supply": 172721,
+        "current_supply": 1955871,
         "confidential_supply": 0,
         "accumulated_fees": 21128,
         "accumulated_collateral_fees": 0,
@@ -48321,11 +48321,11 @@
     },
     {
         "id": "2.3.6139",
-        "current_supply": 959953,
+        "current_supply": 721068,
         "confidential_supply": 0,
-        "accumulated_fees": 7415,
+        "accumulated_fees": 7936,
         "accumulated_collateral_fees": 0,
-        "fee_pool": 11893660
+        "fee_pool": 11837178
     },
     {
         "id": "2.3.6140",
@@ -48345,7 +48345,7 @@
     },
     {
         "id": "2.3.6142",
-        "current_supply": "339805832695",
+        "current_supply": "349781408069",
         "confidential_supply": 0,
         "accumulated_fees": 0,
         "accumulated_collateral_fees": 0,
@@ -48353,7 +48353,7 @@
     },
     {
         "id": "2.3.6143",
-        "current_supply": 0,
+        "current_supply": 246363136,
         "confidential_supply": 0,
         "accumulated_fees": 0,
         "accumulated_collateral_fees": 0,
@@ -48377,7 +48377,7 @@
     },
     {
         "id": "2.3.6146",
-        "current_supply": "3812044061943",
+        "current_supply": "3847855396644",
         "confidential_supply": 0,
         "accumulated_fees": 0,
         "accumulated_collateral_fees": 0,
@@ -48401,11 +48401,11 @@
     },
     {
         "id": "2.3.6149",
-        "current_supply": "20954240740876",
+        "current_supply": "21232421666862",
         "confidential_supply": 0,
-        "accumulated_fees": 1848450960,
+        "accumulated_fees": 58116984,
         "accumulated_collateral_fees": 0,
-        "fee_pool": 19589354
+        "fee_pool": 19685392
     },
     {
         "id": "2.3.6150",
@@ -48497,7 +48497,7 @@
     },
     {
         "id": "2.3.6161",
-        "current_supply": "5401620065",
+        "current_supply": "14928353025",
         "confidential_supply": 0,
         "accumulated_fees": 0,
         "accumulated_collateral_fees": 0,
@@ -48529,7 +48529,7 @@
     },
     {
         "id": "2.3.6165",
-        "current_supply": 770093,
+        "current_supply": 775332,
         "confidential_supply": 0,
         "accumulated_fees": 0,
         "accumulated_collateral_fees": 0,
@@ -48561,7 +48561,7 @@
     },
     {
         "id": "2.3.6169",
-        "current_supply": "2372889962825",
+        "current_supply": "2401749791973",
         "confidential_supply": 0,
         "accumulated_fees": 0,
         "accumulated_collateral_fees": 0,
@@ -48585,7 +48585,7 @@
     },
     {
         "id": "2.3.6172",
-        "current_supply": "714673453082",
+        "current_supply": "742921052791",
         "confidential_supply": 0,
         "accumulated_fees": 0,
         "accumulated_collateral_fees": 0,
@@ -48601,11 +48601,11 @@
     },
     {
         "id": "2.3.6174",
-        "current_supply": 1302697213,
+        "current_supply": 1300164888,
         "confidential_supply": 0,
-        "accumulated_fees": 753899,
+        "accumulated_fees": 754635,
         "accumulated_collateral_fees": 0,
-        "fee_pool": 1603472
+        "fee_pool": 1456336
     },
     {
         "id": "2.3.6175",
@@ -48641,7 +48641,7 @@
     },
     {
         "id": "2.3.6179",
-        "current_supply": "648036094090",
+        "current_supply": "688561201585",
         "confidential_supply": 0,
         "accumulated_fees": 0,
         "accumulated_collateral_fees": 0,
@@ -48649,15 +48649,15 @@
     },
     {
         "id": "2.3.6180",
-        "current_supply": "3303709615011",
+        "current_supply": "4847403025200",
         "confidential_supply": 0,
-        "accumulated_fees": "7903442153",
+        "accumulated_fees": "8945717219",
         "accumulated_collateral_fees": 0,
-        "fee_pool": 39367679
+        "fee_pool": 39509567
     },
     {
         "id": "2.3.6181",
-        "current_supply": "43827602320202",
+        "current_supply": "43856111820202",
         "confidential_supply": 0,
         "accumulated_fees": 1422404423,
         "accumulated_collateral_fees": 0,
@@ -48675,7 +48675,7 @@
         "id": "2.3.6183",
         "current_supply": "202373866213423",
         "confidential_supply": 0,
-        "accumulated_fees": 295649703,
+        "accumulated_fees": 297869101,
         "accumulated_collateral_fees": 0,
         "fee_pool": 37639
     },
@@ -48713,7 +48713,7 @@
     },
     {
         "id": "2.3.6188",
-        "current_supply": 1158242628,
+        "current_supply": 1106003348,
         "confidential_supply": 0,
         "accumulated_fees": 0,
         "accumulated_collateral_fees": 0,
@@ -48787,13 +48787,13 @@
         "id": "2.3.6197",
         "current_supply": "6491094694667",
         "confidential_supply": 0,
-        "accumulated_fees": 0,
+        "accumulated_fees": 96541,
         "accumulated_collateral_fees": 0,
-        "fee_pool": 17292512
+        "fee_pool": 17290611
     },
     {
         "id": "2.3.6198",
-        "current_supply": "300733539169",
+        "current_supply": "301476844375",
         "confidential_supply": 0,
         "accumulated_fees": 0,
         "accumulated_collateral_fees": 0,
@@ -48801,9 +48801,9 @@
     },
     {
         "id": "2.3.6199",
-        "current_supply": "100051477681",
+        "current_supply": "100608410462",
         "confidential_supply": 0,
-        "accumulated_fees": 255224128,
+        "accumulated_fees": 256002465,
         "accumulated_collateral_fees": 0,
         "fee_pool": 19858103
     },
@@ -48897,7 +48897,7 @@
     },
     {
         "id": "2.3.6211",
-        "current_supply": "340513400760",
+        "current_supply": "341613220604",
         "confidential_supply": 0,
         "accumulated_fees": 0,
         "accumulated_collateral_fees": 0,
@@ -48921,7 +48921,7 @@
     },
     {
         "id": "2.3.6214",
-        "current_supply": "148529779873",
+        "current_supply": "169577000742",
         "confidential_supply": 0,
         "accumulated_fees": 0,
         "accumulated_collateral_fees": 0,
@@ -48929,7 +48929,7 @@
     },
     {
         "id": "2.3.6215",
-        "current_supply": "50584383255",
+        "current_supply": "60433862939",
         "confidential_supply": 0,
         "accumulated_fees": 0,
         "accumulated_collateral_fees": 0,
@@ -49041,7 +49041,7 @@
     },
     {
         "id": "2.3.6229",
-        "current_supply": 0,
+        "current_supply": 196918027,
         "confidential_supply": 0,
         "accumulated_fees": 0,
         "accumulated_collateral_fees": 0,
@@ -49089,7 +49089,7 @@
     },
     {
         "id": "2.3.6235",
-        "current_supply": 807763673,
+        "current_supply": 1449384627,
         "confidential_supply": 0,
         "accumulated_fees": 0,
         "accumulated_collateral_fees": 0,
@@ -49115,9 +49115,9 @@
         "id": "2.3.6238",
         "current_supply": "101325237038",
         "confidential_supply": 0,
-        "accumulated_fees": 195445637,
+        "accumulated_fees": 195457687,
         "accumulated_collateral_fees": 0,
-        "fee_pool": 19385494
+        "fee_pool": 19433272
     },
     {
         "id": "2.3.6239",
@@ -49137,15 +49137,15 @@
     },
     {
         "id": "2.3.6241",
-        "current_supply": 1039446243,
+        "current_supply": 1067454620,
         "confidential_supply": 0,
-        "accumulated_fees": 7983559,
+        "accumulated_fees": 8007772,
         "accumulated_collateral_fees": 0,
         "fee_pool": 15722635
     },
     {
         "id": "2.3.6242",
-        "current_supply": 1642169937,
+        "current_supply": 1710420593,
         "confidential_supply": 0,
         "accumulated_fees": 0,
         "accumulated_collateral_fees": 0,
@@ -49209,7 +49209,7 @@
     },
     {
         "id": "2.3.6250",
-        "current_supply": 188,
+        "current_supply": 0,
         "confidential_supply": 0,
         "accumulated_fees": 0,
         "accumulated_collateral_fees": 0,
@@ -49257,7 +49257,7 @@
     },
     {
         "id": "2.3.6256",
-        "current_supply": "8377864812",
+        "current_supply": "8811713707",
         "confidential_supply": 0,
         "accumulated_fees": 0,
         "accumulated_collateral_fees": 0,
@@ -49265,7 +49265,7 @@
     },
     {
         "id": "2.3.6257",
-        "current_supply": "4809783093",
+        "current_supply": "4973169912",
         "confidential_supply": 0,
         "accumulated_fees": 0,
         "accumulated_collateral_fees": 0,
@@ -49339,17 +49339,17 @@
         "id": "2.3.6266",
         "current_supply": 104460518,
         "confidential_supply": 0,
-        "accumulated_fees": 209068,
+        "accumulated_fees": 210078,
         "accumulated_collateral_fees": 0,
-        "fee_pool": 7281231
+        "fee_pool": 7759051
     },
     {
         "id": "2.3.6267",
         "current_supply": 42378996,
         "confidential_supply": 0,
-        "accumulated_fees": 307737,
+        "accumulated_fees": 311641,
         "accumulated_collateral_fees": 0,
-        "fee_pool": 3649654
+        "fee_pool": 3654292
     },
     {
         "id": "2.3.6268",
@@ -49361,7 +49361,7 @@
     },
     {
         "id": "2.3.6269",
-        "current_supply": 27752922,
+        "current_supply": 41898962,
         "confidential_supply": 0,
         "accumulated_fees": 0,
         "accumulated_collateral_fees": 0,
@@ -49385,7 +49385,7 @@
     },
     {
         "id": "2.3.6272",
-        "current_supply": 250605,
+        "current_supply": 462192,
         "confidential_supply": 0,
         "accumulated_fees": 0,
         "accumulated_collateral_fees": 0,
@@ -49403,9 +49403,9 @@
         "id": "2.3.6274",
         "current_supply": 91207218,
         "confidential_supply": 0,
-        "accumulated_fees": 71987,
+        "accumulated_fees": 73915,
         "accumulated_collateral_fees": 0,
-        "fee_pool": 9795374
+        "fee_pool": 9986486
     },
     {
         "id": "2.3.6275",
@@ -49417,7 +49417,7 @@
     },
     {
         "id": "2.3.6276",
-        "current_supply": 59511302,
+        "current_supply": 19937763,
         "confidential_supply": 0,
         "accumulated_fees": 20345,
         "accumulated_collateral_fees": 0,
@@ -49457,7 +49457,7 @@
     },
     {
         "id": "2.3.6281",
-        "current_supply": "257481047102370",
+        "current_supply": "270738155402370",
         "confidential_supply": 0,
         "accumulated_fees": "50579120000",
         "accumulated_collateral_fees": 0,
@@ -49465,7 +49465,7 @@
     },
     {
         "id": "2.3.6282",
-        "current_supply": "149743958546869",
+        "current_supply": "149733717279129",
         "confidential_supply": 0,
         "accumulated_fees": 0,
         "accumulated_collateral_fees": 0,
@@ -49473,7 +49473,7 @@
     },
     {
         "id": "2.3.6283",
-        "current_supply": "5946061164761",
+        "current_supply": "4046061164761",
         "confidential_supply": 0,
         "accumulated_fees": 0,
         "accumulated_collateral_fees": 0,
@@ -49601,7 +49601,7 @@
     },
     {
         "id": "2.3.6299",
-        "current_supply": 0,
+        "current_supply": "2102811979736",
         "confidential_supply": 0,
         "accumulated_fees": 0,
         "accumulated_collateral_fees": 0,
@@ -49619,7 +49619,7 @@
         "id": "2.3.6301",
         "current_supply": "999797890789030",
         "confidential_supply": 0,
-        "accumulated_fees": "6397581056511",
+        "accumulated_fees": "6439523296325",
         "accumulated_collateral_fees": 0,
         "fee_pool": 3480
     },
@@ -50729,11 +50729,11 @@
     },
     {
         "id": "2.3.6440",
-        "current_supply": "2966588375634",
+        "current_supply": "2811279357468",
         "confidential_supply": 0,
-        "accumulated_fees": "59723069747",
+        "accumulated_fees": 1844139842,
         "accumulated_collateral_fees": 0,
-        "fee_pool": 18723837
+        "fee_pool": 18675577
     },
     {
         "id": "2.3.6441",
@@ -50761,7 +50761,7 @@
     },
     {
         "id": "2.3.6444",
-        "current_supply": 74767836,
+        "current_supply": 77768224,
         "confidential_supply": 0,
         "accumulated_fees": 0,
         "accumulated_collateral_fees": 0,
@@ -50769,7 +50769,7 @@
     },
     {
         "id": "2.3.6445",
-        "current_supply": "6361182872",
+        "current_supply": "7056958758",
         "confidential_supply": 0,
         "accumulated_fees": 0,
         "accumulated_collateral_fees": 0,
@@ -51305,7 +51305,7 @@
     },
     {
         "id": "2.3.6512",
-        "current_supply": "2571512268",
+        "current_supply": 1912500000,
         "confidential_supply": 0,
         "accumulated_fees": 0,
         "accumulated_collateral_fees": 0,
@@ -51337,7 +51337,7 @@
     },
     {
         "id": "2.3.6516",
-        "current_supply": 202285268,
+        "current_supply": 87285268,
         "confidential_supply": 0,
         "accumulated_fees": 0,
         "accumulated_collateral_fees": 0,
@@ -51417,7 +51417,7 @@
     },
     {
         "id": "2.3.6526",
-        "current_supply": "19826054294893",
+        "current_supply": "23769666401509",
         "confidential_supply": 0,
         "accumulated_fees": 0,
         "accumulated_collateral_fees": 0,
@@ -51425,9 +51425,9 @@
     },
     {
         "id": "2.3.6527",
-        "current_supply": 1925562949,
+        "current_supply": 2078102555,
         "confidential_supply": 0,
-        "accumulated_fees": 298490,
+        "accumulated_fees": 448906,
         "accumulated_collateral_fees": 0,
         "fee_pool": 20000000
     },
@@ -51443,7 +51443,7 @@
         "id": "2.3.6529",
         "current_supply": 1443982286,
         "confidential_supply": 0,
-        "accumulated_fees": 2095335,
+        "accumulated_fees": 2195335,
         "accumulated_collateral_fees": 0,
         "fee_pool": 9853289
     },
@@ -51529,7 +51529,7 @@
     },
     {
         "id": "2.3.6540",
-        "current_supply": "200419460816",
+        "current_supply": "202378570945",
         "confidential_supply": 0,
         "accumulated_fees": 0,
         "accumulated_collateral_fees": 0,
@@ -51561,7 +51561,7 @@
     },
     {
         "id": "2.3.6544",
-        "current_supply": "93439127429",
+        "current_supply": "43044947925",
         "confidential_supply": 0,
         "accumulated_fees": 0,
         "accumulated_collateral_fees": 0,
@@ -51585,7 +51585,7 @@
     },
     {
         "id": "2.3.6547",
-        "current_supply": "6259625675001",
+        "current_supply": "6260926195002",
         "confidential_supply": 0,
         "accumulated_fees": 0,
         "accumulated_collateral_fees": 0,

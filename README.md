@@ -1,4 +1,5 @@
 # beet_api
+
 An ElysiaJS based API for generating Bitshares Beet wallet deeplinks
 
 First [install Bun](https://bun.sh/docs/installation) on your computer.
@@ -9,10 +10,7 @@ Before running this Bitshares Beet API, please run the following commands:
 
 ```
 bun install
-bun run fetchPools
-bun run fetchAssets
-bun run fetchDynamicData
-bun run fetchIssuers
+bun run freshDataFetch
 ```
 
 Then you can run the following commands:
@@ -33,6 +31,10 @@ To compile the beet_api into a linux executable
 
 Once the elysia server is running, navigate to:
 
-`http://localhost:8080/` to view 
+`http://localhost:8080/` to view
 
 `http://localhost:8080/swagger` for a swagger docs page.
+
+---
+
+To run the compiled executable, run: `./beet_api` in the terminal.

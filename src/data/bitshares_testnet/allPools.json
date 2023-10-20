@@ -64,7 +64,7 @@
                 "float": 2026.5419,
                 "holders": 7,
                 "value": {
-                    "total_withdraw_value_in_core": 2013335.0666502852,
+                    "total_withdraw_value_in_core": 6225.073314401528,
                     "withdraw_value_a": 0.43249959944080113,
                     "withdraw_value_b": 0.0020540284165849222,
                     "market_value_in_core": 0
@@ -86,7 +86,7 @@
                 "10": 191.13250246614197,
                 "unit": "TEST/CONTEST.BTC"
             },
-            "value_in_core": 4080107871.3060956,
+            "value_in_core": 12615371.90220657,
             "ticker": {
                 "volume_a_24h": 0,
                 "volume_b_24h": 0,
@@ -188,107 +188,6 @@
                 "unit": "TEST/MKUU"
             },
             "value_in_core": 319.03294,
-            "ticker": {
-                "volume_a_24h": 0,
-                "volume_b_24h": 0,
-                "delta_a_24h": 0,
-                "delta_b_24h": 0,
-                "apy_24h_in_core": 0,
-                "apy_in_core": 0,
-                "total_volume_24h_in_core": 0
-            },
-            "activity": 0,
-            "score": 0
-        }
-    },
-    {
-        "id": "1.19.7",
-        "asset_a": "1.3.0",
-        "asset_b": "1.3.174",
-        "balance_a": 0,
-        "balance_b": 0,
-        "share_asset": "1.3.1566",
-        "taker_fee_percent": 480,
-        "withdrawal_fee_percent": 0,
-        "virtual_value": "0",
-        "statistics": {
-            "id": "5.6.7",
-            "_24h_deposit_count": 0,
-            "_24h_deposit_amount_a": "0",
-            "_24h_deposit_amount_b": "0",
-            "_24h_deposit_share_amount": "0",
-            "_24h_withdrawal_count": 0,
-            "_24h_withdrawal_amount_a": "0",
-            "_24h_withdrawal_amount_b": "0",
-            "_24h_withdrawal_share_amount": "0",
-            "_24h_withdrawal_fee_a": "0",
-            "_24h_withdrawal_fee_b": "0",
-            "_24h_exchange_a2b_count": 0,
-            "_24h_exchange_a2b_amount_a": "0",
-            "_24h_exchange_a2b_amount_b": "0",
-            "_24h_exchange_b2a_count": 0,
-            "_24h_exchange_b2a_amount_a": "0",
-            "_24h_exchange_b2a_amount_b": "0",
-            "_24h_exchange_fee_a": "0",
-            "_24h_exchange_fee_b": "0",
-            "_24h_balance_delta_a": 0,
-            "_24h_balance_delta_b": 0,
-            "total_deposit_count": 0,
-            "total_deposit_amount_a": "0",
-            "total_deposit_amount_b": "0",
-            "total_deposit_share_amount": "0",
-            "total_withdrawal_count": 0,
-            "total_withdrawal_amount_a": "0",
-            "total_withdrawal_amount_b": "0",
-            "total_withdrawal_share_amount": "0",
-            "total_withdrawal_fee_a": "0",
-            "total_withdrawal_fee_b": "0",
-            "total_exchange_a2b_count": 0,
-            "total_exchange_a2b_amount_a": "0",
-            "total_exchange_a2b_amount_b": "0",
-            "total_exchange_b2a_count": 0,
-            "total_exchange_b2a_amount_a": "0",
-            "total_exchange_b2a_amount_b": "0",
-            "total_exchange_fee_a": "0",
-            "total_exchange_fee_b": "0"
-        },
-        "details": {
-            "asset_a": {
-                "symbol": "TEST",
-                "float": 0
-            },
-            "asset_b": {
-                "symbol": "CNY",
-                "float": 0
-            },
-            "share_asset": {
-                "symbol": "MYLP01",
-                "float": 0,
-                "holders": -1,
-                "value": {
-                    "total_withdraw_value_in_core": null,
-                    "withdraw_value_a": null,
-                    "withdraw_value_b": null,
-                    "market_value_in_core": 0
-                },
-                "warnings": {
-                    "may_use_override_transfer": true,
-                    "may_whitelist": true
-                }
-            },
-            "price_sell_a_per_percent": {
-                "1": 0,
-                "5": 0,
-                "10": 0,
-                "unit": "CNY/TEST"
-            },
-            "price_sell_b_per_percent": {
-                "1": 0,
-                "5": 0,
-                "10": 0,
-                "unit": "TEST/CNY"
-            },
-            "value_in_core": 0,
             "ticker": {
                 "volume_a_24h": 0,
                 "volume_b_24h": 0,
@@ -912,12 +811,12 @@
         "id": "1.19.52",
         "asset_a": "1.3.0",
         "asset_b": "1.3.1709",
-        "balance_a": 123877453,
-        "balance_b": 11842338,
+        "balance_a": 71152215,
+        "balance_b": 20704716,
         "share_asset": "1.3.1747",
         "taker_fee_percent": 10,
         "withdrawal_fee_percent": 20,
-        "virtual_value": "1466998669005114",
+        "virtual_value": "1473186404345940",
         "statistics": {
             "id": "5.6.52",
             "_24h_deposit_count": 0,
@@ -930,16 +829,16 @@
             "_24h_withdrawal_share_amount": "0",
             "_24h_withdrawal_fee_a": "0",
             "_24h_withdrawal_fee_b": "0",
-            "_24h_exchange_a2b_count": 13,
-            "_24h_exchange_a2b_amount_a": "10259385",
-            "_24h_exchange_a2b_amount_b": "979944",
-            "_24h_exchange_b2a_count": 10,
-            "_24h_exchange_b2a_amount_a": "8690376",
-            "_24h_exchange_b2a_amount_b": "829875",
-            "_24h_exchange_fee_a": "8694",
-            "_24h_exchange_fee_b": "975",
-            "_24h_balance_delta_a": 1569009,
-            "_24h_balance_delta_b": -150069,
+            "_24h_exchange_a2b_count": 0,
+            "_24h_exchange_a2b_amount_a": "0",
+            "_24h_exchange_a2b_amount_b": "0",
+            "_24h_exchange_b2a_count": 0,
+            "_24h_exchange_b2a_amount_a": "0",
+            "_24h_exchange_b2a_amount_b": "0",
+            "_24h_exchange_fee_a": "0",
+            "_24h_exchange_fee_b": "0",
+            "_24h_balance_delta_a": 0,
+            "_24h_balance_delta_b": 0,
             "total_deposit_count": 23,
             "total_deposit_amount_a": "102221967",
             "total_deposit_amount_b": "5444660",
@@ -950,32 +849,32 @@
             "total_withdrawal_share_amount": "60000",
             "total_withdrawal_fee_a": "256",
             "total_withdrawal_fee_b": "470",
-            "total_exchange_a2b_count": 819,
-            "total_exchange_a2b_amount_a": "14420717060",
-            "total_exchange_a2b_amount_b": "3329389461",
-            "total_exchange_b2a_count": 302,
-            "total_exchange_b2a_amount_a": "14398933187",
-            "total_exchange_b2a_amount_b": "3336022438",
-            "total_exchange_fee_a": "14413210",
-            "total_exchange_fee_b": "3332342"
+            "total_exchange_a2b_count": 952,
+            "total_exchange_a2b_amount_a": "14543176558",
+            "total_exchange_a2b_amount_b": "3362986484",
+            "total_exchange_b2a_count": 408,
+            "total_exchange_b2a_amount_a": "14574117923",
+            "total_exchange_b2a_amount_b": "3378481839",
+            "total_exchange_fee_a": "14588523",
+            "total_exchange_fee_b": "3365912"
         },
         "details": {
             "asset_a": {
                 "symbol": "TEST",
-                "float": 1238.77453
+                "float": 711.52215
             },
             "asset_b": {
                 "symbol": "BSWAP",
-                "float": 118.42338
+                "float": 207.04716
             },
             "share_asset": {
                 "symbol": "BSWAP.LP1",
                 "float": 534.2753,
                 "holders": 0,
                 "value": {
-                    "total_withdraw_value_in_core": 4.651039863020198,
-                    "withdraw_value_a": 2.318607148786403,
-                    "withdraw_value_b": 0.22165235787617357,
+                    "total_withdraw_value_in_core": 2.6607218912043886,
+                    "withdraw_value_a": 1.3317519076775588,
+                    "withdraw_value_b": 0.3875289761664071,
                     "market_value_in_core": 0
                 },
                 "warnings": {
@@ -984,29 +883,29 @@
                 }
             },
             "price_sell_a_per_percent": {
-                "1": 0.09455477754618678,
-                "5": 0.09095360704903167,
-                "10": 0.08681951396319508,
+                "1": 0.2878210371569677,
+                "5": 0.27685749702749884,
+                "10": 0.2642733092900417,
                 "unit": "BSWAP/TEST"
             },
             "price_sell_b_per_percent": {
-                "1": 10.346647188468458,
-                "5": 9.952485661593336,
-                "10": 9.500093309340308,
+                "1": 3.399088129748318,
+                "5": 3.2696064178664748,
+                "10": 3.1209869638357652,
                 "unit": "TEST/BSWAP"
             },
-            "value_in_core": 2484.9357181270752,
+            "value_in_core": 1421.557986639792,
             "ticker": {
-                "volume_a_24h": 189.49761,
-                "volume_b_24h": 18.09819,
-                "delta_a_24h": 15.69009,
-                "delta_b_24h": -1.50069,
-                "apy_24h_in_core": -0.004087221973980704,
-                "apy_in_core": -1.480793314409845,
-                "total_volume_24h_in_core": 379.94363470685727
+                "volume_a_24h": 0,
+                "volume_b_24h": 0,
+                "delta_a_24h": 0,
+                "delta_b_24h": 0,
+                "apy_24h_in_core": 0,
+                "apy_in_core": 0,
+                "total_volume_24h_in_core": 0
             },
-            "activity": 23,
-            "score": 387
+            "activity": 0,
+            "score": 0
         }
     },
     {
@@ -1276,7 +1175,7 @@
                 "float": 1680.6052,
                 "holders": 0,
                 "value": {
-                    "total_withdraw_value_in_core": 3.405830418721769,
+                    "total_withdraw_value_in_core": 1.9918168842218744,
                     "withdraw_value_a": 1.308222383222425,
                     "withdraw_value_b": 0.19933684008594046,
                     "market_value_in_core": 0
@@ -1298,7 +1197,209 @@
                 "10": 5.9602819646782965,
                 "unit": "TEST/BSWAP"
             },
-            "value_in_core": 5723.856312021982,
+            "value_in_core": 3347.45781307108,
+            "ticker": {
+                "volume_a_24h": 0,
+                "volume_b_24h": 0,
+                "delta_a_24h": 0,
+                "delta_b_24h": 0,
+                "apy_24h_in_core": 0,
+                "apy_in_core": 0,
+                "total_volume_24h_in_core": 0
+            },
+            "activity": 0,
+            "score": 0
+        }
+    },
+    {
+        "id": "1.19.57",
+        "asset_a": "1.3.0",
+        "asset_b": "1.3.174",
+        "balance_a": 0,
+        "balance_b": 0,
+        "share_asset": "1.3.1566",
+        "taker_fee_percent": 300,
+        "withdrawal_fee_percent": 0,
+        "virtual_value": "0",
+        "statistics": {
+            "id": "5.6.57",
+            "_24h_deposit_count": 0,
+            "_24h_deposit_amount_a": "0",
+            "_24h_deposit_amount_b": "0",
+            "_24h_deposit_share_amount": "0",
+            "_24h_withdrawal_count": 0,
+            "_24h_withdrawal_amount_a": "0",
+            "_24h_withdrawal_amount_b": "0",
+            "_24h_withdrawal_share_amount": "0",
+            "_24h_withdrawal_fee_a": "0",
+            "_24h_withdrawal_fee_b": "0",
+            "_24h_exchange_a2b_count": 0,
+            "_24h_exchange_a2b_amount_a": "0",
+            "_24h_exchange_a2b_amount_b": "0",
+            "_24h_exchange_b2a_count": 0,
+            "_24h_exchange_b2a_amount_a": "0",
+            "_24h_exchange_b2a_amount_b": "0",
+            "_24h_exchange_fee_a": "0",
+            "_24h_exchange_fee_b": "0",
+            "_24h_balance_delta_a": 0,
+            "_24h_balance_delta_b": 0,
+            "total_deposit_count": 0,
+            "total_deposit_amount_a": "0",
+            "total_deposit_amount_b": "0",
+            "total_deposit_share_amount": "0",
+            "total_withdrawal_count": 0,
+            "total_withdrawal_amount_a": "0",
+            "total_withdrawal_amount_b": "0",
+            "total_withdrawal_share_amount": "0",
+            "total_withdrawal_fee_a": "0",
+            "total_withdrawal_fee_b": "0",
+            "total_exchange_a2b_count": 0,
+            "total_exchange_a2b_amount_a": "0",
+            "total_exchange_a2b_amount_b": "0",
+            "total_exchange_b2a_count": 0,
+            "total_exchange_b2a_amount_a": "0",
+            "total_exchange_b2a_amount_b": "0",
+            "total_exchange_fee_a": "0",
+            "total_exchange_fee_b": "0"
+        },
+        "details": {
+            "asset_a": {
+                "symbol": "TEST",
+                "float": 0
+            },
+            "asset_b": {
+                "symbol": "CNY",
+                "float": 0
+            },
+            "share_asset": {
+                "symbol": "MYLP01",
+                "float": 0,
+                "holders": -1,
+                "value": {
+                    "total_withdraw_value_in_core": null,
+                    "withdraw_value_a": null,
+                    "withdraw_value_b": null,
+                    "market_value_in_core": 0
+                },
+                "warnings": {
+                    "may_use_override_transfer": true,
+                    "may_whitelist": true
+                }
+            },
+            "price_sell_a_per_percent": {
+                "1": 0,
+                "5": 0,
+                "10": 0,
+                "unit": "CNY/TEST"
+            },
+            "price_sell_b_per_percent": {
+                "1": 0,
+                "5": 0,
+                "10": 0,
+                "unit": "TEST/CNY"
+            },
+            "value_in_core": 0,
+            "ticker": {
+                "volume_a_24h": 0,
+                "volume_b_24h": 0,
+                "delta_a_24h": 0,
+                "delta_b_24h": 0,
+                "apy_24h_in_core": 0,
+                "apy_in_core": 0,
+                "total_volume_24h_in_core": 0
+            },
+            "activity": 0,
+            "score": 0
+        }
+    },
+    {
+        "id": "1.19.58",
+        "asset_a": "1.3.0",
+        "asset_b": "1.3.1762",
+        "balance_a": 199494067,
+        "balance_b": "200716455036",
+        "share_asset": "1.3.1815",
+        "taker_fee_percent": 10,
+        "withdrawal_fee_percent": 20,
+        "virtual_value": "40041741928954271412",
+        "statistics": {
+            "id": "5.6.58",
+            "_24h_deposit_count": 0,
+            "_24h_deposit_amount_a": "0",
+            "_24h_deposit_amount_b": "0",
+            "_24h_deposit_share_amount": "0",
+            "_24h_withdrawal_count": 0,
+            "_24h_withdrawal_amount_a": "0",
+            "_24h_withdrawal_amount_b": "0",
+            "_24h_withdrawal_share_amount": "0",
+            "_24h_withdrawal_fee_a": "0",
+            "_24h_withdrawal_fee_b": "0",
+            "_24h_exchange_a2b_count": 0,
+            "_24h_exchange_a2b_amount_a": "0",
+            "_24h_exchange_a2b_amount_b": "0",
+            "_24h_exchange_b2a_count": 0,
+            "_24h_exchange_b2a_amount_a": "0",
+            "_24h_exchange_b2a_amount_b": "0",
+            "_24h_exchange_fee_a": "0",
+            "_24h_exchange_fee_b": "0",
+            "_24h_balance_delta_a": 0,
+            "_24h_balance_delta_b": 0,
+            "total_deposit_count": 2,
+            "total_deposit_amount_a": "200100000",
+            "total_deposit_amount_b": "200100000000",
+            "total_deposit_share_amount": "200100000000",
+            "total_withdrawal_count": 0,
+            "total_withdrawal_amount_a": "0",
+            "total_withdrawal_amount_b": "0",
+            "total_withdrawal_share_amount": "0",
+            "total_withdrawal_fee_a": "0",
+            "total_withdrawal_fee_b": "0",
+            "total_exchange_a2b_count": 13,
+            "total_exchange_a2b_amount_a": "4000000",
+            "total_exchange_a2b_amount_b": "4024256463",
+            "total_exchange_b2a_count": 7,
+            "total_exchange_b2a_amount_a": "4605933",
+            "total_exchange_b2a_amount_b": "4640711499",
+            "total_exchange_fee_a": "4606",
+            "total_exchange_fee_b": "4028280"
+        },
+        "details": {
+            "asset_a": {
+                "symbol": "TEST",
+                "float": 1994.94067
+            },
+            "asset_b": {
+                "symbol": "SWAPBTS",
+                "float": 2007.16455036
+            },
+            "share_asset": {
+                "symbol": "SWAPBTS.L1",
+                "float": 200100,
+                "holders": 0,
+                "value": {
+                    "total_withdraw_value_in_core": 1.1013188116086907,
+                    "withdraw_value_a": 0.009969718490754623,
+                    "withdraw_value_b": 0.010030807348125937,
+                    "market_value_in_core": 0
+                },
+                "warnings": {
+                    "may_use_override_transfer": true,
+                    "may_whitelist": true
+                }
+            },
+            "price_sell_a_per_percent": {
+                "1": 0.995169950474701,
+                "5": 0.9572584268423832,
+                "10": 0.9137466802770969,
+                "unit": "SWAPBTS/TEST"
+            },
+            "price_sell_b_per_percent": {
+                "1": 0.983084321611798,
+                "5": 0.9456340785865678,
+                "10": 0.9026508064469377,
+                "unit": "TEST/SWAPBTS"
+            },
+            "value_in_core": 220373.894202899,
             "ticker": {
                 "volume_a_24h": 0,
                 "volume_b_24h": 0,

@@ -15,7 +15,8 @@
         "issuer": "1.2.17",
         "market_fee_percent": 0,
         "max_market_fee": "1000000000000000",
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.0"
     },
     {
         "id": "1.3.2",
@@ -24,7 +25,8 @@
         "issuer": "1.2.17",
         "market_fee_percent": 0,
         "max_market_fee": "1000000000000000",
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.1"
     },
     {
         "id": "1.3.3",
@@ -33,7 +35,8 @@
         "issuer": "1.2.17",
         "market_fee_percent": 0,
         "max_market_fee": "1000000000000000",
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.2"
     },
     {
         "id": "1.3.4",
@@ -51,7 +54,8 @@
         "issuer": "1.2.17",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.3"
     },
     {
         "id": "1.3.6",
@@ -60,7 +64,8 @@
         "issuer": "1.2.17",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.4"
     },
     {
         "id": "1.3.7",
@@ -69,7 +74,8 @@
         "issuer": "1.2.17",
         "market_fee_percent": 0,
         "max_market_fee": "1000000000000000",
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.5"
     },
     {
         "id": "1.3.8",
@@ -87,7 +93,8 @@
         "issuer": "1.2.29",
         "market_fee_percent": 30,
         "max_market_fee": 90000000,
-        "max_supply": 90000000
+        "max_supply": 90000000,
+        "bitasset_data_id": "2.4.6"
     },
     {
         "id": "1.3.10",
@@ -96,7 +103,8 @@
         "issuer": "1.2.29",
         "market_fee_percent": 30,
         "max_market_fee": "90000000000000",
-        "max_supply": "90000000000000"
+        "max_supply": "90000000000000",
+        "bitasset_data_id": "2.4.7"
     },
     {
         "id": "1.3.11",
@@ -204,7 +212,8 @@
         "issuer": "1.2.17",
         "market_fee_percent": 15,
         "max_market_fee": 0,
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.8"
     },
     {
         "id": "1.3.23",
@@ -276,7 +285,8 @@
         "issuer": "1.2.29",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.9"
     },
     {
         "id": "1.3.31",
@@ -285,7 +295,8 @@
         "issuer": "1.2.117",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "23232300000"
+        "max_supply": "23232300000",
+        "bitasset_data_id": "2.4.10"
     },
     {
         "id": "1.3.32",
@@ -294,7 +305,8 @@
         "issuer": "1.2.117",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "23232300000"
+        "max_supply": "23232300000",
+        "bitasset_data_id": "2.4.11"
     },
     {
         "id": "1.3.33",
@@ -303,7 +315,8 @@
         "issuer": "1.2.117",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "65465132100000"
+        "max_supply": "65465132100000",
+        "bitasset_data_id": "2.4.12"
     },
     {
         "id": "1.3.34",
@@ -312,7 +325,8 @@
         "issuer": "1.2.117",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.13"
     },
     {
         "id": "1.3.35",
@@ -321,7 +335,8 @@
         "issuer": "1.2.117",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.14"
     },
     {
         "id": "1.3.36",
@@ -330,7 +345,8 @@
         "issuer": "1.2.117",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.15"
     },
     {
         "id": "1.3.37",
@@ -348,7 +364,8 @@
         "issuer": "1.2.117",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.16"
     },
     {
         "id": "1.3.39",
@@ -366,7 +383,8 @@
         "issuer": "1.2.117",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.17"
     },
     {
         "id": "1.3.41",
@@ -411,7 +429,8 @@
         "issuer": "1.2.157",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.18"
     },
     {
         "id": "1.3.46",
@@ -420,7 +439,8 @@
         "issuer": "1.2.157",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.19"
     },
     {
         "id": "1.3.47",
@@ -456,7 +476,8 @@
         "issuer": "1.2.174",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "1000000000000"
+        "max_supply": "1000000000000",
+        "bitasset_data_id": "2.4.20"
     },
     {
         "id": "1.3.51",
@@ -528,7 +549,8 @@
         "issuer": "1.2.131",
         "market_fee_percent": 20,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.21"
     },
     {
         "id": "1.3.59",
@@ -537,7 +559,8 @@
         "issuer": "1.2.131",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.22"
     },
     {
         "id": "1.3.60",
@@ -546,7 +569,8 @@
         "issuer": "1.2.88",
         "market_fee_percent": 100,
         "max_market_fee": 100000,
-        "max_supply": "10000000000000"
+        "max_supply": "10000000000000",
+        "bitasset_data_id": "2.4.23"
     },
     {
         "id": "1.3.61",
@@ -564,7 +588,8 @@
         "issuer": "1.2.254",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.24"
     },
     {
         "id": "1.3.63",
@@ -654,7 +679,8 @@
         "issuer": "1.2.29",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.25"
     },
     {
         "id": "1.3.73",
@@ -672,7 +698,8 @@
         "issuer": "1.2.369",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.26"
     },
     {
         "id": "1.3.75",
@@ -708,7 +735,8 @@
         "issuer": "1.2.369",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.27"
     },
     {
         "id": "1.3.79",
@@ -717,7 +745,8 @@
         "issuer": "1.2.369",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.28"
     },
     {
         "id": "1.3.80",
@@ -726,7 +755,8 @@
         "issuer": "1.2.365",
         "market_fee_percent": 10,
         "max_market_fee": "1000000000000000",
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.29"
     },
     {
         "id": "1.3.81",
@@ -735,7 +765,8 @@
         "issuer": "1.2.365",
         "market_fee_percent": 10,
         "max_market_fee": "1000000000000000",
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.30"
     },
     {
         "id": "1.3.82",
@@ -744,7 +775,8 @@
         "issuer": "1.2.394",
         "market_fee_percent": 10,
         "max_market_fee": "100000000000000",
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.31"
     },
     {
         "id": "1.3.83",
@@ -753,7 +785,8 @@
         "issuer": "1.2.398",
         "market_fee_percent": 100,
         "max_market_fee": "100000000000",
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.32"
     },
     {
         "id": "1.3.84",
@@ -771,7 +804,8 @@
         "issuer": "1.2.399",
         "market_fee_percent": 69,
         "max_market_fee": "1000000000000000",
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.33"
     },
     {
         "id": "1.3.86",
@@ -780,7 +814,8 @@
         "issuer": "1.2.156",
         "market_fee_percent": 100,
         "max_market_fee": 100000000,
-        "max_supply": "100000000000"
+        "max_supply": "100000000000",
+        "bitasset_data_id": "2.4.34"
     },
     {
         "id": "1.3.87",
@@ -789,7 +824,8 @@
         "issuer": "1.2.399",
         "market_fee_percent": 69,
         "max_market_fee": "1000000000000000",
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.35"
     },
     {
         "id": "1.3.88",
@@ -798,7 +834,8 @@
         "issuer": "1.2.415",
         "market_fee_percent": 50,
         "max_market_fee": "100000000000",
-        "max_supply": "100000000000"
+        "max_supply": "100000000000",
+        "bitasset_data_id": "2.4.36"
     },
     {
         "id": "1.3.89",
@@ -807,7 +844,8 @@
         "issuer": "1.2.415",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.37"
     },
     {
         "id": "1.3.90",
@@ -816,7 +854,8 @@
         "issuer": "1.2.399",
         "market_fee_percent": 0,
         "max_market_fee": "1000000000000000",
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.38"
     },
     {
         "id": "1.3.91",
@@ -843,7 +882,8 @@
         "issuer": "1.2.451",
         "market_fee_percent": 200,
         "max_market_fee": 10000000,
-        "max_supply": "10000000000000"
+        "max_supply": "10000000000000",
+        "bitasset_data_id": "2.4.39"
     },
     {
         "id": "1.3.94",
@@ -852,7 +892,8 @@
         "issuer": "1.2.399",
         "market_fee_percent": 0,
         "max_market_fee": "1000000000000000",
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.40"
     },
     {
         "id": "1.3.95",
@@ -870,7 +911,8 @@
         "issuer": "1.2.114",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 117398000
+        "max_supply": 117398000,
+        "bitasset_data_id": "2.4.41"
     },
     {
         "id": "1.3.97",
@@ -879,7 +921,8 @@
         "issuer": "1.2.474",
         "market_fee_percent": 5,
         "max_market_fee": 0,
-        "max_supply": "100000000000"
+        "max_supply": "100000000000",
+        "bitasset_data_id": "2.4.42"
     },
     {
         "id": "1.3.98",
@@ -969,7 +1012,8 @@
         "issuer": "1.2.662",
         "market_fee_percent": 20,
         "max_market_fee": 100000000,
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.43"
     },
     {
         "id": "1.3.108",
@@ -1032,7 +1076,8 @@
         "issuer": "1.2.653",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "1000000000000"
+        "max_supply": "1000000000000",
+        "bitasset_data_id": "2.4.44"
     },
     {
         "id": "1.3.115",
@@ -1077,7 +1122,8 @@
         "issuer": "1.2.653",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.45"
     },
     {
         "id": "1.3.120",
@@ -1122,7 +1168,8 @@
         "issuer": "1.2.698",
         "market_fee_percent": 1000,
         "max_market_fee": 1000000,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.46"
     },
     {
         "id": "1.3.125",
@@ -1131,7 +1178,8 @@
         "issuer": "1.2.698",
         "market_fee_percent": 5000,
         "max_market_fee": 5000000,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.47"
     },
     {
         "id": "1.3.126",
@@ -1158,7 +1206,8 @@
         "issuer": "1.2.711",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.48"
     },
     {
         "id": "1.3.129",
@@ -1176,7 +1225,8 @@
         "issuer": "1.2.723",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 10000000
+        "max_supply": 10000000,
+        "bitasset_data_id": "2.4.49"
     },
     {
         "id": "1.3.131",
@@ -1203,7 +1253,8 @@
         "issuer": "1.2.722",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 100000000
+        "max_supply": 100000000,
+        "bitasset_data_id": "2.4.50"
     },
     {
         "id": "1.3.134",
@@ -1230,7 +1281,8 @@
         "issuer": "1.2.727",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.51"
     },
     {
         "id": "1.3.137",
@@ -1239,7 +1291,8 @@
         "issuer": "1.2.399",
         "market_fee_percent": 0,
         "max_market_fee": "1000000000000000",
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.52"
     },
     {
         "id": "1.3.138",
@@ -1248,7 +1301,8 @@
         "issuer": "1.2.399",
         "market_fee_percent": 0,
         "max_market_fee": "1000000000000000",
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.53"
     },
     {
         "id": "1.3.139",
@@ -1257,7 +1311,8 @@
         "issuer": "1.2.730",
         "market_fee_percent": 100,
         "max_market_fee": 1000000,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.54"
     },
     {
         "id": "1.3.140",
@@ -1302,7 +1357,8 @@
         "issuer": "1.2.460",
         "market_fee_percent": 100,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.55"
     },
     {
         "id": "1.3.145",
@@ -1356,7 +1412,8 @@
         "issuer": "1.2.749",
         "market_fee_percent": 100,
         "max_market_fee": 1500000,
-        "max_supply": "100000000000000"
+        "max_supply": "100000000000000",
+        "bitasset_data_id": "2.4.56"
     },
     {
         "id": "1.3.151",
@@ -1473,7 +1530,8 @@
         "issuer": "1.2.798",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.57"
     },
     {
         "id": "1.3.164",
@@ -1536,7 +1594,8 @@
         "issuer": "1.2.782",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000000"
+        "max_supply": "10000000000000",
+        "bitasset_data_id": "2.4.58"
     },
     {
         "id": "1.3.171",
@@ -1554,7 +1613,8 @@
         "issuer": "1.2.17",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.59"
     },
     {
         "id": "1.3.173",
@@ -1563,7 +1623,8 @@
         "issuer": "1.2.17",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.60"
     },
     {
         "id": "1.3.174",
@@ -1572,7 +1633,8 @@
         "issuer": "1.2.17",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.61"
     },
     {
         "id": "1.3.175",
@@ -1680,7 +1742,8 @@
         "issuer": "1.2.474",
         "market_fee_percent": 500,
         "max_market_fee": "10000000000",
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.62"
     },
     {
         "id": "1.3.187",
@@ -1752,7 +1815,8 @@
         "issuer": "1.2.925",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 10000
+        "max_supply": 10000,
+        "bitasset_data_id": "2.4.63"
     },
     {
         "id": "1.3.195",
@@ -1761,7 +1825,8 @@
         "issuer": "1.2.925",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 10000000
+        "max_supply": 10000000,
+        "bitasset_data_id": "2.4.64"
     },
     {
         "id": "1.3.196",
@@ -1779,7 +1844,8 @@
         "issuer": "1.2.975",
         "market_fee_percent": 1,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.65"
     },
     {
         "id": "1.3.198",
@@ -1788,7 +1854,8 @@
         "issuer": "1.2.766",
         "market_fee_percent": 1,
         "max_market_fee": 0,
-        "max_supply": "1000000000000"
+        "max_supply": "1000000000000",
+        "bitasset_data_id": "2.4.66"
     },
     {
         "id": "1.3.199",
@@ -1797,7 +1864,8 @@
         "issuer": "1.2.766",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.67"
     },
     {
         "id": "1.3.200",
@@ -1806,7 +1874,8 @@
         "issuer": "1.2.977",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.68"
     },
     {
         "id": "1.3.201",
@@ -1815,7 +1884,8 @@
         "issuer": "1.2.977",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.69"
     },
     {
         "id": "1.3.202",
@@ -1833,7 +1903,8 @@
         "issuer": "1.2.982",
         "market_fee_percent": 1500,
         "max_market_fee": 0,
-        "max_supply": "10000000000000"
+        "max_supply": "10000000000000",
+        "bitasset_data_id": "2.4.70"
     },
     {
         "id": "1.3.204",
@@ -1860,7 +1931,8 @@
         "issuer": "1.2.956",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "9999900000"
+        "max_supply": "9999900000",
+        "bitasset_data_id": "2.4.71"
     },
     {
         "id": "1.3.207",
@@ -1869,7 +1941,8 @@
         "issuer": "1.2.961",
         "market_fee_percent": 100,
         "max_market_fee": 100000,
-        "max_supply": "100000000000"
+        "max_supply": "100000000000",
+        "bitasset_data_id": "2.4.72"
     },
     {
         "id": "1.3.208",
@@ -1896,7 +1969,8 @@
         "issuer": "1.2.961",
         "market_fee_percent": 2000,
         "max_market_fee": 0,
-        "max_supply": "100000000000"
+        "max_supply": "100000000000",
+        "bitasset_data_id": "2.4.73"
     },
     {
         "id": "1.3.211",
@@ -1914,7 +1988,8 @@
         "issuer": "1.2.29",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.74"
     },
     {
         "id": "1.3.213",
@@ -1932,7 +2007,8 @@
         "issuer": "1.2.961",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "100000000000"
+        "max_supply": "100000000000",
+        "bitasset_data_id": "2.4.75"
     },
     {
         "id": "1.3.215",
@@ -1941,7 +2017,8 @@
         "issuer": "1.2.961",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.76"
     },
     {
         "id": "1.3.216",
@@ -1950,7 +2027,8 @@
         "issuer": "1.2.961",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.77"
     },
     {
         "id": "1.3.217",
@@ -1959,7 +2037,8 @@
         "issuer": "1.2.961",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.78"
     },
     {
         "id": "1.3.218",
@@ -1968,7 +2047,8 @@
         "issuer": "1.2.1023",
         "market_fee_percent": 100,
         "max_market_fee": 10000000,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.79"
     },
     {
         "id": "1.3.219",
@@ -1977,7 +2057,8 @@
         "issuer": "1.2.29",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "200000000000"
+        "max_supply": "200000000000",
+        "bitasset_data_id": "2.4.80"
     },
     {
         "id": "1.3.220",
@@ -2013,7 +2094,8 @@
         "issuer": "1.2.1037",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.81"
     },
     {
         "id": "1.3.224",
@@ -2022,7 +2104,8 @@
         "issuer": "1.2.1038",
         "market_fee_percent": 300,
         "max_market_fee": 0,
-        "max_supply": "100000000000"
+        "max_supply": "100000000000",
+        "bitasset_data_id": "2.4.82"
     },
     {
         "id": "1.3.225",
@@ -2031,7 +2114,8 @@
         "issuer": "1.2.961",
         "market_fee_percent": 0,
         "max_market_fee": "1000000000000000",
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.83"
     },
     {
         "id": "1.3.226",
@@ -2040,7 +2124,8 @@
         "issuer": "1.2.961",
         "market_fee_percent": 0,
         "max_market_fee": "1000000000000000",
-        "max_supply": 200000
+        "max_supply": 200000,
+        "bitasset_data_id": "2.4.84"
     },
     {
         "id": "1.3.227",
@@ -2049,7 +2134,8 @@
         "issuer": "1.2.961",
         "market_fee_percent": 0,
         "max_market_fee": "1000000000000000",
-        "max_supply": "100000000000000"
+        "max_supply": "100000000000000",
+        "bitasset_data_id": "2.4.85"
     },
     {
         "id": "1.3.228",
@@ -2058,7 +2144,8 @@
         "issuer": "1.2.961",
         "market_fee_percent": 0,
         "max_market_fee": "1000000000000000",
-        "max_supply": "100000000000000"
+        "max_supply": "100000000000000",
+        "bitasset_data_id": "2.4.86"
     },
     {
         "id": "1.3.229",
@@ -2067,7 +2154,8 @@
         "issuer": "1.2.961",
         "market_fee_percent": 0,
         "max_market_fee": "1000000000000000",
-        "max_supply": "100000000000000"
+        "max_supply": "100000000000000",
+        "bitasset_data_id": "2.4.87"
     },
     {
         "id": "1.3.230",
@@ -2076,7 +2164,8 @@
         "issuer": "1.2.961",
         "market_fee_percent": 0,
         "max_market_fee": "1000000000000000",
-        "max_supply": "100000000000000"
+        "max_supply": "100000000000000",
+        "bitasset_data_id": "2.4.88"
     },
     {
         "id": "1.3.231",
@@ -2166,7 +2255,8 @@
         "issuer": "1.2.1102",
         "market_fee_percent": 100,
         "max_market_fee": 200000,
-        "max_supply": "100000000000000"
+        "max_supply": "100000000000000",
+        "bitasset_data_id": "2.4.89"
     },
     {
         "id": "1.3.241",
@@ -2202,7 +2292,8 @@
         "issuer": "1.2.1119",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000000"
+        "max_supply": "10000000000000",
+        "bitasset_data_id": "2.4.90"
     },
     {
         "id": "1.3.245",
@@ -2265,7 +2356,8 @@
         "issuer": "1.2.1169",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 1000000
+        "max_supply": 1000000,
+        "bitasset_data_id": "2.4.91"
     },
     {
         "id": "1.3.252",
@@ -2274,7 +2366,8 @@
         "issuer": "1.2.1170",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "100000000000"
+        "max_supply": "100000000000",
+        "bitasset_data_id": "2.4.92"
     },
     {
         "id": "1.3.253",
@@ -2310,7 +2403,8 @@
         "issuer": "1.2.1180",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.93"
     },
     {
         "id": "1.3.257",
@@ -2328,7 +2422,8 @@
         "issuer": "1.2.962",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.94"
     },
     {
         "id": "1.3.259",
@@ -2337,7 +2432,8 @@
         "issuer": "1.2.1184",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 999730000
+        "max_supply": 999730000,
+        "bitasset_data_id": "2.4.95"
     },
     {
         "id": "1.3.260",
@@ -2490,7 +2586,8 @@
         "issuer": "1.2.1227",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 2000000000
+        "max_supply": 2000000000,
+        "bitasset_data_id": "2.4.96"
     },
     {
         "id": "1.3.277",
@@ -2535,7 +2632,8 @@
         "issuer": "1.2.3280",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "100000000000"
+        "max_supply": "100000000000",
+        "bitasset_data_id": "2.4.97"
     },
     {
         "id": "1.3.282",
@@ -2607,7 +2705,8 @@
         "issuer": "1.2.682",
         "market_fee_percent": 10,
         "max_market_fee": 0,
-        "max_supply": "100000000000"
+        "max_supply": "100000000000",
+        "bitasset_data_id": "2.4.98"
     },
     {
         "id": "1.3.290",
@@ -2733,7 +2832,8 @@
         "issuer": "1.2.3355",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000000"
+        "max_supply": "10000000000000",
+        "bitasset_data_id": "2.4.99"
     },
     {
         "id": "1.3.304",
@@ -2832,7 +2932,8 @@
         "issuer": "1.2.3349",
         "market_fee_percent": 20,
         "max_market_fee": 0,
-        "max_supply": "100000000000"
+        "max_supply": "100000000000",
+        "bitasset_data_id": "2.4.100"
     },
     {
         "id": "1.3.315",
@@ -2922,7 +3023,8 @@
         "issuer": "1.2.3402",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.101"
     },
     {
         "id": "1.3.325",
@@ -3039,7 +3141,8 @@
         "issuer": "1.2.3650",
         "market_fee_percent": 300,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.102"
     },
     {
         "id": "1.3.338",
@@ -3075,7 +3178,8 @@
         "issuer": "1.2.1156",
         "market_fee_percent": 0,
         "max_market_fee": "1000000000000000",
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.103"
     },
     {
         "id": "1.3.342",
@@ -3084,7 +3188,8 @@
         "issuer": "1.2.1156",
         "market_fee_percent": 0,
         "max_market_fee": "1000000000000000",
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.104"
     },
     {
         "id": "1.3.343",
@@ -3111,7 +3216,8 @@
         "issuer": "1.2.3821",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.105"
     },
     {
         "id": "1.3.346",
@@ -3255,7 +3361,8 @@
         "issuer": "1.2.3401",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.106"
     },
     {
         "id": "1.3.362",
@@ -3282,7 +3389,8 @@
         "issuer": "1.2.1156",
         "market_fee_percent": 0,
         "max_market_fee": "1000000000000000",
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.107"
     },
     {
         "id": "1.3.365",
@@ -3300,7 +3408,8 @@
         "issuer": "1.2.792",
         "market_fee_percent": 0,
         "max_market_fee": "1000000000000000",
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.108"
     },
     {
         "id": "1.3.367",
@@ -3309,7 +3418,8 @@
         "issuer": "1.2.3806",
         "market_fee_percent": 0,
         "max_market_fee": "1000000000000000",
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.109"
     },
     {
         "id": "1.3.368",
@@ -3318,7 +3428,8 @@
         "issuer": "1.2.887",
         "market_fee_percent": 0,
         "max_market_fee": "1000000000000000",
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.110"
     },
     {
         "id": "1.3.369",
@@ -3336,7 +3447,8 @@
         "issuer": "1.2.680",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.111"
     },
     {
         "id": "1.3.371",
@@ -3345,7 +3457,8 @@
         "issuer": "1.2.680",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.112"
     },
     {
         "id": "1.3.372",
@@ -3381,7 +3494,8 @@
         "issuer": "1.2.4136",
         "market_fee_percent": 0,
         "max_market_fee": "1000000000000000",
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.113"
     },
     {
         "id": "1.3.376",
@@ -3390,7 +3504,8 @@
         "issuer": "1.2.4136",
         "market_fee_percent": 0,
         "max_market_fee": "1000000000000000",
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.114"
     },
     {
         "id": "1.3.377",
@@ -3426,7 +3541,8 @@
         "issuer": "1.2.4195",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.115"
     },
     {
         "id": "1.3.381",
@@ -3435,7 +3551,8 @@
         "issuer": "1.2.4220",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "33600000000"
+        "max_supply": "33600000000",
+        "bitasset_data_id": "2.4.116"
     },
     {
         "id": "1.3.382",
@@ -3444,7 +3561,8 @@
         "issuer": "1.2.4235",
         "market_fee_percent": 100,
         "max_market_fee": 49900000,
-        "max_supply": "100000000000"
+        "max_supply": "100000000000",
+        "bitasset_data_id": "2.4.117"
     },
     {
         "id": "1.3.383",
@@ -3471,7 +3589,8 @@
         "issuer": "1.2.4136",
         "market_fee_percent": 1,
         "max_market_fee": 1000,
-        "max_supply": 10000
+        "max_supply": 10000,
+        "bitasset_data_id": "2.4.118"
     },
     {
         "id": "1.3.386",
@@ -3480,7 +3599,8 @@
         "issuer": "1.2.4136",
         "market_fee_percent": 1,
         "max_market_fee": 1000,
-        "max_supply": 10000
+        "max_supply": 10000,
+        "bitasset_data_id": "2.4.119"
     },
     {
         "id": "1.3.387",
@@ -3489,7 +3609,8 @@
         "issuer": "1.2.4136",
         "market_fee_percent": 1,
         "max_market_fee": 1000,
-        "max_supply": 10000
+        "max_supply": 10000,
+        "bitasset_data_id": "2.4.120"
     },
     {
         "id": "1.3.388",
@@ -3498,7 +3619,8 @@
         "issuer": "1.2.4136",
         "market_fee_percent": 1,
         "max_market_fee": 1000,
-        "max_supply": 10000
+        "max_supply": 10000,
+        "bitasset_data_id": "2.4.121"
     },
     {
         "id": "1.3.389",
@@ -3633,7 +3755,8 @@
         "issuer": "1.2.4280",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.122"
     },
     {
         "id": "1.3.404",
@@ -3651,7 +3774,8 @@
         "issuer": "1.2.4357",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.123"
     },
     {
         "id": "1.3.406",
@@ -3696,7 +3820,8 @@
         "issuer": "1.2.4280",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 10000000
+        "max_supply": 10000000,
+        "bitasset_data_id": "2.4.124"
     },
     {
         "id": "1.3.411",
@@ -3768,7 +3893,8 @@
         "issuer": "1.2.4446",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.125"
     },
     {
         "id": "1.3.419",
@@ -3930,7 +4056,8 @@
         "issuer": "1.2.4582",
         "market_fee_percent": 50,
         "max_market_fee": 8000,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.126"
     },
     {
         "id": "1.3.437",
@@ -3984,7 +4111,8 @@
         "issuer": "1.2.4595",
         "market_fee_percent": 100,
         "max_market_fee": "100000000000000",
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.127"
     },
     {
         "id": "1.3.443",
@@ -4038,7 +4166,8 @@
         "issuer": "1.2.4658",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "1000000000000"
+        "max_supply": "1000000000000",
+        "bitasset_data_id": "2.4.128"
     },
     {
         "id": "1.3.449",
@@ -4065,7 +4194,8 @@
         "issuer": "1.2.4662",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "1000000000000"
+        "max_supply": "1000000000000",
+        "bitasset_data_id": "2.4.129"
     },
     {
         "id": "1.3.452",
@@ -4146,7 +4276,8 @@
         "issuer": "1.2.4581",
         "market_fee_percent": 50,
         "max_market_fee": 1000000,
-        "max_supply": "10000000000000"
+        "max_supply": "10000000000000",
+        "bitasset_data_id": "2.4.130"
     },
     {
         "id": "1.3.461",
@@ -4173,7 +4304,8 @@
         "issuer": "1.2.4767",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.131"
     },
     {
         "id": "1.3.464",
@@ -4200,7 +4332,8 @@
         "issuer": "1.2.4764",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "5000000000"
+        "max_supply": "5000000000",
+        "bitasset_data_id": "2.4.132"
     },
     {
         "id": "1.3.467",
@@ -4335,7 +4468,8 @@
         "issuer": "1.2.4789",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.133"
     },
     {
         "id": "1.3.482",
@@ -4362,7 +4496,8 @@
         "issuer": "1.2.4808",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.134"
     },
     {
         "id": "1.3.485",
@@ -4461,7 +4596,8 @@
         "issuer": "1.2.4865",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "100000000000"
+        "max_supply": "100000000000",
+        "bitasset_data_id": "2.4.135"
     },
     {
         "id": "1.3.496",
@@ -4479,7 +4615,8 @@
         "issuer": "1.2.4866",
         "market_fee_percent": 0,
         "max_market_fee": 10000000,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.136"
     },
     {
         "id": "1.3.498",
@@ -4488,7 +4625,8 @@
         "issuer": "1.2.4870",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.137"
     },
     {
         "id": "1.3.499",
@@ -4497,7 +4635,8 @@
         "issuer": "1.2.4887",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000000"
+        "max_supply": "10000000000000",
+        "bitasset_data_id": "2.4.138"
     },
     {
         "id": "1.3.500",
@@ -4515,7 +4654,8 @@
         "issuer": "1.2.3905",
         "market_fee_percent": 20,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.139"
     },
     {
         "id": "1.3.502",
@@ -4596,7 +4736,8 @@
         "issuer": "1.2.4912",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.140"
     },
     {
         "id": "1.3.511",
@@ -4641,7 +4782,8 @@
         "issuer": "1.2.4917",
         "market_fee_percent": 100,
         "max_market_fee": 10000000,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.141"
     },
     {
         "id": "1.3.516",
@@ -4677,7 +4819,8 @@
         "issuer": "1.2.4896",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "100000000000"
+        "max_supply": "100000000000",
+        "bitasset_data_id": "2.4.142"
     },
     {
         "id": "1.3.520",
@@ -4686,7 +4829,8 @@
         "issuer": "1.2.4921",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "100000000000"
+        "max_supply": "100000000000",
+        "bitasset_data_id": "2.4.143"
     },
     {
         "id": "1.3.521",
@@ -4704,7 +4848,8 @@
         "issuer": "1.2.4896",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "1000000000000"
+        "max_supply": "1000000000000",
+        "bitasset_data_id": "2.4.144"
     },
     {
         "id": "1.3.523",
@@ -4839,7 +4984,8 @@
         "issuer": "1.2.5000",
         "market_fee_percent": 100,
         "max_market_fee": 0,
-        "max_supply": 100000
+        "max_supply": 100000,
+        "bitasset_data_id": "2.4.145"
     },
     {
         "id": "1.3.538",
@@ -4884,7 +5030,8 @@
         "issuer": "1.2.5000",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.146"
     },
     {
         "id": "1.3.543",
@@ -5163,7 +5310,8 @@
         "issuer": "1.2.4972",
         "market_fee_percent": 20,
         "max_market_fee": "99999999900000",
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.147"
     },
     {
         "id": "1.3.574",
@@ -5190,7 +5338,8 @@
         "issuer": "1.2.5010",
         "market_fee_percent": 1000,
         "max_market_fee": 10000000,
-        "max_supply": "5000000000"
+        "max_supply": "5000000000",
+        "bitasset_data_id": "2.4.148"
     },
     {
         "id": "1.3.577",
@@ -5199,7 +5348,8 @@
         "issuer": "1.2.5013",
         "market_fee_percent": 1000,
         "max_market_fee": 10000,
-        "max_supply": "100000000000"
+        "max_supply": "100000000000",
+        "bitasset_data_id": "2.4.149"
     },
     {
         "id": "1.3.578",
@@ -5226,7 +5376,8 @@
         "issuer": "1.2.4902",
         "market_fee_percent": 50,
         "max_market_fee": 100000000,
-        "max_supply": "100000000000"
+        "max_supply": "100000000000",
+        "bitasset_data_id": "2.4.150"
     },
     {
         "id": "1.3.581",
@@ -5235,7 +5386,8 @@
         "issuer": "1.2.5035",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.151"
     },
     {
         "id": "1.3.582",
@@ -5253,7 +5405,8 @@
         "issuer": "1.2.7586",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "100000000000000"
+        "max_supply": "100000000000000",
+        "bitasset_data_id": "2.4.152"
     },
     {
         "id": "1.3.584",
@@ -5271,7 +5424,8 @@
         "issuer": "1.2.18746",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.153"
     },
     {
         "id": "1.3.586",
@@ -5298,7 +5452,8 @@
         "issuer": "1.2.4986",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.154"
     },
     {
         "id": "1.3.589",
@@ -5433,7 +5588,8 @@
         "issuer": "1.2.4867",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "100000000000"
+        "max_supply": "100000000000",
+        "bitasset_data_id": "2.4.155"
     },
     {
         "id": "1.3.604",
@@ -5451,7 +5607,8 @@
         "issuer": "1.2.7586",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.156"
     },
     {
         "id": "1.3.606",
@@ -5514,7 +5671,8 @@
         "issuer": "1.2.20084",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.157"
     },
     {
         "id": "1.3.613",
@@ -5577,7 +5735,8 @@
         "issuer": "1.2.20123",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "100000000000000"
+        "max_supply": "100000000000000",
+        "bitasset_data_id": "2.4.158"
     },
     {
         "id": "1.3.620",
@@ -5595,7 +5754,8 @@
         "issuer": "1.2.20123",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 1000000
+        "max_supply": 1000000,
+        "bitasset_data_id": "2.4.159"
     },
     {
         "id": "1.3.622",
@@ -5604,7 +5764,8 @@
         "issuer": "1.2.20072",
         "market_fee_percent": 1,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.160"
     },
     {
         "id": "1.3.623",
@@ -5631,7 +5792,8 @@
         "issuer": "1.2.4551",
         "market_fee_percent": 200,
         "max_market_fee": 100000000,
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.161"
     },
     {
         "id": "1.3.626",
@@ -5649,7 +5811,8 @@
         "issuer": "1.2.20146",
         "market_fee_percent": 0,
         "max_market_fee": 100,
-        "max_supply": 100000000
+        "max_supply": 100000000,
+        "bitasset_data_id": "2.4.162"
     },
     {
         "id": "1.3.628",
@@ -5712,7 +5875,8 @@
         "issuer": "1.2.20188",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000000"
+        "max_supply": "10000000000000",
+        "bitasset_data_id": "2.4.163"
     },
     {
         "id": "1.3.635",
@@ -5730,7 +5894,8 @@
         "issuer": "1.2.20196",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 10000000
+        "max_supply": 10000000,
+        "bitasset_data_id": "2.4.164"
     },
     {
         "id": "1.3.637",
@@ -5748,7 +5913,8 @@
         "issuer": "1.2.20196",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.165"
     },
     {
         "id": "1.3.639",
@@ -5784,7 +5950,8 @@
         "issuer": "1.2.20150",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.166"
     },
     {
         "id": "1.3.643",
@@ -5793,7 +5960,8 @@
         "issuer": "1.2.20271",
         "market_fee_percent": 6,
         "max_market_fee": 2500000,
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.167"
     },
     {
         "id": "1.3.644",
@@ -5811,7 +5979,8 @@
         "issuer": "1.2.20271",
         "market_fee_percent": 6,
         "max_market_fee": 1300000,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.168"
     },
     {
         "id": "1.3.646",
@@ -6045,7 +6214,8 @@
         "issuer": "1.2.20357",
         "market_fee_percent": 2,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.169"
     },
     {
         "id": "1.3.672",
@@ -6063,7 +6233,8 @@
         "issuer": "1.2.20357",
         "market_fee_percent": 2,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.170"
     },
     {
         "id": "1.3.674",
@@ -6072,7 +6243,8 @@
         "issuer": "1.2.20357",
         "market_fee_percent": 2,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.171"
     },
     {
         "id": "1.3.675",
@@ -6081,7 +6253,8 @@
         "issuer": "1.2.20357",
         "market_fee_percent": 2,
         "max_market_fee": 0,
-        "max_supply": 666
+        "max_supply": 666,
+        "bitasset_data_id": "2.4.172"
     },
     {
         "id": "1.3.676",
@@ -6090,7 +6263,8 @@
         "issuer": "1.2.20357",
         "market_fee_percent": 2,
         "max_market_fee": 0,
-        "max_supply": 666
+        "max_supply": 666,
+        "bitasset_data_id": "2.4.173"
     },
     {
         "id": "1.3.677",
@@ -6099,7 +6273,8 @@
         "issuer": "1.2.20357",
         "market_fee_percent": 2,
         "max_market_fee": 0,
-        "max_supply": 666
+        "max_supply": 666,
+        "bitasset_data_id": "2.4.174"
     },
     {
         "id": "1.3.678",
@@ -6108,7 +6283,8 @@
         "issuer": "1.2.20357",
         "market_fee_percent": 2,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.175"
     },
     {
         "id": "1.3.679",
@@ -6117,7 +6293,8 @@
         "issuer": "1.2.20357",
         "market_fee_percent": 2,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.176"
     },
     {
         "id": "1.3.680",
@@ -6126,7 +6303,8 @@
         "issuer": "1.2.20357",
         "market_fee_percent": 2,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.177"
     },
     {
         "id": "1.3.681",
@@ -6144,7 +6322,8 @@
         "issuer": "1.2.20357",
         "market_fee_percent": 2,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.178"
     },
     {
         "id": "1.3.683",
@@ -6153,7 +6332,8 @@
         "issuer": "1.2.20357",
         "market_fee_percent": 2,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.179"
     },
     {
         "id": "1.3.684",
@@ -6162,7 +6342,8 @@
         "issuer": "1.2.20357",
         "market_fee_percent": 2,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.180"
     },
     {
         "id": "1.3.685",
@@ -6171,7 +6352,8 @@
         "issuer": "1.2.20357",
         "market_fee_percent": 2,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.181"
     },
     {
         "id": "1.3.686",
@@ -6180,7 +6362,8 @@
         "issuer": "1.2.20150",
         "market_fee_percent": 100,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.182"
     },
     {
         "id": "1.3.687",
@@ -6189,7 +6372,8 @@
         "issuer": "1.2.20150",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.183"
     },
     {
         "id": "1.3.688",
@@ -6198,7 +6382,8 @@
         "issuer": "1.2.20150",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.184"
     },
     {
         "id": "1.3.689",
@@ -6207,7 +6392,8 @@
         "issuer": "1.2.20150",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000100000"
+        "max_supply": "10000100000",
+        "bitasset_data_id": "2.4.185"
     },
     {
         "id": "1.3.690",
@@ -6216,7 +6402,8 @@
         "issuer": "1.2.20150",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.186"
     },
     {
         "id": "1.3.691",
@@ -6225,7 +6412,8 @@
         "issuer": "1.2.20150",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.187"
     },
     {
         "id": "1.3.692",
@@ -6234,7 +6422,8 @@
         "issuer": "1.2.20150",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.188"
     },
     {
         "id": "1.3.693",
@@ -6252,7 +6441,8 @@
         "issuer": "1.2.20357",
         "market_fee_percent": 2,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.189"
     },
     {
         "id": "1.3.695",
@@ -6450,7 +6640,8 @@
         "issuer": "1.2.20474",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 22200000
+        "max_supply": 22200000,
+        "bitasset_data_id": "2.4.190"
     },
     {
         "id": "1.3.717",
@@ -6486,7 +6677,8 @@
         "issuer": "1.2.20495",
         "market_fee_percent": 200,
         "max_market_fee": 0,
-        "max_supply": "10000000000000"
+        "max_supply": "10000000000000",
+        "bitasset_data_id": "2.4.191"
     },
     {
         "id": "1.3.721",
@@ -6495,7 +6687,8 @@
         "issuer": "1.2.20494",
         "market_fee_percent": 20,
         "max_market_fee": 0,
-        "max_supply": "10000000000000"
+        "max_supply": "10000000000000",
+        "bitasset_data_id": "2.4.192"
     },
     {
         "id": "1.3.722",
@@ -6540,7 +6733,8 @@
         "issuer": "1.2.20633",
         "market_fee_percent": 1,
         "max_market_fee": 300000000,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.193"
     },
     {
         "id": "1.3.727",
@@ -6549,7 +6743,8 @@
         "issuer": "1.2.3625",
         "market_fee_percent": 9000,
         "max_market_fee": "100000000000000",
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.194"
     },
     {
         "id": "1.3.728",
@@ -6567,7 +6762,8 @@
         "issuer": "1.2.20337",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "100000000000"
+        "max_supply": "100000000000",
+        "bitasset_data_id": "2.4.195"
     },
     {
         "id": "1.3.730",
@@ -6585,7 +6781,8 @@
         "issuer": "1.2.20682",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 100000
+        "max_supply": 100000,
+        "bitasset_data_id": "2.4.196"
     },
     {
         "id": "1.3.732",
@@ -6648,7 +6845,8 @@
         "issuer": "1.2.20870",
         "market_fee_percent": 2000,
         "max_market_fee": 100000000,
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.197"
     },
     {
         "id": "1.3.739",
@@ -6729,7 +6927,8 @@
         "issuer": "1.2.20956",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 100000000
+        "max_supply": 100000000,
+        "bitasset_data_id": "2.4.198"
     },
     {
         "id": "1.3.748",
@@ -6846,7 +7045,8 @@
         "issuer": "1.2.21087",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000000"
+        "max_supply": "10000000000000",
+        "bitasset_data_id": "2.4.199"
     },
     {
         "id": "1.3.761",
@@ -6873,7 +7073,8 @@
         "issuer": "1.2.21125",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.200"
     },
     {
         "id": "1.3.764",
@@ -6882,7 +7083,8 @@
         "issuer": "1.2.21050",
         "market_fee_percent": 200,
         "max_market_fee": 0,
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.201"
     },
     {
         "id": "1.3.765",
@@ -7107,7 +7309,8 @@
         "issuer": "1.2.21044",
         "market_fee_percent": 0,
         "max_market_fee": 100000000,
-        "max_supply": 100000000
+        "max_supply": 100000000,
+        "bitasset_data_id": "2.4.202"
     },
     {
         "id": "1.3.790",
@@ -7116,7 +7319,8 @@
         "issuer": "1.2.21044",
         "market_fee_percent": 0,
         "max_market_fee": 100000000,
-        "max_supply": 100000000
+        "max_supply": 100000000,
+        "bitasset_data_id": "2.4.203"
     },
     {
         "id": "1.3.791",
@@ -7179,7 +7383,8 @@
         "issuer": "1.2.21402",
         "market_fee_percent": 1100,
         "max_market_fee": 11100000,
-        "max_supply": "10000000000000"
+        "max_supply": "10000000000000",
+        "bitasset_data_id": "2.4.204"
     },
     {
         "id": "1.3.798",
@@ -7287,7 +7492,8 @@
         "issuer": "1.2.20225",
         "market_fee_percent": 15,
         "max_market_fee": 0,
-        "max_supply": "10000000000000"
+        "max_supply": "10000000000000",
+        "bitasset_data_id": "2.4.205"
     },
     {
         "id": "1.3.810",
@@ -7296,7 +7502,8 @@
         "issuer": "1.2.20225",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.206"
     },
     {
         "id": "1.3.811",
@@ -7314,7 +7521,8 @@
         "issuer": "1.2.20225",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.207"
     },
     {
         "id": "1.3.813",
@@ -7323,7 +7531,8 @@
         "issuer": "1.2.21091",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 10000000
+        "max_supply": 10000000,
+        "bitasset_data_id": "2.4.208"
     },
     {
         "id": "1.3.814",
@@ -7332,7 +7541,8 @@
         "issuer": "1.2.21091",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.209"
     },
     {
         "id": "1.3.815",
@@ -7368,7 +7578,8 @@
         "issuer": "1.2.22554",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "100000000000000"
+        "max_supply": "100000000000000",
+        "bitasset_data_id": "2.4.210"
     },
     {
         "id": "1.3.819",
@@ -7377,7 +7588,8 @@
         "issuer": "1.2.22559",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.211"
     },
     {
         "id": "1.3.820",
@@ -7386,7 +7598,8 @@
         "issuer": "1.2.22560",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 10000000
+        "max_supply": 10000000,
+        "bitasset_data_id": "2.4.212"
     },
     {
         "id": "1.3.821",
@@ -7395,7 +7608,8 @@
         "issuer": "1.2.22549",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.213"
     },
     {
         "id": "1.3.822",
@@ -7404,7 +7618,8 @@
         "issuer": "1.2.22549",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 10000000
+        "max_supply": 10000000,
+        "bitasset_data_id": "2.4.214"
     },
     {
         "id": "1.3.823",
@@ -7413,7 +7628,8 @@
         "issuer": "1.2.22567",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "14010000000"
+        "max_supply": "14010000000",
+        "bitasset_data_id": "2.4.215"
     },
     {
         "id": "1.3.824",
@@ -7422,7 +7638,8 @@
         "issuer": "1.2.22570",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "45000000000"
+        "max_supply": "45000000000",
+        "bitasset_data_id": "2.4.216"
     },
     {
         "id": "1.3.825",
@@ -7431,7 +7648,8 @@
         "issuer": "1.2.22571",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "85000000000"
+        "max_supply": "85000000000",
+        "bitasset_data_id": "2.4.217"
     },
     {
         "id": "1.3.826",
@@ -7440,7 +7658,8 @@
         "issuer": "1.2.22576",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 25000
+        "max_supply": 25000,
+        "bitasset_data_id": "2.4.218"
     },
     {
         "id": "1.3.827",
@@ -7503,7 +7722,8 @@
         "issuer": "1.2.4986",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.219"
     },
     {
         "id": "1.3.834",
@@ -7512,7 +7732,8 @@
         "issuer": "1.2.22620",
         "market_fee_percent": 30,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.220"
     },
     {
         "id": "1.3.835",
@@ -7521,7 +7742,8 @@
         "issuer": "1.2.22620",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "100000000000"
+        "max_supply": "100000000000",
+        "bitasset_data_id": "2.4.221"
     },
     {
         "id": "1.3.836",
@@ -7530,7 +7752,8 @@
         "issuer": "1.2.22637",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.222"
     },
     {
         "id": "1.3.837",
@@ -7539,7 +7762,8 @@
         "issuer": "1.2.3833",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.223"
     },
     {
         "id": "1.3.838",
@@ -7548,7 +7772,8 @@
         "issuer": "1.2.22636",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "1000000000000"
+        "max_supply": "1000000000000",
+        "bitasset_data_id": "2.4.224"
     },
     {
         "id": "1.3.839",
@@ -7566,7 +7791,8 @@
         "issuer": "1.2.3833",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 100000
+        "max_supply": 100000,
+        "bitasset_data_id": "2.4.225"
     },
     {
         "id": "1.3.841",
@@ -7584,7 +7810,8 @@
         "issuer": "1.2.22637",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.226"
     },
     {
         "id": "1.3.843",
@@ -7593,7 +7820,8 @@
         "issuer": "1.2.22639",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.227"
     },
     {
         "id": "1.3.844",
@@ -7602,7 +7830,8 @@
         "issuer": "1.2.22639",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "100000000000"
+        "max_supply": "100000000000",
+        "bitasset_data_id": "2.4.228"
     },
     {
         "id": "1.3.845",
@@ -7620,7 +7849,8 @@
         "issuer": "1.2.22639",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.229"
     },
     {
         "id": "1.3.847",
@@ -7647,7 +7877,8 @@
         "issuer": "1.2.3833",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.230"
     },
     {
         "id": "1.3.850",
@@ -7656,7 +7887,8 @@
         "issuer": "1.2.3833",
         "market_fee_percent": 0,
         "max_market_fee": "1000000000000000",
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.231"
     },
     {
         "id": "1.3.851",
@@ -7683,7 +7915,8 @@
         "issuer": "1.2.22113",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.232"
     },
     {
         "id": "1.3.854",
@@ -7701,7 +7934,8 @@
         "issuer": "1.2.3817",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000000"
+        "max_supply": "10000000000000",
+        "bitasset_data_id": "2.4.233"
     },
     {
         "id": "1.3.856",
@@ -7710,7 +7944,8 @@
         "issuer": "1.2.22620",
         "market_fee_percent": 0,
         "max_market_fee": "1000000000000000",
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.234"
     },
     {
         "id": "1.3.857",
@@ -7728,7 +7963,8 @@
         "issuer": "1.2.22614",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "1000000000000"
+        "max_supply": "1000000000000",
+        "bitasset_data_id": "2.4.235"
     },
     {
         "id": "1.3.859",
@@ -7737,7 +7973,8 @@
         "issuer": "1.2.21044",
         "market_fee_percent": 0,
         "max_market_fee": 100000000,
-        "max_supply": "100000000000"
+        "max_supply": "100000000000",
+        "bitasset_data_id": "2.4.236"
     },
     {
         "id": "1.3.860",
@@ -7746,7 +7983,8 @@
         "issuer": "1.2.21044",
         "market_fee_percent": 0,
         "max_market_fee": 100000000,
-        "max_supply": "100000000000"
+        "max_supply": "100000000000",
+        "bitasset_data_id": "2.4.237"
     },
     {
         "id": "1.3.861",
@@ -7755,7 +7993,8 @@
         "issuer": "1.2.21044",
         "market_fee_percent": 0,
         "max_market_fee": 100000000,
-        "max_supply": "100000000000"
+        "max_supply": "100000000000",
+        "bitasset_data_id": "2.4.238"
     },
     {
         "id": "1.3.862",
@@ -7764,7 +8003,8 @@
         "issuer": "1.2.21091",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.239"
     },
     {
         "id": "1.3.863",
@@ -7773,7 +8013,8 @@
         "issuer": "1.2.21044",
         "market_fee_percent": 0,
         "max_market_fee": 100000000,
-        "max_supply": "100000000000"
+        "max_supply": "100000000000",
+        "bitasset_data_id": "2.4.240"
     },
     {
         "id": "1.3.864",
@@ -7782,7 +8023,8 @@
         "issuer": "1.2.21044",
         "market_fee_percent": 0,
         "max_market_fee": 100000000,
-        "max_supply": "100000000000"
+        "max_supply": "100000000000",
+        "bitasset_data_id": "2.4.241"
     },
     {
         "id": "1.3.865",
@@ -7791,7 +8033,8 @@
         "issuer": "1.2.21044",
         "market_fee_percent": 0,
         "max_market_fee": 100000000,
-        "max_supply": "100000000000"
+        "max_supply": "100000000000",
+        "bitasset_data_id": "2.4.242"
     },
     {
         "id": "1.3.866",
@@ -7800,7 +8043,8 @@
         "issuer": "1.2.21044",
         "market_fee_percent": 0,
         "max_market_fee": 100000000,
-        "max_supply": "100000000000"
+        "max_supply": "100000000000",
+        "bitasset_data_id": "2.4.243"
     },
     {
         "id": "1.3.867",
@@ -7809,7 +8053,8 @@
         "issuer": "1.2.21044",
         "market_fee_percent": 0,
         "max_market_fee": 100000000,
-        "max_supply": "100000000000"
+        "max_supply": "100000000000",
+        "bitasset_data_id": "2.4.244"
     },
     {
         "id": "1.3.868",
@@ -7827,7 +8072,8 @@
         "issuer": "1.2.21044",
         "market_fee_percent": 0,
         "max_market_fee": "100000000000",
-        "max_supply": "100000000000"
+        "max_supply": "100000000000",
+        "bitasset_data_id": "2.4.245"
     },
     {
         "id": "1.3.870",
@@ -7836,7 +8082,8 @@
         "issuer": "1.2.21044",
         "market_fee_percent": 0,
         "max_market_fee": "100000000000",
-        "max_supply": "100000000000"
+        "max_supply": "100000000000",
+        "bitasset_data_id": "2.4.246"
     },
     {
         "id": "1.3.871",
@@ -7890,7 +8137,8 @@
         "issuer": "1.2.22113",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.247"
     },
     {
         "id": "1.3.877",
@@ -8016,7 +8264,8 @@
         "issuer": "1.2.20636",
         "market_fee_percent": 10,
         "max_market_fee": 1000000,
-        "max_supply": "1000000000000"
+        "max_supply": "1000000000000",
+        "bitasset_data_id": "2.4.248"
     },
     {
         "id": "1.3.891",
@@ -8241,7 +8490,8 @@
         "issuer": "1.2.22892",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000000"
+        "max_supply": "10000000000000",
+        "bitasset_data_id": "2.4.249"
     },
     {
         "id": "1.3.916",
@@ -8322,7 +8572,8 @@
         "issuer": "1.2.22908",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.250"
     },
     {
         "id": "1.3.925",
@@ -8358,7 +8609,8 @@
         "issuer": "1.2.22765",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "99999900000"
+        "max_supply": "99999900000",
+        "bitasset_data_id": "2.4.251"
     },
     {
         "id": "1.3.929",
@@ -8484,7 +8736,8 @@
         "issuer": "1.2.21075",
         "market_fee_percent": 20,
         "max_market_fee": 100000,
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.252"
     },
     {
         "id": "1.3.943",
@@ -8493,7 +8746,8 @@
         "issuer": "1.2.4136",
         "market_fee_percent": 1,
         "max_market_fee": 100,
-        "max_supply": 10000
+        "max_supply": 10000,
+        "bitasset_data_id": "2.4.253"
     },
     {
         "id": "1.3.944",
@@ -8511,7 +8765,8 @@
         "issuer": "1.2.21125",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.254"
     },
     {
         "id": "1.3.946",
@@ -8520,7 +8775,8 @@
         "issuer": "1.2.21125",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.255"
     },
     {
         "id": "1.3.947",
@@ -8529,7 +8785,8 @@
         "issuer": "1.2.21125",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.256"
     },
     {
         "id": "1.3.948",
@@ -9033,7 +9290,8 @@
         "issuer": "1.2.680",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.257"
     },
     {
         "id": "1.3.1004",
@@ -9078,7 +9336,8 @@
         "issuer": "1.2.23094",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.258"
     },
     {
         "id": "1.3.1009",
@@ -9105,7 +9364,8 @@
         "issuer": "1.2.23213",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.259"
     },
     {
         "id": "1.3.1012",
@@ -9114,7 +9374,8 @@
         "issuer": "1.2.23213",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.260"
     },
     {
         "id": "1.3.1013",
@@ -9177,7 +9438,8 @@
         "issuer": "1.2.23247",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "100000000000000"
+        "max_supply": "100000000000000",
+        "bitasset_data_id": "2.4.261"
     },
     {
         "id": "1.3.1020",
@@ -9195,7 +9457,8 @@
         "issuer": "1.2.22760",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "1000000000000"
+        "max_supply": "1000000000000",
+        "bitasset_data_id": "2.4.262"
     },
     {
         "id": "1.3.1022",
@@ -9267,7 +9530,8 @@
         "issuer": "1.2.23272",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "9000000000000"
+        "max_supply": "9000000000000",
+        "bitasset_data_id": "2.4.263"
     },
     {
         "id": "1.3.1030",
@@ -9321,7 +9585,8 @@
         "issuer": "1.2.23057",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 800000000
+        "max_supply": 800000000,
+        "bitasset_data_id": "2.4.264"
     },
     {
         "id": "1.3.1036",
@@ -9330,7 +9595,8 @@
         "issuer": "1.2.23057",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.265"
     },
     {
         "id": "1.3.1037",
@@ -9348,7 +9614,8 @@
         "issuer": "1.2.23057",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.266"
     },
     {
         "id": "1.3.1039",
@@ -9357,7 +9624,8 @@
         "issuer": "1.2.23090",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.267"
     },
     {
         "id": "1.3.1040",
@@ -9393,7 +9661,8 @@
         "issuer": "1.2.23058",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.268"
     },
     {
         "id": "1.3.1044",
@@ -9402,7 +9671,8 @@
         "issuer": "1.2.23059",
         "market_fee_percent": 1000,
         "max_market_fee": 50000000,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.269"
     },
     {
         "id": "1.3.1045",
@@ -9582,7 +9852,8 @@
         "issuer": "1.2.4891",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.270"
     },
     {
         "id": "1.3.1065",
@@ -9600,7 +9871,8 @@
         "issuer": "1.2.20084",
         "market_fee_percent": 0,
         "max_market_fee": "1000000000000000",
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.271"
     },
     {
         "id": "1.3.1067",
@@ -9672,7 +9944,8 @@
         "issuer": "1.2.23372",
         "market_fee_percent": 10,
         "max_market_fee": 0,
-        "max_supply": "10000000000000"
+        "max_supply": "10000000000000",
+        "bitasset_data_id": "2.4.272"
     },
     {
         "id": "1.3.1075",
@@ -9753,7 +10026,8 @@
         "issuer": "1.2.23363",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.273"
     },
     {
         "id": "1.3.1084",
@@ -9861,7 +10135,8 @@
         "issuer": "1.2.23516",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 1000000
+        "max_supply": 1000000,
+        "bitasset_data_id": "2.4.274"
     },
     {
         "id": "1.3.1096",
@@ -10140,7 +10415,8 @@
         "issuer": "1.2.23603",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.275"
     },
     {
         "id": "1.3.1127",
@@ -10185,7 +10461,8 @@
         "issuer": "1.2.20084",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000000"
+        "max_supply": "10000000000000",
+        "bitasset_data_id": "2.4.276"
     },
     {
         "id": "1.3.1132",
@@ -10194,7 +10471,8 @@
         "issuer": "1.2.20084",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.277"
     },
     {
         "id": "1.3.1133",
@@ -10230,7 +10508,8 @@
         "issuer": "1.2.23605",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.278"
     },
     {
         "id": "1.3.1137",
@@ -10293,7 +10572,8 @@
         "issuer": "1.2.23613",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "100000000000"
+        "max_supply": "100000000000",
+        "bitasset_data_id": "2.4.279"
     },
     {
         "id": "1.3.1144",
@@ -10302,7 +10582,8 @@
         "issuer": "1.2.23666",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "1000000000000"
+        "max_supply": "1000000000000",
+        "bitasset_data_id": "2.4.280"
     },
     {
         "id": "1.3.1145",
@@ -10374,7 +10655,8 @@
         "issuer": "1.2.23587",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 10000000
+        "max_supply": 10000000,
+        "bitasset_data_id": "2.4.281"
     },
     {
         "id": "1.3.1153",
@@ -10401,7 +10683,8 @@
         "issuer": "1.2.23587",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.282"
     },
     {
         "id": "1.3.1156",
@@ -10437,7 +10720,8 @@
         "issuer": "1.2.23697",
         "market_fee_percent": 20,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.283"
     },
     {
         "id": "1.3.1160",
@@ -10482,7 +10766,8 @@
         "issuer": "1.2.23721",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.284"
     },
     {
         "id": "1.3.1165",
@@ -10491,7 +10776,8 @@
         "issuer": "1.2.23723",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "999999900000000"
+        "max_supply": "999999900000000",
+        "bitasset_data_id": "2.4.285"
     },
     {
         "id": "1.3.1166",
@@ -10536,7 +10822,8 @@
         "issuer": "1.2.23213",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.286"
     },
     {
         "id": "1.3.1171",
@@ -10545,7 +10832,8 @@
         "issuer": "1.2.23213",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.287"
     },
     {
         "id": "1.3.1172",
@@ -10590,7 +10878,8 @@
         "issuer": "1.2.23758",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.288"
     },
     {
         "id": "1.3.1177",
@@ -10698,7 +10987,8 @@
         "issuer": "1.2.23796",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.289"
     },
     {
         "id": "1.3.1189",
@@ -10770,7 +11060,8 @@
         "issuer": "1.2.4819",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.290"
     },
     {
         "id": "1.3.1197",
@@ -10914,7 +11205,8 @@
         "issuer": "1.2.23888",
         "market_fee_percent": 500,
         "max_market_fee": 50000000,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.291"
     },
     {
         "id": "1.3.1213",
@@ -10923,7 +11215,8 @@
         "issuer": "1.2.23891",
         "market_fee_percent": 0,
         "max_market_fee": 100000000,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.292"
     },
     {
         "id": "1.3.1214",
@@ -10950,7 +11243,8 @@
         "issuer": "1.2.23587",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.293"
     },
     {
         "id": "1.3.1217",
@@ -11004,7 +11298,8 @@
         "issuer": "1.2.23173",
         "market_fee_percent": 10,
         "max_market_fee": 100000,
-        "max_supply": "100000000000"
+        "max_supply": "100000000000",
+        "bitasset_data_id": "2.4.294"
     },
     {
         "id": "1.3.1223",
@@ -11013,7 +11308,8 @@
         "issuer": "1.2.23173",
         "market_fee_percent": 0,
         "max_market_fee": "880000000000",
-        "max_supply": "220000000000"
+        "max_supply": "220000000000",
+        "bitasset_data_id": "2.4.295"
     },
     {
         "id": "1.3.1224",
@@ -11022,7 +11318,8 @@
         "issuer": "1.2.23173",
         "market_fee_percent": 0,
         "max_market_fee": 70000000,
-        "max_supply": "77770000000"
+        "max_supply": "77770000000",
+        "bitasset_data_id": "2.4.296"
     },
     {
         "id": "1.3.1225",
@@ -11049,7 +11346,8 @@
         "issuer": "1.2.23173",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "100000000000"
+        "max_supply": "100000000000",
+        "bitasset_data_id": "2.4.297"
     },
     {
         "id": "1.3.1228",
@@ -11058,7 +11356,8 @@
         "issuer": "1.2.23173",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "100000000000"
+        "max_supply": "100000000000",
+        "bitasset_data_id": "2.4.298"
     },
     {
         "id": "1.3.1229",
@@ -11238,7 +11537,8 @@
         "issuer": "1.2.23987",
         "market_fee_percent": 0,
         "max_market_fee": 100000000,
-        "max_supply": "999999900000000"
+        "max_supply": "999999900000000",
+        "bitasset_data_id": "2.4.299"
     },
     {
         "id": "1.3.1249",
@@ -11256,7 +11556,8 @@
         "issuer": "1.2.23989",
         "market_fee_percent": 10,
         "max_market_fee": 0,
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.300"
     },
     {
         "id": "1.3.1251",
@@ -11337,7 +11638,8 @@
         "issuer": "1.2.23173",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.301"
     },
     {
         "id": "1.3.1260",
@@ -11373,7 +11675,8 @@
         "issuer": "1.2.23917",
         "market_fee_percent": 500,
         "max_market_fee": 5000000,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.302"
     },
     {
         "id": "1.3.1264",
@@ -11391,7 +11694,8 @@
         "issuer": "1.2.23917",
         "market_fee_percent": 500,
         "max_market_fee": 10000000,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.303"
     },
     {
         "id": "1.3.1266",
@@ -11400,7 +11704,8 @@
         "issuer": "1.2.23919",
         "market_fee_percent": 500,
         "max_market_fee": 10000000,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.304"
     },
     {
         "id": "1.3.1267",
@@ -11427,7 +11732,8 @@
         "issuer": "1.2.961",
         "market_fee_percent": 50,
         "max_market_fee": "10000000000",
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.305"
     },
     {
         "id": "1.3.1270",
@@ -11463,7 +11769,8 @@
         "issuer": "1.2.4931",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "1000000000000"
+        "max_supply": "1000000000000",
+        "bitasset_data_id": "2.4.306"
     },
     {
         "id": "1.3.1274",
@@ -11508,7 +11815,8 @@
         "issuer": "1.2.23960",
         "market_fee_percent": 100,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.307"
     },
     {
         "id": "1.3.1279",
@@ -11526,7 +11834,8 @@
         "issuer": "1.2.4866",
         "market_fee_percent": 10,
         "max_market_fee": 2000,
-        "max_supply": "10000000000000"
+        "max_supply": "10000000000000",
+        "bitasset_data_id": "2.4.308"
     },
     {
         "id": "1.3.1281",
@@ -11535,7 +11844,8 @@
         "issuer": "1.2.4866",
         "market_fee_percent": 10,
         "max_market_fee": 3000,
-        "max_supply": "36000000000000"
+        "max_supply": "36000000000000",
+        "bitasset_data_id": "2.4.309"
     },
     {
         "id": "1.3.1282",
@@ -11607,7 +11917,8 @@
         "issuer": "1.2.23572",
         "market_fee_percent": 10,
         "max_market_fee": 0,
-        "max_supply": "100000000000"
+        "max_supply": "100000000000",
+        "bitasset_data_id": "2.4.310"
     },
     {
         "id": "1.3.1290",
@@ -11634,7 +11945,8 @@
         "issuer": "1.2.23723",
         "market_fee_percent": 100,
         "max_market_fee": 0,
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.311"
     },
     {
         "id": "1.3.1293",
@@ -11706,7 +12018,8 @@
         "issuer": "1.2.24205",
         "market_fee_percent": 10,
         "max_market_fee": "1000000000000000",
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.312"
     },
     {
         "id": "1.3.1301",
@@ -11724,7 +12037,8 @@
         "issuer": "1.2.24205",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "100000000000000"
+        "max_supply": "100000000000000",
+        "bitasset_data_id": "2.4.313"
     },
     {
         "id": "1.3.1303",
@@ -11760,7 +12074,8 @@
         "issuer": "1.2.23881",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.314"
     },
     {
         "id": "1.3.1307",
@@ -11832,7 +12147,8 @@
         "issuer": "1.2.23891",
         "market_fee_percent": 5,
         "max_market_fee": 1000000000,
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.315"
     },
     {
         "id": "1.3.1315",
@@ -11949,7 +12265,8 @@
         "issuer": "1.2.23300",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.316"
     },
     {
         "id": "1.3.1328",
@@ -12246,7 +12563,8 @@
         "issuer": "1.2.4411",
         "market_fee_percent": 1000,
         "max_market_fee": 0,
-        "max_supply": 100000000
+        "max_supply": 100000000,
+        "bitasset_data_id": "2.4.317"
     },
     {
         "id": "1.3.1361",
@@ -12273,7 +12591,8 @@
         "issuer": "1.2.4411",
         "market_fee_percent": 1000,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.318"
     },
     {
         "id": "1.3.1364",
@@ -12309,7 +12628,8 @@
         "issuer": "1.2.24937",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.319"
     },
     {
         "id": "1.3.1368",
@@ -12354,7 +12674,8 @@
         "issuer": "1.2.24970",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000000"
+        "max_supply": "10000000000000",
+        "bitasset_data_id": "2.4.320"
     },
     {
         "id": "1.3.1373",
@@ -12426,7 +12747,8 @@
         "issuer": "1.2.24024",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.321"
     },
     {
         "id": "1.3.1381",
@@ -12435,7 +12757,8 @@
         "issuer": "1.2.24024",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.322"
     },
     {
         "id": "1.3.1382",
@@ -12444,7 +12767,8 @@
         "issuer": "1.2.24024",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.323"
     },
     {
         "id": "1.3.1383",
@@ -12453,7 +12777,8 @@
         "issuer": "1.2.24024",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.324"
     },
     {
         "id": "1.3.1384",
@@ -12462,7 +12787,8 @@
         "issuer": "1.2.24024",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.325"
     },
     {
         "id": "1.3.1385",
@@ -12471,7 +12797,8 @@
         "issuer": "1.2.4818",
         "market_fee_percent": 10,
         "max_market_fee": 100000000,
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.326"
     },
     {
         "id": "1.3.1386",
@@ -12489,7 +12816,8 @@
         "issuer": "1.2.4818",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.327"
     },
     {
         "id": "1.3.1388",
@@ -12498,7 +12826,8 @@
         "issuer": "1.2.4818",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "246000000000000"
+        "max_supply": "246000000000000",
+        "bitasset_data_id": "2.4.328"
     },
     {
         "id": "1.3.1389",
@@ -12507,7 +12836,8 @@
         "issuer": "1.2.4818",
         "market_fee_percent": 10,
         "max_market_fee": 1000000000,
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.329"
     },
     {
         "id": "1.3.1390",
@@ -12633,7 +12963,8 @@
         "issuer": "1.2.25048",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "100000000000000"
+        "max_supply": "100000000000000",
+        "bitasset_data_id": "2.4.330"
     },
     {
         "id": "1.3.1404",
@@ -12723,7 +13054,8 @@
         "issuer": "1.2.22682",
         "market_fee_percent": 4,
         "max_market_fee": "1000000000000000",
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.331"
     },
     {
         "id": "1.3.1414",
@@ -12741,7 +13073,8 @@
         "issuer": "1.2.24983",
         "market_fee_percent": 100,
         "max_market_fee": 50000000,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.332"
     },
     {
         "id": "1.3.1416",
@@ -12759,7 +13092,8 @@
         "issuer": "1.2.24983",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "20000000000"
+        "max_supply": "20000000000",
+        "bitasset_data_id": "2.4.333"
     },
     {
         "id": "1.3.1418",
@@ -12768,7 +13102,8 @@
         "issuer": "1.2.24983",
         "market_fee_percent": 500,
         "max_market_fee": 50000000,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.334"
     },
     {
         "id": "1.3.1419",
@@ -12777,7 +13112,8 @@
         "issuer": "1.2.25110",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.335"
     },
     {
         "id": "1.3.1420",
@@ -12813,7 +13149,8 @@
         "issuer": "1.2.23812",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000000"
+        "max_supply": "10000000000000",
+        "bitasset_data_id": "2.4.336"
     },
     {
         "id": "1.3.1424",
@@ -12885,7 +13222,8 @@
         "issuer": "1.2.23812",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.337"
     },
     {
         "id": "1.3.1432",
@@ -12966,7 +13304,8 @@
         "issuer": "1.2.23881",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.338"
     },
     {
         "id": "1.3.1441",
@@ -13038,7 +13377,8 @@
         "issuer": "1.2.23881",
         "market_fee_percent": 50,
         "max_market_fee": 100000,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.339"
     },
     {
         "id": "1.3.1449",
@@ -13047,7 +13387,8 @@
         "issuer": "1.2.23881",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.340"
     },
     {
         "id": "1.3.1450",
@@ -13056,7 +13397,8 @@
         "issuer": "1.2.23881",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.341"
     },
     {
         "id": "1.3.1451",
@@ -13065,7 +13407,8 @@
         "issuer": "1.2.23881",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.342"
     },
     {
         "id": "1.3.1452",
@@ -13074,7 +13417,8 @@
         "issuer": "1.2.23881",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.343"
     },
     {
         "id": "1.3.1453",
@@ -13092,7 +13436,8 @@
         "issuer": "1.2.23881",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.344"
     },
     {
         "id": "1.3.1455",
@@ -13101,7 +13446,8 @@
         "issuer": "1.2.23881",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.345"
     },
     {
         "id": "1.3.1456",
@@ -13110,7 +13456,8 @@
         "issuer": "1.2.23881",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.346"
     },
     {
         "id": "1.3.1457",
@@ -13119,7 +13466,8 @@
         "issuer": "1.2.23881",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.347"
     },
     {
         "id": "1.3.1458",
@@ -13128,7 +13476,8 @@
         "issuer": "1.2.23881",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.348"
     },
     {
         "id": "1.3.1459",
@@ -13146,7 +13495,8 @@
         "issuer": "1.2.23881",
         "market_fee_percent": 300,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.349"
     },
     {
         "id": "1.3.1461",
@@ -13155,7 +13505,8 @@
         "issuer": "1.2.23881",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.350"
     },
     {
         "id": "1.3.1462",
@@ -13164,7 +13515,8 @@
         "issuer": "1.2.23881",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.351"
     },
     {
         "id": "1.3.1463",
@@ -13173,7 +13525,8 @@
         "issuer": "1.2.23881",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.352"
     },
     {
         "id": "1.3.1464",
@@ -13200,7 +13553,8 @@
         "issuer": "1.2.23881",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.353"
     },
     {
         "id": "1.3.1467",
@@ -13209,7 +13563,8 @@
         "issuer": "1.2.23881",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.354"
     },
     {
         "id": "1.3.1468",
@@ -13218,7 +13573,8 @@
         "issuer": "1.2.23881",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.355"
     },
     {
         "id": "1.3.1469",
@@ -13227,7 +13583,8 @@
         "issuer": "1.2.23881",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.356"
     },
     {
         "id": "1.3.1470",
@@ -13236,7 +13593,8 @@
         "issuer": "1.2.23881",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.357"
     },
     {
         "id": "1.3.1471",
@@ -13245,7 +13603,8 @@
         "issuer": "1.2.23881",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.358"
     },
     {
         "id": "1.3.1472",
@@ -13254,7 +13613,8 @@
         "issuer": "1.2.23881",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.359"
     },
     {
         "id": "1.3.1473",
@@ -13263,7 +13623,8 @@
         "issuer": "1.2.23881",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.360"
     },
     {
         "id": "1.3.1474",
@@ -13272,7 +13633,8 @@
         "issuer": "1.2.23881",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.361"
     },
     {
         "id": "1.3.1475",
@@ -13281,7 +13643,8 @@
         "issuer": "1.2.23881",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.362"
     },
     {
         "id": "1.3.1476",
@@ -13290,7 +13653,8 @@
         "issuer": "1.2.23881",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.363"
     },
     {
         "id": "1.3.1477",
@@ -13299,7 +13663,8 @@
         "issuer": "1.2.23881",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.364"
     },
     {
         "id": "1.3.1478",
@@ -13308,7 +13673,8 @@
         "issuer": "1.2.23881",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.365"
     },
     {
         "id": "1.3.1479",
@@ -13317,7 +13683,8 @@
         "issuer": "1.2.23881",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.366"
     },
     {
         "id": "1.3.1480",
@@ -13326,7 +13693,8 @@
         "issuer": "1.2.23881",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.367"
     },
     {
         "id": "1.3.1481",
@@ -13335,7 +13703,8 @@
         "issuer": "1.2.23881",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.368"
     },
     {
         "id": "1.3.1482",
@@ -13344,7 +13713,8 @@
         "issuer": "1.2.23881",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.369"
     },
     {
         "id": "1.3.1483",
@@ -13353,7 +13723,8 @@
         "issuer": "1.2.23881",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.370"
     },
     {
         "id": "1.3.1484",
@@ -13362,7 +13733,8 @@
         "issuer": "1.2.23881",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.371"
     },
     {
         "id": "1.3.1485",
@@ -13389,7 +13761,8 @@
         "issuer": "1.2.23812",
         "market_fee_percent": 10,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.372"
     },
     {
         "id": "1.3.1488",
@@ -13407,7 +13780,8 @@
         "issuer": "1.2.23812",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.373"
     },
     {
         "id": "1.3.1490",
@@ -13686,7 +14060,8 @@
         "issuer": "1.2.25360",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.374"
     },
     {
         "id": "1.3.1521",
@@ -13731,7 +14106,8 @@
         "issuer": "1.2.25373",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 1000
+        "max_supply": 1000,
+        "bitasset_data_id": "2.4.375"
     },
     {
         "id": "1.3.1526",
@@ -13740,7 +14116,8 @@
         "issuer": "1.2.25373",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 1000
+        "max_supply": 1000,
+        "bitasset_data_id": "2.4.376"
     },
     {
         "id": "1.3.1527",
@@ -13749,7 +14126,8 @@
         "issuer": "1.2.25373",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 1000
+        "max_supply": 1000,
+        "bitasset_data_id": "2.4.377"
     },
     {
         "id": "1.3.1528",
@@ -13785,7 +14163,8 @@
         "issuer": "1.2.23173",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 10000000
+        "max_supply": 10000000,
+        "bitasset_data_id": "2.4.378"
     },
     {
         "id": "1.3.1532",
@@ -13803,7 +14182,8 @@
         "issuer": "1.2.23173",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 100000000
+        "max_supply": 100000000,
+        "bitasset_data_id": "2.4.379"
     },
     {
         "id": "1.3.1534",
@@ -13848,7 +14228,8 @@
         "issuer": "1.2.23172",
         "market_fee_percent": 100,
         "max_market_fee": "80000000000",
-        "max_supply": "2500000000000"
+        "max_supply": "2500000000000",
+        "bitasset_data_id": "2.4.380"
     },
     {
         "id": "1.3.1539",
@@ -13974,7 +14355,8 @@
         "issuer": "1.2.25563",
         "market_fee_percent": 100,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.381"
     },
     {
         "id": "1.3.1553",
@@ -13992,7 +14374,8 @@
         "issuer": "1.2.25563",
         "market_fee_percent": 100,
         "max_market_fee": 1000000,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.382"
     },
     {
         "id": "1.3.1555",
@@ -14010,7 +14393,8 @@
         "issuer": "1.2.4818",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.383"
     },
     {
         "id": "1.3.1557",
@@ -14163,7 +14547,8 @@
         "issuer": "1.2.25643",
         "market_fee_percent": 10,
         "max_market_fee": 1000,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.384"
     },
     {
         "id": "1.3.1574",
@@ -14235,7 +14620,8 @@
         "issuer": "1.2.23880",
         "market_fee_percent": 100,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.385"
     },
     {
         "id": "1.3.1582",
@@ -14289,7 +14675,8 @@
         "issuer": "1.2.3402",
         "market_fee_percent": 10,
         "max_market_fee": 0,
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.386"
     },
     {
         "id": "1.3.1588",
@@ -14298,7 +14685,8 @@
         "issuer": "1.2.23173",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 11100000
+        "max_supply": 11100000,
+        "bitasset_data_id": "2.4.387"
     },
     {
         "id": "1.3.1589",
@@ -14307,7 +14695,8 @@
         "issuer": "1.2.25661",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.388"
     },
     {
         "id": "1.3.1590",
@@ -14316,7 +14705,8 @@
         "issuer": "1.2.25661",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.389"
     },
     {
         "id": "1.3.1591",
@@ -14361,7 +14751,8 @@
         "issuer": "1.2.23173",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "100000000000000"
+        "max_supply": "100000000000000",
+        "bitasset_data_id": "2.4.390"
     },
     {
         "id": "1.3.1596",
@@ -15063,7 +15454,8 @@
         "issuer": "1.2.25729",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.391"
     },
     {
         "id": "1.3.1674",
@@ -15081,7 +15473,8 @@
         "issuer": "1.2.25729",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.392"
     },
     {
         "id": "1.3.1676",
@@ -15162,7 +15555,8 @@
         "issuer": "1.2.24790",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.393"
     },
     {
         "id": "1.3.1685",
@@ -15171,7 +15565,8 @@
         "issuer": "1.2.24790",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.394"
     },
     {
         "id": "1.3.1686",
@@ -15261,7 +15656,8 @@
         "issuer": "1.2.25961",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.395"
     },
     {
         "id": "1.3.1696",
@@ -15270,7 +15666,8 @@
         "issuer": "1.2.25530",
         "market_fee_percent": 0,
         "max_market_fee": "1000000000000000",
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.396"
     },
     {
         "id": "1.3.1697",
@@ -15315,7 +15712,8 @@
         "issuer": "1.2.4818",
         "market_fee_percent": 10,
         "max_market_fee": "10000000000",
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.397"
     },
     {
         "id": "1.3.1702",
@@ -15324,7 +15722,8 @@
         "issuer": "1.2.20326",
         "market_fee_percent": 10,
         "max_market_fee": "10000000000",
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.398"
     },
     {
         "id": "1.3.1703",
@@ -15369,7 +15768,8 @@
         "issuer": "1.2.26135",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.399"
     },
     {
         "id": "1.3.1708",
@@ -15387,7 +15787,8 @@
         "issuer": "1.2.25721",
         "market_fee_percent": 10,
         "max_market_fee": "10000000000",
-        "max_supply": "1000000000000"
+        "max_supply": "1000000000000",
+        "bitasset_data_id": "2.4.400"
     },
     {
         "id": "1.3.1710",
@@ -15862,7 +16263,7 @@
         "symbol": "SWAPBTS",
         "precision": 8,
         "issuer": "1.2.25721",
-        "market_fee_percent": 2000,
+        "market_fee_percent": 100,
         "max_market_fee": "1000000000000000",
         "max_supply": "1000000000000000"
     },
@@ -15873,7 +16274,8 @@
         "issuer": "1.2.25729",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.401"
     },
     {
         "id": "1.3.1764",
@@ -15882,7 +16284,8 @@
         "issuer": "1.2.25729",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": 1000000000
+        "max_supply": 1000000000,
+        "bitasset_data_id": "2.4.402"
     },
     {
         "id": "1.3.1765",
@@ -15918,7 +16321,8 @@
         "issuer": "1.2.25729",
         "market_fee_percent": 0,
         "max_market_fee": "100000000000000",
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.403"
     },
     {
         "id": "1.3.1769",
@@ -15927,7 +16331,8 @@
         "issuer": "1.2.25729",
         "market_fee_percent": 0,
         "max_market_fee": "100000000000000",
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.404"
     },
     {
         "id": "1.3.1770",
@@ -15936,7 +16341,8 @@
         "issuer": "1.2.25729",
         "market_fee_percent": 0,
         "max_market_fee": "100000000000000",
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.405"
     },
     {
         "id": "1.3.1771",
@@ -15945,7 +16351,8 @@
         "issuer": "1.2.25729",
         "market_fee_percent": 0,
         "max_market_fee": "100000000000000",
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.406"
     },
     {
         "id": "1.3.1772",
@@ -15954,7 +16361,8 @@
         "issuer": "1.2.25729",
         "market_fee_percent": 0,
         "max_market_fee": "100000000000000",
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.407"
     },
     {
         "id": "1.3.1773",
@@ -15963,7 +16371,8 @@
         "issuer": "1.2.25729",
         "market_fee_percent": 0,
         "max_market_fee": "100000000000000",
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.408"
     },
     {
         "id": "1.3.1774",
@@ -15972,7 +16381,8 @@
         "issuer": "1.2.25729",
         "market_fee_percent": 0,
         "max_market_fee": "100000000000000",
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.409"
     },
     {
         "id": "1.3.1775",
@@ -15981,7 +16391,8 @@
         "issuer": "1.2.25729",
         "market_fee_percent": 0,
         "max_market_fee": "100000000000000",
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.410"
     },
     {
         "id": "1.3.1776",
@@ -15990,7 +16401,8 @@
         "issuer": "1.2.25729",
         "market_fee_percent": 0,
         "max_market_fee": "100000000000000",
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.411"
     },
     {
         "id": "1.3.1777",
@@ -15999,7 +16411,8 @@
         "issuer": "1.2.25729",
         "market_fee_percent": 0,
         "max_market_fee": "100000000000000",
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.412"
     },
     {
         "id": "1.3.1778",
@@ -16008,7 +16421,8 @@
         "issuer": "1.2.25729",
         "market_fee_percent": 0,
         "max_market_fee": "100000000000000",
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.413"
     },
     {
         "id": "1.3.1779",
@@ -16017,7 +16431,8 @@
         "issuer": "1.2.25729",
         "market_fee_percent": 0,
         "max_market_fee": "100000000000000",
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.414"
     },
     {
         "id": "1.3.1780",
@@ -16026,7 +16441,8 @@
         "issuer": "1.2.25729",
         "market_fee_percent": 0,
         "max_market_fee": "100000000000000",
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.415"
     },
     {
         "id": "1.3.1781",
@@ -16035,7 +16451,8 @@
         "issuer": "1.2.25729",
         "market_fee_percent": 0,
         "max_market_fee": "100000000000000",
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.416"
     },
     {
         "id": "1.3.1782",
@@ -16044,7 +16461,8 @@
         "issuer": "1.2.25729",
         "market_fee_percent": 0,
         "max_market_fee": "100000000000000",
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.417"
     },
     {
         "id": "1.3.1783",
@@ -16053,7 +16471,8 @@
         "issuer": "1.2.25729",
         "market_fee_percent": 0,
         "max_market_fee": "100000000000000",
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.418"
     },
     {
         "id": "1.3.1784",
@@ -16062,7 +16481,8 @@
         "issuer": "1.2.25729",
         "market_fee_percent": 0,
         "max_market_fee": "100000000000000",
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.419"
     },
     {
         "id": "1.3.1785",
@@ -16071,7 +16491,8 @@
         "issuer": "1.2.25729",
         "market_fee_percent": 0,
         "max_market_fee": "100000000000000",
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.420"
     },
     {
         "id": "1.3.1786",
@@ -16080,7 +16501,8 @@
         "issuer": "1.2.25729",
         "market_fee_percent": 0,
         "max_market_fee": "100000000000000",
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.421"
     },
     {
         "id": "1.3.1787",
@@ -16089,7 +16511,8 @@
         "issuer": "1.2.25729",
         "market_fee_percent": 0,
         "max_market_fee": "100000000000000",
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.422"
     },
     {
         "id": "1.3.1788",
@@ -16098,7 +16521,8 @@
         "issuer": "1.2.25729",
         "market_fee_percent": 0,
         "max_market_fee": "100000000000000",
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.423"
     },
     {
         "id": "1.3.1789",
@@ -16107,7 +16531,8 @@
         "issuer": "1.2.25729",
         "market_fee_percent": 0,
         "max_market_fee": "100000000000000",
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.424"
     },
     {
         "id": "1.3.1790",
@@ -16116,7 +16541,8 @@
         "issuer": "1.2.25729",
         "market_fee_percent": 0,
         "max_market_fee": "100000000000000",
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.425"
     },
     {
         "id": "1.3.1791",
@@ -16125,7 +16551,8 @@
         "issuer": "1.2.25729",
         "market_fee_percent": 0,
         "max_market_fee": "100000000000000",
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.426"
     },
     {
         "id": "1.3.1792",
@@ -16134,7 +16561,8 @@
         "issuer": "1.2.25729",
         "market_fee_percent": 0,
         "max_market_fee": "100000000000000",
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.427"
     },
     {
         "id": "1.3.1793",
@@ -16143,7 +16571,8 @@
         "issuer": "1.2.25729",
         "market_fee_percent": 0,
         "max_market_fee": "100000000000000",
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.428"
     },
     {
         "id": "1.3.1794",
@@ -16152,7 +16581,8 @@
         "issuer": "1.2.25729",
         "market_fee_percent": 0,
         "max_market_fee": "100000000000000",
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.429"
     },
     {
         "id": "1.3.1795",
@@ -16161,7 +16591,8 @@
         "issuer": "1.2.25729",
         "market_fee_percent": 0,
         "max_market_fee": "100000000000000",
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.430"
     },
     {
         "id": "1.3.1796",
@@ -16170,7 +16601,8 @@
         "issuer": "1.2.25729",
         "market_fee_percent": 0,
         "max_market_fee": "100000000000000",
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.431"
     },
     {
         "id": "1.3.1797",
@@ -16179,7 +16611,8 @@
         "issuer": "1.2.25729",
         "market_fee_percent": 0,
         "max_market_fee": "100000000000000",
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.432"
     },
     {
         "id": "1.3.1798",
@@ -16188,7 +16621,8 @@
         "issuer": "1.2.25729",
         "market_fee_percent": 0,
         "max_market_fee": "100000000000000",
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.433"
     },
     {
         "id": "1.3.1799",
@@ -16197,7 +16631,8 @@
         "issuer": "1.2.25729",
         "market_fee_percent": 0,
         "max_market_fee": "100000000000000",
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.434"
     },
     {
         "id": "1.3.1800",
@@ -16206,7 +16641,8 @@
         "issuer": "1.2.25729",
         "market_fee_percent": 0,
         "max_market_fee": "100000000000000",
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.435"
     },
     {
         "id": "1.3.1801",
@@ -16215,7 +16651,8 @@
         "issuer": "1.2.25729",
         "market_fee_percent": 0,
         "max_market_fee": "100000000000000",
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.436"
     },
     {
         "id": "1.3.1802",
@@ -16224,7 +16661,8 @@
         "issuer": "1.2.25729",
         "market_fee_percent": 0,
         "max_market_fee": "100000000000000",
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.437"
     },
     {
         "id": "1.3.1803",
@@ -16242,7 +16680,8 @@
         "issuer": "1.2.25300",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "1000000000000000"
+        "max_supply": "1000000000000000",
+        "bitasset_data_id": "2.4.438"
     },
     {
         "id": "1.3.1805",
@@ -16251,7 +16690,8 @@
         "issuer": "1.2.25300",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.439"
     },
     {
         "id": "1.3.1806",
@@ -16287,7 +16727,8 @@
         "issuer": "1.2.26651",
         "market_fee_percent": 0,
         "max_market_fee": 0,
-        "max_supply": "10000000000"
+        "max_supply": "10000000000",
+        "bitasset_data_id": "2.4.440"
     },
     {
         "id": "1.3.1810",
@@ -16332,6 +16773,16 @@
         "issuer": "1.2.25721",
         "market_fee_percent": 30,
         "max_market_fee": 100000000,
+        "max_supply": "1000000000000",
+        "bitasset_data_id": "2.4.441"
+    },
+    {
+        "id": "1.3.1815",
+        "symbol": "SWAPBTS.L1",
+        "precision": 6,
+        "issuer": "1.2.25721",
+        "market_fee_percent": 0,
+        "max_market_fee": 0,
         "max_supply": "1000000000000"
     }
 ]

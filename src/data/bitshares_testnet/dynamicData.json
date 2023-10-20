@@ -1,7 +1,7 @@
 [
     {
         "id": "2.3.0",
-        "current_supply": "999752844800790",
+        "current_supply": "999754582897930",
         "confidential_supply": "29067757356",
         "accumulated_fees": 0,
         "accumulated_collateral_fees": 0,
@@ -12123,7 +12123,7 @@
         "id": "2.3.1515",
         "current_supply": "100002000000000",
         "confidential_supply": 0,
-        "accumulated_fees": 318059883,
+        "accumulated_fees": 318059984,
         "accumulated_collateral_fees": 0,
         "fee_pool": 250000000
     },
@@ -13673,10 +13673,10 @@
     },
     {
         "id": "2.3.1709",
-        "current_supply": 67999028,
+        "current_supply": 150904042,
         "confidential_supply": 0,
-        "accumulated_fees": 680957,
-        "accumulated_collateral_fees": 210743399,
+        "accumulated_fees": 763937,
+        "accumulated_collateral_fees": 220020927,
         "fee_pool": 10005419
     },
     {
@@ -14099,7 +14099,7 @@
         "id": "2.3.1762",
         "current_supply": "11000000000000",
         "confidential_supply": 0,
-        "accumulated_fees": 0,
+        "accumulated_fees": "2358549687",
         "accumulated_collateral_fees": 0,
         "fee_pool": 10006640
     },
@@ -14518,5 +14518,13 @@
         "accumulated_fees": 0,
         "accumulated_collateral_fees": 0,
         "fee_pool": 10005664
+    },
+    {
+        "id": "2.3.1815",
+        "current_supply": "200100000000",
+        "confidential_supply": 0,
+        "accumulated_fees": 0,
+        "accumulated_collateral_fees": 0,
+        "fee_pool": 2504931
     }
 ]
