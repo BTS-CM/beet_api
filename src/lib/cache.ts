@@ -1,12 +1,14 @@
 import * as fflate from "fflate";
 import { validResult } from "./common";
 
+import bts_offers from "../data/bitshares/allOffers.json";
 import bts_pools from "../data/bitshares/pools.json";
 import bts_allPools from "../data/bitshares/allPools.json";
 import bts_allAssets from "../data/bitshares/allAssets.json";
 import bts_allDynamicData from "../data/bitshares/dynamicData.json";
 import bts_assetIssuers from "../data/bitshares/assetIssuers.json";
 
+import test_offers from "../data/bitshares_testnet/allOffers.json";
 import test_pools from "../data/bitshares_testnet/pools.json";
 import test_allPools from "../data/bitshares_testnet/allPools.json";
 import test_allAssets from "../data/bitshares_testnet/allAssets.json";
@@ -40,6 +42,9 @@ const compressMarketData = (assets: any, issuers: any) => {
     })
   );
 };
+
+const btsOffers = compressContent(bts_offers.map((x) => x.enabled === true));
+const testOffers = compressContent(test_offers.map((x) => x.enabled === true));
 
 const btsPools = compressContent(bts_pools);
 const testPools = compressContent(test_pools);
@@ -100,6 +105,14 @@ function getPools(chain: string) {
 }
 
 /**
+ * Retrieves the active offers for the requested chain
+ * @param chain
+ */
+function getActiveOffers(chain: string) {
+  return validResult(chain === "bitshares" ? btsOffers : testOffers);
+}
+
+/**
  * Get the dynamic data of an asset
  * @param chain
  * @param id 2.3.x
@@ -152,4 +165,5 @@ export {
   getMarketSearch,
   getAllAssets,
   getPools,
+  getActiveOffers,
 };
