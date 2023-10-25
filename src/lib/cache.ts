@@ -43,8 +43,10 @@ const compressMarketData = (assets: any, issuers: any) => {
   );
 };
 
-const btsOffers = compressContent(bts_offers.map((x) => x.enabled === true));
-const testOffers = compressContent(test_offers.map((x) => x.enabled === true));
+const btsOffers = compressContent(bts_offers.filter((x) => x.enabled === true));
+const testOffers = compressContent(
+  test_offers.filter((x) => x.enabled === true)
+);
 
 const btsPools = compressContent(bts_pools);
 const testPools = compressContent(test_pools);
