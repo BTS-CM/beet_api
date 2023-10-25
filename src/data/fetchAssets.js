@@ -1,20 +1,20 @@
 import fs from "fs";
-import { getObjects } from "../lib/api";
+import { getObjects, getMaxObjectIDs } from "../lib/api";
 
 const chains = ["bitshares", "bitshares_testnet"];
-
-const maxObjectIDs = {
-  bitshares: 6600,
-  bitshares_testnet: 2000,
-};
 
 const getAllAssetData = async (chain) => {
   const allData = [];
 
-  let objectIds = Array.from(
-    { length: maxObjectIDs[chain] },
-    (_, i) => `1.3.${i}`
-  );
+  let maxObjectID;
+  try {
+    maxObjectID = await getMaxObjectIDs(chain, 1, 3);
+  } catch (error) {
+    console.log({ error });
+    return;
+  }
+
+  let objectIds = Array.from({ length: maxObjectID }, (_, i) => `1.3.${i}`);
 
   let existingAssetFile;
   try {

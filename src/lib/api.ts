@@ -909,6 +909,94 @@ async function getMarketTrades(
   });
 }
 
+/**
+ * Get the latest ID for an object in the blockchain
+ * @param chain
+ * @param space_id 1.x.x
+ * @param type_id x.1.x
+ * @param newNode
+ * @param app
+ * @returns number
+ */
+async function getMaxObjectIDs(
+  chain: string,
+  space_id: number,
+  type_id: number,
+  newNode?: string,
+  app?: any
+) {
+  return new Promise(async (resolve, reject) => {
+    let node: string;
+    if (app) {
+      node = getCurrentNode(chain, app);
+    } else if (!app && newNode) {
+      node = newNode;
+    } else {
+      node = chains[chain].nodeList[0].url;
+    }
+
+    let currentAPI;
+    try {
+      currentAPI = await Apis.instance(
+        node,
+        true,
+        4000,
+        { enableDatabase: true },
+        (error: Error) => console.log(error)
+      );
+    } catch (error) {
+      console.log({ error, node });
+      if (app) {
+        changeURL(chain, app);
+      } else {
+        console.log("Trying another node");
+        return resolve(
+          getMaxObjectIDs(
+            chain,
+            space_id,
+            type_id,
+            chains[chain].nodeList
+              .map((x: any) => x.url)
+              .filter((x: string) => x !== node)[0]
+          )
+        );
+      }
+      reject(error);
+      return;
+    }
+
+    let nextObjectId;
+    try {
+      nextObjectId = await currentAPI
+        .db_api()
+        .exec("get_next_object_id", [space_id, type_id, false]);
+    } catch (error) {
+      console.log({ error, space_id, type_id });
+      currentAPI.close();
+      if (!app) {
+        console.log("Trying another node");
+        return resolve(
+          getMaxObjectIDs(
+            chain,
+            space_id,
+            type_id,
+            chains[chain].nodeList
+              .map((x: any) => x.url)
+              .filter((x: string) => x !== node)[0]
+          )
+        );
+      }
+      reject(error);
+      return;
+    }
+
+    currentAPI.close();
+
+    // The next object ID is the maximum object ID plus one, so subtract one to get the maximum object ID
+    resolve(parseInt(nextObjectId.split(".")[2]) - 1);
+  });
+}
+
 export {
   generateDeepLink,
   getObjects,
@@ -923,4 +1011,5 @@ export {
   getPortfolio,
   getMarketTrades,
   fetchMarkets,
+  getMaxObjectIDs,
 };
