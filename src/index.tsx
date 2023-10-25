@@ -27,6 +27,7 @@ import {
   getMarketSearch,
   getAllAssets,
   getPools,
+  getActiveOffers,
 } from "./lib/cache";
 
 import { validResult } from "./lib/common";
@@ -429,6 +430,22 @@ const app = new Elysia()
         }
         return getAllAssets(chain);
       })
+      .get(
+        "/offers/:chain",
+        async ({ params: { chain } }) => {
+          // Return all offers
+          if (chain !== "bitshares" && chain !== "bitshares_testnet") {
+            throw new Error("Invalid chain");
+          }
+          return getActiveOffers(chain);
+        },
+        {
+          detail: {
+            summary: "A list of Bitshares offers",
+            tags: ["Cache"],
+          },
+        }
+      )
       .get(
         "/pools/:chain",
         async ({ params: { chain } }) => {
