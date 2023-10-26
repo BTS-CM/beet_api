@@ -43,7 +43,11 @@ const compressMarketData = (assets: any, issuers: any) => {
   );
 };
 
-const btsOffers = compressContent(bts_offers.filter((x) => x.enabled === true));
+const btsOffers = compressContent(
+  bts_offers
+    .filter((x) => x.enabled === true) // only provide active offers
+    .filter((x) => x.fee_rate < 500000) // max fee rate of 50%
+);
 const testOffers = compressContent(
   test_offers.filter((x) => x.enabled === true)
 );

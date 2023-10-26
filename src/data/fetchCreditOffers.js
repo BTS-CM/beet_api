@@ -21,9 +21,29 @@ const getAllOfferData = async (chain) => {
     data = await getObjects(chain, objectIds);
   } catch (error) {
     console.log(error);
-    console.log(`Check you're not fetching ${chain} assets which don't exist.`);
     return;
   }
+
+  let fetchedAccounts;
+  try {
+    fetchedAccounts = await getObjects(chain, [
+      ...new Set(data.map((x) => x.owner_account)),
+    ]);
+  } catch (error) {
+    console.log(error);
+    return;
+  }
+
+  data = data.map((offer) => {
+    const account = fetchedAccounts.find(
+      (account) => account.id === offer.owner_account
+    );
+
+    return {
+      ...offer,
+      owner_name: account.name,
+    };
+  });
 
   return data;
 };
