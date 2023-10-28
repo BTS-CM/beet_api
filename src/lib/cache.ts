@@ -1,6 +1,7 @@
 import * as fflate from "fflate";
 import { validResult } from "./common";
 
+import bts_fees from "../data/bitshares/fees.json";
 import bts_offers from "../data/bitshares/allOffers.json";
 import bts_pools from "../data/bitshares/pools.json";
 import bts_allPools from "../data/bitshares/allPools.json";
@@ -8,6 +9,7 @@ import bts_allAssets from "../data/bitshares/allAssets.json";
 import bts_allDynamicData from "../data/bitshares/dynamicData.json";
 import bts_assetIssuers from "../data/bitshares/assetIssuers.json";
 
+import test_fees from "../data/bitshares_testnet/fees.json";
 import test_offers from "../data/bitshares_testnet/allOffers.json";
 import test_pools from "../data/bitshares_testnet/pools.json";
 import test_allPools from "../data/bitshares_testnet/allPools.json";
@@ -42,6 +44,9 @@ const compressMarketData = (assets: any, issuers: any) => {
     })
   );
 };
+
+const btsFeeSchedule = compressContent(bts_fees);
+const testFeeSchedule = compressContent(test_fees);
 
 const btsOffers = compressContent(
   bts_offers
@@ -119,6 +124,14 @@ function getActiveOffers(chain: string) {
 }
 
 /**
+ * Retrieves the requested fee schedule for the requested chain
+ * @param chain
+ */
+function getFeeSchedule(chain: string) {
+  return validResult(chain === "bitshares" ? btsFeeSchedule : testFeeSchedule);
+}
+
+/**
  * Get the dynamic data of an asset
  * @param chain
  * @param id 2.3.x
@@ -165,6 +178,7 @@ function getPool(chain: string, id: string) {
 }
 
 export {
+  getFeeSchedule,
   getAsset,
   getPool,
   getDynamicData,

@@ -18,9 +18,11 @@ import {
   getObjects,
   getMarketTrades,
   fetchMarkets,
+  fetchCreditDeals,
 } from "./lib/api";
 
 import {
+  getFeeSchedule,
   getAsset,
   getPool,
   getDynamicData,
@@ -421,6 +423,35 @@ const app = new Elysia()
           },
         }
       )
+      .get(
+        "/fetchCreditDeals/:chain/:account",
+        async ({ params: { chain, account } }) => {
+          // Fetch credit deals
+          if (!chain || !account) {
+            throw new Error("Missing required fields");
+          }
+
+          if (chain !== "bitshares" && chain !== "bitshares_testnet") {
+            throw new Error("Invalid chain");
+          }
+
+          let creditDeals;
+          try {
+            creditDeals = await fetchCreditDeals(chain, account, app);
+          } catch (error) {
+            console.log({ error });
+            throw error;
+          }
+
+          return creditDeals;
+        },
+        {
+          detail: {
+            summary: "Get an user's credit deals",
+            tags: ["Blockchain"],
+          },
+        }
+      )
   )
   .group("/cache", (app) =>
     app
@@ -550,6 +581,25 @@ const app = new Elysia()
         {
           detail: {
             summary: "Retrieve multiple Bitshares assets",
+            tags: ["Cache"],
+          },
+        }
+      )
+      .get(
+        "/feeSchedule/:chain",
+        async ({ params: { chain } }) => {
+          if (
+            !chain ||
+            (chain !== "bitshares" && chain !== "bitshares_testnet")
+          ) {
+            throw new Error("Missing required fields");
+          }
+
+          return getFeeSchedule(chain);
+        },
+        {
+          detail: {
+            summary: "Data for fee schedule",
             tags: ["Cache"],
           },
         }

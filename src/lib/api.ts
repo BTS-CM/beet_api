@@ -132,9 +132,14 @@ function _sliceIntoChunks(arr: any[], size: number) {
  */
 async function getObjects(chain: String, object_ids: Array<String>, app?: any) {
   return new Promise(async (resolve, reject) => {
-    const node = app
-      ? getCurrentNode(chain, app)
-      : chains[chain].nodeList[0].url;
+    let node;
+    if (!app) {
+      const nodeList = chains[chain].nodeList;
+      const randomNode = nodeList[Math.floor(Math.random() * nodeList.length)];
+      node = randomNode.url;
+    } else {
+      node = getCurrentNode(chain, app);
+    }
 
     let currentAPI;
     try {
@@ -610,20 +615,74 @@ async function fetchMarkets(chain: string) {
   });
 }
 
-/*
-async function fetchCreditDeals(chain: string) {
+/**
+ * Fetch the credit deals for borrowers and owners
+ * @param chain
+ * @param account_name_or_id
+ * @param app
+ * @returns market limit orders contents
+ */
+async function fetchCreditDeals(
+  chain: String,
+  account_name_or_id: String,
+  app: any
+) {
+  return new Promise(async (resolve, reject) => {
+    const node = getCurrentNode(chain, app);
 
+    let currentAPI;
+    try {
+      currentAPI = await Apis.instance(
+        node,
+        true,
+        4000,
+        { enableDatabase: true },
+        (error: Error) => console.log(error)
+      );
+    } catch (error) {
+      console.log(error);
+      changeURL(chain, app);
+      return reject(error);
+    }
 
-    // list_credit_deals(limit, starting_credit_deal_id)
+    let borrowerDeals;
+    try {
+      borrowerDeals = await currentAPI
+        .db_api()
+        .exec("get_credit_deals_by_borrower", [account_name_or_id]);
+    } catch (error) {
+      console.log(error);
+      return reject(error);
+    }
 
+    let ownerDeals;
+    try {
+      ownerDeals = await currentAPI
+        .db_api()
+        .exec("get_credit_deals_by_offer_owner", [account_name_or_id]);
+    } catch (error) {
+      console.log(error);
+      return reject(error);
+    }
+
+    try {
+      currentAPI.close();
+    } catch (error) {
+      console.log(error);
+    }
+
+    if (!borrowerDeals || !ownerDeals) {
+      return reject(new Error("Couldn't retrieve credit deals"));
+    }
+
+    return resolve(
+      validResult({
+        borrowerDeals,
+        ownerDeals,
+      })
+    );
+  });
 }
-
-async function getBorrowedCreditDeals(chain: string, accountID: string) {
-
-    // 
-
-}
-*/
 
 /**
  * Fetch the limit orders for a given market
@@ -1012,4 +1071,5 @@ export {
   getMarketTrades,
   fetchMarkets,
   getMaxObjectIDs,
+  fetchCreditDeals,
 };
