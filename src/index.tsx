@@ -491,6 +491,19 @@ const app = new Elysia()
         }
       )
       .get(
+        "/bitassets/:chain",
+        async ({ params: { chain } }) => {
+          // Return the min bitasset data for this chain
+          return getMinBitassets(chain);
+        },
+        {
+          detail: {
+            summary: "A list of Bitshares bitassets",
+            tags: ["Cache"],
+          },
+        }
+      )
+      .get(
         "/pool/:chain/:id",
         ({ params: { chain, id } }) => {
           // Return a pool's extended JSON data

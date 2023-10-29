@@ -5,6 +5,7 @@ import bts_fees from "../data/bitshares/fees.json";
 import bts_offers from "../data/bitshares/allOffers.json";
 import bts_pools from "../data/bitshares/pools.json";
 import bts_allPools from "../data/bitshares/allPools.json";
+import bts_minBitassets from "../data/bitshares/minBitassets.json";
 import bts_allAssets from "../data/bitshares/allAssets.json";
 import bts_allDynamicData from "../data/bitshares/dynamicData.json";
 import bts_assetIssuers from "../data/bitshares/assetIssuers.json";
@@ -13,6 +14,7 @@ import test_fees from "../data/bitshares_testnet/fees.json";
 import test_offers from "../data/bitshares_testnet/allOffers.json";
 import test_pools from "../data/bitshares_testnet/pools.json";
 import test_allPools from "../data/bitshares_testnet/allPools.json";
+import test_minBitassets from "../data/bitshares_testnet/minBitassets.json";
 import test_allAssets from "../data/bitshares_testnet/allAssets.json";
 import test_allDynamicData from "../data/bitshares_testnet/dynamicData.json";
 import test_assetIssuers from "../data/bitshares_testnet/assetIssuers.json";
@@ -59,6 +61,9 @@ const testOffers = compressContent(
 
 const btsPools = compressContent(bts_pools);
 const testPools = compressContent(test_pools);
+
+const btsMinBitassets = compressContent(bts_minBitassets);
+const testMinBitassets = compressContent(test_minBitassets);
 
 const compressedBTSAssets = compressContent(bts_allAssets);
 const compressedTestAssets = compressContent(test_allAssets);
@@ -113,6 +118,16 @@ function getMarketSearch(chain: string) {
  */
 function getPools(chain: string) {
   return validResult(chain === "bitshares" ? btsPools : testPools);
+}
+
+/**
+ * Retrieves the minimum bitassets for the requested chain
+ * @param chain
+ */
+function getMinBitassets(chain: string) {
+  return validResult(
+    chain === "bitshares" ? btsMinBitassets : testMinBitassets
+  );
 }
 
 /**
@@ -185,5 +200,6 @@ export {
   getMarketSearch,
   getAllAssets,
   getPools,
+  getMinBitassets,
   getActiveOffers,
 };
