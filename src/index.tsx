@@ -19,6 +19,7 @@ import {
   getMarketTrades,
   fetchMarkets,
   fetchCreditDeals,
+  getFullSmartcoin,
 } from "./lib/api";
 
 import {
@@ -158,6 +159,50 @@ const app = new Elysia()
           detail: {
             summary: "Generate a deep link",
             tags: ["Beet"],
+          },
+        }
+      )
+      .post(
+        "/fullSmartcoin/:chain",
+        async ({ body, params: { chain } }) => {
+          // Retrieve the asset and bitasset data for a single smartcoin
+          if (
+            !body ||
+            !JSON.parse(body) ||
+            !JSON.parse(body).length ||
+            !chain
+          ) {
+            throw new Error("Missing required fields");
+          }
+
+          if (chain !== "bitshares" && chain !== "bitshares_testnet") {
+            throw new Error("Invalid chain");
+          }
+
+          const assetID = JSON.parse(body)[0];
+          const bitassetID = JSON.parse(body)[1];
+
+          let retrievedData;
+          try {
+            retrievedData = await getFullSmartcoin(
+              chain,
+              assetID,
+              bitassetID,
+              app
+            );
+          } catch (error) {
+            throw error;
+          }
+
+          return validResult(retrievedData);
+        },
+        {
+          body: t.String({
+            description: "The JSON-encoded request body",
+          }),
+          detail: {
+            summary: "Retrieve full smartcoin details",
+            tags: ["Blockchain"],
           },
         }
       )

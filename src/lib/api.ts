@@ -1056,6 +1056,58 @@ async function getMaxObjectIDs(
   });
 }
 
+/**
+ * Get the full details of a smartcoin
+ * @param chain
+ * @param assetID
+ * @param bitassetID
+ * @param app
+ * @returns full smartcoin details
+ */
+async function getFullSmartcoin(
+  chain: string,
+  assetID: string,
+  bitassetID: string,
+  app: any
+) {
+  return new Promise(async (resolve, reject) => {
+    const node = getCurrentNode(chain, app);
+
+    let currentAPI;
+    try {
+      currentAPI = await Apis.instance(
+        node,
+        true,
+        4000,
+        { enableDatabase: true, enableHistory: true },
+        (error: Error) => console.log(error)
+      );
+    } catch (error) {
+      console.log(error);
+      changeURL(chain, app);
+      return reject(error);
+    }
+
+    let retrievedObjects;
+    try {
+      retrievedObjects = await currentAPI
+        .db_api()
+        .exec("get_objects", [[assetID, bitassetID], false]);
+    } catch (error) {
+      console.log(error);
+      return reject(error);
+    }
+
+    currentAPI.close();
+
+    if (retrievedObjects && retrievedObjects.length) {
+      return resolve(retrievedObjects);
+    }
+
+    return reject(new Error("Couldn't retrieve objects"));
+  });
+}
+
 export {
   generateDeepLink,
   getObjects,
@@ -1072,4 +1124,5 @@ export {
   fetchMarkets,
   getMaxObjectIDs,
   fetchCreditDeals,
+  getFullSmartcoin,
 };
