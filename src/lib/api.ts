@@ -1067,7 +1067,9 @@ async function getMaxObjectIDs(
 async function getFullSmartcoin(
   chain: string,
   assetID: string,
+  collateralAssetID: string,
   bitassetID: string,
+  userID: string,
   app: any
 ) {
   return new Promise(async (resolve, reject) => {
@@ -1098,10 +1100,58 @@ async function getFullSmartcoin(
       return reject(error);
     }
 
+    let marginPositions;
+    try {
+      marginPositions = await currentAPI
+        .db_api()
+        .exec("get_margin_positions", [userID]);
+    } catch (error) {
+      console.log(error);
+      return reject(error);
+    }
+
+    let assetCallOrders;
+    try {
+      assetCallOrders = await currentAPI
+        .db_api()
+        .exec("get_call_orders", [assetID, 100]);
+    } catch (error) {
+      console.log(error);
+      return reject(error);
+    }
+
+    let assetSettleOrders;
+    try {
+      assetSettleOrders = await currentAPI
+        .db_api()
+        .exec("get_settle_orders", [assetID, 100]);
+    } catch (error) {
+      console.log(error);
+      return reject(error);
+    }
+
+    let assetLimitOrders;
+    try {
+      assetLimitOrders = await currentAPI
+        .db_api()
+        .exec("get_limit_orders", [assetID, collateralAssetID, 100]);
+    } catch (error) {
+      console.log(error);
+      return reject(error);
+    }
+
     currentAPI.close();
 
     if (retrievedObjects && retrievedObjects.length) {
-      return resolve(retrievedObjects);
+      return resolve([
+        ...retrievedObjects,
+        marginPositions.filter(
+          (x: any) => x.call_price.quote.asset_id === assetID
+        ),
+        assetCallOrders,
+        assetSettleOrders,
+        assetLimitOrders,
+      ]);
     }
 
     return reject(new Error("Couldn't retrieve objects"));

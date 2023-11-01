@@ -180,14 +180,18 @@ const app = new Elysia()
           }
 
           const assetID = JSON.parse(body)[0];
-          const bitassetID = JSON.parse(body)[1];
+          const collateralAssetID = JSON.parse(body)[1];
+          const bitassetID = JSON.parse(body)[2];
+          const userID = JSON.parse(body)[3];
 
           let retrievedData;
           try {
             retrievedData = await getFullSmartcoin(
               chain,
               assetID,
+              collateralAssetID,
               bitassetID,
+              userID,
               app
             );
           } catch (error) {
