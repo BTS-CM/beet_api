@@ -1090,71 +1090,45 @@ async function getFullSmartcoin(
       return reject(error);
     }
 
-    let retrievedObjects;
     try {
-      retrievedObjects = await currentAPI
-        .db_api()
-        .exec("get_objects", [[assetID, bitassetID], false]);
-    } catch (error) {
-      console.log(error);
-      return reject(error);
-    }
-
-    let marginPositions;
-    try {
-      marginPositions = await currentAPI
-        .db_api()
-        .exec("get_margin_positions", [userID]);
-    } catch (error) {
-      console.log(error);
-      return reject(error);
-    }
-
-    let assetCallOrders;
-    try {
-      assetCallOrders = await currentAPI
-        .db_api()
-        .exec("get_call_orders", [assetID, 100]);
-    } catch (error) {
-      console.log(error);
-      return reject(error);
-    }
-
-    let assetSettleOrders;
-    try {
-      assetSettleOrders = await currentAPI
-        .db_api()
-        .exec("get_settle_orders", [assetID, 100]);
-    } catch (error) {
-      console.log(error);
-      return reject(error);
-    }
-
-    let assetLimitOrders;
-    try {
-      assetLimitOrders = await currentAPI
-        .db_api()
-        .exec("get_limit_orders", [assetID, collateralAssetID, 100]);
-    } catch (error) {
-      console.log(error);
-      return reject(error);
-    }
-
-    currentAPI.close();
-
-    if (retrievedObjects && retrievedObjects.length) {
-      return resolve([
-        ...retrievedObjects,
-        marginPositions.filter(
-          (x: any) => x.call_price.quote.asset_id === assetID
-        ),
+      const [
+        retrievedObjects,
+        marginPositions,
         assetCallOrders,
         assetSettleOrders,
         assetLimitOrders,
+      ] = await Promise.all([
+        currentAPI.db_api().exec("get_objects", [[assetID, bitassetID], false]),
+        currentAPI.db_api().exec("get_margin_positions", [userID]),
+        currentAPI.db_api().exec("get_call_orders", [assetID, 100]),
+        currentAPI.db_api().exec("get_settle_orders", [assetID, 100]),
+        currentAPI
+          .db_api()
+          .exec("get_order_book", [assetID, collateralAssetID, 10]),
       ]);
-    }
 
-    return reject(new Error("Couldn't retrieve objects"));
+      currentAPI.close();
+
+      if (retrievedObjects && retrievedObjects.length) {
+        return resolve([
+          ...retrievedObjects,
+          marginPositions && marginPositions.length
+            ? marginPositions.filter(
+                (x: any) => x.call_price.quote.asset_id === assetID
+              )
+            : [],
+          assetCallOrders,
+          assetSettleOrders,
+          assetLimitOrders,
+        ]);
+      }
+
+      return reject(new Error("Couldn't retrieve objects"));
+    } catch (error) {
+      console.log(error);
+      currentAPI.close();
+      return reject(error);
+    }
   });
 }
 
