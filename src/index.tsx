@@ -182,7 +182,8 @@ const app = new Elysia()
           const assetID = JSON.parse(body)[0];
           const collateralAssetID = JSON.parse(body)[1];
           const bitassetID = JSON.parse(body)[2];
-          const userID = JSON.parse(body)[3];
+          const collateralBitassetID = JSON.parse(body)[3];
+          const userID = JSON.parse(body)[4];
 
           let retrievedData;
           try {
@@ -191,6 +192,7 @@ const app = new Elysia()
               assetID,
               collateralAssetID,
               bitassetID,
+              collateralBitassetID,
               userID,
               app
             );

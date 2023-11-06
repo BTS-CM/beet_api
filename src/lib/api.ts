@@ -1069,6 +1069,7 @@ async function getFullSmartcoin(
   assetID: string,
   collateralAssetID: string,
   bitassetID: string,
+  collateralBitassetID: string,
   userID: string,
   app: any
 ) {
@@ -1098,7 +1099,14 @@ async function getFullSmartcoin(
         assetSettleOrders,
         assetLimitOrders,
       ] = await Promise.all([
-        currentAPI.db_api().exec("get_objects", [[assetID, bitassetID], false]),
+        currentAPI
+          .db_api()
+          .exec("get_objects", [
+            collateralBitassetID && collateralBitassetID.length
+              ? [assetID, collateralAssetID, bitassetID, collateralBitassetID]
+              : [assetID, collateralAssetID, bitassetID],
+            false,
+          ]),
         currentAPI.db_api().exec("get_margin_positions", [userID]),
         currentAPI.db_api().exec("get_call_orders", [assetID, 100]),
         currentAPI.db_api().exec("get_settle_orders", [assetID, 100]),
@@ -1110,8 +1118,34 @@ async function getFullSmartcoin(
       currentAPI.close();
 
       if (retrievedObjects && retrievedObjects.length) {
+        const assetData = retrievedObjects.slice(0, 2);
+
+        const collateralData =
+          retrievedObjects.length > 3
+            ? retrievedObjects.slice(2, 4)
+            : [...retrievedObjects.slice(2, 3), {}];
+
         return resolve([
-          ...retrievedObjects,
+          ...assetData.map((asset) => {
+            const reference = asset;
+            if (reference.options.description) {
+              delete reference.options.description;
+            }
+            if (reference.options.whitelist_authorities) {
+              delete reference.options.whitelist_authorities;
+            }
+            if (reference.options.blacklist_authorities) {
+              delete reference.options.blacklist_authorities;
+            }
+            if (reference.options.whitelist_markets) {
+              delete reference.options.whitelist_markets;
+            }
+            if (reference.options.blacklist_markets) {
+              delete reference.options.blacklist_markets;
+            }
+            return reference;
+          }),
+          ...collateralData,
           marginPositions && marginPositions.length
             ? marginPositions.filter(
                 (x: any) => x.call_price.quote.asset_id === assetID

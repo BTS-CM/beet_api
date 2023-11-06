@@ -10,7 +10,7 @@
     "fetchOffers": "node ./src/data/fetchCreditOffers.js",
     "fetchDeals": "node ./src/data/fetchCreditDeals.js",
     "fetchFees": "node ./src/data/fetchFees.js",
-    "freshDataFetch": "rm -rf ./src/data/bitshares/* && rm -rf ./src/data/bitshares_testnet/* && bun run fetchPools && bun run fetchFees && bun run fetchAssets && bun run fetchDynamicData && bun run fetchBitassetData && bun run fetchIssuers && bun run fetchOffers",
+    "freshDataFetch": "rm -rf ./src/data/bitshares/* && rm -rf ./src/data/bitshares_testnet/* && bun run fetchPools && bun run fetchFees && bun run fetchAssets && bun run fetchDynamicData && bun run fetchIssuers && bun run fetchBitassetData && bun run fetchOffers",
     "constructUI": "rm -rf public/* && git clone https://github.com/BTS-CM/astro-ui.git && cd astro-ui && mv dist/* ../public && cd .. && rm -rf astro-ui",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "bun run --watch src/index.tsx",
