@@ -143,12 +143,8 @@ async function getObjects(chain: String, object_ids: Array<String>, app?: any) {
 
     let currentAPI;
     try {
-      currentAPI = await Apis.instance(
-        node,
-        true,
-        4000,
-        { enableDatabase: true },
-        (error: Error) => console.log(error)
+      currentAPI = await Apis.instance(node, true, 4000, { enableDatabase: true }, (error: Error) =>
+        console.log(error)
       );
     } catch (error) {
       console.log({ error, msg: "instance failed" });
@@ -165,18 +161,14 @@ async function getObjects(chain: String, object_ids: Array<String>, app?: any) {
       const currentChunk = chunksOfInputs[i];
       let got_objects;
       try {
-        got_objects = await currentAPI
-          .db_api()
-          .exec("get_objects", [currentChunk, false]);
+        got_objects = await currentAPI.db_api().exec("get_objects", [currentChunk, false]);
       } catch (error) {
         console.log(error);
         continue;
       }
 
       if (got_objects && got_objects.length) {
-        retrievedObjects = retrievedObjects.concat(
-          got_objects.filter((x) => x !== null)
-        );
+        retrievedObjects = retrievedObjects.concat(got_objects.filter((x) => x !== null));
       }
     }
 
@@ -204,12 +196,8 @@ async function getBlockedAccounts(chain: String, app: any) {
 
     let currentAPI;
     try {
-      currentAPI = await Apis.instance(
-        node,
-        true,
-        4000,
-        { enableDatabase: true },
-        (error: Error) => console.log(error)
+      currentAPI = await Apis.instance(node, true, 4000, { enableDatabase: true }, (error: Error) =>
+        console.log(error)
       );
     } catch (error) {
       console.log(error);
@@ -227,9 +215,7 @@ async function getBlockedAccounts(chain: String, app: any) {
 
     let object;
     try {
-      object = await currentAPI
-        .db_api()
-        .exec("get_accounts", [["committee-blacklist-manager"]]);
+      object = await currentAPI.db_api().exec("get_accounts", [["committee-blacklist-manager"]]);
     } catch (error) {
       console.log(error);
       currentAPI.close();
@@ -259,12 +245,8 @@ async function accountSearch(chain: String, search_string: String, app: any) {
 
     let currentAPI;
     try {
-      currentAPI = await Apis.instance(
-        node,
-        true,
-        4000,
-        { enableDatabase: true },
-        (error: Error) => console.log(error)
+      currentAPI = await Apis.instance(node, true, 4000, { enableDatabase: true }, (error: Error) =>
+        console.log(error)
       );
     } catch (error) {
       console.log(error);
@@ -275,9 +257,7 @@ async function accountSearch(chain: String, search_string: String, app: any) {
 
     let object;
     try {
-      object = await currentAPI
-        .db_api()
-        .exec("get_accounts", [[search_string]]);
+      object = await currentAPI.db_api().exec("get_accounts", [[search_string]]);
     } catch (error) {
       console.log(error);
       currentAPI.close();
@@ -303,12 +283,8 @@ async function getFullAccounts(chain: String, accountID: String, app: any) {
 
     let currentAPI;
     try {
-      currentAPI = await Apis.instance(
-        node,
-        true,
-        4000,
-        { enableDatabase: true },
-        (error: Error) => console.log(error)
+      currentAPI = await Apis.instance(node, true, 4000, { enableDatabase: true }, (error: Error) =>
+        console.log(error)
       );
     } catch (error) {
       console.log(error);
@@ -395,9 +371,7 @@ async function getAccountHistory(
     if (!history || !history.ok) {
       console.log({
         error: new Error(
-          history
-            ? `${history.status} ${history.statusText}`
-            : "Couldn't fetch account history"
+          history ? `${history.status} ${history.statusText}` : "Couldn't fetch account history"
         ),
         msg: "Couldn't fetch account history.",
       });
@@ -428,12 +402,8 @@ async function getAccountBalances(chain: String, accountID: String, app: any) {
 
     let currentAPI;
     try {
-      currentAPI = await Apis.instance(
-        node,
-        true,
-        4000,
-        { enableDatabase: true },
-        (error: Error) => console.log(error)
+      currentAPI = await Apis.instance(node, true, 4000, { enableDatabase: true }, (error: Error) =>
+        console.log(error)
       );
     } catch (error) {
       console.log(error);
@@ -490,12 +460,8 @@ async function getLimitOrders(
 
     let currentAPI;
     try {
-      currentAPI = await Apis.instance(
-        node,
-        true,
-        4000,
-        { enableDatabase: true },
-        (error: Error) => console.log(error)
+      currentAPI = await Apis.instance(node, true, 4000, { enableDatabase: true }, (error: Error) =>
+        console.log(error)
       );
     } catch (error) {
       console.log(error);
@@ -539,23 +505,14 @@ async function getLimitOrders(
  * @param app
  * @returns market orderbook contents
  */
-async function fetchOrderBook(
-  chain: String,
-  quote: String,
-  base: String,
-  app: any
-) {
+async function fetchOrderBook(chain: String, quote: String, base: String, app: any) {
   return new Promise(async (resolve, reject) => {
     const node = getCurrentNode(chain, app);
 
     let currentAPI;
     try {
-      currentAPI = await Apis.instance(
-        node,
-        true,
-        4000,
-        { enableDatabase: true },
-        (error: Error) => console.log(error)
+      currentAPI = await Apis.instance(node, true, 4000, { enableDatabase: true }, (error: Error) =>
+        console.log(error)
       );
     } catch (error) {
       console.log(error);
@@ -565,9 +522,7 @@ async function fetchOrderBook(
 
     let orderBook;
     try {
-      orderBook = await currentAPI
-        .db_api()
-        .exec("get_order_book", [base, quote, 50]);
+      orderBook = await currentAPI.db_api().exec("get_order_book", [base, quote, 50]);
     } catch (error) {
       console.log(error);
     }
@@ -622,22 +577,14 @@ async function fetchMarkets(chain: string) {
  * @param app
  * @returns market limit orders contents
  */
-async function fetchCreditDeals(
-  chain: String,
-  account_name_or_id: String,
-  app: any
-) {
+async function fetchCreditDeals(chain: String, account_name_or_id: String, app: any) {
   return new Promise(async (resolve, reject) => {
     const node = getCurrentNode(chain, app);
 
     let currentAPI;
     try {
-      currentAPI = await Apis.instance(
-        node,
-        true,
-        4000,
-        { enableDatabase: true },
-        (error: Error) => console.log(error)
+      currentAPI = await Apis.instance(node, true, 4000, { enableDatabase: true }, (error: Error) =>
+        console.log(error)
       );
     } catch (error) {
       console.log(error);
@@ -692,23 +639,14 @@ async function fetchCreditDeals(
  * @param app
  * @returns market limit orders contents
  */
-async function fetchLimitOrders(
-  chain: String,
-  base: String,
-  quote: String,
-  app: any
-) {
+async function fetchLimitOrders(chain: String, base: String, quote: String, app: any) {
   return new Promise(async (resolve, reject) => {
     const node = getCurrentNode(chain, app);
 
     let currentAPI;
     try {
-      currentAPI = await Apis.instance(
-        node,
-        true,
-        4000,
-        { enableDatabase: true },
-        (error: Error) => console.log(error)
+      currentAPI = await Apis.instance(node, true, 4000, { enableDatabase: true }, (error: Error) =>
+        console.log(error)
       );
     } catch (error) {
       console.log(error);
@@ -718,9 +656,7 @@ async function fetchLimitOrders(
 
     let limitOrders;
     try {
-      limitOrders = currentAPI
-        .db_api()
-        .exec("get_limit_orders", [base, quote, 50]);
+      limitOrders = currentAPI.db_api().exec("get_limit_orders", [base, quote, 50]);
     } catch (error) {
       console.log(error);
     }
@@ -752,12 +688,8 @@ async function getPortfolio(chain: String, accountID: String, app: any) {
 
     let currentAPI;
     try {
-      currentAPI = await Apis.instance(
-        node,
-        true,
-        4000,
-        { enableDatabase: true },
-        (error: Error) => console.log(error)
+      currentAPI = await Apis.instance(node, true, 4000, { enableDatabase: true }, (error: Error) =>
+        console.log(error)
       );
     } catch (error) {
       console.log(error);
@@ -767,9 +699,7 @@ async function getPortfolio(chain: String, accountID: String, app: any) {
 
     let limitOrders;
     try {
-      limitOrders = await currentAPI
-        .db_api()
-        .exec("get_limit_orders_by_account", [accountID, 100]);
+      limitOrders = await currentAPI.db_api().exec("get_limit_orders_by_account", [accountID, 100]);
     } catch (error) {
       console.log(error);
       currentAPI.close();
@@ -778,9 +708,7 @@ async function getPortfolio(chain: String, accountID: String, app: any) {
 
     let balances;
     try {
-      balances = await currentAPI
-        .db_api()
-        .exec("get_account_balances", [accountID, []]);
+      balances = await currentAPI.db_api().exec("get_account_balances", [accountID, []]);
     } catch (error) {
       console.log(error);
       currentAPI.close();
@@ -847,9 +775,7 @@ async function getMarketTrades(
 
     let balances;
     try {
-      balances = await currentAPI
-        .db_api()
-        .exec("get_account_balances", [accountID, [base, quote]]);
+      balances = await currentAPI.db_api().exec("get_account_balances", [accountID, [base, quote]]);
     } catch (error) {
       console.log({ error, currentAPI });
       currentAPI.close();
@@ -862,9 +788,7 @@ async function getMarketTrades(
     }
 
     const now = new Date().toISOString().slice(0, 19);
-    const oneMonthAgo = new Date(Date.now() - 30 * 24 * 60 * 60 * 1000)
-      .toISOString()
-      .slice(0, 19);
+    const oneMonthAgo = new Date(Date.now() - 30 * 24 * 60 * 60 * 1000).toISOString().slice(0, 19);
     let marketHistory;
     try {
       marketHistory = await currentAPI
@@ -883,9 +807,7 @@ async function getMarketTrades(
 
     let fullAccount;
     try {
-      fullAccount = await currentAPI
-        .db_api()
-        .exec("get_full_accounts", [[accountID], false]);
+      fullAccount = await currentAPI.db_api().exec("get_full_accounts", [[accountID], false]);
     } catch (error) {
       console.log(error);
       currentAPI.close();
@@ -901,13 +823,7 @@ async function getMarketTrades(
     try {
       usrTrades = await currentAPI
         .history_api()
-        .exec("get_account_history_operations", [
-          accountID,
-          4,
-          "1.11.0",
-          "1.11.0",
-          100,
-        ]);
+        .exec("get_account_history_operations", [accountID, 4, "1.11.0", "1.11.0", 100]);
     } catch (error) {
       console.log(error);
       currentAPI.close();
@@ -959,8 +875,7 @@ async function getMarketTrades(
       }),
       usrTrades: usrTrades.filter(
         (x: any) =>
-          x.op[1].fill_price.base.asset_id === base &&
-          x.op[1].fill_price.quote.asset_id === quote
+          x.op[1].fill_price.base.asset_id === base && x.op[1].fill_price.quote.asset_id === quote
       ),
       ticker,
     };
@@ -996,12 +911,8 @@ async function getMaxObjectIDs(
 
     let currentAPI;
     try {
-      currentAPI = await Apis.instance(
-        node,
-        true,
-        4000,
-        { enableDatabase: true },
-        (error: Error) => console.log(error)
+      currentAPI = await Apis.instance(node, true, 4000, { enableDatabase: true }, (error: Error) =>
+        console.log(error)
       );
     } catch (error) {
       console.log({ error, node });
@@ -1014,9 +925,7 @@ async function getMaxObjectIDs(
             chain,
             space_id,
             type_id,
-            chains[chain].nodeList
-              .map((x: any) => x.url)
-              .filter((x: string) => x !== node)[0]
+            chains[chain].nodeList.map((x: any) => x.url).filter((x: string) => x !== node)[0]
           )
         );
       }
@@ -1039,9 +948,7 @@ async function getMaxObjectIDs(
             chain,
             space_id,
             type_id,
-            chains[chain].nodeList
-              .map((x: any) => x.url)
-              .filter((x: string) => x !== node)[0]
+            chains[chain].nodeList.map((x: any) => x.url).filter((x: string) => x !== node)[0]
           )
         );
       }
@@ -1110,9 +1017,7 @@ async function getFullSmartcoin(
         currentAPI.db_api().exec("get_margin_positions", [userID]),
         currentAPI.db_api().exec("get_call_orders", [assetID, 100]),
         currentAPI.db_api().exec("get_settle_orders", [assetID, 100]),
-        currentAPI
-          .db_api()
-          .exec("get_order_book", [assetID, collateralAssetID, 10]),
+        currentAPI.db_api().exec("get_order_book", [assetID, collateralAssetID, 10]),
       ]);
 
       currentAPI.close();
@@ -1147,9 +1052,7 @@ async function getFullSmartcoin(
           }),
           ...collateralData,
           marginPositions && marginPositions.length
-            ? marginPositions.filter(
-                (x: any) => x.call_price.quote.asset_id === assetID
-              )
+            ? marginPositions.filter((x: any) => x.call_price.quote.asset_id === assetID)
             : [],
           assetCallOrders,
           assetSettleOrders,

@@ -1,19 +1,17 @@
 import fs from "fs";
 import { getObjects } from "../lib/api";
 
-function writeToFile(data, chain, fileName) {
+function writeToFile(data, chain, fileName, prettyPrint = true) {
   console.log(`Writing to ./src/data/${chain}/${fileName}.json`);
   fs.writeFileSync(
     `./src/data/${chain}/${fileName}.json`,
-    JSON.stringify(data, undefined, 4)
+    prettyPrint ? JSON.stringify(data, undefined, 4) : JSON.stringify(data)
   );
 }
 
 const main = async () => {
   for (const chain of ["bitshares", "bitshares_testnet"]) {
-    const allData = JSON.parse(
-      fs.readFileSync(`./src/data/${chain}/allAssets.json`)
-    );
+    const allData = JSON.parse(fs.readFileSync(`./src/data/${chain}/allAssets.json`));
 
     // Filter the assets
     const filteredAssets = allData.filter(
@@ -35,9 +33,7 @@ const main = async () => {
     let finalBitassetData = assetData.filter((asset) => asset.feeds.length > 0);
     writeToFile(finalBitassetData, chain, "bitassetData");
 
-    const assetIssuers = JSON.parse(
-      fs.readFileSync(`./src/data/${chain}/assetIssuers.json`)
-    );
+    const assetIssuers = JSON.parse(fs.readFileSync(`./src/data/${chain}/assetIssuers.json`));
 
     const minimumBitassetInfo = finalBitassetData.map((info) => {
       const foundAsset = filteredAssets.find((x) => x.id === info.asset_id);
@@ -52,7 +48,7 @@ const main = async () => {
         icr: info.median_feed.initial_collateral_ratio,
       };
     });
-    writeToFile(minimumBitassetInfo, chain, "minBitassetData");
+    writeToFile(minimumBitassetInfo, chain, "minBitassetData", false);
   }
   process.exit(0);
 };

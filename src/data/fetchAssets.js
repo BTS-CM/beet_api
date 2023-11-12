@@ -18,9 +18,7 @@ const getAllAssetData = async (chain) => {
 
   let existingAssetFile;
   try {
-    existingAssetFile = JSON.parse(
-      fs.readFileSync(`./src/data/${chain}/allAssets.json`)
-    );
+    existingAssetFile = JSON.parse(fs.readFileSync(`./src/data/${chain}/allAssets.json`));
   } catch (error) {
     console.log(`Error reading file: ${error.message}`);
   }
@@ -44,9 +42,7 @@ const getAllAssetData = async (chain) => {
     return allData;
   }
 
-  console.log(
-    `Fetching ${chain} asset data for ${objectIds.length} remaining assets`
-  );
+  console.log(`Fetching ${chain} asset data for ${objectIds.length} remaining assets`);
 
   let assetData;
   try {
@@ -80,22 +76,35 @@ const getAllAssetData = async (chain) => {
   return allData;
 };
 
-function writeToFile(data, chain, fileName) {
+function writeToFile(data, chain, fileName, prettyPrint = true) {
   console.log(`Writing to ./src/data/${chain}/${fileName}.json`);
   fs.writeFileSync(
     `./src/data/${chain}/${fileName}.json`,
-    JSON.stringify(data, undefined, 4)
+    prettyPrint ? JSON.stringify(data, undefined, 4) : JSON.stringify(data)
   );
 }
 
 const main = async () => {
-  let allData = [];
   for (const chain of chains) {
-    allData = await getAllAssetData(chain);
+    const allData = await getAllAssetData(chain);
     if (allData) {
       writeToFile(allData, chain, "allAssets");
     }
+
+    const minimumAssetInfo = allData.map((asset) => {
+      return {
+        id: asset.id.replace("1.3.", ""),
+        s: asset.symbol,
+        p: asset.precision,
+        i: asset.issuer.replace("1.2.", ""),
+        mfp: asset.market_fee_percent,
+        mmf: asset.max_market_fee,
+        ms: asset.max_supply,
+      };
+    });
+    writeToFile(minimumAssetInfo, chain, "minAssets", false);
   }
+
   process.exit(0);
 };
 
