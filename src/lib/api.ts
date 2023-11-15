@@ -28,7 +28,7 @@ async function generateDeepLink(
       currentAPI = await Apis.instance(
         node,
         true,
-        10000,
+        4000,
         { enableDatabase: true, enableCrypto: false, enableOrders: true },
         (error: Error) => console.log(error)
       );
@@ -157,29 +157,27 @@ async function getObjects(chain: String, object_ids: Array<String>, app?: any) {
 
     let retrievedObjects: Object[] = [];
     const chunksOfInputs = _sliceIntoChunks(object_ids, 50);
-    for (let i = 0; i < chunksOfInputs.length; i++) {
-      const currentChunk = chunksOfInputs[i];
-      let got_objects;
-      try {
-        got_objects = await currentAPI.db_api().exec("get_objects", [currentChunk, false]);
-      } catch (error) {
-        console.log(error);
-        continue;
+
+    try {
+      const results = await Promise.all(
+        chunksOfInputs.map((currentChunk) =>
+          currentAPI.db_api().exec("get_objects", [currentChunk, false])
+        )
+      );
+
+      retrievedObjects = results.flat().filter((x) => x !== null);
+
+      if (retrievedObjects.length === 0) {
+        throw new Error("Couldn't retrieve objects");
       }
 
-      if (got_objects && got_objects.length) {
-        retrievedObjects = retrievedObjects.concat(got_objects.filter((x) => x !== null));
-      }
-    }
-
-    currentAPI.close();
-
-    if (retrievedObjects && retrievedObjects.length) {
       resolve(retrievedObjects);
-      return;
+    } catch (error) {
+      console.log(error);
+      reject(error);
+    } finally {
+      currentAPI.close();
     }
-
-    reject(new Error("Couldn't retrieve objects"));
   });
 }
 
@@ -592,42 +590,32 @@ async function fetchCreditDeals(chain: String, account_name_or_id: String, app: 
       return reject(error);
     }
 
-    let borrowerDeals;
     try {
-      borrowerDeals = await currentAPI
-        .db_api()
-        .exec("get_credit_deals_by_borrower", [account_name_or_id]);
+      const [borrowerDeals, ownerDeals] = await Promise.all([
+        currentAPI.db_api().exec("get_credit_deals_by_borrower", [account_name_or_id]),
+        currentAPI.db_api().exec("get_credit_deals_by_offer_owner", [account_name_or_id]),
+      ]);
+
+      if (!borrowerDeals || !ownerDeals) {
+        return reject(new Error("Couldn't retrieve credit deals"));
+      }
+
+      return resolve(
+        validResult({
+          borrowerDeals,
+          ownerDeals,
+        })
+      );
     } catch (error) {
       console.log(error);
       return reject(error);
+    } finally {
+      try {
+        currentAPI.close();
+      } catch (error) {
+        console.log(error);
+      }
     }
-
-    let ownerDeals;
-    try {
-      ownerDeals = await currentAPI
-        .db_api()
-        .exec("get_credit_deals_by_offer_owner", [account_name_or_id]);
-    } catch (error) {
-      console.log(error);
-      return reject(error);
-    }
-
-    try {
-      currentAPI.close();
-    } catch (error) {
-      console.log(error);
-    }
-
-    if (!borrowerDeals || !ownerDeals) {
-      return reject(new Error("Couldn't retrieve credit deals"));
-    }
-
-    return resolve(
-      validResult({
-        borrowerDeals,
-        ownerDeals,
-      })
-    );
   });
 }
 
@@ -697,46 +685,39 @@ async function getPortfolio(chain: String, accountID: String, app: any) {
       return reject(error);
     }
 
-    let limitOrders;
     try {
-      limitOrders = await currentAPI.db_api().exec("get_limit_orders_by_account", [accountID, 100]);
+      const [limitOrders, balances] = await Promise.all([
+        currentAPI.db_api().exec("get_limit_orders_by_account", [accountID, 100]),
+        currentAPI.db_api().exec("get_account_balances", [accountID, []]),
+      ]);
+
+      if (!balances) {
+        reject(new Error("Account balances not found"));
+        return;
+      }
+
+      if (!limitOrders) {
+        reject(new Error("Account limit orders not found"));
+        return;
+      }
+
+      resolve(
+        validResult({
+          balances,
+          limitOrders,
+        })
+      );
     } catch (error) {
       console.log(error);
       currentAPI.close();
       reject(error);
+    } finally {
+      try {
+        currentAPI.close();
+      } catch (error) {
+        console.log(error);
+      }
     }
-
-    let balances;
-    try {
-      balances = await currentAPI.db_api().exec("get_account_balances", [accountID, []]);
-    } catch (error) {
-      console.log(error);
-      currentAPI.close();
-      reject(error);
-    }
-
-    try {
-      currentAPI.close();
-    } catch (error) {
-      console.log(error);
-    }
-
-    if (!balances) {
-      reject(new Error("Account balances not found"));
-      return;
-    }
-
-    if (!limitOrders) {
-      reject(new Error("Account limit orders not found"));
-      return;
-    }
-
-    resolve(
-      validResult({
-        balances,
-        limitOrders,
-      })
-    );
   });
 }
 
@@ -773,113 +754,68 @@ async function getMarketTrades(
       return reject(error);
     }
 
-    let balances;
-    try {
-      balances = await currentAPI.db_api().exec("get_account_balances", [accountID, [base, quote]]);
-    } catch (error) {
-      console.log({ error, currentAPI });
-      currentAPI.close();
-      reject(error);
-    }
-
-    if (!balances) {
-      reject(new Error("Account balances not found"));
-      return;
-    }
-
     const now = new Date().toISOString().slice(0, 19);
     const oneMonthAgo = new Date(Date.now() - 30 * 24 * 60 * 60 * 1000).toISOString().slice(0, 19);
-    let marketHistory;
+
     try {
-      marketHistory = await currentAPI
-        .db_api()
-        .exec("get_trade_history", [base, quote, now, oneMonthAgo, 100]);
+      const [balances, marketHistory, fullAccount, usrTrades, ticker] = await Promise.all([
+        currentAPI.db_api().exec("get_account_balances", [accountID, [base, quote]]),
+        currentAPI.db_api().exec("get_trade_history", [base, quote, now, oneMonthAgo, 100]),
+        currentAPI.db_api().exec("get_full_accounts", [[accountID], false]),
+        currentAPI
+          .history_api()
+          .exec("get_account_history_operations", [accountID, 4, "1.11.0", "1.11.0", 100]),
+        currentAPI.db_api().exec("get_ticker", [base, quote]),
+      ]);
+
+      const accountLimitOrders = fullAccount[0][1].limit_orders;
+
+      const result = {
+        balanceS: balances ?? [], // qty held quote & base assets
+        marketHistory:
+          marketHistory && marketHistory.length
+            ? marketHistory.map((x: any) => {
+                return {
+                  date: x.date,
+                  price: x.price,
+                  amount: x.amount,
+                  value: x.value,
+                  type: x.type,
+                };
+              })
+            : [],
+        accountLimitOrders:
+          accountLimitOrders && accountLimitOrders.length
+            ? accountLimitOrders.map((x: any) => {
+                return {
+                  expiration: x.expiration,
+                  for_sale: x.for_sale,
+                  sell_price: x.sell_price,
+                };
+              })
+            : [],
+        usrTrades:
+          usrTrades && usrTrades.length
+            ? usrTrades.filter(
+                (x: any) =>
+                  x.op[1].fill_price.base.asset_id === base &&
+                  x.op[1].fill_price.quote.asset_id === quote
+              )
+            : [],
+        ticker: ticker ?? {},
+      };
+      resolve(validResult(result));
     } catch (error) {
       console.log(error);
       currentAPI.close();
       reject(error);
+    } finally {
+      try {
+        currentAPI.close();
+      } catch (error) {
+        console.log(error);
+      }
     }
-
-    if (!marketHistory) {
-      reject(new Error("Market history not found"));
-      return;
-    }
-
-    let fullAccount;
-    try {
-      fullAccount = await currentAPI.db_api().exec("get_full_accounts", [[accountID], false]);
-    } catch (error) {
-      console.log(error);
-      currentAPI.close();
-      reject(error);
-    }
-
-    if (!fullAccount) {
-      reject(new Error("Account not found"));
-      return;
-    }
-
-    let usrTrades;
-    try {
-      usrTrades = await currentAPI
-        .history_api()
-        .exec("get_account_history_operations", [accountID, 4, "1.11.0", "1.11.0", 100]);
-    } catch (error) {
-      console.log(error);
-      currentAPI.close();
-      reject(error);
-    }
-
-    if (!usrTrades) {
-      reject(new Error("Account not found"));
-      return;
-    }
-
-    let ticker;
-    try {
-      ticker = await currentAPI.db_api().exec("get_ticker", [base, quote]);
-    } catch (error) {
-      console.log(error);
-      currentAPI.close();
-      reject(error);
-    }
-
-    if (!ticker) {
-      reject(new Error("Ticker not found"));
-      return;
-    }
-
-    try {
-      currentAPI.close();
-    } catch (error) {
-      console.log(error);
-    }
-
-    const result = {
-      balances, // qty held quote & base assets
-      marketHistory: marketHistory.map((x: any) => {
-        return {
-          date: x.date,
-          price: x.price,
-          amount: x.amount,
-          value: x.value,
-          type: x.type,
-        };
-      }), // recent trades
-      accountLimitOrders: fullAccount[0][1].limit_orders.map((x: any) => {
-        return {
-          expiration: x.expiration,
-          for_sale: x.for_sale,
-          sell_price: x.sell_price,
-        };
-      }),
-      usrTrades: usrTrades.filter(
-        (x: any) =>
-          x.op[1].fill_price.base.asset_id === base && x.op[1].fill_price.quote.asset_id === quote
-      ),
-      ticker,
-    };
-    resolve(validResult(result));
   });
 }
 
