@@ -158,26 +158,27 @@ async function getObjects(chain: String, object_ids: Array<String>, app?: any) {
     let retrievedObjects: Object[] = [];
     const chunksOfInputs = _sliceIntoChunks(object_ids, 50);
 
-    try {
-      const results = await Promise.all(
-        chunksOfInputs.map((currentChunk) =>
-          currentAPI.db_api().exec("get_objects", [currentChunk, false])
-        )
-      );
-
-      retrievedObjects = results.flat().filter((x) => x !== null);
-
-      if (retrievedObjects.length === 0) {
-        throw new Error("Couldn't retrieve objects");
+    for (let i = 0; i < chunksOfInputs.length; i++) {
+      const currentChunk = chunksOfInputs[i];
+      let got_objects;
+      try {
+        got_objects = await currentAPI.db_api().exec("get_objects", [currentChunk, false]);
+      } catch (error) {
+        console.log(error);
+        continue;
       }
 
-      resolve(retrievedObjects);
-    } catch (error) {
-      console.log(error);
-      reject(error);
-    } finally {
-      currentAPI.close();
+      if (got_objects && got_objects.length) {
+        retrievedObjects = retrievedObjects.concat(got_objects.filter((x) => x !== null));
+      }
     }
+
+    if (retrievedObjects.length === 0) {
+      throw new Error("Couldn't retrieve objects");
+    }
+
+    currentAPI.close();
+    resolve(retrievedObjects);
   });
 }
 

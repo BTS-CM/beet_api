@@ -89,20 +89,19 @@ const main = async () => {
     const allData = await getAllAssetData(chain);
     if (allData) {
       writeToFile(allData, chain, "allAssets");
+      const minimumAssetInfo = allData.map((asset) => {
+        return {
+          id: asset.id.replace("1.3.", ""),
+          s: asset.symbol,
+          p: asset.precision,
+          i: asset.issuer.replace("1.2.", ""),
+          mfp: asset.market_fee_percent,
+          mmf: asset.max_market_fee,
+          ms: asset.max_supply,
+        };
+      });
+      writeToFile(minimumAssetInfo, chain, "minAssets", false);
     }
-
-    const minimumAssetInfo = allData.map((asset) => {
-      return {
-        id: asset.id.replace("1.3.", ""),
-        s: asset.symbol,
-        p: asset.precision,
-        i: asset.issuer.replace("1.2.", ""),
-        mfp: asset.market_fee_percent,
-        mmf: asset.max_market_fee,
-        ms: asset.max_supply,
-      };
-    });
-    writeToFile(minimumAssetInfo, chain, "minAssets", false);
   }
 
   process.exit(0);
