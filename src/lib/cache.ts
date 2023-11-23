@@ -76,6 +76,100 @@ const btsMarketData = compressMarketData(bts_allAssets, bts_assetIssuers);
 const testMarketData = compressMarketData(test_allAssets, test_assetIssuers);
 
 /**
+ * Returns all cached assets for one/many blockchain(s)
+ * @param mode
+ * @param chain
+ */
+function getAllAssets(mode: string = "both", chain: string = "bitshares") {
+    if (mode === "both") {
+        return validResult({bitshares: compressedBTSAssets, bitshares_testnet: compressedTestAssets}, false)
+    }
+    return validResult(chain === "bitshares" ? compressedBTSAssets : compressedTestAssets, false);
+}
+
+/**
+ * Returns all minimised cached assets for one/many blockchain(s)
+ * @param mode
+ * @param chain
+ */
+function getMinAssets(mode: string = "both", chain: string = "bitshares") {
+    if (mode === "both") {
+        return validResult({bitshares: compressedMinBTSAssets, bitshares_testnet: compressedMinTestAssets}, false)
+    }
+    return validResult(
+        chain === "bitshares" ? compressedMinBTSAssets : compressedMinTestAssets,
+        false
+    );
+}
+
+/**
+ * Retrieves the requested market search data for one/many blockchain(s)
+ * @param mode
+ * @param chain
+ */
+function getMarketSearch(mode: string = "both", chain: string = "bitshares") {
+    if (mode === "both") {
+        return validResult({bitshares: btsMarketData, bitshares_testnet: testMarketData}, false)
+    }
+    return validResult(chain === "bitshares" ? btsMarketData : testMarketData, false);
+}
+
+/**
+ * Retrieves the pool summary data for one/many blockchain(s)
+ * @param mode
+ * @param chain
+ */
+function getPools(mode: string = "both", chain: string = "bitshares") {
+    if (mode === "both") {
+        return validResult({bitshares: btsPools, bitshares_testnet: testPools}, false)
+    }
+    return validResult(chain === "bitshares" ? btsPools : testPools, false);
+}
+
+function getMinPools(mode: string = "both", chain: string = "bitshares") {
+    if (mode === "both") {
+        return validResult({bitshares: btsMinPools, bitshares_testnet: testMinPools}, false)
+    }
+    return validResult(chain === "bitshares" ? btsMinPools : testMinPools, false);
+}
+
+/**
+ * Retrieves the minimum bitassets for one/many blockchain(s)
+ * @param mode
+ * @param chain
+ */
+function getMinBitassets(mode: string = "both", chain: string = "bitshares") {
+    if (mode === "both") {
+        return validResult({bitshares: btsMinBitassets, bitshares_testnet: testMinBitassets}, false)
+    }
+    return validResult(chain === "bitshares" ? btsMinBitassets : testMinBitassets, false);
+}
+
+/**
+ * Retrieves the active offers for one/many blockchain(s)
+ * @param mode
+ * @param chain
+ */
+function getActiveOffers(mode: string = "both", chain: string = "bitshares") {
+    if (mode === "both") {
+        return validResult({bitshares: btsOffers, bitshares_testnet: testOffers}, false)
+    }
+    return validResult(chain === "bitshares" ? btsOffers : testOffers, false);
+}
+
+/**
+ * Retrieves the requested fee schedule for one/many blockchain(s)
+ * @param mode
+ * @param chain
+ */
+function getFeeSchedule(mode: string = "both", chain: string = "bitshares") {
+    if (mode === "both") {
+        return validResult({bitshares: btsFeeSchedule, bitshares_testnet: testFeeSchedule}, false)
+    }
+    return validResult(chain === "bitshares" ? btsFeeSchedule : testFeeSchedule, false);
+}
+
+/**
  * Retrieves the requested asset from cached assets
  * @param chain
  * @param id
@@ -92,69 +186,6 @@ function getAsset(chain: string, id: string) {
     if (foundAsset) {
         return foundAsset;
     }
-}
-
-/**
- * Returns all cached assets for a blockchain
- * @param chain
- */
-function getAllAssets(chain: string) {
-    return validResult(chain === "bitshares" ? compressedBTSAssets : compressedTestAssets, false);
-}
-
-/**
- * Returns all minimised cached assets for a blockchain
- * @param chain
- */
-function getMinAssets(chain: string) {
-    return validResult(
-        chain === "bitshares" ? compressedMinBTSAssets : compressedMinTestAssets,
-        false
-    );
-}
-
-/**
- * Retrieves the requested market search data for the requested chain
- * @param chain
- */
-function getMarketSearch(chain: string) {
-    return validResult(chain === "bitshares" ? btsMarketData : testMarketData, false);
-}
-
-/**
- * Retrieves the pool summary data for the requested chain
- * @param chain
- */
-function getPools(chain: string) {
-    return validResult(chain === "bitshares" ? btsPools : testPools, false);
-}
-
-function getMinPools(chain: string) {
-    return validResult(chain === "bitshares" ? btsMinPools : testMinPools, false);
-}
-
-/**
- * Retrieves the minimum bitassets for the requested chain
- * @param chain
- */
-function getMinBitassets(chain: string) {
-    return validResult(chain === "bitshares" ? btsMinBitassets : testMinBitassets, false);
-}
-
-/**
- * Retrieves the active offers for the requested chain
- * @param chain
- */
-function getActiveOffers(chain: string) {
-    return validResult(chain === "bitshares" ? btsOffers : testOffers, false);
-}
-
-/**
- * Retrieves the requested fee schedule for the requested chain
- * @param chain
- */
-function getFeeSchedule(chain: string) {
-    return validResult(chain === "bitshares" ? btsFeeSchedule : testFeeSchedule, false);
 }
 
 /**

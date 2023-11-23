@@ -721,13 +721,13 @@ const app = new Elysia()
         if (chain !== "bitshares" && chain !== "bitshares_testnet") {
           throw new Error("Invalid chain");
         }
-        return getAllAssets(chain);
+        return getAllAssets("both", chain);
       })
       .get("/minAssets/:chain", async ({ params: { chain } }) => {
         if (chain !== "bitshares" && chain !== "bitshares_testnet") {
           throw new Error("Invalid chain");
         }
-        return getMinAssets(chain);
+        return getMinAssets("both", chain);
       })
       .get(
         "/offers/:chain",
@@ -736,7 +736,7 @@ const app = new Elysia()
           if (chain !== "bitshares" && chain !== "bitshares_testnet") {
             throw new Error("Invalid chain");
           }
-          return getActiveOffers(chain);
+          return getActiveOffers("both", chain);
         },
         {
           detail: {
@@ -749,7 +749,7 @@ const app = new Elysia()
         "/pools/:chain",
         async ({ params: { chain } }) => {
           // Return entire pool json file
-          return getPools(chain);
+          return getPools("both", chain);
         },
         {
           detail: {
@@ -762,7 +762,7 @@ const app = new Elysia()
         "/minPools/:chain",
         async ({ params: { chain } }) => {
           // Return the min pool data for this chain
-          return getMinPools(chain);
+          return getMinPools("both", chain);
         },
         {
           detail: {
@@ -775,11 +775,43 @@ const app = new Elysia()
         "/bitassets/:chain",
         async ({ params: { chain } }) => {
           // Return the min bitasset data for this chain
-          return getMinBitassets(chain);
+          return getMinBitassets("both", chain);
         },
         {
           detail: {
             summary: "A list of Bitshares bitassets",
+            tags: ["Cache"],
+          },
+        }
+      )
+      .get(
+        "/feeSchedule/:chain",
+        async ({ params: { chain } }) => {
+          if (!chain || (chain !== "bitshares" && chain !== "bitshares_testnet")) {
+            throw new Error("Missing required fields");
+          }
+
+          return getFeeSchedule("both", chain);
+        },
+        {
+          detail: {
+            summary: "Data for fee schedule",
+            tags: ["Cache"],
+          },
+        }
+      )
+      .get(
+        "/marketSearch/:chain",
+        async ({ params: { chain } }) => {
+          if (!chain || (chain !== "bitshares" && chain !== "bitshares_testnet")) {
+            throw new Error("Missing required fields");
+          }
+
+          return getMarketSearch("both", chain);
+        },
+        {
+          detail: {
+            summary: "Data for market asset search",
             tags: ["Cache"],
           },
         }
@@ -862,38 +894,6 @@ const app = new Elysia()
         {
           detail: {
             summary: "Retrieve multiple Bitshares assets",
-            tags: ["Cache"],
-          },
-        }
-      )
-      .get(
-        "/feeSchedule/:chain",
-        async ({ params: { chain } }) => {
-          if (!chain || (chain !== "bitshares" && chain !== "bitshares_testnet")) {
-            throw new Error("Missing required fields");
-          }
-
-          return getFeeSchedule(chain);
-        },
-        {
-          detail: {
-            summary: "Data for fee schedule",
-            tags: ["Cache"],
-          },
-        }
-      )
-      .get(
-        "/marketSearch/:chain",
-        async ({ params: { chain } }) => {
-          if (!chain || (chain !== "bitshares" && chain !== "bitshares_testnet")) {
-            throw new Error("Missing required fields");
-          }
-
-          return getMarketSearch(chain);
-        },
-        {
-          detail: {
-            summary: "Data for market asset search",
             tags: ["Cache"],
           },
         }
