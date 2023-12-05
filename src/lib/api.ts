@@ -772,7 +772,7 @@ async function getMarketTrades(
       const accountLimitOrders = fullAccount[0][1].limit_orders;
 
       const result = {
-        balanceS: balances ?? [], // qty held quote & base assets
+        balances: balances ?? [], // qty held quote & base assets
         marketHistory:
           marketHistory && marketHistory.length
             ? marketHistory.map((x: any) => {
@@ -787,21 +787,37 @@ async function getMarketTrades(
             : [],
         accountLimitOrders:
           accountLimitOrders && accountLimitOrders.length
-            ? accountLimitOrders.map((x: any) => {
-                return {
-                  expiration: x.expiration,
-                  for_sale: x.for_sale,
-                  sell_price: x.sell_price,
-                };
-              })
+            ? accountLimitOrders
+                .filter((x: any) => {
+                  if (
+                    [base, quote].includes(x.sell_price.base.asset_id) &&
+                    [base, quote].includes(x.sell_price.quote.asset_id)
+                  ) {
+                    return true;
+                  }
+                })
+                .map((x: any) => {
+                  return {
+                    id: x.id,
+                    expiration: x.expiration,
+                    for_sale: x.for_sale,
+                    sell_price: x.sell_price,
+                  };
+                })
             : [],
         usrTrades:
           usrTrades && usrTrades.length
-            ? usrTrades.filter(
-                (x: any) =>
-                  x.op[1].fill_price.base.asset_id === base &&
-                  x.op[1].fill_price.quote.asset_id === quote
-              )
+            ? usrTrades.filter((x: any) => {
+                const payAsset = x.op[1].pays.asset_id;
+                const receiveAsset = x.op[1].receives.asset_id;
+                if (
+                  [payAsset, receiveAsset].includes(base) &&
+                  [payAsset, receiveAsset].includes(quote)
+                ) {
+                  return true;
+                }
+                return false;
+              })
             : [],
         ticker: ticker ?? {},
       };
