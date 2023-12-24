@@ -20,7 +20,7 @@
   "dependencies": {
     "@elysiajs/cors": "^0.7.2",
     "@elysiajs/static": "^0.7.1",
-    "bts-buntime": "git@github.com:BTS-CM/bts-buntime.git#b5727b6",
+    "bts-buntime": "git@github.com:BTS-CM/bts-buntime.git#82d9f3e",
     "elysia": "latest",
     "elysia-compression": "^0.0.6",
     "fflate": "^0.8.1",

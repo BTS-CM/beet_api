@@ -1022,6 +1022,52 @@ async function getFullSmartcoin(
   });
 }
 
+/**
+ * Get smartcoin collateral bids
+ * @param chain
+ * @param assetID
+ * @param app
+ * @returns up to 100 collateral bids
+ */
+function getCollateralBids(chain: string, assetID: string, app: any) {
+  return new Promise(async (resolve, reject) => {
+    const node = getCurrentNode(chain, app);
+
+    let currentAPI;
+    try {
+      currentAPI = await Apis.instance(
+        node,
+        true,
+        4000,
+        { enableDatabase: true, enableHistory: true },
+        (error: Error) => console.log(error)
+      );
+    } catch (error) {
+      console.log(error);
+      changeURL(chain, app);
+      return reject(error);
+    }
+
+    try {
+      const [assetLimitOrders] = await Promise.all([
+        currentAPI.db_api().exec("get_collateral_bids", [assetID, 100, 0]), // get first 100 active collateral bids
+      ]);
+
+      currentAPI.close();
+
+      if (assetLimitOrders) {
+        return resolve(assetLimitOrders);
+      }
+
+      return reject(new Error("Couldn't retrieve objects"));
+    } catch (error) {
+      console.log(error);
+      currentAPI.close();
+      return reject(error);
+    }
+  });
+}
+
 export {
   generateDeepLink,
   getObjects,
@@ -1039,4 +1085,5 @@ export {
   getMaxObjectIDs,
   fetchCreditDeals,
   getFullSmartcoin,
+  getCollateralBids,
 };

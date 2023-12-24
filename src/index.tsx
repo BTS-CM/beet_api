@@ -19,6 +19,7 @@ import {
   fetchMarkets,
   fetchCreditDeals,
   getFullSmartcoin,
+  getCollateralBids,
 } from "./lib/api";
 
 import {
@@ -33,6 +34,7 @@ import {
   getMinPools,
   getActiveOffers,
   getMinBitassets,
+  getTranslations,
 } from "./lib/cache";
 
 import { validResult } from "./lib/common";
@@ -422,6 +424,39 @@ const app = new Elysia()
           },
         }
       )
+      .post(
+        "/collateralBids/:chain",
+        async ({ body, params: { chain } }) => {
+          // Retrieve the asset and bitasset data for a single smartcoin
+          if (!body || !JSON.parse(body) || !JSON.parse(body).length || !chain) {
+            throw new Error("Missing required fields");
+          }
+
+          if (chain !== "bitshares" && chain !== "bitshares_testnet") {
+            throw new Error("Invalid chain");
+          }
+
+          const assetID = JSON.parse(body)[0];
+
+          let retrievedData;
+          try {
+            retrievedData = await getCollateralBids(chain, assetID, app);
+          } catch (error) {
+            throw error;
+          }
+
+          return validResult(retrievedData);
+        },
+        {
+          body: t.String({
+            description: "The JSON-encoded request body",
+          }),
+          detail: {
+            summary: "Retrieve collateral bids",
+            tags: ["Blockchain"],
+          },
+        }
+      )
       .get(
         "/blockedAccounts/:chain",
         ({ params: { chain } }) => {
@@ -728,6 +763,9 @@ const app = new Elysia()
           throw new Error("Invalid chain");
         }
         return getMinAssets("both", chain);
+      })
+      .get("/translations/:locale", async ({ params: { locale } }) => {
+        return getTranslations(locale);
       })
       .get(
         "/offers/:chain",

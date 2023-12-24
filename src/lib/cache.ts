@@ -24,36 +24,92 @@ import test_minAssets from "../data/bitshares_testnet/minAssets.json";
 import test_allDynamicData from "../data/bitshares_testnet/dynamicData.json";
 import test_assetIssuers from "../data/bitshares_testnet/assetIssuers.json";
 
+const locales = ["en", "de"];
+
+const pages = [
+  "AccountSearch",
+  "AccountSelect",
+  "AssetDropDownCard",
+  "CreateCreditOffer",
+  "CreditBorrow",
+  "CreditDeals",
+  "CreditOffer",
+  "CurrentUser",
+  "DeepLinkDialog",
+  "ExternalLink",
+  "Featured",
+  "Home",
+  "LimitOrderCard",
+  "LTM",
+  "Market",
+  "MarketAssetCard",
+  "MarketOrder",
+  "MarketOrderCard",
+  "MarketPlaceholder",
+  "MarketSummaryTabs",
+  "MarketTradeContents",
+  "MyCompletedTrades",
+  "MyOpenOrders",
+  "MyOrderSummary",
+  "MyTradeSummary",
+  "PageHeader",
+  "PoolDialogs",
+  "PoolForm",
+  "PoolStake",
+  "PortfolioTabs",
+  "Settlement",
+  "Smartcoin",
+  "Smartcoins",
+  "Transfer",
+];
+
+async function fetchLocales() {
+  const translations = {};
+  for (const language of locales) {
+    const localPages = {};
+    for (const page of pages) {
+      const file = Bun.file(`src/data/locales/${language}/${page}.json`);
+      //src\data\locales\en\AccountSearch.json
+      const _jsonContents = await file.json();
+      localPages[page] = _jsonContents;
+    }
+    translations[language] = localPages;
+  }
+  return translations;
+}
+
+const localeJSON = await fetchLocales();
+
 // Creates a gzip compressed binary string
 const compressContent = (content: any) => {
-    return fflate.strFromU8(fflate.compressSync(fflate.strToU8(JSON.stringify(content))), true);
+  return fflate.strFromU8(fflate.compressSync(fflate.strToU8(JSON.stringify(content))), true);
 };
 
 // Preps the market data for further compression
 const compressMarketData = (assets: any, issuers: any) => {
-    return compressContent(
-        assets.map((asset: any) => {
-            const thisIssuer = issuers.find((issuer: any) => issuer.id === asset.issuer);
-            const issuerString = `${thisIssuer?.name ?? "???"} (${asset.issuer}) ${
-                thisIssuer?.ltm ? "(LTM)" : ""
-            }`;
-            return {
-                id: asset.id,
-                s: asset.symbol,
-                u: issuerString,
-                p: asset.precision,
-            };
-        })
-    );
+  return compressContent(
+    assets.map((asset: any) => {
+      const thisIssuer = issuers.find((issuer: any) => issuer.id === asset.issuer);
+      const issuerString = `${thisIssuer?.name ?? "???"} (${asset.issuer}) ${
+        thisIssuer?.ltm ? "(LTM)" : ""
+      }`;
+      return {
+        id: asset.id,
+        s: asset.symbol,
+        u: issuerString,
+        p: asset.precision,
+      };
+    })
+  );
 };
 
 const btsFeeSchedule = compressContent(bts_fees);
 const testFeeSchedule = compressContent(test_fees);
 
 const btsOffers = compressContent(
-    bts_offers
-        .filter((x) => x.enabled === true) // only provide active offers
-        .filter((x) => x.fee_rate < 500000) // max fee rate of 50%
+  bts_offers
+    .filter((x) => x.enabled === true) // only provide active offers
+    .filter((x) => x.fee_rate < 500000) // max fee rate of 50%
 );
 const testOffers = compressContent(test_offers.filter((x) => x.enabled === true));
 
@@ -81,10 +137,13 @@ const testMarketData = compressMarketData(test_allAssets, test_assetIssuers);
  * @param chain
  */
 function getAllAssets(mode: string = "both", chain: string = "bitshares") {
-    if (mode === "both") {
-        return validResult({bitshares: compressedBTSAssets, bitshares_testnet: compressedTestAssets}, false)
-    }
-    return validResult(chain === "bitshares" ? compressedBTSAssets : compressedTestAssets, false);
+  if (mode === "both") {
+    return validResult(
+      { bitshares: compressedBTSAssets, bitshares_testnet: compressedTestAssets },
+      false
+    );
+  }
+  return validResult(chain === "bitshares" ? compressedBTSAssets : compressedTestAssets, false);
 }
 
 /**
@@ -93,13 +152,16 @@ function getAllAssets(mode: string = "both", chain: string = "bitshares") {
  * @param chain
  */
 function getMinAssets(mode: string = "both", chain: string = "bitshares") {
-    if (mode === "both") {
-        return validResult({bitshares: compressedMinBTSAssets, bitshares_testnet: compressedMinTestAssets}, false)
-    }
+  if (mode === "both") {
     return validResult(
-        chain === "bitshares" ? compressedMinBTSAssets : compressedMinTestAssets,
-        false
+      { bitshares: compressedMinBTSAssets, bitshares_testnet: compressedMinTestAssets },
+      false
     );
+  }
+  return validResult(
+    chain === "bitshares" ? compressedMinBTSAssets : compressedMinTestAssets,
+    false
+  );
 }
 
 /**
@@ -108,10 +170,10 @@ function getMinAssets(mode: string = "both", chain: string = "bitshares") {
  * @param chain
  */
 function getMarketSearch(mode: string = "both", chain: string = "bitshares") {
-    if (mode === "both") {
-        return validResult({bitshares: btsMarketData, bitshares_testnet: testMarketData}, false)
-    }
-    return validResult(chain === "bitshares" ? btsMarketData : testMarketData, false);
+  if (mode === "both") {
+    return validResult({ bitshares: btsMarketData, bitshares_testnet: testMarketData }, false);
+  }
+  return validResult(chain === "bitshares" ? btsMarketData : testMarketData, false);
 }
 
 /**
@@ -120,17 +182,17 @@ function getMarketSearch(mode: string = "both", chain: string = "bitshares") {
  * @param chain
  */
 function getPools(mode: string = "both", chain: string = "bitshares") {
-    if (mode === "both") {
-        return validResult({bitshares: btsPools, bitshares_testnet: testPools}, false)
-    }
-    return validResult(chain === "bitshares" ? btsPools : testPools, false);
+  if (mode === "both") {
+    return validResult({ bitshares: btsPools, bitshares_testnet: testPools }, false);
+  }
+  return validResult(chain === "bitshares" ? btsPools : testPools, false);
 }
 
 function getMinPools(mode: string = "both", chain: string = "bitshares") {
-    if (mode === "both") {
-        return validResult({bitshares: btsMinPools, bitshares_testnet: testMinPools}, false)
-    }
-    return validResult(chain === "bitshares" ? btsMinPools : testMinPools, false);
+  if (mode === "both") {
+    return validResult({ bitshares: btsMinPools, bitshares_testnet: testMinPools }, false);
+  }
+  return validResult(chain === "bitshares" ? btsMinPools : testMinPools, false);
 }
 
 /**
@@ -139,10 +201,10 @@ function getMinPools(mode: string = "both", chain: string = "bitshares") {
  * @param chain
  */
 function getMinBitassets(mode: string = "both", chain: string = "bitshares") {
-    if (mode === "both") {
-        return validResult({bitshares: btsMinBitassets, bitshares_testnet: testMinBitassets}, false)
-    }
-    return validResult(chain === "bitshares" ? btsMinBitassets : testMinBitassets, false);
+  if (mode === "both") {
+    return validResult({ bitshares: btsMinBitassets, bitshares_testnet: testMinBitassets }, false);
+  }
+  return validResult(chain === "bitshares" ? btsMinBitassets : testMinBitassets, false);
 }
 
 /**
@@ -151,10 +213,10 @@ function getMinBitassets(mode: string = "both", chain: string = "bitshares") {
  * @param chain
  */
 function getActiveOffers(mode: string = "both", chain: string = "bitshares") {
-    if (mode === "both") {
-        return validResult({bitshares: btsOffers, bitshares_testnet: testOffers}, false)
-    }
-    return validResult(chain === "bitshares" ? btsOffers : testOffers, false);
+  if (mode === "both") {
+    return validResult({ bitshares: btsOffers, bitshares_testnet: testOffers }, false);
+  }
+  return validResult(chain === "bitshares" ? btsOffers : testOffers, false);
 }
 
 /**
@@ -163,10 +225,10 @@ function getActiveOffers(mode: string = "both", chain: string = "bitshares") {
  * @param chain
  */
 function getFeeSchedule(mode: string = "both", chain: string = "bitshares") {
-    if (mode === "both") {
-        return validResult({bitshares: btsFeeSchedule, bitshares_testnet: testFeeSchedule}, false)
-    }
-    return validResult(chain === "bitshares" ? btsFeeSchedule : testFeeSchedule, false);
+  if (mode === "both") {
+    return validResult({ bitshares: btsFeeSchedule, bitshares_testnet: testFeeSchedule }, false);
+  }
+  return validResult(chain === "bitshares" ? btsFeeSchedule : testFeeSchedule, false);
 }
 
 /**
@@ -176,16 +238,16 @@ function getFeeSchedule(mode: string = "both", chain: string = "bitshares") {
  * @returns Response
  */
 function getAsset(chain: string, id: string) {
-    let foundAsset;
-    if (chain === "bitshares") {
-        foundAsset = bts_allAssets.find((asset: any) => asset.id === id || asset.symbol === id);
-    } else if (chain === "bitshares_testnet") {
-        foundAsset = test_allAssets.find((asset: any) => asset.id === id || asset.symbol === id);
-    }
+  let foundAsset;
+  if (chain === "bitshares") {
+    foundAsset = bts_allAssets.find((asset: any) => asset.id === id || asset.symbol === id);
+  } else if (chain === "bitshares_testnet") {
+    foundAsset = test_allAssets.find((asset: any) => asset.id === id || asset.symbol === id);
+  }
 
-    if (foundAsset) {
-        return foundAsset;
-    }
+  if (foundAsset) {
+    return foundAsset;
+  }
 }
 
 /**
@@ -195,18 +257,18 @@ function getAsset(chain: string, id: string) {
  * @returns Response
  */
 function getDynamicData(chain: string, id: string) {
-    let foundDynamicData;
-    if (chain === "bitshares") {
-        foundDynamicData = bts_allDynamicData.find((dynamicData: any) => dynamicData.id === id);
-    } else if (chain === "bitshares_testnet") {
-        foundDynamicData = test_allDynamicData.find((dynamicData: any) => dynamicData.id === id);
-    }
+  let foundDynamicData;
+  if (chain === "bitshares") {
+    foundDynamicData = bts_allDynamicData.find((dynamicData: any) => dynamicData.id === id);
+  } else if (chain === "bitshares_testnet") {
+    foundDynamicData = test_allDynamicData.find((dynamicData: any) => dynamicData.id === id);
+  }
 
-    if (!foundDynamicData) {
-        throw new Error("Dynamic data not found");
-    }
+  if (!foundDynamicData) {
+    throw new Error("Dynamic data not found");
+  }
 
-    return validResult(foundDynamicData);
+  return validResult(foundDynamicData);
 }
 
 /**
@@ -216,30 +278,43 @@ function getDynamicData(chain: string, id: string) {
  * @returns Response
  */
 function getPool(chain: string, id: string) {
-    let foundPool;
-    if (chain === "bitshares") {
-        foundPool = bts_allPools.find((asset: any) => asset.id === id);
-    } else if (chain === "bitshares_testnet") {
-        foundPool = test_allPools.find((asset: any) => asset.id === id);
-    }
+  let foundPool;
+  if (chain === "bitshares") {
+    foundPool = bts_allPools.find((asset: any) => asset.id === id);
+  } else if (chain === "bitshares_testnet") {
+    foundPool = test_allPools.find((asset: any) => asset.id === id);
+  }
 
-    if (!foundPool) {
-        throw new Error("Pool not found");
-    }
+  if (!foundPool) {
+    throw new Error("Pool not found");
+  }
 
-    return validResult(foundPool);
+  return validResult(foundPool);
+}
+
+/**
+ * Return the requested locale strings for the
+ * @param localeString
+ * @returns Response
+ */
+function getTranslations(localeString: string) {
+  if (!locales.includes(localeString) || !localeJSON[localeString]) {
+    throw new Error("Locale not found");
+  }
+  return validResult(localeJSON[localeString]);
 }
 
 export {
-    getFeeSchedule,
-    getAsset,
-    getPool,
-    getDynamicData,
-    getMarketSearch,
-    getAllAssets,
-    getMinAssets,
-    getPools,
-    getMinPools,
-    getMinBitassets,
-    getActiveOffers,
+  getFeeSchedule,
+  getAsset,
+  getPool,
+  getDynamicData,
+  getMarketSearch,
+  getAllAssets,
+  getMinAssets,
+  getPools,
+  getMinPools,
+  getMinBitassets,
+  getActiveOffers,
+  getTranslations,
 };

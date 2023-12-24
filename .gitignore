@@ -132,3 +132,7 @@ dist
 # Built Tools
 beet_api
 public/
+
+# data
+src/data/bitshares/*.json
+src/data/bitshares_test/*.json
