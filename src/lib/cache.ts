@@ -53,6 +53,7 @@ const pages = [
   "MyOrderSummary",
   "MyTradeSummary",
   "PageHeader",
+  "PageFooter",
   "PoolDialogs",
   "PoolForm",
   "PoolStake",
