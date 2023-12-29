@@ -16,6 +16,14 @@
   "creditDeals": "ข้อเสนอสินเชื่อ",
   "settingsHeading": "การตั้งค่า",
   "buyLTM": "ซื้อ LTM",
-  "english": "อังกฤษ (อังกฤษ)",
-  "german": "เยอรมัน (เดอ)"
+  "english": "อังกฤษ (en)",
+  "danish": "เดนมาร์ก (da)",
+  "german": "เยอรมัน (de)",
+  "spanish": "สเปน (es)",
+  "french": "ฝรั่งเศส (fr)",
+  "italian": "ภาษาอิตาลี (it)",
+  "japanese": "ญี่ปุ่น (ja)",
+  "korean": "เกาหลี (ko)",
+  "portuguese": "โปรตุเกส (pt)",
+  "thai": "ไทย (th)"
 }

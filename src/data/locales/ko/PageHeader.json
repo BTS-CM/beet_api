@@ -16,6 +16,14 @@
   "creditDeals": "신용 거래",
   "settingsHeading": "설정",
   "buyLTM": "장기 구매",
-  "english": "영어(en)",
-  "german": "독일어(드)"
+  "english": "영어 (en)",
+  "danish": "덴마크어 (da)",
+  "german": "독일어 (de)",
+  "spanish": "스페인어 (es)",
+  "french": "프랑스어 (fr)",
+  "italian": "이탈리아어 (it)",
+  "japanese": "일본어 (ja)",
+  "korean": "한국어 (ko)",
+  "portuguese": "포르투갈어 (pt)",
+  "thai": "태국어 (th)"
 }
