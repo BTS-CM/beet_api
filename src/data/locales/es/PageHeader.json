@@ -25,5 +25,25 @@
   "japanese": "japonés (ja)",
   "korean": "coreano (ko)",
   "portuguese": "portugués (pt)",
-  "thai": "tailandés (th)"
+  "thai": "tailandés (th)",
+  "descText": {
+    "borrow": "Utilice esta página para localizar posibles ofertas de crédito",
+    "deals": "¡Consulta tus ofertas actuales a continuación!",
+    "dex": "Utilice el siguiente formulario para crear una orden limitada en Bitshares DEX.",
+    "featured": "Echa un vistazo a algunos de estos mercados destacados",
+    "index": "Esta herramienta de código abierto puede crear múltiples operaciones de Bitshares.",
+    "ltm": "Utilice el siguiente formulario para actualizar su cuenta a una membresía de por vida.",
+    "offer": "El siguiente formulario es para aceptar una oferta de crédito en Bitshares DEX.",
+    "order": "Utilice el siguiente formulario para actualizar su orden límite existente en Bitshares DEX.",
+    "pool": "Utilice el siguiente formulario para crear un intercambio de fondo de liquidez de Bitshares.",
+    "portfolio": "Esta página proporciona una descripción general de los saldos de su cuenta, órdenes abiertas y actividades recientes.",
+    "settlement": "Utilice el siguiente formulario para ofertar por los fondos de liquidación de una smartcoin",
+    "smartcoin": "Utilice el siguiente formulario para emitir deuda garantizada y crearla.",
+    "smartcoins": "Utilice la siguiente interfaz para localizar un activo para pedir prestado y crearlo.",
+    "stake": "Utilice este formulario para apostar sus activos en fondos de liquidez",
+    "transfer": "Utilice el siguiente formulario para transferir activos a otros usuarios de blockchain"
+  },
+  "back": "Regresa",
+  "usage": "Diseñado para usar con el",
+  "multiwallet": "billetera múltiple"
 }
