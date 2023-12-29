@@ -55,9 +55,7 @@ And you can now compile the beet_api into a linux executable:
 
 Once the elysia server is running, navigate to:
 
-`http://localhost:8080/` to view
-
-`http://localhost:8080/swagger` for a swagger docs page.
+`http://localhost:8080/` to view the hosted web app
 
 ---
 
