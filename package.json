@@ -2,11 +2,12 @@
   "name": "app",
   "version": "1.0.50",
   "scripts": {
+    "eraseChainData": "rm -rf ./src/data/bitshares/* && rm -rf ./src/data/bitshares_testnet/*",
     "fetchPools": "node ./src/data/fetchPools.js",
     "fetchAssets": "node ./src/data/fetchAssets.js",
     "fetchDynamicData": "node ./src/data/fetchDynamicData.js",
-    "fetchBitassetData": "node ./src/data/fetchBitassetData.js",
     "fetchIssuers": "node ./src/data/fetchAssetIssuers.js",
+    "fetchBitassetData": "node ./src/data/fetchBitassetData.js",
     "fetchOffers": "node ./src/data/fetchCreditOffers.js",
     "fetchDeals": "node ./src/data/fetchCreditDeals.js",
     "fetchFees": "node ./src/data/fetchFees.js",

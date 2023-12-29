@@ -173,7 +173,7 @@ async function getObjects(chain: String, object_ids: Array<String>, app?: any) {
       }
     }
 
-    if (retrievedObjects.length === 0) {
+    if (app && retrievedObjects.length === 0) {
       throw new Error("Couldn't retrieve objects");
     }
 
