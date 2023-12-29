@@ -1,0 +1,21 @@
+{
+  "welcomeMessage": "에 오신 것을 환영합니다 ",
+  "uiName": "Bitshares 비트 애스트로 UI",
+  "commandSearchPlaceholder": "명령을 입력하거나 검색하세요...",
+  "noResultsFound": "검색 결과가 없습니다.",
+  "exchangingFundsHeading": "자금 교환",
+  "dexLimitOrders": "Dex 제한 주문",
+  "poolExchange": "풀 교환",
+  "transferAssets": "자산 양도",
+  "formsOfDebtHeading": "부채 형태",
+  "borrowFunds": "자금 차용(신용 제안)",
+  "createDebt": "부채 생성(스마트코인)",
+  "overviewsHeading": "개요",
+  "portfolio": "포트폴리오",
+  "topMarkets": "최고의 시장",
+  "creditDeals": "신용 거래",
+  "settingsHeading": "설정",
+  "buyLTM": "장기 구매",
+  "english": "영어(en)",
+  "german": "독일어(드)"
+}

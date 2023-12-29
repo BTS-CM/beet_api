@@ -1,0 +1,21 @@
+{
+  "welcomeMessage": "Velkommen til ",
+  "uiName": "Bitshares Beet Astro UI",
+  "commandSearchPlaceholder": "Skriv en kommando eller søg...",
+  "noResultsFound": "Ingen resultater fundet.",
+  "exchangingFundsHeading": "Udveksling af midler",
+  "dexLimitOrders": "Dex limiterede ordrer",
+  "poolExchange": "Pool udveksling",
+  "transferAssets": "Overfør aktiver",
+  "formsOfDebtHeading": "Gældsformer",
+  "borrowFunds": "Lån midler (kredittilbud)",
+  "createDebt": "Opret gæld (smartcoins)",
+  "overviewsHeading": "Oversigter",
+  "portfolio": "Portefølje",
+  "topMarkets": "Topmarkeder",
+  "creditDeals": "Kreditaftaler",
+  "settingsHeading": "Indstillinger",
+  "buyLTM": "Køb LTM",
+  "english": "engelsk (da)",
+  "german": "tysk (de)"
+}

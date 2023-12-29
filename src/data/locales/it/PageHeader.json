@@ -1,0 +1,21 @@
+{
+  "welcomeMessage": "Benvenuto a ",
+  "uiName": "Interfaccia utente di Bitshares Beet Astro",
+  "commandSearchPlaceholder": "Digita un comando o cerca...",
+  "noResultsFound": "Nessun risultato trovato.",
+  "exchangingFundsHeading": "Scambio di fondi",
+  "dexLimitOrders": "Ordini con limite di destrezza",
+  "poolExchange": "Scambio di piscine",
+  "transferAssets": "Trasferire beni",
+  "formsOfDebtHeading": "Forme di debito",
+  "borrowFunds": "Prendere in prestito fondi (offerte di credito)",
+  "createDebt": "Creare debito (smartcoin)",
+  "overviewsHeading": "Panoramica",
+  "portfolio": "Portafoglio",
+  "topMarkets": "I migliori mercati",
+  "creditDeals": "Accordi di credito",
+  "settingsHeading": "Impostazioni",
+  "buyLTM": "Acquista LTM",
+  "english": "inglese (it)",
+  "german": "tedesco (de)"
+}

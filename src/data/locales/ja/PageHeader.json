@@ -1,0 +1,21 @@
+{
+  "welcomeMessage": "へようこそ ",
+  "uiName": "Bitshares Beet Astro UI",
+  "commandSearchPlaceholder": "コマンドを入力するか検索...",
+  "noResultsFound": "結果が見つかりません。",
+  "exchangingFundsHeading": "資金の交換",
+  "dexLimitOrders": "Dex指値注文",
+  "poolExchange": "プール交流",
+  "transferAssets": "資産の譲渡",
+  "formsOfDebtHeading": "借金の形態",
+  "borrowFunds": "資金を借りる（クレジットオファー）",
+  "createDebt": "借金を作る（スマートコイン）",
+  "overviewsHeading": "概要",
+  "portfolio": "ポートフォリオ",
+  "topMarkets": "トップ市場",
+  "creditDeals": "クレジット取引",
+  "settingsHeading": "設定",
+  "buyLTM": "LTM を購入する",
+  "english": "英語 (en)",
+  "german": "ドイツ語 (デ)"
+}

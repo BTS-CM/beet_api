@@ -1,0 +1,21 @@
+{
+  "welcomeMessage": "Tere tulemast ",
+  "uiName": "Bitshares Beet Astro kasutajaliides",
+  "commandSearchPlaceholder": "Sisestage käsk või otsige...",
+  "noResultsFound": "Tulemusi ei leitud.",
+  "exchangingFundsHeading": "Vahendite vahetamine",
+  "dexLimitOrders": "Dexi limiittellimused",
+  "poolExchange": "Basseini vahetus",
+  "transferAssets": "Varade üleandmine",
+  "formsOfDebtHeading": "Võla vormid",
+  "borrowFunds": "Laenake raha (krediidipakkumised)",
+  "createDebt": "Looge võlg (smartcoinid)",
+  "overviewsHeading": "Ülevaateid",
+  "portfolio": "Portfell",
+  "topMarkets": "Tippturud",
+  "creditDeals": "Krediiditehingud",
+  "settingsHeading": "Seaded",
+  "buyLTM": "Osta LTM",
+  "english": "inglise keel (et)",
+  "german": "saksa (de)"
+}
