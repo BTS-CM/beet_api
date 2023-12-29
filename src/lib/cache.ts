@@ -24,7 +24,7 @@ import test_minAssets from "../data/bitshares_testnet/minAssets.json";
 import test_allDynamicData from "../data/bitshares_testnet/dynamicData.json";
 import test_assetIssuers from "../data/bitshares_testnet/assetIssuers.json";
 
-const locales = ["da", "de", "es", "fr", "it", "ja", "ko", "pt", "th"];
+const locales = ["en", "da", "de", "es", "fr", "it", "ja", "ko", "pt", "th"];
 
 const pages = [
   "AccountSearch",
