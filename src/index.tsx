@@ -940,4 +940,6 @@ const app = new Elysia()
   .use(compression())
   .listen(8080);
 
-console.log(`🦊 Elysia is running at ${app.server?.hostname}:${app.server?.port} `);
+console.log(
+  `Your Bitshares BEET API server is running at http://${app.server?.hostname}:${app.server?.port}/ `
+);
