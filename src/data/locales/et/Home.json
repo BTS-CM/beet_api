@@ -6,6 +6,13 @@
     "hover2": "Pooltel on erinevad kauplemispaarid ja tasud.",
     "hover3": "Lihtsam, kuid kulukam kui piirtellimus."
   },
+  "stake": {
+    "title": "🔒 Panuse vara",
+    "subtitle": "Osalusvara likviidsuskogumites",
+    "hover1": "Tasude teenimiseks panustage varasid likviidsusfondidesse.",
+    "hover2": "Panustatud varad on basseinis lukus.",
+    "hover3": "Panustatud varad saab igal ajal välja võtta."
+  },
   "dex": {
     "title": "📈 DEX-i limiittellimused",
     "subtitle": "Kaubelge Bitshares DEX-il",

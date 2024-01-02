@@ -6,6 +6,13 @@
     "hover2": "Os pools têm diferentes pares de negociação e taxas.",
     "hover3": "Mais simples, mas mais caro do que um pedido com limite."
   },
+  "stake": {
+    "title": "🔒 Participar ativos",
+    "subtitle": "Participar ativos em pools de liquidez",
+    "hover1": "Aposte ativos em pools de liquidez para ganhar taxas.",
+    "hover2": "Os ativos apostados são bloqueados no pool.",
+    "hover3": "Os ativos apostados podem ser retirados a qualquer momento."
+  },
   "dex": {
     "title": "📈 Pedidos com limite de DEX",
     "subtitle": "Negocie no Bitshares DEX",
@@ -17,7 +24,7 @@
   "transfer": {
     "title": "💸 Transferir ativos",
     "subtitle": "Envie ativos para outros usuários",
-    "hover1": "Transfira ativos para qualquer pessoa na blockchain Bitshares em segundos."
+    "hover1": "Transfira ativos para qualquer pessoa no blockchain Bitshares em segundos."
   },
   "borrow": {
     "title": "🏦 Emprestar fundos",

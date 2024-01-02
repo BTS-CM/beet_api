@@ -6,6 +6,13 @@
     "hover2": "Los pools tienen diferentes pares comerciales y tarifas.",
     "hover3": "Más simple pero más costoso que una orden limitada."
   },
+  "stake": {
+    "title": "🔒 Participar activos",
+    "subtitle": "Participar activos en fondos de liquidez",
+    "hover1": "Invierta activos en fondos de liquidez para ganar comisiones.",
+    "hover2": "Los activos apostados están bloqueados en el grupo.",
+    "hover3": "Los activos apostados se pueden retirar en cualquier momento."
+  },
   "dex": {
     "title": "📈 Órdenes limitadas DEX",
     "subtitle": "Opere en Bitshares DEX",

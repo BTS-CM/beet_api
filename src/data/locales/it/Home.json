@@ -6,6 +6,13 @@
     "hover2": "I pool hanno coppie di trading e commissioni di trading diverse.",
     "hover3": "Più semplice ma più costoso di un ordine limite."
   },
+  "stake": {
+    "title": "🔒 Partecipare al patrimonio",
+    "subtitle": "Partecipazione di asset in pool di liquidità",
+    "hover1": "Partecipare a asset in pool di liquidità per guadagnare commissioni.",
+    "hover2": "Le risorse picchettate sono bloccate nel pool.",
+    "hover3": "Il patrimonio investito può essere ritirato in qualsiasi momento."
+  },
   "dex": {
     "title": "📈 Ordini limite DEX",
     "subtitle": "Fai trading su Bitshares DEX",

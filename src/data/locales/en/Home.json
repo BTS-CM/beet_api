@@ -6,6 +6,13 @@
     "hover2": "Pools have different trading pairs and fees.",
     "hover3": "Simpler but more costly than a limit order."
   },
+  "stake": {
+    "title": "🔒 Stake assets",
+    "subtitle": "Stake assets in liquidity pools",
+    "hover1": "Stake assets in liquidity pools to earn fees.",
+    "hover2": "Staked assets are locked in the pool.",
+    "hover3": "Staked assets can be withdrawn at any time."
+  },
   "dex": {
     "title": "📈 DEX limit orders",
     "subtitle": "Trade on the Bitshares DEX",

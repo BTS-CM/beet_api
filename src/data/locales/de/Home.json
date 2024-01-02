@@ -6,6 +6,13 @@
     "hover2": "Pools haben unterschiedliche Handelspaare und Gebühren.",
     "hover3": "Einfacher, aber teurer als eine Limit-Order."
   },
+  "stake": {
+    "title": "🔒 Vermögenswerte einsetzen",
+    "subtitle": "Setzen Sie Vermögenswerte in Liquiditätspools ein",
+    "hover1": "Setzen Sie Vermögenswerte in Liquiditätspools ein, um Gebühren zu verdienen.",
+    "hover2": "Abgesteckte Vermögenswerte sind im Pool gesperrt.",
+    "hover3": "Eingesetzte Vermögenswerte können jederzeit abgehoben werden."
+  },
   "dex": {
     "title": "📈 DEX-Limit-Orders",
     "subtitle": "Handeln Sie am Bitshares DEX",

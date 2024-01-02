@@ -6,18 +6,25 @@
     "hover2": "Puljer har forskellige handelspar og gebyrer.",
     "hover3": "Enklere men dyrere end en limiteret ordre."
   },
+  "stake": {
+    "title": "🔒 Indsats aktiver",
+    "subtitle": "Sats aktiver i likviditetspuljer",
+    "hover1": "Sats aktiver i likviditetspuljer for at tjene gebyrer.",
+    "hover2": "Indsatte aktiver er låst i puljen.",
+    "hover3": "Indsatte aktiver kan til enhver tid trækkes tilbage."
+  },
   "dex": {
     "title": "📈 DEX begrænsede ordrer",
     "subtitle": "Handl på Bitshares DEX",
     "hover1": "Lav manuelt begrænsede ordrer.",
     "hover2": "Brug ethvert aktivhandelspar.",
-    "hover3": "Angiv ordrens udløbsdatoer.",
+    "hover3": "Angiv ordreudløbsdatoer.",
     "hover4": "Mere kompleks, men billigere end poolbytte."
   },
   "transfer": {
     "title": "💸 Overfør aktiver",
     "subtitle": "Send aktiver til andre brugere",
-    "hover1": "Overfør aktiver til enhver på Bitshares blockchain på få sekunder."
+    "hover1": "Overfør aktiver til alle på Bitshares blockchain på få sekunder."
   },
   "borrow": {
     "title": "🏦 Lån penge",

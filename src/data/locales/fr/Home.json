@@ -6,6 +6,13 @@
     "hover2": "Les pools ont des paires de trading et des frais différents.",
     "hover3": "Plus simple mais plus coûteux qu’un ordre limité."
   },
+  "stake": {
+    "title": "🔒 Miser des actifs",
+    "subtitle": "Miser des actifs dans des pools de liquidité",
+    "hover1": "Misez des actifs dans des pools de liquidités pour gagner des frais.",
+    "hover2": "Les actifs jalonnés sont verrouillés dans le pool.",
+    "hover3": "Les actifs mis en jeu peuvent être retirés à tout moment."
+  },
   "dex": {
     "title": "📈 Ordres limités DEX",
     "subtitle": "Négociez sur les Bitshares DEX",
