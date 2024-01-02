@@ -20,7 +20,7 @@
   "unstakingAssets": "언스테이킹 자산",
   "unstakeAssets": "언스테이크 자산",
   "howMuchToStake": "얼마나 많이 {{symbol}} 지분을 갖고 싶나요?",
-  "totalShareAssetReceive": "예상 총액 {{symbol}} 당신은 받게 될 것입니다",
+  "totalShareAssetReceive": "귀하가 받게 될 예상 총 풀 공유 자산",
   "unstaking": "언스테이킹...",
   "networkFee": "네트워크 수수료",
   "networkFeeDescription1": "이는 풀 스테이킹 작업을 블록체인에 방송하는 데 드는 비용입니다.",

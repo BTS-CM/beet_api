@@ -20,7 +20,7 @@
   "unstakingAssets": "ทรัพย์สินที่ไม่มั่นคง",
   "unstakeAssets": "ปลดทรัพย์สิน",
   "howMuchToStake": "เท่าไร {{symbol}} คุณอยากเดิมพันไหม?",
-  "totalShareAssetReceive": "รวมประมาณ {{symbol}} คุณจะได้รับ",
+  "totalShareAssetReceive": "สินทรัพย์ส่วนแบ่งพูลโดยประมาณทั้งหมดที่คุณจะได้รับ",
   "unstaking": "แน่วแน่...",
   "networkFee": "ค่าธรรมเนียมเครือข่าย",
   "networkFeeDescription1": "นี่คือค่าใช้จ่ายในการออกอากาศการดำเนินการปักหลักพูลของคุณไปยังบล็อกเชน",

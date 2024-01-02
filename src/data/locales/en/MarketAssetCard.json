@@ -5,6 +5,7 @@
   "selling": "Selling",
   "poolStakeAsset": "Pool stake asset",
   "supply": "Supply",
+  "links": "Links",
   "totalCirculation": "{{asset}} in total circulation",
   "maximumSupply": "Maximum supply",
   "confidentialSupply": "{{asset}} in confidential supply",

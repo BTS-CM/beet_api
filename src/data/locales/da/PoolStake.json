@@ -20,7 +20,7 @@
   "unstakingAssets": "Frigørelse af aktiver",
   "unstakeAssets": "Afspil aktiver",
   "howMuchToStake": "Hvor meget {{symbol}} vil du satse?",
-  "totalShareAssetReceive": "Estimeret total {{symbol}} du vil modtage",
+  "totalShareAssetReceive": "Anslået samlede puljeandelsaktiver, du vil modtage",
   "unstaking": "Udsætter...",
   "networkFee": "Netværksgebyr",
   "networkFeeDescription1": "Dette er prisen for at udsende din puljeindsatsoperation til blockchain",

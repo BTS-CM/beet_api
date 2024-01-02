@@ -20,7 +20,7 @@
   "unstakingAssets": "Unstaking assets",
   "unstakeAssets": "Unstake assets",
   "howMuchToStake": "How much {{symbol}} do you want to stake?",
-  "totalShareAssetReceive": "Estimated total {{symbol}} you'll receive",
+  "totalShareAssetReceive": "Estimated total pool share assets you'll receive",
   "unstaking": "Unstaking...",
   "networkFee": "Network fee",
   "networkFeeDescription1": "This is the cost to broadcast your pool staking operation onto the blockchain",

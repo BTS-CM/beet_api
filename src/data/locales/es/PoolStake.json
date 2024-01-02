@@ -20,7 +20,7 @@
   "unstakingAssets": "Activos sin participación",
   "unstakeAssets": "Activos sin participación",
   "howMuchToStake": "Cuánto {{symbol}} ¿Quieres apostar?",
-  "totalShareAssetReceive": "Total Estimado {{symbol}} recibirás",
+  "totalShareAssetReceive": "Activos totales estimados del pool compartido que recibirás",
   "unstaking": "Desestacar...",
   "networkFee": "Tarifa de red",
   "networkFeeDescription1": "Este es el costo de transmitir la operación de participación de su grupo en la cadena de bloques.",

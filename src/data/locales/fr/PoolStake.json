@@ -20,7 +20,7 @@
   "unstakingAssets": "Actifs non mis en jeu",
   "unstakeAssets": "Libérer les actifs",
   "howMuchToStake": "Combien {{symbol}} tu veux miser ?",
-  "totalShareAssetReceive": "Total estimé {{symbol}} tu recevras",
+  "totalShareAssetReceive": "Estimation du total des actifs partagés du pool que vous recevrez",
   "unstaking": "Sans mise en jeu...",
   "networkFee": "Frais de réseau",
   "networkFeeDescription1": "C'est le coût de diffusion de votre opération de pool staking sur la blockchain",

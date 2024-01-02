@@ -20,7 +20,7 @@
   "unstakingAssets": "Varade vabastamine",
   "unstakeAssets": "Panustada vara",
   "howMuchToStake": "Kui palju {{symbol}} kas sa tahad panustada?",
-  "totalShareAssetReceive": "Hinnanguline kogusumma {{symbol}} sa saad",
+  "totalShareAssetReceive": "Hinnanguline kogusumma, mille saate",
   "unstaking": "Unustades...",
   "networkFee": "Võrgutasu",
   "networkFeeDescription1": "See on teie basseini panustamise operatsiooni plokiahelasse edastamise hind",

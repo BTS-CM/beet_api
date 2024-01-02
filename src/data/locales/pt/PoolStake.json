@@ -20,7 +20,7 @@
   "unstakingAssets": "Desempacotar ativos",
   "unstakeAssets": "Desempacotar ativos",
   "howMuchToStake": "Quanto {{symbol}} você quer apostar?",
-  "totalShareAssetReceive": "Total Estimado {{symbol}} você receberá",
+  "totalShareAssetReceive": "Total estimado de ativos de compartilhamento do pool que você receberá",
   "unstaking": "Desempacotando...",
   "networkFee": "Taxa de rede",
   "networkFeeDescription1": "Este é o custo para transmitir sua operação de piquetagem de pool no blockchain",

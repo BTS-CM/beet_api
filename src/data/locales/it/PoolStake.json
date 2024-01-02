@@ -20,7 +20,7 @@
   "unstakingAssets": "Asset non impegnativi",
   "unstakeAssets": "Rimuovi asset",
   "howMuchToStake": "Quanto {{symbol}} vuoi puntare?",
-  "totalShareAssetReceive": "Totale stimato {{symbol}} riceverai",
+  "totalShareAssetReceive": "Stima delle risorse totali di condivisione del pool che riceverai",
   "unstaking": "Instabile...",
   "networkFee": "Tariffa di rete",
   "networkFeeDescription1": "Questo è il costo per trasmettere la tua operazione di pool staking sulla blockchain",

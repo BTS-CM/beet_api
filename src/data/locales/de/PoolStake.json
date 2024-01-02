@@ -20,7 +20,7 @@
   "unstakingAssets": "Entsicherung von Vermögenswerten",
   "unstakeAssets": "Vermögenswerte abheben",
   "howMuchToStake": "Wie viel {{symbol}} Willst du wetten?",
-  "totalShareAssetReceive": "Geschätzter Gesamtwert {{symbol}} Du wirst erhalten",
+  "totalShareAssetReceive": "Geschätzte Gesamtsumme der Poolanteile, die Sie erhalten",
   "unstaking": "Abstecken...",
   "networkFee": "Netzwerkgebühr",
   "networkFeeDescription1": "Dies sind die Kosten für die Übertragung Ihres Pool-Einsatzvorgangs auf die Blockchain",

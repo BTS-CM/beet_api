@@ -20,7 +20,7 @@
   "unstakingAssets": "資産のステーキングを解除する",
   "unstakeAssets": "資産のステークを解除する",
   "howMuchToStake": "いくら {{symbol}} 賭けたいですか？",
-  "totalShareAssetReceive": "推定合計額 {{symbol}} あなたは受け取ります",
+  "totalShareAssetReceive": "あなたが受け取る予定のプールシェア資産の合計",
   "unstaking": "ステーキングを解除...",
   "networkFee": "ネットワーク料金",
   "networkFeeDescription1": "これは、プールステーキング操作をブロックチェーンにブロードキャストするためのコストです",

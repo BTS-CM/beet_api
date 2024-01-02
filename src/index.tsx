@@ -74,20 +74,6 @@ function publicFile(folder: string, fileName: string, set: any) {
 const app = new Elysia()
   //.use(swagger(swaggerConfig))
   .use(staticPlugin({ prefix: "/" }))
-  /*
-  .use(
-    staticPlugin({
-      prefix: "/bitshares",
-      assets: "./src/data/bitshares",
-    })
-  )
-  .use(
-    staticPlugin({
-      prefix: "/bitshares_testnet",
-      assets: "./src/data/bitshares_testnet",
-    })
-  )
-  */
   .state("bitshares_nodes", JSON.stringify(chains.bitshares.nodeList))
   .state("bitshares_testnet_nodes", JSON.stringify(chains.bitshares_testnet.nodeList))
   .onError(({ code, error }) => {
