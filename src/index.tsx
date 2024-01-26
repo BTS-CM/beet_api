@@ -178,6 +178,18 @@ const app = new Elysia()
     }
   )
   .get(
+    "/lend/:fileName",
+    ({ set, params: { fileName } }) => {
+      return publicFile("lend", fileName, set);
+    },
+    {
+      detail: {
+        summary: "bitshares dist files",
+        tags: ["Website"],
+      },
+    }
+  )
+  .get(
     "/ltm/:fileName",
     ({ set, params: { fileName } }) => {
       return publicFile("ltm", fileName, set);
