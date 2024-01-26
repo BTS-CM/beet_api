@@ -8,7 +8,9 @@
     "repayPeriod": "Período de reembolso: {{repayPeriod}} horas",
     "validity": "Oferta válida para {{validity}} horas",
     "min": "Quantidade mínima: {{amount}} {{asset}}",
-    "proceed": "Prossiga com a oferta de crédito{{offerID}}"
+    "proceed": "Prossiga com a oferta de crédito{{offerID}}",
+    "edit": "Editar oferta",
+    "view": "Configurações de exibição"
   },
   "card": {
     "title": "🏦 Visualizando ofertas de crédito disponíveis",

@@ -8,7 +8,9 @@
     "repayPeriod": "Periodo de amortización: {{repayPeriod}} horas",
     "validity": "Oferta válida para {{validity}} horas",
     "min": "Cantidad mínima: {{amount}} {{asset}}",
-    "proceed": "Continuar con la oferta de crédito{{offerID}}"
+    "proceed": "Continuar con la oferta de crédito{{offerID}}",
+    "edit": "Editar oferta",
+    "view": "Ver configuraciones"
   },
   "card": {
     "title": "🏦 Ver ofertas de crédito disponibles",

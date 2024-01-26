@@ -23,6 +23,7 @@
     "backingCollateral": "Garantia de garantia para negócio de crédito",
     "selectCollateral": "Selecione sua garantia de apoio.",
     "borrowDescription": "Emprestar {{symbol}} de {{owner_name}}, escolha entre os ativos colaterais aceitos acima.",
+    "borrowDescription2": "Preço designado pelo credor: {{price}} {{quote}}/{{base}}",
     "noCollateralMessage": "A conta não contém esse ativo de garantia.",
     "borrowAmount": "Quantidade de {{symbol}} você planeja pedir emprestado",
     "availableAmountRange": "Disponível: {{minAmount}} para {{availableAmount}} {{symbol}}",

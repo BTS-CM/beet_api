@@ -156,7 +156,7 @@ async function getObjects(chain: String, object_ids: Array<String>, app?: any) {
     }
 
     let retrievedObjects: Object[] = [];
-    const chunksOfInputs = _sliceIntoChunks(object_ids, 50);
+    const chunksOfInputs = _sliceIntoChunks(object_ids, 50); // TODO: Increase maximum limit
 
     for (let i = 0; i < chunksOfInputs.length; i++) {
       const currentChunk = chunksOfInputs[i];

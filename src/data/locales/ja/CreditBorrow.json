@@ -8,7 +8,9 @@
     "repayPeriod": "返済期間： {{repayPeriod}} 時間",
     "validity": "オファーの有効期限 {{validity}} 時間",
     "min": "最小金額: {{amount}} {{asset}}",
-    "proceed": "クレジットオファーを続行する{{offerID}}"
+    "proceed": "クレジットオファーを続行する{{offerID}}",
+    "edit": "オファーを編集する",
+    "view": "設定を表示する"
   },
   "card": {
     "title": "🏦 利用可能なクレジット特典の表示",

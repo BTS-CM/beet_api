@@ -8,7 +8,9 @@
     "repayPeriod": "Repay period: {{repayPeriod}} hours",
     "validity": "Offer valid for {{validity}} hours",
     "min": "Min amount: {{amount}} {{asset}}",
-    "proceed": "Proceed with credit offer #{{offerID}}"
+    "proceed": "Proceed with credit offer #{{offerID}}",
+    "edit": "Edit offer",
+    "view": "View settings"
   },
   "card": {
     "title": "🏦 Viewing available credit offers",

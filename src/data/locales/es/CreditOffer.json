@@ -23,6 +23,7 @@
     "backingCollateral": "Garantía de respaldo para acuerdo de crédito",
     "selectCollateral": "Seleccione su garantía de respaldo.",
     "borrowDescription": "pedir prestado {{symbol}} de {{owner_name}}, elija entre los activos de garantía de respaldo aceptados anteriormente.",
+    "borrowDescription2": "Precio designado por el prestamista: {{price}} {{quote}}/{{base}}",
     "noCollateralMessage": "La cuenta no tiene este activo de garantía de respaldo.",
     "borrowAmount": "Cantidad de {{symbol}} planeas pedir prestado",
     "availableAmountRange": "Disponible: {{minAmount}} a {{availableAmount}} {{symbol}}",

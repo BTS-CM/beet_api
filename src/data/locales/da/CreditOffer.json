@@ -23,6 +23,7 @@
     "backingCollateral": "Sikkerhedsstillelse for kreditaftale",
     "selectCollateral": "Vælg din sikkerhedsstillelse..",
     "borrowDescription": "At låne {{symbol}} fra {{owner_name}}, vælg mellem ovenstående accepterede sikkerhedsstillelsesaktiver.",
+    "borrowDescription2": "Långivers angivne pris: {{price}} {{quote}}/{{base}}",
     "noCollateralMessage": "Kontoen indeholder ikke dette sikkerhedsstillelsesaktiv.",
     "borrowAmount": "Mængde af {{symbol}} du planlægger at låne",
     "availableAmountRange": "Ledig: {{minAmount}} til {{availableAmount}} {{symbol}}",

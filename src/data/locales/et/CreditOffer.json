@@ -23,6 +23,7 @@
     "backingCollateral": "Krediiditehingu tagatis",
     "selectCollateral": "Valige oma tagatis..",
     "borrowDescription": "Laenama {{symbol}} alates {{owner_name}}, valige ülaltoodud aktsepteeritud tagatistagatisvarade vahel.",
+    "borrowDescription2": "Laenuandja määratud hind: {{price}} {{quote}}/{{base}}",
     "noCollateralMessage": "Kontol ei ole seda tagatisvara.",
     "borrowAmount": "Kogus {{symbol}} plaanite laenu võtta",
     "availableAmountRange": "Saadaval: {{minAmount}} juurde {{availableAmount}} {{symbol}}",

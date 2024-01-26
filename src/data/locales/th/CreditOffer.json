@@ -23,6 +23,7 @@
     "backingCollateral": "การสนับสนุนหลักประกันสำหรับข้อตกลงสินเชื่อ",
     "selectCollateral": "เลือกหลักประกันสำรอง..",
     "borrowDescription": "ยืม {{symbol}} จาก {{owner_name}}ให้เลือกระหว่างสินทรัพย์หลักประกันที่ได้รับการยอมรับข้างต้น",
+    "borrowDescription2": "ราคาที่กำหนดของผู้ให้กู้: {{price}} {{quote}}/{{base}}",
     "noCollateralMessage": "บัญชีไม่ได้ถือครองสินทรัพย์หลักประกันนี้",
     "borrowAmount": "จำนวนของ {{symbol}} คุณวางแผนที่จะกู้ยืม",
     "availableAmountRange": "มีอยู่: {{minAmount}} ถึง {{availableAmount}} {{symbol}}",

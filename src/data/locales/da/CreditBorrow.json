@@ -8,7 +8,9 @@
     "repayPeriod": "Tilbagebetalingsperiode: {{repayPeriod}} timer",
     "validity": "Tilbuddet gælder pr {{validity}} timer",
     "min": "Minimum beløb: {{amount}} {{asset}}",
-    "proceed": "Fortsæt med kredittilbud{{offerID}}"
+    "proceed": "Fortsæt med kredittilbud{{offerID}}",
+    "edit": "Rediger tilbud",
+    "view": "Se indstillinger"
   },
   "card": {
     "title": "🏦 Se tilgængelige kredittilbud",

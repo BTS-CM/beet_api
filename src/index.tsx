@@ -660,6 +660,49 @@ const app = new Elysia()
           },
         }
       )
+      .post(
+        "/getNames/:chain",
+        async ({ body, params: { chain } }) => {
+          // Fetch multiple objects from the blockchain
+          if (!body || !chain) {
+            throw new Error("Missing required fields");
+          }
+
+          if (chain !== "bitshares" && chain !== "bitshares_testnet") {
+            throw new Error("Invalid chain");
+          }
+
+          const objects = JSON.parse(body);
+
+          let retrievedObjects;
+          try {
+            retrievedObjects = await getObjects(chain, objects, app);
+          } catch (error) {
+            throw error;
+          }
+
+          if (!retrievedObjects) {
+            throw new Error("Objects not found");
+          }
+
+          const _finalResults = retrievedObjects.map((x) => {
+            if (x) {
+              return {
+                name: x.name,
+                id: x.id,
+              };
+            }
+          });
+
+          return validResult(_finalResults);
+        },
+        {
+          detail: {
+            summary: "Get usernames",
+            tags: ["Blockchain"],
+          },
+        }
+      )
       .get(
         "/getMarketHistory/:chain/:quote/:base/:accountID",
         async ({ params: { chain, quote, base, accountID } }) => {

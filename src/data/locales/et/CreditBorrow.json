@@ -8,7 +8,9 @@
     "repayPeriod": "Tagasimakse periood: {{repayPeriod}} tundi",
     "validity": "Pakkumine kehtib {{validity}} tundi",
     "min": "Minimaalne summa: {{amount}} {{asset}}",
-    "proceed": "Jätkake krediidipakkumisega{{offerID}}"
+    "proceed": "Jätkake krediidipakkumisega{{offerID}}",
+    "edit": "Muuda pakkumist",
+    "view": "Kuva seaded"
   },
   "card": {
     "title": "🏦 Saadaolevate krediidipakkumiste vaatamine",

@@ -23,6 +23,7 @@
     "backingCollateral": "Backing collateral for credit deal",
     "selectCollateral": "Select your backing collateral..",
     "borrowDescription": "To borrow {{symbol}} from {{owner_name}}, choose between the above accepted backing collateral assets.",
+    "borrowDescription2": "Lender's designated price: {{price}} {{quote}}/{{base}}",
     "noCollateralMessage": "Account doesn't hold this backing collateral asset.",
     "borrowAmount": "Amount of {{symbol}} you plan on borrowing",
     "availableAmountRange": "Available: {{minAmount}} to {{availableAmount}} {{symbol}}",

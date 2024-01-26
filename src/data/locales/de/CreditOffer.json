@@ -23,6 +23,7 @@
     "backingCollateral": "Sicherheiten für Kreditgeschäfte",
     "selectCollateral": "Wählen Sie Ihre Sicherheiten aus.",
     "borrowDescription": "Zum Ausleihen {{symbol}} aus {{owner_name}}Wählen Sie zwischen den oben genannten akzeptierten Sicherungswerten.",
+    "borrowDescription2": "Vom Kreditgeber festgelegter Preis: {{price}} {{quote}}/{{base}}",
     "noCollateralMessage": "Das Konto enthält diesen Sicherungswert nicht.",
     "borrowAmount": "Menge von {{symbol}} Sie planen, einen Kredit aufzunehmen",
     "availableAmountRange": "Verfügbar: {{minAmount}} Zu {{availableAmount}} {{symbol}}",

@@ -8,7 +8,9 @@
     "repayPeriod": "Rückzahlungszeitraum: {{repayPeriod}} Std.",
     "validity": "Angebot gültig für {{validity}} Std.",
     "min": "Mindestbetrag: {{amount}} {{asset}}",
-    "proceed": "Fahren Sie mit dem Kreditangebot fort{{offerID}}"
+    "proceed": "Fahren Sie mit dem Kreditangebot fort{{offerID}}",
+    "edit": "Angebot bearbeiten",
+    "view": "Einstellungen anzeigen"
   },
   "card": {
     "title": "🏦 Anzeigen verfügbarer Kreditangebote",

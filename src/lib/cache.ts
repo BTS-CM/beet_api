@@ -34,6 +34,7 @@ const pages = [
   "CreditBorrow",
   "CreditDeals",
   "CreditOffer",
+  "CreditOfferEditor",
   "CurrentUser",
   "DeepLinkDialog",
   "ExternalLink",

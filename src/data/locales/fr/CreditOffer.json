@@ -23,6 +23,7 @@
     "backingCollateral": "Garantie de garantie pour une opération de crédit",
     "selectCollateral": "Sélectionnez votre garantie de soutien.",
     "borrowDescription": "Emprunter {{symbol}} depuis {{owner_name}}, choisissez parmi les actifs de garantie acceptés ci-dessus.",
+    "borrowDescription2": "Prix ​​désigné par le prêteur : {{price}} {{quote}}/{{base}}",
     "noCollateralMessage": "Le compte ne détient pas cet actif de garantie de garantie.",
     "borrowAmount": "Quantité de {{symbol}} vous envisagez d'emprunter",
     "availableAmountRange": "Disponible: {{minAmount}} à {{availableAmount}} {{symbol}}",

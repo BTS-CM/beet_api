@@ -33,9 +33,6 @@ export const chains = {
       {
         url: "wss://api-testnet.61bts.com/ws",
       },
-      {
-        url: "wss://testnet.bitshares.im/ws",
-      },
     ],
   },
 };
