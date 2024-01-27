@@ -1,4 +1,11 @@
 {
+  "lend": {
+    "title": "🪙 Prêter des fonds",
+    "subtitle": "Prêter à d'autres utilisateurs",
+    "hover1": "Créez vos propres offres de crédit décentralisées.",
+    "hover2": "Prêtez des actifs à vos taux définis.",
+    "hover3": "Spécifiez les garanties de prêt et les prix acceptables."
+  },
   "pool": {
     "title": "💱 Échange de piscine",
     "subtitle": "Échanger des actifs via un pool",

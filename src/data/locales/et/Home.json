@@ -1,4 +1,11 @@
 {
+  "lend": {
+    "title": "🪙 Laena raha",
+    "subtitle": "Laena teistele kasutajatele",
+    "hover1": "Looge oma detsentraliseeritud krediidipakkumised.",
+    "hover2": "Laenake varasid teie määratud intressimääradega.",
+    "hover3": "Täpsustage aktsepteeritav laenutagatis ja hinnad."
+  },
   "pool": {
     "title": "💱 Basseini vahetus",
     "subtitle": "Vahetage varasid basseini kaudu",

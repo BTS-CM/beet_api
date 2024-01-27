@@ -1,4 +1,11 @@
 {
+  "lend": {
+    "title": "🪙 Lend funds",
+    "subtitle": "Lend to other users",
+    "hover1": "Create your own decentralized credit offers.",
+    "hover2": "Lend assets at your defined rates.",
+    "hover3": "Specify acceptable loan collateral and prices."
+  },
   "pool": {
     "title": "💱 Pool exchange",
     "subtitle": "Swap assets via a pool",

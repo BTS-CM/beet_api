@@ -1,4 +1,11 @@
 {
+  "lend": {
+    "title": "🪙 Lån penge",
+    "subtitle": "Lån til andre brugere",
+    "hover1": "Opret dine egne decentrale kredittilbud.",
+    "hover2": "Lån aktiver til dine definerede satser.",
+    "hover3": "Angiv acceptable lånesikkerheder og priser."
+  },
   "pool": {
     "title": "💱 Poolbytte",
     "subtitle": "Byt aktiver via en pulje",

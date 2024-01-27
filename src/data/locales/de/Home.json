@@ -1,4 +1,11 @@
 {
+  "lend": {
+    "title": "🪙 Gelder verleihen",
+    "subtitle": "An andere Benutzer verleihen",
+    "hover1": "Erstellen Sie Ihre eigenen dezentralen Kreditangebote.",
+    "hover2": "Verleihen Sie Vermögenswerte zu Ihren festgelegten Zinssätzen.",
+    "hover3": "Geben Sie akzeptable Kreditsicherheiten und Preise an."
+  },
   "pool": {
     "title": "💱 Pooltausch",
     "subtitle": "Tauschen Sie Vermögenswerte über einen Pool aus",

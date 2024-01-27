@@ -1,4 +1,11 @@
 {
+  "lend": {
+    "title": "🪙 Emprestar fundos",
+    "subtitle": "Empreste para outros usuários",
+    "hover1": "Crie suas próprias ofertas de crédito descentralizadas.",
+    "hover2": "Empreste ativos às taxas definidas.",
+    "hover3": "Especifique garantias e preços de empréstimo aceitáveis."
+  },
   "pool": {
     "title": "💱 Troca de piscina",
     "subtitle": "Trocar ativos por meio de um pool",

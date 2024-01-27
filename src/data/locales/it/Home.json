@@ -1,4 +1,11 @@
 {
+  "lend": {
+    "title": "🪙 Presta fondi",
+    "subtitle": "Prestare ad altri utenti",
+    "hover1": "Crea le tue offerte di credito decentralizzato.",
+    "hover2": "Presta beni ai tassi da te definiti.",
+    "hover3": "Specificare le garanzie e i prezzi del prestito accettabili."
+  },
   "pool": {
     "title": "💱 Scambio piscina",
     "subtitle": "Scambia asset tramite un pool",
