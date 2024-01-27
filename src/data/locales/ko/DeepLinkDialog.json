@@ -1,7 +1,7 @@
 {
   "dialogContent": {
     "generatingDeeplink": "딥링크 생성 중...",
-    "withAccount": "계정 사용: {username} ({{userID}})",
+    "withAccount": "계정 사용: {{username}} ({{userID}})",
     "readyToBroadcast": "귀하의 Bitshares Beet 작업이 방송될 준비가 되었습니다!",
     "chooseMethod": "아래 방법 중에서 선택하여 거래를 방송하세요.",
     "bitsharesBEETMultiwallet": "Bitshares BEET 멀티월렛",

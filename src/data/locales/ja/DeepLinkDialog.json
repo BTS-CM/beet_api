@@ -1,7 +1,7 @@
 {
   "dialogContent": {
     "generatingDeeplink": "ディープリンクを生成中...",
-    "withAccount": "アカウント: {ユーザー名} ({{userID}})",
+    "withAccount": "アカウント: {{username}} ({{userID}})",
     "readyToBroadcast": "Bitshares Beet オペレーションをブロードキャストする準備ができました。",
     "chooseMethod": "以下の方法から選択して、トランザクションをブロードキャストします。",
     "bitsharesBEETMultiwallet": "Bitshares BEET マルチウォレット",

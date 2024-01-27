@@ -1,7 +1,7 @@
 {
   "dialogContent": {
     "generatingDeeplink": "กำลังสร้าง Deep Link...",
-    "withAccount": "ด้วยบัญชี: {ชื่อผู้ใช้} ({{userID}})",
+    "withAccount": "ด้วยบัญชี: {{username}} ({{userID}})",
     "readyToBroadcast": "การดำเนินการ Bitshares Beet ของคุณพร้อมที่จะออกอากาศแล้ว!",
     "chooseMethod": "เลือกวิธีการด้านล่างเพื่อถ่ายทอดธุรกรรมของคุณผ่านทาง",
     "bitsharesBEETMultiwallet": "Bitshares BEET มัลติวอลเล็ต",

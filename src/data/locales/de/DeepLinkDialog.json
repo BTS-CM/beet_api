@@ -1,7 +1,7 @@
 {
   "dialogContent": {
     "generatingDeeplink": "Deeplink wird generiert...",
-    "withAccount": "Mit dem Konto: {Benutzername} ({{userID}})",
+    "withAccount": "Mit dem Konto: {{Benutzername}} ({{userID}})",
     "readyToBroadcast": "Ihr Bitshares Beet-Vorgang ist bereit zur Ausstrahlung!",
     "chooseMethod": "Wählen Sie eine der folgenden Methoden, um Ihre Transaktion über das zu übertragen",
     "bitsharesBEETMultiwallet": "Bitshares BEET Multiwallet",

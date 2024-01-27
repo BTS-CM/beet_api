@@ -1,7 +1,7 @@
 {
   "dialogContent": {
     "generatingDeeplink": "Süvalingi genereerimine...",
-    "withAccount": "Kontoga: {username} ({{userID}})",
+    "withAccount": "Kontoga: {{username}} ({{userID}})",
     "readyToBroadcast": "Teie Bitshares Beet toiming on edastamiseks valmis!",
     "chooseMethod": "Valige allolevate meetodite hulgast, et edastada oma tehing teenuse kaudu",
     "bitsharesBEETMultiwallet": "Bitshares BEET multirahakott",

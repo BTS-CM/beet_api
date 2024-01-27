@@ -30,10 +30,10 @@ async function generateDeepLink(
         true,
         4000,
         { enableDatabase: true, enableCrypto: false, enableOrders: true },
-        (error: Error) => console.log(error)
+        (error: Error) => console.log({ error })
       );
     } catch (error) {
-      console.log(error);
+      console.log({ error, location: "api instance failed" });
       changeURL(chain, app);
       reject(error);
       return;
@@ -47,7 +47,7 @@ async function generateDeepLink(
     try {
       await tr.update_head_block(currentAPI);
     } catch (error) {
-      console.error(error);
+      console.log({ error, location: "update head block failed" });
       currentAPI.close();
       reject(error);
       return;
@@ -56,7 +56,7 @@ async function generateDeepLink(
     try {
       await tr.set_required_fees(null, null, currentAPI);
     } catch (error) {
-      console.error(error);
+      console.log({ error, location: "set required fees failed" });
       currentAPI.close();
       reject(error);
       return;
@@ -65,7 +65,7 @@ async function generateDeepLink(
     try {
       tr.set_expire_seconds(7200);
     } catch (error) {
-      console.error(error);
+      console.log({ error, location: "set expire seconds failed" });
       currentAPI.close();
       reject(error);
       return;
@@ -74,7 +74,7 @@ async function generateDeepLink(
     try {
       tr.finalize(currentAPI);
     } catch (error) {
-      console.error(error);
+      console.log({ error, location: "finalize failed" });
       currentAPI.close();
       reject(error);
       return;
@@ -99,7 +99,7 @@ async function generateDeepLink(
     try {
       encodedPayload = encodeURIComponent(JSON.stringify(request));
     } catch (error) {
-      console.log(error);
+      console.log({ error, location: "encode payload failed" });
       reject(error);
       return;
     }
@@ -144,7 +144,7 @@ async function getObjects(chain: String, object_ids: Array<String>, app?: any) {
     let currentAPI;
     try {
       currentAPI = await Apis.instance(node, true, 4000, { enableDatabase: true }, (error: Error) =>
-        console.log(error)
+        console.log({ error })
       );
     } catch (error) {
       console.log({ error, msg: "instance failed" });
@@ -164,7 +164,7 @@ async function getObjects(chain: String, object_ids: Array<String>, app?: any) {
       try {
         got_objects = await currentAPI.db_api().exec("get_objects", [currentChunk, false]);
       } catch (error) {
-        console.log(error);
+        console.log({ error });
         continue;
       }
 
@@ -196,10 +196,10 @@ async function getBlockedAccounts(chain: String, app: any) {
     let currentAPI;
     try {
       currentAPI = await Apis.instance(node, true, 4000, { enableDatabase: true }, (error: Error) =>
-        console.log(error)
+        console.log({ error })
       );
     } catch (error) {
-      console.log(error);
+      console.log({ error });
       changeURL(chain, app);
       reject(error);
       return;
@@ -216,7 +216,7 @@ async function getBlockedAccounts(chain: String, app: any) {
     try {
       object = await currentAPI.db_api().exec("get_accounts", [["committee-blacklist-manager"]]);
     } catch (error) {
-      console.log(error);
+      console.log({ error });
       currentAPI.close();
       reject(error);
     }
@@ -245,10 +245,10 @@ async function accountSearch(chain: String, search_string: String, app: any) {
     let currentAPI;
     try {
       currentAPI = await Apis.instance(node, true, 4000, { enableDatabase: true }, (error: Error) =>
-        console.log(error)
+        console.log({ error })
       );
     } catch (error) {
-      console.log(error);
+      console.log({ error });
       changeURL(chain, app);
       reject(error);
       return;
@@ -258,7 +258,7 @@ async function accountSearch(chain: String, search_string: String, app: any) {
     try {
       object = await currentAPI.db_api().exec("get_accounts", [[search_string]]);
     } catch (error) {
-      console.log(error);
+      console.log({ error });
       currentAPI.close();
       reject(error);
     }
@@ -283,10 +283,10 @@ async function getFullAccounts(chain: String, accountID: String, app: any) {
     let currentAPI;
     try {
       currentAPI = await Apis.instance(node, true, 4000, { enableDatabase: true }, (error: Error) =>
-        console.log(error)
+        console.log({ error })
       );
     } catch (error) {
-      console.log(error);
+      console.log({ error });
       changeURL(chain, app);
       reject(error);
       return;
@@ -303,7 +303,7 @@ async function getFullAccounts(chain: String, accountID: String, app: any) {
           }
         });
     } catch (error) {
-      console.log(error);
+      console.log({ error });
       currentAPI.close();
       reject(error);
     }
@@ -363,7 +363,7 @@ async function getAccountHistory(
     try {
       history = await fetch(url, { method: "GET" });
     } catch (error) {
-      console.log(error);
+      console.log({ error });
       reject(error);
     }
 
@@ -402,10 +402,10 @@ async function getAccountBalances(chain: String, accountID: String, app: any) {
     let currentAPI;
     try {
       currentAPI = await Apis.instance(node, true, 4000, { enableDatabase: true }, (error: Error) =>
-        console.log(error)
+        console.log({ error })
       );
     } catch (error) {
-      console.log(error);
+      console.log({ error });
       changeURL(chain, app);
       reject(error);
       return;
@@ -422,7 +422,7 @@ async function getAccountBalances(chain: String, accountID: String, app: any) {
           }
         });
     } catch (error) {
-      console.log(error);
+      console.log({ error });
       currentAPI.close();
       reject(error);
     }
@@ -460,10 +460,10 @@ async function getLimitOrders(
     let currentAPI;
     try {
       currentAPI = await Apis.instance(node, true, 4000, { enableDatabase: true }, (error: Error) =>
-        console.log(error)
+        console.log({ error })
       );
     } catch (error) {
-      console.log(error);
+      console.log({ error });
       changeURL(chain, app);
       reject(error);
       return;
@@ -480,7 +480,7 @@ async function getLimitOrders(
           }
         });
     } catch (error) {
-      console.log(error);
+      console.log({ error });
       currentAPI.close();
       reject(error);
     }
@@ -511,10 +511,10 @@ async function fetchOrderBook(chain: String, quote: String, base: String, app: a
     let currentAPI;
     try {
       currentAPI = await Apis.instance(node, true, 4000, { enableDatabase: true }, (error: Error) =>
-        console.log(error)
+        console.log({ error })
       );
     } catch (error) {
-      console.log(error);
+      console.log({ error });
       changeURL(chain, app);
       return reject(error);
     }
@@ -523,13 +523,13 @@ async function fetchOrderBook(chain: String, quote: String, base: String, app: a
     try {
       orderBook = await currentAPI.db_api().exec("get_order_book", [base, quote, 50]);
     } catch (error) {
-      console.log(error);
+      console.log({ error });
     }
 
     try {
       await currentAPI.close();
     } catch (error) {
-      console.log(error);
+      console.log({ error });
     }
 
     if (!orderBook) {
@@ -583,10 +583,10 @@ async function fetchCreditDeals(chain: String, account_name_or_id: String, app: 
     let currentAPI;
     try {
       currentAPI = await Apis.instance(node, true, 4000, { enableDatabase: true }, (error: Error) =>
-        console.log(error)
+        console.log({ error })
       );
     } catch (error) {
-      console.log(error);
+      console.log({ error });
       changeURL(chain, app);
       return reject(error);
     }
@@ -608,13 +608,13 @@ async function fetchCreditDeals(chain: String, account_name_or_id: String, app: 
         })
       );
     } catch (error) {
-      console.log(error);
+      console.log({ error });
       return reject(error);
     } finally {
       try {
         currentAPI.close();
       } catch (error) {
-        console.log(error);
+        console.log({ error });
       }
     }
   });
@@ -635,10 +635,10 @@ async function fetchLimitOrders(chain: String, base: String, quote: String, app:
     let currentAPI;
     try {
       currentAPI = await Apis.instance(node, true, 4000, { enableDatabase: true }, (error: Error) =>
-        console.log(error)
+        console.log({ error })
       );
     } catch (error) {
-      console.log(error);
+      console.log({ error });
       changeURL(chain, app);
       return reject(error);
     }
@@ -647,13 +647,13 @@ async function fetchLimitOrders(chain: String, base: String, quote: String, app:
     try {
       limitOrders = currentAPI.db_api().exec("get_limit_orders", [base, quote, 50]);
     } catch (error) {
-      console.log(error);
+      console.log({ error });
     }
 
     try {
       currentAPI.close();
     } catch (error) {
-      console.log(error);
+      console.log({ error });
     }
 
     if (!limitOrders) {
@@ -678,10 +678,10 @@ async function getPortfolio(chain: String, accountID: String, app: any) {
     let currentAPI;
     try {
       currentAPI = await Apis.instance(node, true, 4000, { enableDatabase: true }, (error: Error) =>
-        console.log(error)
+        console.log({ error })
       );
     } catch (error) {
-      console.log(error);
+      console.log({ error });
       changeURL(chain, app);
       return reject(error);
     }
@@ -709,14 +709,14 @@ async function getPortfolio(chain: String, accountID: String, app: any) {
         })
       );
     } catch (error) {
-      console.log(error);
+      console.log({ error });
       currentAPI.close();
       reject(error);
     } finally {
       try {
         currentAPI.close();
       } catch (error) {
-        console.log(error);
+        console.log({ error });
       }
     }
   });
@@ -747,10 +747,10 @@ async function getMarketTrades(
         true,
         4000,
         { enableDatabase: true, enableHistory: true },
-        (error: Error) => console.log(error)
+        (error: Error) => console.log({ error })
       );
     } catch (error) {
-      console.log(error);
+      console.log({ error });
       changeURL(chain, app);
       return reject(error);
     }
@@ -823,14 +823,14 @@ async function getMarketTrades(
       };
       resolve(validResult(result));
     } catch (error) {
-      console.log(error);
+      console.log({ error });
       currentAPI.close();
       reject(error);
     } finally {
       try {
         currentAPI.close();
       } catch (error) {
-        console.log(error);
+        console.log({ error });
       }
     }
   });
@@ -865,7 +865,7 @@ async function getMaxObjectIDs(
     let currentAPI;
     try {
       currentAPI = await Apis.instance(node, true, 4000, { enableDatabase: true }, (error: Error) =>
-        console.log(error)
+        console.log({ error })
       );
     } catch (error) {
       console.log({ error, node });
@@ -943,10 +943,10 @@ async function getFullSmartcoin(
         true,
         4000,
         { enableDatabase: true, enableHistory: true },
-        (error: Error) => console.log(error)
+        (error: Error) => console.log({ error })
       );
     } catch (error) {
-      console.log(error);
+      console.log({ error });
       changeURL(chain, app);
       return reject(error);
     }
@@ -1015,7 +1015,7 @@ async function getFullSmartcoin(
 
       return reject(new Error("Couldn't retrieve objects"));
     } catch (error) {
-      console.log(error);
+      console.log({ error });
       currentAPI.close();
       return reject(error);
     }
@@ -1040,10 +1040,10 @@ function getCollateralBids(chain: string, assetID: string, app: any) {
         true,
         4000,
         { enableDatabase: true, enableHistory: true },
-        (error: Error) => console.log(error)
+        (error: Error) => console.log({ error })
       );
     } catch (error) {
-      console.log(error);
+      console.log({ error });
       changeURL(chain, app);
       return reject(error);
     }
@@ -1061,7 +1061,7 @@ function getCollateralBids(chain: string, assetID: string, app: any) {
 
       return reject(new Error("Couldn't retrieve objects"));
     } catch (error) {
-      console.log(error);
+      console.log({ error });
       currentAPI.close();
       return reject(error);
     }
