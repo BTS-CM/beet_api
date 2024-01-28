@@ -51,7 +51,7 @@
   "updatingCreditOffer": "Actualizando oferta de crédito {{offerID}}",
   "risksTitle": "Riesgos asociados con la creación de ofertas de crédito.",
   "risksDescription": "Esta es una lista no exhaustiva de riesgos; realice su propia investigación antes de continuar.",
-  "risksPoint1": "Cuando crea una oferta de crédito, crea una oferta abierta para prestar activos en sus términos predefinidos hasta que pase la fecha de vencimiento de la oferta de crédito. ",
+  "risksPoint1": "Cuando crea una oferta de crédito, crea una oferta abierta para prestar activos en sus términos predefinidos hasta que pase la fecha de vencimiento de la oferta de crédito. La participación en el mercado en la oferta de crédito no está garantizada; es posible que no reciba ninguna oferta de crédito si las condiciones no son favorables para los prestatarios.",
   "risksPoint2": "Si configura mal la oferta de crédito y los usuarios realizan acuerdos de crédito con ella, deberá esperar hasta que expire el período de reembolso para reclamar los activos prestados o la garantía. ",
   "risksPoint3": "Si no configura los prestatarios permitidos, todos los usuarios de la cadena de bloques Bitshares pueden aceptar el trato en su totalidad. ",
   "risksPoint4": "Los prestatarios no están obligados a reembolsar los activos prestados, ni son castigados por hacerlo; pueden optar por no pagar el préstamo y perder su garantía. ",

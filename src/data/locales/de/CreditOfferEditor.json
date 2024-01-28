@@ -51,7 +51,7 @@
   "updatingCreditOffer": "Kreditangebot wird aktualisiert {{offerID}}",
   "risksTitle": "Risiken im Zusammenhang mit der Erstellung von Kreditangeboten",
   "risksDescription": "Dies ist eine nicht erschöpfende Liste von Risiken. Bitte recherchieren Sie selbst, bevor Sie fortfahren.",
-  "risksPoint1": "Wenn Sie ein Kreditangebot erstellen, erstellen Sie ein offenes Angebot zur Ausleihe von Vermögenswerten zu Ihren vordefinierten Bedingungen, bis das Ablaufdatum des Kreditangebots abgelaufen ist. ",
+  "risksPoint1": "Wenn Sie ein Kreditangebot erstellen, erstellen Sie ein offenes Angebot zur Ausleihe von Vermögenswerten zu Ihren vordefinierten Bedingungen, bis das Ablaufdatum des Kreditangebots abgelaufen ist. Eine Marktteilnahme am Kreditangebot ist nicht garantiert, es kann sein, dass Sie keine Kreditverträge erhalten, wenn die Konditionen für Kreditnehmer ungünstig sind.",
   "risksPoint2": "Wenn Sie das Kreditangebot falsch konfigurieren und Nutzer damit Kreditgeschäfte abschließen, müssen Sie warten, bis die Rückzahlungsfrist abgelaufen ist, um Ihr geliehenes Vermögen oder die Sicherheiten zurückzufordern. ",
   "risksPoint3": "Wenn Sie keine zulässigen Kreditnehmer konfigurieren, können alle Benutzer der Bitshares-Blockchain den Deal als Ganzes annehmen. ",
   "risksPoint4": "Kreditnehmer sind nicht zur Rückzahlung der geliehenen Vermögenswerte verpflichtet und werden dafür auch nicht bestraft. Sie können sich dafür entscheiden, mit dem Kredit in Verzug zu geraten und ihre Sicherheiten zu verlieren. ",

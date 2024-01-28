@@ -51,7 +51,7 @@
   "updatingCreditOffer": "Krediidipakkumise värskendamine {{offerID}}",
   "risksTitle": "Krediidipakkumiste loomisega seotud riskid",
   "risksDescription": "See on mittetäielik riskide loend. Enne jätkamist uurige ise.",
-  "risksPoint1": "Krediidipakkumise loomisel loote avatud pakkumise varade laenamiseks etteantud tingimustel kuni krediidipakkumise aegumiskuupäevani. ",
+  "risksPoint1": "Krediidipakkumise loomisel loote avatud pakkumise varade laenamiseks etteantud tingimustel kuni krediidipakkumise aegumiskuupäevani. Turul osalemine krediidipakkumises ei ole garanteeritud, te ei pruugi saada ühtegi krediiditehingut, kui tingimused ei ole laenuvõtjatele soodsad.",
   "risksPoint2": "Kui konfigureerite krediidipakkumise valesti ja kasutajad teevad sellega krediiditehinguid, peate laenutatud vara või tagatise tagasi nõudmiseks ootama tagasimaksetähtaja möödumist. ",
   "risksPoint3": "Kui te lubatud laenuvõtjaid ei konfigureeri, saavad kõik Bitsharesi plokiahela kasutajad tehinguga täielikult nõustuda. ",
   "risksPoint4": "Laenuvõtjad ei ole kohustatud laenatud varasid tagasi maksma, samuti ei karistata neid selle eest, nad võivad otsustada laenu mitte maksta ja tagatisest ilma jääda. ",

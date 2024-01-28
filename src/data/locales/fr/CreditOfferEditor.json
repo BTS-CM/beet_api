@@ -51,7 +51,7 @@
   "updatingCreditOffer": "Mise à jour de l'offre de crédit {{offerID}}",
   "risksTitle": "Risques liés à la création d'offres de crédit",
   "risksDescription": "Il s'agit d'une liste non exhaustive de risques, veuillez faire vos propres recherches avant de continuer.",
-  "risksPoint1": "Lorsque vous créez une offre de crédit, vous créez une offre ouverte pour prêter des actifs à vos conditions prédéfinies jusqu'à ce que la date d'expiration de l'offre de crédit soit passée. ",
+  "risksPoint1": "Lorsque vous créez une offre de crédit, vous créez une offre ouverte pour prêter des actifs à vos conditions prédéfinies jusqu'à ce que la date d'expiration de l'offre de crédit soit passée. La participation au marché à l'offre de crédit n'est pas garantie, vous ne pourrez bénéficier d'aucune offre de crédit si les conditions ne sont pas favorables aux emprunteurs.",
   "risksPoint2": "Si vous configurez mal l'offre de crédit et que les utilisateurs concluent des accords de crédit avec elle, vous devez alors attendre l'expiration de la période de remboursement pour récupérer vos actifs prêtés ou la garantie. ",
   "risksPoint3": "Si vous ne configurez pas les emprunteurs autorisés, tous les utilisateurs de la blockchain Bitshares peuvent accepter la transaction dans son intégralité. ",
   "risksPoint4": "Les emprunteurs ne sont pas tenus de rembourser les actifs prêtés et ne sont pas non plus punis pour cela ; ils peuvent choisir de ne pas rembourser le prêt et de perdre leur garantie. ",

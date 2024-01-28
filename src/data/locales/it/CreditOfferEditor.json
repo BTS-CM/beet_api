@@ -51,7 +51,7 @@
   "updatingCreditOffer": "Aggiornamento dell'offerta di credito {{offerID}}",
   "risksTitle": "Rischi associati alla creazione di offerte di credito",
   "risksDescription": "Questo è un elenco di rischi non esaustivo, ti invitiamo a effettuare le tue ricerche prima di procedere.",
-  "risksPoint1": "Quando crei un'offerta di credito, crei un'offerta aperta per prestare beni ai termini predefiniti fino alla data di scadenza dell'offerta di credito. ",
+  "risksPoint1": "Quando crei un'offerta di credito, crei un'offerta aperta per prestare beni ai termini predefiniti fino alla data di scadenza dell'offerta di credito. La partecipazione al mercato nell'offerta di credito non è garantita, potresti non ricevere alcuna offerta di credito se i termini non sono favorevoli ai mutuatari.",
   "risksPoint2": "Se si configura in modo errato l'offerta di credito e gli utenti stipulano accordi di credito con essa, è necessario attendere la scadenza del periodo di rimborso per reclamare i beni prestati o la garanzia. ",
   "risksPoint3": "Se non configuri i mutuatari consentiti, tutti gli utenti blockchain di Bitshares potranno accettare l'accordo per intero. ",
   "risksPoint4": "I mutuatari non sono tenuti a rimborsare i beni prestati, né sono puniti per averlo fatto, possono scegliere di non pagare il prestito e perdere la garanzia. ",

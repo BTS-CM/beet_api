@@ -51,7 +51,7 @@
   "updatingCreditOffer": "Opdatering af kredittilbud {{offerID}}",
   "risksTitle": "Risici forbundet med at oprette kredittilbud",
   "risksDescription": "Dette er en ikke-udtømmende liste over risici. Lav venligst din egen research, før du fortsætter.",
-  "risksPoint1": "Når du opretter et kredittilbud, opretter du et åbent tilbud om at udlåne aktiver på dine foruddefinerede vilkår, indtil kredittilbuddets udløbsdato passerer. ",
+  "risksPoint1": "Når du opretter et kredittilbud, opretter du et åbent tilbud om at udlåne aktiver på dine foruddefinerede vilkår, indtil kredittilbuddets udløbsdato passerer. Markedsdeltagelse i kredittilbuddet er ikke garanteret, du modtager muligvis ingen kreditaftaler, hvis vilkårene ikke er gunstige for låntagere. ",
   "risksPoint2": "Hvis du fejlkonfigurerer kredittilbuddet, og brugere laver kreditaftaler med det, skal du vente, indtil tilbagebetalingsperioden udløber, med at kræve dine udlånte aktiver eller sikkerheden tilbage. ",
   "risksPoint3": "Hvis du ikke konfigurerer tilladte låntagere, kan alle Bitshares blockchain-brugere acceptere aftalen i sin helhed. ",
   "risksPoint4": "Låntagere er ikke forpligtet til at tilbagebetale de udlånte aktiver, og de bliver heller ikke straffet for at gøre det, de kan vælge at misligholde lånet og miste deres sikkerhed. ",
