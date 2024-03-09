@@ -87,7 +87,7 @@ async function generateDeepLink(
         method: "injectedCall",
         params: ["signAndBroadcast", JSON.stringify(tr.toObject()), []],
         appName: "Static Bitshares Astro web app",
-        chain: chain === "bitshares" ? "BTS" : "TEST",
+        chain: chain === "bitshares" ? "BTS" : "BTS_TEST",
         browser: "web browser",
         origin: "localhost",
       },
