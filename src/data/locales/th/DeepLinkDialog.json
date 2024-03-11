@@ -3,7 +3,7 @@
     "generatingDeeplink": "กำลังสร้าง Deep Link...",
     "withAccount": "ด้วยบัญชี: {{username}} ({{userID}})",
     "readyToBroadcast": "การดำเนินการ Bitshares Beet ของคุณพร้อมที่จะออกอากาศแล้ว!",
-    "chooseMethod": "เลือกวิธีการด้านล่างเพื่อถ่ายทอดธุรกรรมของคุณผ่านทาง",
+    "chooseMethod": "เลือกจากวิธีการด้านล่างเพื่อถ่ายทอดไปยังกระเป๋าเงินที่คุณเลือก",
     "bitsharesBEETMultiwallet": "Bitshares BEET มัลติวอลเล็ต",
     "errorOccurred": "เกิดข้อผิดพลาด ขออภัย ",
     "beetWallet": "Bitshares BEET มัลติวอลเล็ต"

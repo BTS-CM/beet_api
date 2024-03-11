@@ -3,7 +3,7 @@
     "generatingDeeplink": "Genererer dybt link...",
     "withAccount": "Med kontoen: {{brugernavn}} ({{userID}})",
     "readyToBroadcast": "Din Bitshares Beet-operation er klar til at sendes!",
-    "chooseMethod": "Vælg mellem metoderne nedenfor for at udsende din transaktion via",
+    "chooseMethod": "Vælg mellem metoderne nedenfor for at udsende til din valgte tegnebog.",
     "bitsharesBEETMultiwallet": "Bitshares BEET multiwallet",
     "errorOccurred": "Der opstod en fejl, beklager. ",
     "beetWallet": "Bitshares BEET multiwallet"

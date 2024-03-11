@@ -23,8 +23,13 @@ bun run refreshData
 
 Or you can manually run each script:
 
+For erasing existing data:
 ```
 bun run eraseChainData
+```
+
+For fetching new data:
+```
 bun run fetchPools
 bun run fetchAssets
 bun run fetchDynamicData

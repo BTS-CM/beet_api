@@ -3,7 +3,7 @@
     "generatingDeeplink": "Süvalingi genereerimine...",
     "withAccount": "Kontoga: {{username}} ({{userID}})",
     "readyToBroadcast": "Teie Bitshares Beet toiming on edastamiseks valmis!",
-    "chooseMethod": "Valige allolevate meetodite hulgast, et edastada oma tehing teenuse kaudu",
+    "chooseMethod": "Valige oma rahakotti edastamiseks allolevate meetodite hulgast.",
     "bitsharesBEETMultiwallet": "Bitshares BEET multirahakott",
     "errorOccurred": "Ilmnes viga, vabandust. ",
     "beetWallet": "Bitshares BEET multirahakott"

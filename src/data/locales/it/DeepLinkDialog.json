@@ -3,7 +3,7 @@
     "generatingDeeplink": "Generazione del collegamento diretto in corso...",
     "withAccount": "Con l'account: {{username}} ({{userID}})",
     "readyToBroadcast": "La tua operazione Bitshares Beet è pronta per essere trasmessa!",
-    "chooseMethod": "Scegli tra i metodi seguenti per trasmettere la tua transazione tramite",
+    "chooseMethod": "Scegli tra i metodi seguenti per trasmettere al tuo portafoglio preferito.",
     "bitsharesBEETMultiwallet": "Multiportafoglio Bitshares BEET",
     "errorOccurred": "Si è verificato un errore, siamo spiacenti. ",
     "beetWallet": "Multiportafoglio Bitshares BEET"

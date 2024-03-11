@@ -3,7 +3,7 @@
     "generatingDeeplink": "ディープリンクを生成中...",
     "withAccount": "アカウント: {{username}} ({{userID}})",
     "readyToBroadcast": "Bitshares Beet オペレーションをブロードキャストする準備ができました。",
-    "chooseMethod": "以下の方法から選択して、トランザクションをブロードキャストします。",
+    "chooseMethod": "以下の方法から選択して、選択したウォレットにブロードキャストします。",
     "bitsharesBEETMultiwallet": "Bitshares BEET マルチウォレット",
     "errorOccurred": "エラーが発生しました。申し訳ありません。",
     "beetWallet": "Bitshares BEET マルチウォレット"
